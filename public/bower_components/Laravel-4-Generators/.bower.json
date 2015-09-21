@@ -1,11 +1,15 @@
 {
   "name": "Laravel-4-Generators",
-  "_cacheHeaders": {
-    "Content-Type": "text/html; charset=utf-8"
+  "homepage": "https://github.com/JeffreyWay/Laravel-4-Generators",
+  "version": "3.0.3",
+  "_release": "3.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.3",
+    "commit": "68ab9313fb28272eb555dc2f76a90deb2e1145cf"
   },
-  "main": "index",
-  "_source": "https://github.com/JeffreyWay/Laravel-4-Generators",
-  "_target": "*",
-  "_originalSource": "https://github.com/JeffreyWay/Laravel-4-Generators",
+  "_source": "git://github.com/JeffreyWay/Laravel-4-Generators.git",
+  "_target": "~3.0.3",
+  "_originalSource": "JeffreyWay/Laravel-4-Generators",
   "_direct": true
 }
