@@ -32,6 +32,8 @@
 	<!-- Custom styles CSS -->
 	<link href="assets_homepage/css/style.css" rel="stylesheet" media="screen">
 	<link href="assets_homepage/css/flip_team.css" rel="stylesheet" media="screen">
+	<link href="css/footer-distributed-with-address-and-phones.css" rel="stylesheet" media="screen">
+	<link href="css/style.css" rel="stylesheet" media="screen">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -52,34 +54,78 @@
 
 		<!-- Navigation start -->
 
-		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-			<div class="container">
-
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Resume Solutions</a>
-				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#intro">home</a></li>
-						<li><a href="#profile">Profile</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#resume">Resume</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-
+		<nav>
+<ul>
+	<li><a href="http://facebook.com">About</a></li>
+	<li><a href="#">Services</a></li>
+	<li><a href="#">Work</a></li>
+</ul>
+<div class="button">
+	<a class="btn-open" href="#"></a>
+</div>
+</nav>
+<div class="overlay">
+	<div class="wrap">
+		<ul class="wrap-nav">
+			<li><a href="#">About</a>
+			<ul>
+				<li><a href="#">About Company</a></li>
+				<li><a href="#">Designers</a></li>
+				<li><a href="#">Developers</a></li>
+				<li><a href="#">Pets</a></li>
+			</ul>
+			</li>
+			<li><a href="#">Services</a>
+			<ul>
+				<li><a href="https://www.google.hr/">Web Design</a></li>
+				<li><a href="#">Development</a></li>
+				<li><a href="#">Apps</a></li>
+				<li><a href="#">Graphic design</a></li>
+				<li><a href="#">Branding</a></li>
+			</ul>
+			</li>
+			<li><a href="#">Work</a>
+			<ul>
+				<li><a href="#">Web</a></li>
+				<li><a href="#">Graphic</a></li>
+				<li><a href="#">Apps</a></li>
+			</ul>
+			</li>
+		</ul>
+		<div class="social">
+			<a href="http://mario-loncarek.from.hr/">
+			<div class="social-icon">
+				<i class="fa fa-facebook"></i>
 			</div>
-		</nav>
+			</a>
+			<a href="#">
+			<div class="social-icon">
+				<i class="fa fa-twitter"></i>
+			</div>
+			</a>
+			<a href="#">
+			<div class="social-icon">
+				<i class="fa fa-codepen"></i>
+			</div>
+			</a>
+			<a href="#">
+			<div class="social-icon">
+				<i class="fa fa-behance"></i>
+			</div>
+			</a>
+			<a href="#">
+			<div class="social-icon">
+				<i class="fa fa-dribbble"></i>
+			</div>
+			</a>
+			<p>
+				From: Zagreb, Croatia<br>
+				 Site: <a href="http://mario-loncarek.from.hr/">mario-loncarek.from.hr</a>
+			</p>
+		</div>
+	</div>
+</div>
+
 
 		<!-- Navigation end -->
 
@@ -146,157 +192,160 @@
 		<!-- Profile contact callout section -->
 
 		
-
-		<section id="portfolio" class="section">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-12 headline wow bounceInDown">
-						<h2>Our Team</h2>
-					</div>
-
-					<div class="col-md-4 col-sm-6 wow bounceInLeft">
-						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-							<div class="flipper">
-								<div class="front">
-									<img src="images/hand-shakes.jpg" alt="">
-								</div>
-								<div class="back">
-									goodbye
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-md-4 col-sm-6 wow bounceInUp">
-							<div class="portfolio-item">
-								<div class="portfolio-item-preview">
-									<img src="images/hand-shakes.jpg" alt="">
-								</div>
-								<div class="portfolio-item-description">
-									<h3>Some work</h3>
-									<p>Category</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 col-sm-6 wow bounceInRight">
-						<a href="assets/images/p3.jpg" class="pop-up" title="Caption 3">
-							<div class="portfolio-item">
-								<div class="portfolio-item-preview">
-									<img src="images/hand-shakes.jpg" alt="">
-								</div>
-								<div class="portfolio-item-description">
-									<h3>Some work</h3>
-									<p>Category</p>
-								</div>
-							</div>
-						</a>
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</section>
-
-		
-
-		
-
-		
 		
 
 		<!-- Portfolio section start -->
 
-		
+		<!-- SPEAKERS SECTION -->	
+	<section id="speakers">
+		<h3>THE TEAM</h3> <!-- Section Title -->
+		<div class="separator"></div>
+		<div class="container">
+			<div class="col-md-8 col-md-offset-2">
+				<!-- Section Description -->
+				<p>Meet the team and feel free to reach out to any one of them.</p>
+			</div>
+			
+			<!-- First Row of Speakers -->
+			<div class="row1">
+			
+				<!-- Speaker 1 -->
+				<div class="col-md-3">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="images/speaker-1.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="images/speaker-1-hover.png" alt="" />
+						</div>
+						<span>Creative Director</span>
+						<h4><span>Patrick </span> Simpson</h4>
+					</a>	
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>						
+					</ul>
+				</div>
+				
+				<!-- Speaker 2 -->
+				<div class="col-md-3">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="images/speaker-2.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="images/speaker-2-hover.png" alt="" />
+						</div>
+						<span>Web Designer</span>
+						<h4><span>Teresa</span> Crawford</h4>
+					</a>	
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				
+				<!-- Speaker 3 -->
+				<div class="col-md-3">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="images/speaker-3.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="images/speaker-3-hover.png" alt="" />
+						</div>
+						<span>Photographer</span>
+						<h4><span>Joseph</span> Reynolds</h4>
+					</a>					
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>						
+						<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>						
+					</ul>					
+				</div>
+				
+				
+			</div>	<!-- End Second Row -->	
+			<div class="clear"></div>
+			
+			<!-- View All Button -->
+			<div class="col-md-12">
+				<button class="btn btn-transparent fadeIn">View All</button>
+			</div>	
+					
+		</div>
+	</section>
+	<!-- //SPEAKERS SECTION -->	
 
-		</section>
 
 		<!-- Portfolio section end -->
 
-		<!-- Contact section start -->
+	
 
-		<section id="contact" class="section">
+<footer class="footer-distributed">
 
-			<div class="container">
+			<div class="footer-left">
 
-				<div class="row">
+				<h3>Company<span>logo</span></h3>
 
-					<div class="col-md-12 headline wow bounceInLeft">
-						<h2>Contact Us</h2>
-						<p>We look forward to opening new opportunities for you.</p>
-					</div>
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
 
-					<div class="col-md-6 wow bounceInUp">
+				<p class="footer-company-name">Company Name &copy; 2015</p>
+			</div>
 
-						<ul class="icon-list">
-							<li><i class="fa fa-fw fa-map-marker"></i>Codeup, San Antonio</li>
-							<li><i class="fa fa-fw fa-phone"></i>(210) 555 5555</li>
-							<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">resumesolutions@gmail.com</a></li>
-						</ul>
+			<div class="footer-center">
 
-					</div>
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>21 Revolution Street</span> Paris, France</p>
+				</div>
 
-					<div class="col-md-6 wow bounceInRight">
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 123456</p>
+				</div>
 
-						<form id="contact-form" role="form">
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
 
-							<div class="form-group">
-								<label class="sr-only" for="c_name">Name</label>
-								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
-							</div>
+			</div>
 
-							<div class="form-group">
-								<label class="sr-only" for="c_email">Email address</label>
-								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
-							</div>
+			<div class="footer-right">
 
-							<div class="form-group">
-								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
-							</div>
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
 
-							<button type="submit" class="btn btn-custom-1">
-								<i class="fa fa-bullhorn icon-before"></i> Send it
-							</button>
+				<div class="footer-icons">
 
-						</form>
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
 
-						<div class="ajax-response"></div>
+				</div>
 
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
-
-		</section>
-
-		<!-- Contact section end -->
-
-		<!-- Footer start -->
-
-		<footer id="footer">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-12">
-						<p class="copy">
-							© 2015 Resume Solutions, All Rights Reserved.
-						</p>
-					</div>
-
-				</div><!-- .row -->
-
-			</div><!-- .container -->
+			</div>
 
 		</footer>
+    </div>
 
 		<!-- Footer end -->
 
