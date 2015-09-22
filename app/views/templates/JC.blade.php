@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 		<meta name="description" content="Flip Resume : A book style resume theme" />
 		<meta name="author" content="Revolutionix" />
-		
+	
 		<!-- Title -->
 		<title>Flip Resume - A book style resume theme</title>
 		
@@ -16,30 +16,30 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		
 		<!-- Other CSS -->
-		<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-		<link href="css/animate.css" rel="stylesheet" type="text/css">
-		<link href="css/simpletextrotator.css" rel="stylesheet" type="text/css" />
-		<link href="css/theme-loading-bar.css" rel="stylesheet" />
+		<link href="/assets_john/css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="/assets_john/css/animate.css" rel="stylesheet" type="text/css">
+		<link href="/assets_john/css/simpletextrotator.css" rel="stylesheet" type="text/css" />
+		<link href="/assets_john/css/theme-loading-bar.css" rel="stylesheet" />
 		<link href='http://fonts.googleapis.com/css?family=Revalia%7COswald%7COpen+Sans+Condensed:300%7CRoboto' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		
 		<!-- Custom CSS -->
-		<link href="css/theme.css" rel="stylesheet" type="text/css" />
-		<link href="css/bookblock.css" rel="stylesheet" type="text/css" />
+		<link href="/assets_john/css/theme.css" rel="stylesheet" type="text/css" />
+		<link href="/assets_john/css/bookblock.css" rel="stylesheet" type="text/css" />
 		
 		<!-- Default Colour CSS -->
-		<link id="theme-color" rel="stylesheet" type="text/css" href="css/theme-colors/kimberly.css" />
+		<link id="theme-color" rel="stylesheet" type="text/css" href="/assets_john/css/theme-colors/kimberly.css" />
 		
 		<!-- PreLoader -->
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/pace.js" type="text/javascript"></script>
+    <script src="/assets_john/js/modernizr.custom.js"></script>
+    <script src="/assets_john/js/pace.js" type="text/javascript"></script>
 		
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!--[if lt IE 9]-->
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--[endif]-->
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 	</head>
 	<body>
@@ -92,8 +92,8 @@
 					  <div class="row" id="first-page">
               <div class="col-sm-12 text-center">
                 <div class="dp-box">
-                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="images/john.jpg" width="272" height="299" alt="Display Picture" /> Johnathan Christopherson</h1>
-                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="images/dp.jpg" alt="Display Picture" /><h1>John Doe</h1></div>
+                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="/assets_john/images/john.jpg" width="272" height="299" alt="Display Picture" /> Johnathan Christopherson</h1>
+                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="/assets_john/images/dp.jpg" alt="Display Picture" /><h1>John Doe</h1></div>
                 </div>
               </div>
               <div class="col-xs-8 col-xs-offset-2 text-center">
@@ -108,8 +108,8 @@
                   <a class="btn btn-circle" href="#"><i class="fa fa-skype"></i></a>
                 </p>
                 <p id="navigation-help">
-								  Use <i class="fa fa-arrow-left"></i> <i class="fa fa-arrow-right"></i> keys to navigate.
-								</p>
+					Use <i class="fa fa-arrow-left"></i> <i class="fa fa-arrow-right"></i> keys to navigate.
+				</p>
               </div>
 
 					  </div>
@@ -123,7 +123,7 @@
 								<h1 class="text-center"><span class="page-heading">About</span></h1>
 								<div class="row content-block text-justify animateFadeInRight">
 									<div class="col-sm-2 col-sm-offset-2 text-center">
-										<img src="images/man.png" alt="man icon"/>
+										<img src="/assets_john/images/man.png" alt="man icon"/>
 									</div>
 									<div class="col-sm-6">
 										<p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow bears marshmallow halvah.croissant candy. <br/> Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
@@ -131,7 +131,7 @@
 								</div>
 								<div class="row content-block text-justify animateFadeInLeft">
 									<div class="col-sm-2 col-sm-offset-2 col-sm-push-6 text-center">
-										<img src="images/joypad.png" alt="joypad icon"/>
+										<img src="/assets_john/images/joypad.png" alt="joypad icon"/>
 									</div>
 									<div class="col-sm-6 col-sm-pull-2">
 										<p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow bears marshmallow halvah.croissant candy. <br/> Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
@@ -139,7 +139,7 @@
 								</div>
 								<div class="row content-block content-block-last text-justify animateFadeInRight">
 									<div class="col-sm-2 col-sm-offset-2 text-center">
-										<img src="images/wine.png" alt="wine icon"/>
+										<img src="/assets_john/images/wine.png" alt="wine icon"/>
 									</div>
 									<div class="col-sm-6">
 										<p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
@@ -319,42 +319,42 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-4 text-center">
 										<div class="portfolio-item animateFlipInY">
-											<p><img src="images/pencil.png" alt="Pencil icon"/></p>
+											<p><img src="/assets_john/images/pencil.png" alt="Pencil icon"/></p>
 											<h4>Mobile Application</h4>
 											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
 										</div>
 									</div>
 									<div class="col-sm-6 col-md-4 text-center animateFlipInX">
 										<div class="portfolio-item">
-											<p><img src="images/clock.png" alt="Clock icon"/></p>
+											<p><img src="/assets_john/images/clock.png" alt="Clock icon"/></p>
 											<h4>Mobile Application</h4>
 											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
 										</div>
 									</div>
 									<div class="col-sm-6 col-md-4 text-center animateFlipInY">
 										<div class="portfolio-item">
-											<p><img src="images/bookShell.png" alt="Book Shell icon"/></p>
+											<p><img src="/assets_john/images/bookShell.png" alt="Book Shell icon"/></p>
 											<h4>Mobile Application</h4>
 											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
 										</div>
 									</div>
 									<div class="col-sm-6 col-md-4 text-center animateFlipInX">
 										<div class="portfolio-item">
-											<p><img src="images/calendar.png" alt="Calendar icon"/></p>
+											<p><img src="/assets_john/images/calendar.png" alt="Calendar icon"/></p>
 											<h4>Mobile Application</h4>
 											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
 										</div>
 									</div>
 									<div class="col-sm-6 col-md-4 text-center animateFlipInY">
 										<div class="portfolio-item">
-											<p><img src="images/film.png" alt="Film icon"/></p>
+											<p><img src="/assets_john/images/film.png" alt="Film icon"/></p>
 											<h4>Mobile Application</h4>
 											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
 										</div>
 									</div>
 									<div class="col-sm-6 col-md-4 text-center animateFlipInX">
 										<div class="portfolio-item">
-											<p><img src="images/phone.png" alt="Phone icon"/></p>
+											<p><img src="/assets_john/images/phone.png" alt="Phone icon"/></p>
 											<h4>Mobile Application</h4>
 											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
 										</div>
@@ -434,18 +434,18 @@
 		</div><!-- /container -->
 		
     <!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
+		<script src="/assets_john/js/jquery.min.js"></script>
     
     <!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="/assets_john/js/bootstrap.min.js"></script>
     
     <!-- Other JavaScript -->
-    <script src="js/theme.js" type="text/javascript"></script>
-		<script src="js/jquery.bookblock.js" type="text/javascript"></script>
-		<script src="js/bootstrap-progressbar.min.js" type="text/javascript"></script>
-		<script src="js/jquery.tabSlideOut.v1.3.js" type="text/javascript"></script>
+    <script src="/assets_john/js/theme.js" type="text/javascript"></script>
+		<script src="/assets_john/js/jquery.bookblock.js" type="text/javascript"></script>
+		<script src="/assets_john/js/bootstrap-progressbar.min.js" type="text/javascript"></script>
+		<script src="/assets_john/js/jquery.tabSlideOut.v1.3.js" type="text/javascript"></script>
 		<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript" ></script>
-		// <script src="js/gmaps.js" type="text/javascript"></script>
+		// <script src="/assets_john/js/gmaps.js" type="text/javascript"></script>
 		<script>
 			Page.init();
 		      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -462,14 +462,14 @@
 			<a class="handle" href="#"></a>
 			<h3>Change Color</h3>
 			<ul id="color-switcher" class="list-inline">
-				<li><a href="#" data-rel="css/theme-colors/orange.css"><img src="images/orange-theme.png" alt="Orange Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/green.css"><img src="images/green-theme.png" alt="Green Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/blue.css"><img src="images/blue-theme.png" alt="Blue Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/red.css"><img src="images/red-theme.png" alt="Red Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/purple.css"><img src="images/purple-theme.png" alt="Purple Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/dark.css"><img src="images/dark-theme.png" alt="Dark Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/glade.css"><img src="images/glade-theme.png" alt="Glade Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/kimberly.css"><img src="images/kimberly-theme.png" alt="Kimberly Theme Color" /></a></li>
+				<li><a href="#" data-rel="css/theme-colors/orange.css"><img src="/assets_john/images/orange-theme.png" alt="Orange Theme Color" /></a></li>
+				<li><a href="#" data-rel="css/theme-colors/green.css"><img src="/assets_john/images/green-theme.png" alt="Green Theme Color" /></a></li>
+				<li><a href="#" data-rel="css/theme-colors/blue.css"><img src="/assets_john/images/blue-theme.png" alt="Blue Theme Color" /></a></li>
+				<li><a href="#" data-rel="css/theme-colors/red.css"><img src="/assets_john/images/red-theme.png" alt="Red Theme Color" /></a></li>
+				<li><a href="#" data-rel="css/theme-colors/purple.css"><img src="/assets_john/images/purple-theme.png" alt="Purple Theme Color" /></a></li>
+				<li><a href="#" data-rel="css/theme-colors/dark.css"><img src="/assets_john/images/dark-theme.png" alt="Dark Theme Color" /></a></li>
+				<li><a href="#" data-rel="css/theme-colors/glade.css"><img src="/assets_john/images/glade-theme.png" alt="Glade Theme Color" /></a></li>
+				<li><a href="#" data-rel="css/theme-colors/kimberly.css"><img src="/assets_john/images/kimberly-theme.png" alt="Kimberly Theme Color" /></a></li>
 			</ul>
 		</div>
 		
