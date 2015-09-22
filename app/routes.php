@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('/templates/DP' , 'TemplatesController@DPTemplate');
 Route::get('/', function()
 {
 	return View::make('hello');
@@ -19,4 +20,3 @@ Route::get('/', function()
 Route::resource('users', 'UsersController');
 Route::resource('templates', 'TemplatesController');
 
-Route::get('templates/DPTemplate' , 'DPTemplate');
