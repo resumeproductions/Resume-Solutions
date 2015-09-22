@@ -67,17 +67,6 @@
 		  <!------Banner ends------->
 	</div>
 	<!------Headerbg ends-------->
-	<div class="ad728x90" style="text-align:center">
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- w3layouts_demo_728x90 -->
-					<ins class="adsbygoogle"
-						 style="display:inline-block;width:728px;height:90px"
-						 data-ad-client="ca-pub-9153409599391170"
-						 data-ad-slot="8639520288"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</div>
 	<!------Content starts-------->
 	<div class="content">
 		<!------About starts-------->
@@ -94,17 +83,6 @@
 					<span><h4>Project Manager Web Center</h4></span>
 					<p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
 					lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</i></p>
-				</div> 
-				<div class="ad728x90" style="text-align:center">
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- w3layouts_demo_728x90 -->
-					<ins class="adsbygoogle"
-						 style="display:inline-block;width:728px;height:90px"
-						 data-ad-client="ca-pub-9153409599391170"
-						 data-ad-slot="8639520288"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
 				</div>
 				<div class="years">	 		
 					<h4><b>2012</b></h4>
