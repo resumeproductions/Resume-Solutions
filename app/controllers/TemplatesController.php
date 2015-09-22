@@ -114,7 +114,7 @@ class TemplatesController extends \BaseController {
 		return View::make('templates.DPS');
 	}
 
-	public function DJTemplate()
+	public function JCTemplate()
 	{
 		return View::make('templates.JC');
 	}
