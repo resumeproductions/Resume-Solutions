@@ -1,9 +1,10 @@
 <?php
+use Esensi\Model\SoftModel;
 
-class Template extends \Eloquent {
+class Template extends SoftModel 
+{
 
-	// Add your validation rules here
-	public static $rules = [];
+	protected $table = 'templates';
 
 	// Don't forget to fill this array
 	protected $fillable = [];

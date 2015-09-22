@@ -1,22 +1,16 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Resume Website Template | Home :: w3layouts</title>
-	<script src="/js/jquery.min.js"> </script>
-	<link href="/css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<title>Template</title>
+	<script src="/assets_dylan/js/jquery.min.js"> </script>
+	<link href="/assets_dylan/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="/assets_dylan/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!---- start-smoth-scrolling---->
-		<script type="text/javascript" src="/js/move-top.js"></script>
-		<script type="text/javascript" src="/js/easing.js"></script>
+		<script type="text/javascript" src="/assets_dylan/js/move-top.js"></script>
+		<script type="text/javascript" src="/assets_dylan/js/easing.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -59,9 +53,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		   <div class="banner">
 			  <div class="container">
 				 <div class="banner-info">
-					  <div class="bannerlogo">
-						  <img src="images/diamond.png">
-					  </div>
 					  <div class="bannerhead">
 						  <h2>My name is <span>John Deo</span></h2>
 						  <h3>PHP Programmer</h3>
@@ -175,7 +166,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</div>
 					</div>
 					<!---->
-					 <script type="text/javascript" src="js/circles.js"></script>
+					 <script type="text/javascript" src="/assets_dylan/js/circles.js"></script>
 								 <script>
 									var colors = [
 											['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
@@ -211,19 +202,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				  <div class="container">
 					  <div class="portfolio-grids">
 						  <div class="portfolio-grid col-md-4">
-							 <a href="#"><img src="/images/monitr1.png"></a>
+							 <a href="#"><img src="/assets_dylan/images/monitr1.png"></a>
 							  <p>Proin gravida nibh vel velit auctor aliquet.
 								 Aenean sollicitudin, lorem quis bibendum</p>
 							  <a class="rightarrow" href="#"><span> </span></a>
 						  </div>
 						  <div class="portfolio-grid col-md-4">
-							  <a href="#"><img src="/images/monitr2.png"></a>
+							  <a href="#"><img src="/assets_dylan/images/monitr2.png"></a>
 							  <p>Proin gravida nibh vel velit auctor aliquet.
 								 Aenean sollicitudin, lorem quis bibendum</p>
 							  <a class="rightarrow" href="#"><span> </span></a>
 						  </div>
 						  <div class="portfolio-grid col-md-4">
-							  <a href="#"><img src="/images/monitr3.png"></a>
+							  <a href="#"><img src="/assets_dylan/images/monitr3.png"></a>
 							  <p>Proin gravida nibh vel velit auctor aliquet.
 								 Aenean sollicitudin, lorem quis bibendum</p>
 							  <a class="rightarrow" href="#"><span> </span></a>
@@ -245,9 +236,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-6">
 				  <div class="footer-left">
 						<div class="social-icons">
-						   <a href="#"><img src="/images/in.png"></a>
-						   <a href="#"><img src="/images/twt.png"></a>
-						   <a href="#"><img src="/images/fb.png"></a>
+						   <a href="#"><img src="/assets_dylan/images/in.png"></a>
+						   <a href="#"><img src="/assets_dylan/images/twt.png"></a>
+						   <a href="#"><img src="/assets_dylan/images/fb.png"></a>
 					   </div>
 					   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
 					   quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
