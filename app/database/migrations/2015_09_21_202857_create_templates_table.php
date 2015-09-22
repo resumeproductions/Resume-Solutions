@@ -16,6 +16,7 @@ class CreateTemplatesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->timestamps();
+			$table->softdeletes();
 		});
 	}
 

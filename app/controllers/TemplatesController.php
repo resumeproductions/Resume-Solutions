@@ -106,7 +106,7 @@ class TemplatesController extends \BaseController {
 
 	public function DPTemplate()
 	{
-		return View::make('templates.DPTemplate');
+		return View::make('/templates/DP');
 	}
 
 }
