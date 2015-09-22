@@ -11,6 +11,7 @@ Resume Overview,
 Multiple Work Start and Finish Dates,
 Multiple Work Titles,
 Multiple Work Descriptions,
+Titles for Skills,
 Percents for Skills,
 Multiple Language Titles,
 Multiple Language Percents,
@@ -24,4 +25,3 @@ Contact Number,
 Contact Adress,
 Contact Email,
  -->
- <title>hey</title>
