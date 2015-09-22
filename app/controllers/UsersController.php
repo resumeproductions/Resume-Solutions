@@ -104,4 +104,42 @@ class UsersController extends \BaseController {
 		return Redirect::route('users.index');
 	}
 
+	public function doLogin() 
+    {
+        $user = Input::get('user');
+        $email = Input::get('email');
+        $password = Input::get('password');	public function doLogin() 
+    {
+        $user = Input::get('user');
+        $email = Input::get('email');
+        $password = Input::get('password');
+        if (Auth::attempt(array('user' => $user, 'password' => $password)) || Auth::attempt(array('email' => $email, 'password' => $password))) {
+            return Redirect::intended('/posts');
+        } else {
+            // Display session flash message , log email that tried to authenticate
+            Session::flash('errorMessage' , 'Incorrect user or password.');
+            return Redirect::action('PostController@index');
+		}
+    }
+
+	public function doLogout() 
+	{
+		Auth::logout();
+		return Redirect::to('posts');
+	}
+        if (Auth::attempt(array('user' => $user, 'password' => $password)) || Auth::attempt(array('email' => $email, 'password' => $password))) {
+            return Redirect::intended('/posts');
+        } else {
+            // Display session flash message , log email that tried to authenticate
+            Session::flash('errorMessage' , 'Incorrect user or password.');
+            return Redirect::action('HomeController@showWelcome');
+		}
+    }
+
+	public function doLogout() 
+	{
+		Auth::logout();
+		return Redirect::to('posts');
+	}
+
 }
