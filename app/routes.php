@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/templates/DP' , 'TemplatesController@DPTemplate');
+Route::get('/templates/1' , 'TemplatesController@DPTemplate');
+Route::get('/templates/2' , 'TemplatesController@DPSTemplate');
+Route::get('/templates/3' , 'TemplatesController@JCTemplate');
 Route::get('/', function()
-{
+{ 
 	return View::make('hello');
 });
 
