@@ -104,4 +104,9 @@ class TemplatesController extends \BaseController {
 		return Redirect::route('templates.index');
 	}
 
+	public function DPTemplate()
+	{
+		return View::make('templates.DPTemplate');
+	}
+
 }

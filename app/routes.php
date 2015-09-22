@@ -18,3 +18,5 @@ Route::get('/', function()
 
 Route::resource('users', 'UsersController');
 Route::resource('templates', 'TemplatesController');
+
+Route::get('templates/DPTemplate' , 'DPTemplate');
