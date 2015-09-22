@@ -13,21 +13,12 @@
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-	<!-- Owl Carousel -->
-	<link href="assets_homepage/css/owl.theme.css" rel="stylesheet">
-	<link href="assets_homepage/css/owl.carousel.css" rel="stylesheet">
 
-	<!-- Magnific-popup lightbox -->
-	<link href="assets_homepage/css/magnific-popup.css" rel="stylesheet">
-
-	<!-- Simple text rotator -->
-	<link href="assets_homepage/css/simpletextrotator.css" rel="stylesheet">
+	
 
 	<!-- Font Awesome CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	<!-- Animate css -->
-	<link rel="stylesheet" type="text/css" href="assets_homepage/css/animate.css">
 
 	<!-- Custom styles CSS -->
 	<link href="assets_homepage/css/style.css" rel="stylesheet" media="screen">
@@ -210,16 +201,16 @@
 			<div class="row1">
 			
 				<!-- Speaker 1 -->
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<a href="#" class="member-profile">
 						<div class="unhover_img">
-						<img src="images/speaker-1.png" alt="" />
+						<img src="images/david.jpg" alt="" />
 						</div>
 						<div class="hover_img">
-						<img src="images/speaker-1-hover.png" alt="" />
+						<img src="images/david.jpg" alt="" />
 						</div>
-						<span>Creative Director</span>
-						<h4><span>Patrick </span> Simpson</h4>
+						<span>Web Developer</span>
+						<h4><span>David</span> Simonelli</h4>
 					</a>	
 					<ul>
 						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -229,16 +220,16 @@
 				</div>
 				
 				<!-- Speaker 2 -->
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<a href="#" class="member-profile">
 						<div class="unhover_img">
-						<img src="images/speaker-2.png" alt="" />
+						<img src="images/john.jpg" alt="" />
 						</div>
 						<div class="hover_img">
-						<img src="images/speaker-2-hover.png" alt="" />
+						<img src="images/john.jpg" alt="" />
 						</div>
-						<span>Web Designer</span>
-						<h4><span>Teresa</span> Crawford</h4>
+						<span>Web Developer</span>
+						<h4><span>Johnathan</span> Christopherson</h4>
 					</a>	
 					<ul>
 						<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
@@ -248,16 +239,16 @@
 				</div>
 				
 				<!-- Speaker 3 -->
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<a href="#" class="member-profile">
 						<div class="unhover_img">
-						<img src="images/speaker-3.png" alt="" />
+						<img src="images/dylan.jpg" alt="" />
 						</div>
 						<div class="hover_img">
-						<img src="images/speaker-3-hover.png" alt="" />
+						<img src="images/dylan.jpg" alt="" />
 						</div>
-						<span>Photographer</span>
-						<h4><span>Joseph</span> Reynolds</h4>
+						<span>Web Developer</span>
+						<h4><span>Dylan</span>Perenchio</h4>
 					</a>					
 					<ul>
 						<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
@@ -268,12 +259,6 @@
 				
 				
 			</div>	<!-- End Second Row -->	
-			<div class="clear"></div>
-			
-			<!-- View All Button -->
-			<div class="col-md-12">
-				<button class="btn btn-transparent fadeIn">View All</button>
-			</div>	
 					
 		</div>
 	</section>
@@ -358,22 +343,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- Background slider -->
 	<script src="assets_homepage/js/jquery.backstretch.min.js"></script>
-	<!-- OwlCarousel -->
-	<script src="assets_homepage/js/owl.carousel.min.js"></script>
-	<!-- Modal for portfolio -->
-	<script src="assets_homepage/js/jquery.magnific-popup.min.js"></script>
-	<!-- Text rotator -->
-	<script src="assets_homepage/js/jquery.simple-text-rotator.min.js"></script>
-	<!-- Waypoints -->
-	<script src="assets_homepage/js/jquery.waypoints.js"></script>
-	<!-- CountTo  -->
-	<script src="assets_homepage/js/jquery.countTo.js"></script>
-	<!-- WOW - Reveal Animations When You Scroll -->
-	<script src="assets_homepage/js/wow.min.js"></script>   
-	<!-- Smooth scroll -->
-	<script src="assets_homepage/js/smoothscroll.js"></script>
-	<!-- Fitvids -->
-	<script src="assets_homepage/js/jquery.fitvids.js"></script>
 	<!-- Custom scripts -->
 	<script src="assets_homepage/js/custom.js"></script>
 
