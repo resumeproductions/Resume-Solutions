@@ -48,7 +48,7 @@
         <li><a href="#">My Profile</a></li>
         <li><a href="#">Edit Profile</a></li>
         <li><a href="#">My Resumes</a></li>
-        <li><a href="#">Log Out</a></li>
+        <li><a href="/logout">Log Out</a></li>
       </ul>
       </li>
       <li><a href="#">Resumes</a>
