@@ -5,34 +5,77 @@
 input {
 	width: 20%;
 }
-.pages {
+#cont {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.pagesle {
+	margin: 0;
+	padding: 0;
 	position: absolute;
 	height: 100vh;
 }
+.Inpage2 {
+	opacity: 0;
+}
+.Inpage3 {
+	opacity: 0;
+}
+.Inpage4 {
+	opacity: 0;
+}
+.Inpage5 {
+	opacity: 0;
+}
 .page1 {
 	width: 100%;
- 		background-color: blue;
+ 	background-image: url(/assets_dylan/Dp/Screen1.png);
+ 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 .page2 {
 	width: 0%;
 	left: 99%;
- 		background-color: yellow;
+	background-image: url(/assets_dylan/Dp/Screen2.png);
+ 	background-color: yellow;
+ 	background-size: cover;
 }
 .page3 {
 	width: 0%;
 	left: 99%;
- 		background-color: red;
+	background-image: url(/assets_dylan/Dp/Screen3.png);
+ 	background-color: red;
+ 	background-size: cover;
+}
+.page4 {
+	width: 0%;
+	left: 99%;
+	background-image: url(/assets_dylan/Dp/Screen4.png);
+ 	background-color: green;
+ 	background-size: cover;
+}
+.page5 {
+	width: 0%;
+	left: 99%;
+	background-image: url(/assets_dylan/Dp/Screen5.png);
+ 	background-color: black;
+ 	background-size: cover;
 }
 #left {
 	position: fixed;
+	text-align: left;
 	height: 10%;
 	width: 10%;
 	top: 75%;
 	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	border-radius: 10%;
 }
 #right {
 	position: fixed;
+	text-align: right;
 	height: 10%;
 	width: 10%;
 	top: 75%;

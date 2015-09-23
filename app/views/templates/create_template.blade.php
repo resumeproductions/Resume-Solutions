@@ -11,21 +11,32 @@
 
 </head>
 <body>
-<div class='page1 pages'>
+<div class='page1 pagesle'>
 <input class='Inpage1'>
 <input class='Inpage1'>
 </div>
-<div class='page2 pages'>
+<div class='page2 pagesle'>
 <input class='Inpage2'>
 <input class='Inpage2'>
 </div>
-<div class='page3 pages'>
+<div class='page3 pagesle'>
 <input class='Inpage3'>
 <input class='Inpage3'>
 </div>
-<div id='left'></div>
-<div id='right'></div>
-<script src="/js/jquery.js"></script>
+<div class='page4 pagesle'>
+<input class='Inpage4'>
+<input class='Inpage4'>
+</div>
+<div class='page5 pagesle'>
+<input class='Inpage5'>
+<input class='Inpage5'>
+</div>
+<button id='right' type="button" class="btn btn-default btn-lg">
+	▶▶▶
+</button>
+<button id='left' type="button" class="btn btn-default btn-lg">
+	◀◀◀
+</button>
 @stop
 
 @section('script')
@@ -63,7 +74,7 @@
 			if (page <= 1) {
 				$("#right").css('opacity', '1');
 				$("#left").css('opacity', '0');
-			} else if(page >= 3) {
+			} else if(page >= 5) {
 				$("#right").css('opacity', '0');
 				$("#left").css('opacity', '1');
 			} else {

@@ -3,23 +3,23 @@
 <head>
   @yield('title')
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="hero-slider/css/reset.css"> <!-- CSS reset -->
-  <link rel="stylesheet" href="hero-slider/css/style.css"> <!-- Resource style -->
-  <script src="hero-slider/js/modernizr.js"></script> <!-- Modernizr -->
-
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/hero-slider/css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="/hero-slider/css/style.css"> <!-- Resource style -->
+  <script src="/hero-slider/js/modernizr.js"></script> <!-- Modernizr -->
 
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
   <!-- Custom styles CSS -->
-  <link href="assets_homepage/css/style.css" rel="stylesheet" media="screen">
-  <link href="assets_homepage/css/flip_team.css" rel="stylesheet" media="screen">
-  <link href="css/footer-distributed-with-address-and-phones.css" rel="stylesheet" media="screen">
-  <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="/assets_homepage/css/style.css" rel="stylesheet" media="screen">
+  <link href="/assets_homepage/css/flip_team.css" rel="stylesheet" media="screen">
+  <link href="/css/footer-distributed-with-address-and-phones.css" rel="stylesheet" media="screen">
+  <link href="/css/style.css" rel="stylesheet" media="screen">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -91,7 +91,7 @@
           
 
   <main>
-    <div class="container">
+    <div class="container" id='cont'>
         @if (Session::has('successMessage'))
             <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
         @endif
@@ -119,11 +119,11 @@
   <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- Background slider -->
-  <script src="assets_homepage/js/jquery.backstretch.min.js"></script>
+  <script src="/assets_homepage/js/jquery.backstretch.min.js"></script>
   <!-- Custom scripts -->
-  <script src="assets_homepage/js/custom.js"></script>
-  <script src="hero-slider/js/jquery-2.1.1.js"></script>
-  <script src="hero-slider/js/main.js"></script> <!-- Resource jQuery -->
+  <script src="/assets_homepage/js/custom.js"></script>
+  <script src="/hero-slider/js/jquery-2.1.1.js"></script>
+  <script src="/hero-slider/js/main.js"></script> <!-- Resource jQuery -->
 
   @yield('script')
 
