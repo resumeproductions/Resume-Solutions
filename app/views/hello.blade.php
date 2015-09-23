@@ -86,7 +86,7 @@
 					</p>
 
 					<p class="fieldset">
-						<a href="{{{action('HomeController@doLogin')}}}"><input class="full-width" type="submit" value="Login"></a>
+						<a href="{{{action('UsersController@doLogin')}}}"><input class="full-width" type="submit" value="Login"></a>
 					</p>
 				</form>
 				
