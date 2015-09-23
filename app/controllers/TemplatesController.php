@@ -119,4 +119,9 @@ class TemplatesController extends \BaseController {
 		return View::make('templates.JC');
 	}
 
+	public function Something()
+	{
+		return View::make('templates.create_template');
+	}
+
 }

@@ -1,0 +1,46 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+input {
+	width: 20%;
+}
+.pages {
+	position: absolute;
+	height: 100vh;
+}
+.page1 {
+	width: 100%;
+ 		background-color: blue;
+}
+.page2 {
+	width: 0%;
+	left: 99%;
+ 		background-color: yellow;
+}
+.page3 {
+	width: 0%;
+	left: 99%;
+ 		background-color: red;
+}
+#left {
+	position: fixed;
+	height: 10%;
+	width: 10%;
+	top: 75%;
+	background-image: url(/img/arrow.png);
+	background-color: black;
+	border-radius: 10%;
+}
+#right {
+	position: fixed;
+	height: 10%;
+	width: 10%;
+	top: 75%;
+	left: 90%;
+	background-image: url(/img/arrow.png);
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border-radius: 10%;
+}
