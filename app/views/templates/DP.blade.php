@@ -4,7 +4,7 @@
 	<title>Template</title>
 	<script src="/assets_dylan/js/jquery.min.js"> </script>
 	<link href="/assets_dylan/css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="/assets_dylan/css/purple-template.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/assets_dylan/css/blue-template.css" rel="stylesheet" type="text/css" media="all" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -147,7 +147,7 @@
 					 <script type="text/javascript" src="/assets_dylan/js/circles.js"></script>
 								 <script>
 									var colors = [
-											['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
+											['#ADADAD', '#303030'], ['#ADADAD', '#303030'], ['#ADADAD', '#303030'], ['#ADADAD', '#303030']
 										];
 									for (var i = 1; i <= 8; i++) {
 										var child = document.getElementById('circles-' + i),
