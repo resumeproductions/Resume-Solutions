@@ -12,7 +12,6 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/login.css"> <!-- Gem style -->
 	<link rel="stylesheet" href="hero-slider/css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="hero-slider/css/style.css"> <!-- Resource style -->
 	<script src="hero-slider/js/modernizr.js"></script> <!-- Modernizr -->
@@ -31,6 +30,7 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/login.css"> <!-- Gem style -->
 
 <!-- Latest compiled and minified JavaScript -->
 </head>
@@ -68,18 +68,16 @@
 			</ul>
 
 			<div id="cd-login"> <!-- log in form -->
-				<form class="cd-form">
+				<form class="cd-form" >
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
-						<span class="cd-error-message">Error message here!</span>
+						<input class="full-width has-padding has-border" name="email" id="signin-email" type="email" placeholder="E-mail">
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+						<input class="full-width has-padding has-border" name="password" id="signin-password" type="text"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
-						<span class="cd-error-message">Error message here!</span>
 					</p>
 
 					<p class="fieldset">
@@ -88,7 +86,7 @@
 					</p>
 
 					<p class="fieldset">
-						<input class="full-width" type="submit" value="Login">
+						<a href="{{{action('UsersController@doLogin')}}}"><input class="full-width" type="submit" value="Login"></a>
 					</p>
 				</form>
 				
