@@ -4,7 +4,7 @@
     background: #696969
 }
 ::-moz-selection {
-    color: #fff;
+    color: #fff;	
     background: #696969
 }
 html {
@@ -16,11 +16,11 @@ body {
     position: relative;
     height: 100%;
     max-width: 100%;
-    background: #2c2c2c;
+    background: #53599A;
     font-family: Lato, sans-serif;
     font-weight: 300;
-    font-size: 16px;
-    color: #fff;
+    font-size: 20px;
+    color: #80DED9;
     line-height: 1.6em;
     padding-left: 0!important;
     -webkit-font-smoothing: antialiased;
@@ -35,7 +35,7 @@ h5,
 h6 {
     font-family: Lato, sans-serif;
     font-weight: 300;
-    color: #fff
+    color: #AEECEF
 }
 h1 {
     font-size: 40px
@@ -52,7 +52,7 @@ p {
     font-size: 16px
 }
 a {
-    color: #869198;
+    color: #068D9D;
     word-wrap: break-word;
     -webkit-transition: color .1s ease-in, background .1s ease-in;
     -moz-transition: color .1s ease-in, background .1s ease-in;
@@ -65,7 +65,7 @@ ul {
 }
 a:focus,
 a:hover {
-    color: #99a2a9;
+    color: #AEECEF;
     text-decoration: none;
     outline: 0
 }
@@ -165,8 +165,8 @@ a:before {
     margin: 0 auto 35px
 }
 .section-solid {
-    background: #ededed;
-    color: #646464
+    background: #8CF2ED;
+    color: #303359
 }
 .section-solid h1,
 .section-solid h2,
@@ -174,14 +174,14 @@ a:before {
 .section-solid h4,
 .section-solid h5,
 .section-solid h6 {
-    color: #646464
+    color: #303359
 }
 .section-solid .section-title-border {
     background: rgba(0, 0, 0, .13)
 }
 .section-solid-white {
-    background: #fff;
-    color: #646464
+    background: #D6FCFF;
+    color: #303359
 }
 .section-solid-white h1,
 .section-solid-white h2,
@@ -189,7 +189,7 @@ a:before {
 .section-solid-white h4,
 .section-solid-white h5,
 .section-solid-white h6 {
-    color: #646464
+    color: #303359
 }
 .section-solid-white .section-title-border {
     background: rgba(0, 0, 0, .13)
@@ -203,18 +203,12 @@ a:before {
     }
 }
 footer {
-    background: #1d1d1d;
+    background: #D6FCFF;
     padding: 30px 0 40px;
     font-size: 13px
 }
 footer div[class*=col-] {
     text-align: center
-}
-p.copyright {
-    margin-top: 20px;
-    color: #fff;
-    text-align: center;
-    font-size: 14px
 }
 .social {
     font-size: 14px;
@@ -316,7 +310,7 @@ p.copyright {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: #e0e0e0;
+    background: #FFF;
     left: 20%;
     margin-left: -6px
 }
@@ -334,7 +328,7 @@ p.copyright {
 }
 .v-timeline>li>.v-heading {
     position: relative;
-    background: #869198;
+    background: #303359;
     padding: 11px 15px;
     color: #fff;
     margin: 0 0 45px;
@@ -387,7 +381,7 @@ p.copyright {
     -webkit-font-smoothing: antialiased;
     position: absolute;
     color: #fff;
-    background: #869198;
+    background: #0070C6;
     text-align: center;
     left: 20%;
     margin: 7px 0 0 -24px
@@ -403,12 +397,12 @@ p.copyright {
 }
 .v-timeline>li .v-icon:before {
     bottom: 100%;
-    border-bottom: 10px solid #869198
+    border-bottom: 10px solid #303359 
 }
 .v-timeline>li .v-icon:after {
     top: 100%;
     width: 0;
-    border-top: 10px solid #869198
+    border-top: 10px solid #B5FBFF
 }
 @media screen and (max-width: 65.375em) {
     .v-timeline>li .v-time span {
@@ -711,7 +705,7 @@ p.copyright {
 }
 .btn-theme-inverse {
     color: #363636;
-    border-color: #363636;
+    border-color: #303359;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -787,7 +781,7 @@ form.signup button.btn {
     box-shadow: none
 }
 .progress-bar {
-    background-color: #869198;
+    background-color: red;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none
@@ -879,7 +873,7 @@ form.signup button.btn {
     top: 0;
     left: 0;
     height: 8px;
-    background-color: #fff;
+    background-color: #54F2EA;
     -webkit-transition: -webkit-transform .3s, width 1s;
     -moz-transition: width 1s;
     -o-transform: width 1s;
@@ -1257,11 +1251,12 @@ form.signup button.btn {
     font-size: 13px;
     line-height: 2px;
     font-weight: 700;
-    margin-top: 10px
+    margin-top: 10px;
 }
 .lang-level {
-    font-size: 12px;
-    opacity: .7
+    font-size: 20px;
+    color: white;
+    opacity: .9
 }
 .skills-ul {
     font-size: 14px
@@ -1356,7 +1351,7 @@ form.signup button.btn {
     }
 }
 .heading {
-    color: red;
+    color: #fff;
     font-size: 1.5625em;
     text-transform: uppercase;
     font-weight: 700;

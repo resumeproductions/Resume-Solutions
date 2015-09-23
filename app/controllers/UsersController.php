@@ -109,6 +109,7 @@ class UsersController extends \BaseController {
         $email = Input::get('email'); 
 		$password = Input::get('password'); 
 
+
 		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
 			Session::flash('successMessage', 'Logged in successfully!');
 			return Redirect::action('HomeController@showHome');

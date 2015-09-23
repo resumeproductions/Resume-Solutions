@@ -16,7 +16,7 @@
 		<link href="/assets_david/side-menu:Image/assets/css/jasny-bootstrap.min.css" rel="stylesheet">
 		<link href="/assets_david/side-menu:Image/assets/css/jquery.bxslider.css" rel="stylesheet">
 		<link href="/assets_david/side-menu:Image/assets/css/animate.css" rel="stylesheet">
-		<link href="/assets_david/side-menu:Image/assets/css/app.css" rel="stylesheet">
+		<link href="/assets_david/side-menu:Image/assets/css/red-app.css" rel="stylesheet">
 		
 		<link href="../../settings-panel.css" rel="stylesheet">
 		
@@ -354,7 +354,7 @@
 						</div>
 					</div>
 					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">
-						<h4>Hobies</h4>
+						<h4>Hobbies</h4>
 						<ul class="fa-ul skills-ul">
 						  <li><i class="fa-li fa fa-camera"></i>Hunting</li>
 						  <li><i class="fa-li fa fa-plane"></i>Kicking Puppys</li>
