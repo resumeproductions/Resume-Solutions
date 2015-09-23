@@ -22,6 +22,8 @@ class UsersTableSeeder extends Seeder {
 		$user->address = $_ENV['USER_ADDRESS'];
 		$user->state = $_ENV['USER_STATE'];
 		$user->phone_number = $_ENV['USER_PHONE_NUMBER'];
+		$user->username = $_ENV['USER_USERNAME'];
+		$user->city = $_ENV['USER_CITY'];
 		$user->save();
 	}
 
