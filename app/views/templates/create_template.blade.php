@@ -1,10 +1,13 @@
 
-	<title>Template</title>
+@extends('layouts.master')
 
-	@extends('layouts.master')
+@section('title')
 
-	@section('content')
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+<title>Template</title>
+@stop
+
+@section('content')
+
 </head>
 <body>
 <div class='page1 pages'>
@@ -22,6 +25,9 @@
 <div id='left'></div>
 <div id='right'></div>
 <script src="/js/jquery.js"></script>
+@stop
+
+@section('script')
 <script type="text/javascript">
 	$(document).ready(function() {
 		var findRigh = document.getElementById('right');
@@ -66,5 +72,5 @@
 		}
 	});
 </script>
-</body>
-</html>
+
+@stop
