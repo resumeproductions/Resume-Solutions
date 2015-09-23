@@ -312,6 +312,9 @@ xsigin/signup popup
 .cd-form label.cd-password {
   background-image: url("../images/cd-icon-password.svg");
 }
+.cd-form label.cd-hone {
+  background-image:  url("<i class="fa fa-phone"></i>");
+}
 .cd-form input {
   margin: 0;
   padding: 0;

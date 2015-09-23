@@ -31,16 +31,47 @@ class UsersController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), User::$rules);
+		if(Input::hasFile('profile_img_url')){
+			$file = Input::file('profile_img_url');
+			$destinationPath = public_path() . '/img';
+			$filename = $file->getClientOriginalName();
+			Input::file('profile_img_url')->move($destinationPath, $filename);
 
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
+			$user = new User();
+			$user->password = Input::get('password');
+			$user->email = Input::get('email');
+			$user->first_name = Input::get('first_name');
+			$user->last_name = Input::get('last_name');
+			$user->username = Input::get('username');
+			$user->address = Input::get('address');
+			$user->city = Input::get('city');
+			$user->state = Input::get('state');
+			$user->zip = Input::get('zip_code');
+			$user->phone_number = Input::get('phone_number');
+			$user->profile_img_url = $filename; 
+			$user->save();
+
+
+			Session::flash('successMessage', 'Account created successfully! You may now login.');
+			return Redirect::action('HomeController@showWelcome');
+		}else{
+			$user = new User();
+			$user->password = Input::get('password');
+			$user->email = Input::get('email');
+			$user->first_name = Input::get('first_name');
+			$user->last_name = Input::get('last_name');
+			$user->username = Input::get('username');
+			$user->address = Input::get('address');
+			$user->city = Input::get('city');
+			$user->state = Input::get('state');
+			$user->zip = Input::get('zip_code');
+			$user->phone_number = Input::get('phone_number');
+			$user->save();
+
+
+			Session::flash('successMessage', 'Account created successfully! You may now login.');
+			return Redirect::action('HomeController@showWelcome');
 		}
-
-		User::create($data);
-
-		return Redirect::route('users.index');
 	}
 
 	/**

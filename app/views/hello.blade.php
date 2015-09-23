@@ -28,9 +28,10 @@
 	<link href="css/footer-distributed-with-address-and-phones.css" rel="stylesheet" media="screen">
 	<link href="css/style.css" rel="stylesheet" media="screen">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/login.css"> <!-- Gem style -->
+	
 
 <!-- Latest compiled and minified JavaScript -->
 </head>
@@ -72,17 +73,13 @@
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
 						<input class="full-width has-padding has-border" name="email" id="signin-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" name="password" id="signin-password" type="text"  placeholder="Password">
-						<a href="#0" class="hide-password">Hide</a>
-					</p>
-
-					<p class="fieldset">
-						<input type="checkbox" id="remember-me" checked>
-						<label for="remember-me">Remember me</label>
+						<input class="full-width has-padding has-border" name="password" id="signin-password" type="password"  placeholder="Password">
+						<span class="cd-error-message">Error message here!</span>
 					</p>
 
 					<p class="fieldset">
@@ -95,30 +92,54 @@
 			</div> <!-- cd-login -->
 
 			<div id="cd-signup"> <!-- sign up form -->
-				<form class="cd-form">
-					<p class="fieldset">
-						<label class="image-replace cd-username" for="signup-username">Username</label>
-						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
-						<span class="cd-error-message">Error message here!</span>
-					</p>
+				<form class="cd-form" action="{{{action("UsersController@store")}}}" method="POST">
 
-					<p class="fieldset">
-						<label class="image-replace cd-email" for="signup-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
-						<span class="cd-error-message">Error message here!</span>
-					</p>
+						<div class="col-md-6">
+							<label class="fa fa-user"> First Name</label>
+							<input class="full-width has-padding has-border" type="text" name="first_name"  placeholder="First Name">
+						</div>
 
-					<p class="fieldset">
-						<label class="image-replace cd-password" for="signup-password">Password</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
-						<a href="#0" class="hide-password">Hide</a>
-						<span class="cd-error-message">Error message here!</span>
-					</p>
+						<div class="col-md-6">
+							<label class="fa fa-user" > Last Name</label>
+							<input class="full-width has-padding has-border" name="last_name"  type="text"  placeholder="Last Name">
+						</div>
 
-					<p class="fieldset">
-						<input type="checkbox" id="accept-terms">
-						<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
-					</p>
+
+
+						<label class="fa fa-tag" > Username</label>
+						<input class="full-width has-padding has-border" name="username" type="text" placeholder="Username">
+
+
+
+						<label class="fa fa-envelope-o" for="signup-email"> E-mail</label>
+						<input class="full-width has-padding has-border" name="email" type="email" placeholder="E-mail">
+
+
+
+						<label class="fa fa-unlock" for="signup-password"> Password</label>
+						<input class="full-width has-padding has-border" name="password" type="password"  placeholder="Password">
+
+
+
+						<label class="fa fa-home" for="signup-password"> Address</label>
+						<input class="full-width has-padding has-border" name="address" type="text"  placeholder="Street Address">
+
+
+
+						<label class="fa fa-plane" for="signup-password"> Zip</label>
+						<input class="full-width has-padding has-border" name="zip_code" type="text"  placeholder="Zip">
+						<label class="fa fa-globe" for="signup-password"> City</label>
+						<input class="full-width has-padding has-border" name="city" type="text"  placeholder="City">
+	
+
+						<label class="fa fa-globe" for="signup-password"> State</label>
+						<input class="full-width has-padding has-border" name="state" type="text"  placeholder="State">
+
+
+
+						<label class="fa fa-phone" for="signup-password"> Phone</label>
+						<input class="full-width has-padding has-border" name="phone_number" type="text"  placeholder="Phone">
+	
 
 					<p class="fieldset">
 						<input class="full-width has-padding" type="submit" value="Create account">

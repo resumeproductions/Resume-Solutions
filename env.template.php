@@ -13,7 +13,9 @@
 		'USER_ZIP' => '',
 		'USER_STATE' => '',
 		'USER_PHONE_NUMBER' => '',
-		'USER_PASSWORD' => ''
+		'USER_PASSWORD' => '',
+		'USER_USERNAME' => '',
+		'USER_CITY' => ''
 	);
 
 ?>
