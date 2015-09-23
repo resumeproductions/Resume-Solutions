@@ -10,12 +10,17 @@
 
 	<!-- CSS -->
 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="hero-slider/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="hero-slider/css/style.css"> <!-- Resource style -->
+	<script src="hero-slider/js/modernizr.js"></script> <!-- Modernizr -->
+
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 	<!-- Font Awesome CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
 
 	<!-- Custom styles CSS -->
 	<link href="assets_homepage/css/style.css" rel="stylesheet" media="screen">
@@ -119,20 +124,104 @@
 
 		<!-- Intro section start -->
 
-		<div class="owl-carousel">
-		    <div class="item"><h4>1</h4></div>
-		    <div class="item"><h4>2</h4></div>
-		    <div class="item"><h4>3</h4></div>
-		    <div class="item"><h4>4</h4></div>
-		    <div class="item"><h4>5</h4></div>
-		    <div class="item"><h4>6</h4></div>
-		    <div class="item"><h4>7</h4></div>
-		    <div class="item"><h4>8</h4></div>
-		    <div class="item"><h4>9</h4></div>
-		    <div class="item"><h4>10</h4></div>
-		    <div class="item"><h4>11</h4></div>
-		    <div class="item"><h4>12</h4></div>
-		</div>
+		<header class="cd-header">
+		<div id="cd-logo"><a href="#0"><img src="assets/cd-logo.svg" alt="Logo"></a></div>
+
+		<nav class="cd-primary-nav">
+			<ul>
+				<li><a href="#0">Home</a></li>
+				<li><a href="#0">Portfolio</a></li>
+				<li><a href="#0">Contact</a></li>
+			</ul>
+		</nav> <!-- .cd-primary-nav -->
+	</header>
+
+	<section class="cd-hero">
+		<ul class="cd-hero-slider autoplay">
+			<li class="selected">
+				<div class="cd-full-width">
+					<h2>Hero slider</h2>
+					<p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
+					<a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+				</div> <!-- .cd-full-width -->
+			</li>
+
+			<li>
+				<div class="cd-half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+					<a href="#0" class="cd-btn">Start</a>
+					<a href="#0" class="cd-btn secondary">Learn More</a>
+				</div> <!-- .cd-half-width -->
+
+				<div class="cd-half-width cd-img-container">
+					<img src="assets/tech-1.jpg" alt="tech 1">
+				</div> <!-- .cd-half-width.cd-img-container -->
+			</li>
+
+			<li>
+				<div class="cd-half-width cd-img-container">
+					<img src="assets/tech-2.jpg" alt="tech 2">
+				</div> <!-- .cd-half-width.cd-img-container -->
+
+				<div class="cd-half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+					<a href="#0" class="cd-btn">Start</a>
+					<a href="#0" class="cd-btn secondary">Learn More</a>
+				</div> <!-- .cd-half-width -->
+				
+			</li>
+
+			<li class="cd-bg-video">
+				<div class="cd-full-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="#0" class="cd-btn">Learn more</a>
+				</div> <!-- .cd-full-width -->
+
+				<div class="cd-bg-video-wrapper" data-video="assets/video/video">
+					<!-- video element will be loaded using jQuery -->
+				</div> <!-- .cd-bg-video-wrapper -->
+			</li>
+
+			<li>
+				<div class="cd-full-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="#0" class="cd-btn">Start</a>
+					<a href="#0" class="cd-btn secondary">Learn More</a>
+				</div> <!-- .cd-full-width -->
+			</li>
+		</ul> <!-- .cd-hero-slider -->
+
+		<div class="cd-slider-nav">
+			<nav>
+				<span class="cd-marker item-1"></span>
+				
+				<ul>
+					<li class="selected"><a href="#0">Intro</a></li>
+					<li><a href="#0">Tech 1</a></li>
+					<li><a href="#0">Tech 2</a></li>
+					<li><a href="#0">Video</a></li>
+					<li><a href="#0">Image</a></li>
+				</ul>
+			</nav> 
+		</div> <!-- .cd-slider-nav -->
+	</section> <!-- .cd-hero -->
+
+	<main class="cd-main-content">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+		</p>
+	</main> <!-- .cd-main-content -->
+
+
 
 		<!-- Intro section end -->
 
@@ -173,7 +262,6 @@
 
 		<!-- Profile contact callout section -->
 
-		
 		
 
 		<!-- Portfolio section start -->
@@ -336,6 +424,9 @@
 	<script src="assets_homepage/js/jquery.backstretch.min.js"></script>
 	<!-- Custom scripts -->
 	<script src="assets_homepage/js/custom.js"></script>
+	<script src="hero-slider/js/jquery-2.1.1.js"></script>
+	<script src="hero-slider/js/main.js"></script> <!-- Resource jQuery -->
+
 
 </body>
 </html>
