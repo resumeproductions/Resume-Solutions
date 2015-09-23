@@ -68,7 +68,7 @@
 			</ul>
 
 			<div id="cd-login"> <!-- log in form -->
-				<form class="cd-form" >
+				<form class="cd-form" action="{{{action("UsersController@doLogin")}}}" method='POST' >
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
 						<input class="full-width has-padding has-border" name="email" id="signin-email" type="email" placeholder="E-mail">
@@ -86,7 +86,7 @@
 					</p>
 
 					<p class="fieldset">
-						<a href="{{{action('UsersController@doLogin')}}}"><input class="full-width" type="submit" value="Login"></a>
+						<a href="/login"><input class="full-width" type="submit" value="Login"></a>
 					</p>
 				</form>
 				
