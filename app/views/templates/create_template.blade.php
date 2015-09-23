@@ -4,6 +4,7 @@
 @section('title')
 
 <title>Template</title>
+<link href='/css/create_template.css' rel='stylesheet' type='text/css'>
 @stop
 
 @section('content')

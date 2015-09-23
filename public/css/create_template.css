@@ -28,7 +28,6 @@ input {
 	height: 10%;
 	width: 10%;
 	top: 75%;
-	background-image: url(/img/arrow.png);
 	background-color: black;
 	border-radius: 10%;
 }
@@ -38,7 +37,6 @@ input {
 	width: 10%;
 	top: 75%;
 	left: 90%;
-	background-image: url(/img/arrow.png);
 	background-color: black;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
