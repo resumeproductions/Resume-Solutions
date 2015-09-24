@@ -68,7 +68,8 @@
 			</ul>
 
 			<div id="cd-login"> <!-- log in form -->
-				<form class="cd-form" action="{{{action("UsersController@doLogin")}}}" method='POST' >
+				<form class="cd-form" action="{{{action('UsersController@doLogin')}}}" method='POST' >
+					{{ Form::token() }}
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
 						<input class="full-width has-padding has-border" name="email" id="signin-email" type="email" placeholder="E-mail">
@@ -91,7 +92,7 @@
 			</div> <!-- cd-login -->
 
 			<div id="cd-signup"> <!-- sign up form -->
-				<form class="cd-form" action="{{{action("UsersController@store")}}}" method="POST">
+				<form class="cd-form" action="{{{action('UsersController@store')}}}" method="POST">
 
 						<div class="col-md-6">
 							<label class="fa fa-user"> First Name</label>
@@ -171,11 +172,11 @@
 
 		<!-- Navigation end -->
 
-		<!-- hero-slider -->
+		<!-- Intro section start -->
 
 	<section class="cd-hero">
 		<ul class="cd-hero-slider autoplay">
-			<li class="selected cd-hero-slider2">
+			<li class="selected">
 				<div class="cd-full-width">
 					<h2>Resume Solutions</h2>
 					<p>Where you can stand out from the rest. </p>
@@ -183,7 +184,7 @@
 			</li>
 
 			<li>
-				<div class="cd-half-width cd-hero-slider2">
+				<div class="cd-half-width">
 					<h2>Responsive Design</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
 					<a href="#0" class="cd-btn">Start</a>
@@ -191,13 +192,13 @@
 				</div> <!-- .cd-half-width -->
 
 				<div class="cd-half-width cd-img-container">
-					<img style="opacity: .8" src="images/cv.jpg" alt="tech 1">
+					<img src="images/cv.jpg" alt="tech 1">
 				</div> <!-- .cd-half-width.cd-img-container -->
 			</li>
 
 			<li>
 				<div class="cd-half-width cd-img-container">
-					<img style="opacity: .8" src="images/slide2.jpg" alt="tech 2">
+					<img src="images/slide2.jpg" alt="tech 2">
 				</div> <!-- .cd-half-width.cd-img-container -->
 
 				<div class="cd-half-width">
@@ -209,8 +210,20 @@
 				
 			</li>
 
+			<li class="cd-bg-video">
+				<div class="cd-full-width">
+					<h2>Easy Config</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="#0" class="cd-btn">Learn more</a>
+				</div> <!-- .cd-full-width -->
+
+				<div class="cd-bg-video-wrapper" data-video="hero-slider/assets/video/video">
+					<!-- video element will be loaded using jQuery -->
+				</div> <!-- .cd-bg-video-wrapper -->
+			</li>
+
 			<li>
-				<div class="cd-full-width cd-hero-slider2">
+				<div class="cd-full-width">
 					<h2>Slide title here</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
 					<a href="#0" class="cd-btn">Start</a>
@@ -227,6 +240,7 @@
 					<li class="selected"><a href="#0">Intro</a></li>
 					<li><a href="#0">Tech 1</a></li>
 					<li><a href="#0">Tech 2</a></li>
+					<li><a href="#0">Video</a></li>
 					<li><a href="#0">Image</a></li>
 				</ul>
 			</nav> 
