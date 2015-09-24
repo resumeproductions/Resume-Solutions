@@ -180,7 +180,7 @@ a:before {
     background: rgba(0, 0, 0, .13)
 }
 .section-solid-white {
-    background: #FF8A72;
+    background: #FFB444;
     color: #303359
 }
 .section-solid-white h1,
@@ -381,7 +381,7 @@ footer div[class*=col-] {
     -webkit-font-smoothing: antialiased;
     position: absolute;
     color: #fff;
-    background: #0070C6;
+    background: #FF6344;
     text-align: center;
     left: 20%;
     margin: 7px 0 0 -24px
@@ -397,12 +397,12 @@ footer div[class*=col-] {
 }
 .v-timeline>li .v-icon:before {
     bottom: 100%;
-    border-bottom: 10px solid #303359 
+    border-bottom: 10px solid #F4CD4E 
 }
 .v-timeline>li .v-icon:after {
     top: 100%;
     width: 0;
-    border-top: 10px solid #B5FBFF
+    border-top: 10px solid #8EA604
 }
 @media screen and (max-width: 65.375em) {
     .v-timeline>li .v-time span {
@@ -690,9 +690,9 @@ footer div[class*=col-] {
     line-height: 1.5
 }
 .btn-theme {
-    color: #fff;
-    background-color: transparent;
-    border-color: #fff;
+    color: #C91016;
+    background-color: white;
+    border-color: #E81700;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -700,11 +700,11 @@ footer div[class*=col-] {
 }
 .btn-theme .active,
 .btn-theme:hover {
-    color: #000;
-    background-color: #fff
+    color: white;
+    background-color: #A9BA4A;
 }
 .btn-theme-inverse {
-    color: #363636;
+    color: red;
     border-color: #303359;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -714,7 +714,7 @@ footer div[class*=col-] {
 }
 .btn-theme-inverse:hover {
     color: #fff;
-    background-color: #363636
+    background-color: orange;
 }
 .form-control {
     height: 42px;
@@ -781,7 +781,7 @@ form.signup button.btn {
     box-shadow: none
 }
 .progress-bar {
-    background-color: #8EA604;
+    background-color: red;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none
@@ -873,7 +873,7 @@ form.signup button.btn {
     top: 0;
     left: 0;
     height: 8px;
-    background-color: #54F2EA;
+    background-color: red;
     -webkit-transition: -webkit-transform .3s, width 1s;
     -moz-transition: width 1s;
     -o-transform: width 1s;
@@ -1273,7 +1273,8 @@ form.signup button.btn {
     }
 }
 #contact {
-    background: #2d2e2e
+    background: #A9BA4A;
+    color: #FF4A26;
 }
 .list-contacts {
     list-style: none;
