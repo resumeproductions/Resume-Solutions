@@ -172,11 +172,11 @@
 
 		<!-- Navigation end -->
 
-		<!-- Intro section start -->
+		<!-- hero-slider -->
 
 	<section class="cd-hero">
 		<ul class="cd-hero-slider autoplay">
-			<li class="selected">
+			<li class="selected cd-hero-slider2">
 				<div class="cd-full-width">
 					<h2>Resume Solutions</h2>
 					<p>Where you can stand out from the rest. </p>
@@ -184,7 +184,7 @@
 			</li>
 
 			<li>
-				<div class="cd-half-width">
+				<div class="cd-half-width cd-hero-slider2">
 					<h2>Responsive Design</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
 					<a href="#0" class="cd-btn">Start</a>
@@ -192,13 +192,13 @@
 				</div> <!-- .cd-half-width -->
 
 				<div class="cd-half-width cd-img-container">
-					<img src="images/cv.jpg" alt="tech 1">
+					<img style="opacity: .8" src="images/cv.jpg" alt="tech 1">
 				</div> <!-- .cd-half-width.cd-img-container -->
 			</li>
 
 			<li>
 				<div class="cd-half-width cd-img-container">
-					<img src="images/slide2.jpg" alt="tech 2">
+					<img style="opacity: .8" src="images/slide2.jpg" alt="tech 2">
 				</div> <!-- .cd-half-width.cd-img-container -->
 
 				<div class="cd-half-width">
@@ -210,20 +210,8 @@
 				
 			</li>
 
-			<li class="cd-bg-video">
-				<div class="cd-full-width">
-					<h2>Easy Config</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
-					<a href="#0" class="cd-btn">Learn more</a>
-				</div> <!-- .cd-full-width -->
-
-				<div class="cd-bg-video-wrapper" data-video="hero-slider/assets/video/video">
-					<!-- video element will be loaded using jQuery -->
-				</div> <!-- .cd-bg-video-wrapper -->
-			</li>
-
 			<li>
-				<div class="cd-full-width">
+				<div class="cd-full-width cd-hero-slider2">
 					<h2>Slide title here</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
 					<a href="#0" class="cd-btn">Start</a>
@@ -240,7 +228,6 @@
 					<li class="selected"><a href="#0">Intro</a></li>
 					<li><a href="#0">Tech 1</a></li>
 					<li><a href="#0">Tech 2</a></li>
-					<li><a href="#0">Video</a></li>
 					<li><a href="#0">Image</a></li>
 				</ul>
 			</nav> 

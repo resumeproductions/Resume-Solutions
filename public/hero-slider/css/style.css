@@ -219,8 +219,8 @@ Single slide style
 }
 .cd-hero-slider li:nth-of-type(2) {
   background-color: #3d4952;
-  background-image: url("../../images/background1.jpg");
-  background-size: cover;
+  background-image: url("../../images/responsive2.png");
+  background-size: 100% 100%;
 }
 .cd-hero-slider li:nth-of-type(3) {
   background-color: #586775;
@@ -301,6 +301,14 @@ Single slide style
   transform: translateX(-50%) translateY(-50%);
 }
 .cd-hero-slider h2, .cd-hero-slider p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
+  margin: 0 auto 14px;
+  color: black;
+  width: 90%;
+  max-width: 400px;
+}
+.cd-hero-slider2 h2, .cd-hero-slider2 p {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   line-height: 1.2;
   margin: 0 auto 14px;
