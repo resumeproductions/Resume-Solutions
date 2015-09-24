@@ -93,7 +93,7 @@
 
 			<div id="cd-signup"> <!-- sign up form -->
 				<form class="cd-form" action="{{{action('UsersController@store')}}}" method="POST">
-
+					{!! Form::token() !!}
 						<div class="col-md-6">
 							<label class="fa fa-user"> First Name</label>
 							<input class="full-width has-padding has-border" type="text" name="first_name"  placeholder="First Name">
