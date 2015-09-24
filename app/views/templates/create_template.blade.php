@@ -32,10 +32,10 @@
 <input class='Inpage5'>
 </div>
 <button id='right' type="button" class="btn btn-default btn-lg">
-	▶▶▶
+ 	<i class="fa fa-arrow-right fa-2x">
 </button>
 <button id='left' type="button" class="btn btn-default btn-lg">
-	◀◀◀
+ 	<i class="fa fa-arrow-left fa-2x">
 </button>
 @stop
 

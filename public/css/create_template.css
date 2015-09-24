@@ -13,6 +13,8 @@ input {
 	margin: 0;
 	padding: 0;
 	position: absolute;
+	background-position: top center;
+	background-attachment: fixed;
 	height: 100vh;
 }
 .Inpage2 {
@@ -29,42 +31,55 @@ input {
 }
 .page1 {
 	width: 100%;
- 	background-image: url(/assets_dylan/Dp/Screen1.png);
- 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+ 	background: url(/assets_dylan/Dp/Screen1.png) no-repeat center center fixed;
+ 	-webkit-background-size: 100% 100%;
+  	-moz-background-size: 100% 100%;
+  	-o-background-size: 100% 100%;
+  	background-size: 100% 100%;
 }
 .page2 {
 	width: 0%;
 	left: 99%;
-	background-image: url(/assets_dylan/Dp/Screen2.png);
+	background: url(/assets_dylan/Dp/Screen2.png) no-repeat center center fixed;
+	-webkit-background-size: 100% 100%;
+  	-moz-background-size: 100% 100%;
+  	-o-background-size: 100% 100%;
+  	background-size: 100% 100%;
  	background-color: yellow;
- 	background-size: cover;
 }
 .page3 {
 	width: 0%;
 	left: 99%;
-	background-image: url(/assets_dylan/Dp/Screen3.png);
+	background: url(/assets_dylan/Dp/Screen3.png) no-repeat center center fixed;
+	-webkit-background-size: 100% 100%;
+  	-moz-background-size: 100% 100%;
+  	-o-background-size: 100% 100%;
+  	background-size: 100% 100%;
  	background-color: red;
- 	background-size: cover;
 }
 .page4 {
 	width: 0%;
 	left: 99%;
-	background-image: url(/assets_dylan/Dp/Screen4.png);
+	background: url(/assets_dylan/Dp/Screen4.png) no-repeat center center fixed;
+	-webkit-background-size: 100% 100%;
+  	-moz-background-size: 100% 100%;
+  	-o-background-size: 100% 100%;
+  	background-size: 100% 100%;
  	background-color: green;
- 	background-size: cover;
 }
 .page5 {
 	width: 0%;
 	left: 99%;
-	background-image: url(/assets_dylan/Dp/Screen5.png);
+	background: url(/assets_dylan/Dp/Screen5.png) no-repeat center center fixed;
+	-webkit-background-size: 100% 100%;
+  	-moz-background-size: 100% 100%;
+  	-o-background-size: 100% 100%;
+  	background-size: 100% 100%;
  	background-color: black;
- 	background-size: cover;
 }
 #left {
 	position: fixed;
-	text-align: left;
+	left: 10%;
 	height: 10%;
 	width: 10%;
 	top: 75%;
@@ -79,7 +94,7 @@ input {
 	height: 10%;
 	width: 10%;
 	top: 75%;
-	left: 90%;
+	left: 80%;
 	background-color: black;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
