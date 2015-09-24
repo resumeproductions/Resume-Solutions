@@ -3,11 +3,75 @@
 	padding: 0px;
 }
 input {
+	position: absolute;
 	width: 20%;
+	height: 5%;
+}
+textarea {
+	position: absolute;
+	width: 30%;
+	height: 15%;
 }
 #cont {
 	margin-left: 0px;
 	padding-left: 0px;
+}
+#input11 {
+	left: 42%;
+	top: 43%;
+	height: 5%;
+	width: 25%;
+}
+#input12 {
+	left: 12%;
+	top: 1%;
+	height: 5%;
+	width: 25%;
+}
+#input13 {
+	left: 41%;
+	top: 49%;
+	width: 38%;
+}
+#input21 {
+	left: 41%;
+	top: 49%;
+	width: 38%;
+}
+#input22 {
+	left: 41%;
+	top: 49%;
+	width: 38%;
+}
+#input23 {
+	left: 41%;
+	top: 49%;
+	width: 38%;
+}
+#input24 {
+	left: 41%;
+	top: 49%;
+	width: 38%;
+}
+#input25 {
+	left: 41%;
+	top: 49%;
+	width: 38%;
+}
+#input26 {
+	left: 41%;
+	top: 49%;
+	width: 38%;
+}
+#input27 {
+	left: 41%;
+	top: 49%;
+	width: 38%;
+}
+#input28 {
+	left: 41%;
+	top: 49%;
+	width: 38%;
 }
 .pagesle {
 	margin: 0;
@@ -19,6 +83,8 @@ input {
 }
 .Inpage2 {
 	opacity: 0;
+	height: 5%;
+	width: 20%;
 }
 .Inpage3 {
 	opacity: 0;
