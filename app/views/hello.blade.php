@@ -178,32 +178,31 @@
 		<ul class="cd-hero-slider autoplay">
 			<li class="selected">
 				<div class="cd-full-width">
-					<h2>Hero slider</h2>
-					<p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
-					<a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+					<h2>Resume Solutions</h2>
+					<p>Where you can stand out from the rest. </p>
 				</div> <!-- .cd-full-width -->
 			</li>
 
 			<li>
 				<div class="cd-half-width">
-					<h2>Slide title here</h2>
+					<h2>Responsive Design</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
 					<a href="#0" class="cd-btn">Start</a>
 					<a href="#0" class="cd-btn secondary">Learn More</a>
 				</div> <!-- .cd-half-width -->
 
 				<div class="cd-half-width cd-img-container">
-					<img src="assets/tech-1.jpg" alt="tech 1">
+					<img src="images/cv.jpg" alt="tech 1">
 				</div> <!-- .cd-half-width.cd-img-container -->
 			</li>
 
 			<li>
 				<div class="cd-half-width cd-img-container">
-					<img src="assets/tech-2.jpg" alt="tech 2">
+					<img src="images/slide2.jpg" alt="tech 2">
 				</div> <!-- .cd-half-width.cd-img-container -->
 
 				<div class="cd-half-width">
-					<h2>Slide title here</h2>
+					<h2>Beautiful Layout</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
 					<a href="#0" class="cd-btn">Start</a>
 					<a href="#0" class="cd-btn secondary">Learn More</a>
@@ -213,12 +212,12 @@
 
 			<li class="cd-bg-video">
 				<div class="cd-full-width">
-					<h2>Slide title here</h2>
+					<h2>Easy Config</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
 					<a href="#0" class="cd-btn">Learn more</a>
 				</div> <!-- .cd-full-width -->
 
-				<div class="cd-bg-video-wrapper" data-video="assets/video/video">
+				<div class="cd-bg-video-wrapper" data-video="hero-slider/assets/video/video">
 					<!-- video element will be loaded using jQuery -->
 				</div> <!-- .cd-bg-video-wrapper -->
 			</li>
@@ -250,12 +249,11 @@
 
 	<main class="cd-main-content">
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+			We are your one stop to success. Implementing beautiful and responsive layouts to give you the push you need to start your new career. 
 		</p>
 
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+			Resume Solutions offers an easy effective way to create an eye catching HTML/CSS resume. Using the laravel framework we have implemented dynamic code that can be unique to each user. As we grow we continue to implement more templates as well as a create your own option. So take one of ours or build your own and let the interviews begin! Sign up now to get your free resume.
 		</p>
 	</main> <!-- .cd-main-content -->
 
@@ -311,7 +309,7 @@
 		<div class="container">
 			<div class="col-md-8 col-md-offset-2">
 				<!-- Section Description -->
-				<p>Meet the team and feel free to reach out to any one of them.</p>
+				<p>Meet the team and feel free to reach out to any one of us.</p>
 			</div>
 			
 			<!-- First Row of Speakers -->
@@ -332,7 +330,7 @@
 					<ul>
 						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>						
+						<li><a href="#" target="_blank"><i class="fa fa-github-alt"></i></a></li>						
 					</ul>
 				</div>
 				
@@ -349,9 +347,9 @@
 						<h4><span>Johnathan</span> Christopherson</h4>
 					</a>	
 					<ul>
-						<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
 						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-github-alt"></i></a></li>
 					</ul>
 				</div>
 				
@@ -368,9 +366,9 @@
 						<h4><span>Dylan</span>Perenchio</h4>
 					</a>					
 					<ul>
-						<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>						
-						<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>						
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-github-alt"></i></a></li>					
 					</ul>					
 				</div>
 				
@@ -390,40 +388,26 @@
 
 			<div class="footer-left">
 
-				<h3>Company<span>logo</span></h3>
+				<h3>Resume<span>Solutions</span></h3>
 
-				<p class="footer-links">
-					<a href="#">Home</a>
-					·
-					<a href="#">Blog</a>
-					·
-					<a href="#">Pricing</a>
-					·
-					<a href="#">About</a>
-					·
-					<a href="#">Faq</a>
-					·
-					<a href="#">Contact</a>
-				</p>
-
-				<p class="footer-company-name">Company Name &copy; 2015</p>
+				<p class="footer-company-name">Resume Solutions &copy; 2015</p>
 			</div>
 
 			<div class="footer-center">
 
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>21 Revolution Street</span> Paris, France</p>
+					<p><span>Codeup</span>San Antonio</p>
 				</div>
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+1 555 123456</p>
+					<p>+1 555 555 5555</p>
 				</div>
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
+					<p><a href="mailto:resumesolutions@gmail.com">resumesolutions@gmail.com</a></p>
 				</div>
 
 			</div>
@@ -432,12 +416,11 @@
 
 				<p class="footer-company-about">
 					<span>About the company</span>
-					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+					Codeup Final Project 2015
 				</p>
 
 				<div class="footer-icons">
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>
 					<a href="#"><i class="fa fa-linkedin"></i></a>
 					<a href="#"><i class="fa fa-github"></i></a>
