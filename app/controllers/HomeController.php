@@ -23,6 +23,10 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
+		if (Auth::check())
+		{
+		    return View::make('users.index');
+		}
 		return View::make('hello');
 	}
 
