@@ -12,19 +12,19 @@
 </head>
 <body>
 	<div class='page1 pagesle'>
-		<input class='Inpage1 form-control' id='input11'>
-		<input class='Inpage1 form-control' id='input12'>
-		<textarea class='Inpage1 form-control' id='input13'></textarea>
+		<input class='Inpage1 form-control' name='headerJobTitle' id='input11'>
+		<input class='Inpage1 form-control' name='navbarTitle' id='input12'>
+		<textarea class='Inpage1 form-control' name='headerDescription' id='input13'></textarea>
 	</div>
 	<div class='page2 pagesle'>
-		<input class='Inpage2' id='input21'>
-		<input class='Inpage2' id='input22'>
-		<input class='Inpage2' id='input23'>
-		<input class='Inpage2' id='input24'>
-		<input class='Inpage2' id='input25'>
-		<input class='Inpage2' id='input26'>
-		<input class='Inpage2' id='input27'>
-		<input class='Inpage2' id='input28'>
+		<input class='Inpage2' name='' id='input21'>
+		<input class='Inpage2' name='' id='input22'>
+		<input class='Inpage2' name='' id='input23'>
+		<input class='Inpage2' name='' id='input24'>
+		<input class='Inpage2' name='' id='input25'>
+		<input class='Inpage2' name='' id='input26'>
+		<input class='Inpage2' name='' id='input27'>
+		<input class='Inpage2' name='' id='input28'>
 	</div>
 	<div class='page3 pagesle'>
 		<input class='Inpage3'>
@@ -52,24 +52,28 @@
 				var findRigh = document.getElementById('right');
 				var findLeft = document.getElementById('left');
 				var page = 1;
+				var set = true;
 				checkPage(page);
 				findRigh.addEventListener("click", function(){
+					if (set == false) {
+
+					};
 					checkPage(page);
 					$(".page".concat(page)).animate({width: "0%", left: "0%"}, 2000);
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page++;
+					checkPage(page);
 					$(".Inpage".concat(page)).css('z-index', '1');
 					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 2000);
-					checkPage(page);
 				}, false);
 				findLeft.addEventListener("click", function(){
 					checkPage(page);
 					$(".page".concat(page)).animate({width: "0%", left: "99%"}, 2000);
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page--;
+					checkPage(page);
 					$(".Inpage".concat(page)).css('z-index', '1');
 					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 2000);
-					checkPage(page);
 				}, false);
 				$(document).keydown(function(e) {
 					switch(e.which) {

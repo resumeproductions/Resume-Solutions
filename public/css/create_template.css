@@ -34,41 +34,50 @@ textarea {
 	width: 38%;
 }
 #input21 {
-	left: 41%;
-	top: 49%;
-	width: 38%;
+	z-index: -1;
+	left: 20%;
+	top: 34%;
+	width: 6%;
+	height: 12%;
 }
 #input22 {
+	z-index: -1;
 	left: 41%;
 	top: 49%;
 	width: 38%;
 }
 #input23 {
+	z-index: -1;
 	left: 41%;
 	top: 49%;
 	width: 38%;
 }
 #input24 {
+	z-index: -1;
 	left: 41%;
 	top: 49%;
 	width: 38%;
 }
 #input25 {
+	z-index: -1;
 	left: 41%;
 	top: 49%;
 	width: 38%;
 }
 #input26 {
+	z-index: -1;
 	left: 41%;
 	top: 49%;
 	width: 38%;
 }
 #input27 {
+	z-index: -1;
 	left: 41%;
 	top: 49%;
 	width: 38%;
 }
 #input28 {
+	z-index: -1;
 	left: 41%;
 	top: 49%;
 	width: 38%;
@@ -82,18 +91,16 @@ textarea {
 	height: 100vh;
 }
 .Inpage2 {
-	opacity: 0;
-	height: 5%;
-	width: 20%;
+	z-index: -1;
 }
 .Inpage3 {
-	opacity: 0;
+	z-index: -1;
 }
 .Inpage4 {
-	opacity: 0;
+	z-index: -1;
 }
 .Inpage5 {
-	opacity: 0;
+	z-index: -1;
 }
 .page1 {
 	width: 100%;
