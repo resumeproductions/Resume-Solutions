@@ -22,7 +22,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 }
 /*------ HEADERBG STARTS---------*/
 .headerbg{
-	background: url(/assets_dylan/images/bannerbg.png);
+	background: url(/assets_dylan/images/bannerbg.jpg);
 	min-height:700px;
 	width:100%;
 	background-size:cover;
@@ -174,7 +174,7 @@ a.downarrow{
 .arrow span{
 	height:48px;
 	width:48px;
-	background:url(/assets_dylan/images/bwn.png);
+	background:url(/assets_dylan/images/down.png);
 	display:inline-block;
 }
 a.arrow{
@@ -221,7 +221,7 @@ a.arrow{
 .down span{
 	height:48px;
 	width:48px;
-	background:url(/assets_dylan/images/bwn.png);
+	background:url(/assets_dylan/images/down.png);
 	display:inline-block;
 }
 a.down{
@@ -283,7 +283,7 @@ a.rightarrow{
 .portdown span{
 	height:48px;
 	width:48px;
-	background:url(/assets_dylan/images/bwn.png);
+	background:url(/assets_dylan/images/down.png);
 	display:inline-block;
 	}
 a.portdown{
