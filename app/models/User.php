@@ -18,17 +18,6 @@ class User extends SoftModel implements UserInterface, RemindableInterface
 	 */
 	protected $table = 'users';
 
-	public $rules = array (
-		'email' => 'required|email|max:100|unique:users',
-		'first_name' => 'required|max:100',
-		'last_name' => 'required|max:100',
-		'password' => 'required|confirmed',
-		'phone_number' => 'required|max:12',
-		'zip' => 'required|max:5',
-		'city' => 'required|max:100',
-		'state' => 'required|max:100',
-		'address' => 'required|max:100'
-	);
 
 	//Hash the password
 	public function setPasswordAttribute($value)

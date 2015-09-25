@@ -2,15 +2,18 @@
 <html>
 <head>
 	<title>Template</title>
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="/assets_dylan/js/jquery.min.js"> </script>
 	<link href="/assets_dylan/css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="/assets_dylan/css/green-template.css" rel="stylesheet" type="text/css" media="all" />
+	<link id="pagestyle" href="/assets_dylan/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!---- start-smoth-scrolling---->
+	<!-- start-smoth-scrolling-->
 		<script type="text/javascript" src="/assets_dylan/js/move-top.js"></script>
 		<script type="text/javascript" src="/assets_dylan/js/easing.js"></script>
+		<script src="/assets_john/js/theme.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -18,8 +21,11 @@
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
 			});
+			function swapStyleSheet(sheet){
+				document.getElementById('pagestyle').setAttribute('href', sheet);
+			}
 		</script>
- 	<!---- start-smoth-scrolling---->
+ 	<!-- start-smoth-scrolling-->
 </head>
 <body>
 <script async type='text/javascript' src='//cdn.fancybar.net/ac/fancybar.js?zoneid=1502&serve=C6ADVKE&placement=w3layouts' id='_fancybar_js'></script>
@@ -27,14 +33,14 @@
 
 	<!--headerbg starts-->
 	<div id="top-top" class="headerbg">
-		 <!------header starts-------->
+		 <!---header starts-->
 		   <div class="header">
-			 <!------container starts-------->
+			 <!--container starts-->
 				  <div class="container">
 					   <div class="logo">
 							<a href="#">Resume</a>
 					   </div>
-					  <!------Navigation starts-------->
+					  <!--Navigation starts-->
 					  <div class="nav">
 						 <ul>
 							 <li><a class="scroll" href="#about">ABOUT</a></li>
@@ -43,13 +49,13 @@
 							 <li><a class="scroll" href="#contact">CONTACT</a></li>
 						 </ul>
 					 </div>
-					  <!------Navigation ends------>
+					  <!--Navigation ends-->
 						<div class="clear"></div>
 				  </div>
 			 <!--container ends-->
 		   </div>
-		 <!------header ends--------->
-		 <!------Banner starts-------->
+		 <!--header ends-->
+		 <!--Banner starts-->
 		   <div class="banner">
 			  <div class="container">
 				 <div class="banner-info">
@@ -64,12 +70,22 @@
 				 <div class="clear"></div>
 			  </div>
 		  </div>
-		  <!------Banner ends------->
+		  <!--Banner ends-->
 	</div>
-	<!------Headerbg ends-------->
-	<!------Content starts-------->
+	<!--Headerbg ends-->
+	<!--Content starts-->
 	<div class="content">
-		<!------About starts-------->
+		<!--About starts--> 
+		<div class="slide-out-div">
+			<a class="handle" href="#"></a>
+			<h3>Change Color</h3>
+			<ul id="color-switcher" class="list-inline">
+				<button id="darkCSS" onclick="swapStyleSheet('/assets_dylan/css/style.css')">Dark Style Sheet</button>
+				<button id="blueCSS" onclick="swapStyleSheet('/assets_dylan/css/blue-template.css')">Blue Style Sheet</button>
+				<button id="greenCSS" onclick="swapStyleSheet('/assets_dylan/css/green-template.css')">Green Style Sheet</button>
+				<button id="purpleCSS" onclick="swapStyleSheet('/assets_dylan/css/purple-template.css')">Purple Style Sheet</button>
+			</ul>
+		</div>
 		<div id="about" class="about">
 			<div class="container">
 				<div class="header-section text-center">
@@ -103,9 +119,9 @@
 				 <a class="arrow scroll" href="#skills"><span> </span></a>
 			</div>
 		</div>
-		<!------About Ends-------->
+		<!--About Ends-->
 	 
-		<!------SKILLS Starts-------->
+		<!--SKILLS Starts-->
 		<div id="skills" class="skills">
 			<div class="container">
 				<div class="skills-grids">
@@ -203,8 +219,8 @@
 				  </div>
 		</div>
 	</div>
-	<!------Content Ends------->
-	<!------FOOTER Starts---------->
+	<!---Content Ends-->
+	<!--FOOTER Starts-->
 	<div  id="contact" class="footer">
 		<div class="container">
 			<div class="contact-section text-center">
