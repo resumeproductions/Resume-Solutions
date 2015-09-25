@@ -12,31 +12,45 @@
 </head>
 <body>
 	<div class='page1 pagesle'>
-		<input class='Inpage1 form-control' name='headerJobTitle' id='input11'>
-		<input class='Inpage1 form-control' name='navbarTitle' id='input12'>
-		<textarea class='Inpage1 form-control' name='headerDescription' id='input13'></textarea>
+		<input 	class='Inpage1'   name='headerJobTitle' 	 id='input11'>
+		<input 	class='Inpage1'   name='navbarTitle' 		 id='input12'>
+		<textarea class='Inpage1' name='headerDescription' 	 id='input13'></textarea>
 	</div>
 	<div class='page2 pagesle'>
-		<input class='Inpage2' name='' id='input21'>
-		<input class='Inpage2' name='' id='input22'>
-		<input class='Inpage2' name='' id='input23'>
-		<input class='Inpage2' name='' id='input24'>
-		<input class='Inpage2' name='' id='input25'>
-		<input class='Inpage2' name='' id='input26'>
-		<input class='Inpage2' name='' id='input27'>
-		<input class='Inpage2' name='' id='input28'>
+		<textarea class='Inpage2' name='workExperienceExtraText'id='input21'></textarea>
+		<input class='Inpage2' name='workExperienceYear' 		id='input22'>
+		<input class='Inpage2' name='workExperienceTitle' 		id='input23'>
+		<textarea class='Inpage2' name='workExperienceDescription' id='input24'></textarea>
+		<input class='Inpage2' name='workExperienceYear' 	id='input25'>
+		<input class='Inpage2' name='workExperienceTitle' 		id='input26'>
+		<textarea class='Inpage2' name='workExperienceDescription' id='input27'></textarea>
+		<input class='Inpage2' name='workExperienceYear' 		id='input28'>
+		<input class='Inpage2' name='workExperienceTitle' 		id='input29'>
+		<textarea class='Inpage2' name='workExperienceDescription' id='input210'></textarea>
 	</div>
 	<div class='page3 pagesle'>
-		<input class='Inpage3'>
-		<input class='Inpage3'>
+		<input class='Inpage3' name='skillPercent' 	id='input31'>
+		<input class='Inpage3' name='skillTitle' 	id='input32'>
+		<input class='Inpage3' name='skillPercent' 	id='input33'>
+		<input class='Inpage3' name='skillTitle' 	id='input34'>
+		<input class='Inpage3' name='skillPercent' 	id='input35'>
+		<input class='Inpage3' name='skillTitle' 	id='input36'>
+		<input class='Inpage3' name='skillPercent' 	id='input37'>
+		<input class='Inpage3' name='skillTitle' 	id='input38'>
 	</div>
 	<div class='page4 pagesle'>
-		<input class='Inpage4'>
-		<input class='Inpage4'>
+		<input class='Inpage4' name='portfolioDescription' 	id='input41'>
+		<button class='Inpage4'name='portfolioPicture' 		id='input42'></button>
+		<input class='Inpage4' name='portfolioDescription' 	id='input43'>
+		<input class='Inpage4' name='portfolioPicture' 		id='input44'>
+		<input class='Inpage4' name='portfolioDescription' 	id='input45'>
+		<input class='Inpage4' name='portfolioPicture' 		id='input46'>
 	</div>
 	<div class='page5 pagesle'>
-		<input class='Inpage5'>
-		<input class='Inpage5'>
+		<input class='Inpage5' name='contact' id='input51'>
+		<input class='Inpage5' name='contact' id='input52'>
+		<input class='Inpage5' name='contact' id='input53'>
+		<input class='Inpage5' name='contact' id='input54'>
 	</div>
 	<button id='right' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-right fa-2x">
@@ -52,12 +66,8 @@
 				var findRigh = document.getElementById('right');
 				var findLeft = document.getElementById('left');
 				var page = 1;
-				var set = true;
 				checkPage(page);
 				findRigh.addEventListener("click", function(){
-					if (set == false) {
-
-					};
 					checkPage(page);
 					$(".page".concat(page)).animate({width: "0%", left: "0%"}, 2000);
 					$(".Inpage".concat(page)).css('z-index', '-1');

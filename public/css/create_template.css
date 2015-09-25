@@ -6,6 +6,15 @@ input {
 	position: absolute;
 	width: 20%;
 	height: 5%;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 textarea {
 	position: absolute;
@@ -34,53 +43,148 @@ textarea {
 	width: 38%;
 }
 #input21 {
-	z-index: -1;
+	left: 25%;
+	top: 13%;
+	height: 9%;
+	width: 50%;
+}
+#input22 {
+	left: 45%;
+	top: 23%;
+	height: 5%;
+	width: 10%;
+}
+#input23 {
+	left: 38.5%;
+	top: 28%;
+	height: 5%;
+	width: 23%;
+}
+#input24 {
+	left: 30%;
+	top: 34%;
+	height: 8%;
+	width: 40%;
+}
+#input25 {
+	left: 45%;
+	top: 45%;
+	height: 5%;
+	width: 10%;
+}
+#input26 {
+	left: 38.5%;
+	top: 50%;
+	height: 5%;
+	width: 23%;
+}
+#input27 {
+	left: 30%;
+	top: 56%;
+	height: 8%;
+	width: 40%;
+}
+#input28 {
+	left: 45%;
+	top: 69%;
+	height: 5%;
+	width: 10%;
+}
+#input29 {
+	left: 38.5%;
+	top: 74%;
+	height: 5%;
+	width: 23%;
+}
+#input210 {
+	left: 29%;
+	top: 81%;
+	height: 14%;
+	width: 42%;
+}
+#input31 {
 	left: 20%;
 	top: 34%;
 	width: 6%;
 	height: 12%;
+	font-size: 300%;
 }
-#input22 {
-	z-index: -1;
-	left: 41%;
-	top: 49%;
-	width: 38%;
+#input32 {
+	left: 19%;
+	top: 58%;
+	width: 10%;
+	font-size: 200%;
 }
-#input23 {
-	z-index: -1;
-	left: 41%;
-	top: 49%;
-	width: 38%;
+#input33 {
+	left: 37%;
+	top: 34%;
+	width: 6%;
+	height: 12%;
+	font-size: 300%;
 }
-#input24 {
-	z-index: -1;
-	left: 41%;
-	top: 49%;
-	width: 38%;
+#input34 {
+	left: 36%;
+	top: 58%;
+	width: 10%;
+	font-size: 200%;
 }
-#input25 {
-	z-index: -1;
-	left: 41%;
-	top: 49%;
-	width: 38%;
+#input35 {
+	left: 54%;
+	top: 34%;
+	width: 6%;
+	height: 12%;
+	font-size: 300%;
 }
-#input26 {
-	z-index: -1;
-	left: 41%;
-	top: 49%;
-	width: 38%;
+#input36 {
+	left: 52%;
+	top: 58%;
+	width: 10%;
+	font-size: 200%;
 }
-#input27 {
-	z-index: -1;
-	left: 41%;
-	top: 49%;
-	width: 38%;
+#input37 {
+	left: 71%;
+	top: 34%;
+	width: 6%;
+	height: 12%;
+	font-size: 300%;
 }
-#input28 {
-	z-index: -1;
-	left: 41%;
-	top: 49%;
-	width: 38%;
+#input38 {
+	left: 68%;
+	top: 58%;
+	width: 13%;
+	font-size: 200%;
+}
+#input41 {
+	left: 16%;
+	top: 57%;
+	width: 22%;
+	height: 12%;
+}
+#input42 {
+	left: 40%;
+	top: 57%;
+	width: 22%;
+	height: 12%;
+	opacity: 0;
+}
+#input43 {
+	left: 39%;
+	top: 57%;
+	width: 22%;
+	height: 12%;
+}
+#input44 {
+	left: 20%;
+	top: 34%;
+	width: 6%;
+	height: 12%;
+	opacity: 0;
+}
+#input45 {
+	left: 62%;
+	top: 57%;
+	width: 22%;
+	height: 12%;
 }
 .pagesle {
 	margin: 0;
@@ -89,6 +193,7 @@ textarea {
 	background-position: top center;
 	background-attachment: fixed;
 	height: 100vh;
+	color: black;
 }
 .Inpage2 {
 	z-index: -1;
@@ -104,51 +209,51 @@ textarea {
 }
 .page1 {
 	width: 100%;
- 	background: url(/assets_dylan/Dp/Screen1.png) no-repeat center center fixed;
- 	-webkit-background-size: 100% 100%;
-  	-moz-background-size: 100% 100%;
-  	-o-background-size: 100% 100%;
-  	background-size: 100% 100%;
+	background: url(/assets_dylan/Dp/Page1.png) no-repeat center center fixed;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 .page2 {
 	width: 0%;
 	left: 99%;
-	background: url(/assets_dylan/Dp/Screen2.png) no-repeat center center fixed;
+	background: url(/assets_dylan/Dp/Page2.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
-  	-moz-background-size: 100% 100%;
-  	-o-background-size: 100% 100%;
-  	background-size: 100% 100%;
- 	background-color: yellow;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-color: yellow;
 }
 .page3 {
 	width: 0%;
 	left: 99%;
-	background: url(/assets_dylan/Dp/Screen3.png) no-repeat center center fixed;
+	background: url(/assets_dylan/Dp/Page3.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
-  	-moz-background-size: 100% 100%;
-  	-o-background-size: 100% 100%;
-  	background-size: 100% 100%;
- 	background-color: red;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-color: red;
 }
 .page4 {
 	width: 0%;
 	left: 99%;
-	background: url(/assets_dylan/Dp/Screen4.png) no-repeat center center fixed;
+	background: url(/assets_dylan/Dp/Page4.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
-  	-moz-background-size: 100% 100%;
-  	-o-background-size: 100% 100%;
-  	background-size: 100% 100%;
- 	background-color: green;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-color: green;
 }
 .page5 {
 	width: 0%;
 	left: 99%;
-	background: url(/assets_dylan/Dp/Screen5.png) no-repeat center center fixed;
+	background: url(/assets_dylan/Dp/Page5.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
-  	-moz-background-size: 100% 100%;
-  	-o-background-size: 100% 100%;
-  	background-size: 100% 100%;
- 	background-color: black;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-color: black;
 }
 #left {
 	position: fixed;
