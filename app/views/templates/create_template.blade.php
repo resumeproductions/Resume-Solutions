@@ -12,45 +12,45 @@
 </head>
 <body>
 	<div class='page1 pagesle'>
-		<input 	class='Inpage1'   name='headerJobTitle' 	 id='input11'>
-		<input 	class='Inpage1'   name='navbarTitle' 		 id='input12'>
-		<textarea class='Inpage1' name='headerDescription' 	 id='input13'></textarea>
+		<input placeholder='Insert Job Title' class='Inpage1' name='headerJobTitle'    id='input11'>
+		<input placeholder='Insert Resume Title' class='Inpage1' name='navbarTitle' 	   id='input12'>
+		<textarea placeholder='Insert Job Description' class='Inpage1' name='headerDescription' id='input13'></textarea>
 	</div>
 	<div class='page2 pagesle'>
-		<textarea class='Inpage2' name='workExperienceExtraText'id='input21'></textarea>
-		<input class='Inpage2' name='workExperienceYear' 		id='input22'>
-		<input class='Inpage2' name='workExperienceTitle' 		id='input23'>
-		<textarea class='Inpage2' name='workExperienceDescription' id='input24'></textarea>
-		<input class='Inpage2' name='workExperienceYear' 	id='input25'>
-		<input class='Inpage2' name='workExperienceTitle' 		id='input26'>
-		<textarea class='Inpage2' name='workExperienceDescription' id='input27'></textarea>
-		<input class='Inpage2' name='workExperienceYear' 		id='input28'>
-		<input class='Inpage2' name='workExperienceTitle' 		id='input29'>
-		<textarea class='Inpage2' name='workExperienceDescription' id='input210'></textarea>
+		<textarea placeholder='Description of General Previous Work' class='Inpage2' name='workExperienceExtraText'	id='input21'></textarea>
+		<input 	  placeholder='Year of Work' class='Inpage2' name='workExperienceYear' 		id='input22'>
+		<input 	  placeholder='Work Title' class='Inpage2' name='workExperienceTitle' 		id='input23'>
+		<textarea placeholder='Work Description' class='Inpage2' name='workExperienceDescription'  id='input24'></textarea>
+		<input 	  placeholder='Year of Work' class='Inpage2' name='workExperienceYear' 		id='input25'>
+		<input 	  placeholder='Work Title' class='Inpage2' name='workExperienceTitle' 		id='input26'>
+		<textarea placeholder='Work Description' class='Inpage2' name='workExperienceDescription'  id='input27'></textarea>
+		<input 	  placeholder='Year of Work' class='Inpage2' name='workExperienceYear' 		id='input28'>
+		<input 	  placeholder='Work Title' class='Inpage2' name='workExperienceTitle' 		id='input29'>
+		<textarea placeholder='Work Description' class='Inpage2' name='workExperienceDescription'  id='input210'></textarea>
 	</div>
 	<div class='page3 pagesle'>
 		<input class='Inpage3' name='skillPercent' 	id='input31'>
-		<input class='Inpage3' name='skillTitle' 	id='input32'>
+		<input class='Inpage3' placeholder='Skill Title' name='skillTitle' 	id='input32'>
 		<input class='Inpage3' name='skillPercent' 	id='input33'>
-		<input class='Inpage3' name='skillTitle' 	id='input34'>
+		<input class='Inpage3' placeholder='Skill Title' name='skillTitle' 	id='input34'>
 		<input class='Inpage3' name='skillPercent' 	id='input35'>
-		<input class='Inpage3' name='skillTitle' 	id='input36'>
+		<input class='Inpage3' placeholder='Skill Title' name='skillTitle' 	id='input36'>
 		<input class='Inpage3' name='skillPercent' 	id='input37'>
-		<input class='Inpage3' name='skillTitle' 	id='input38'>
+		<input class='Inpage3' placeholder='Skill Title' name='skillTitle' 	id='input38'>
 	</div>
 	<div class='page4 pagesle'>
-		<input class='Inpage4' name='portfolioDescription' 	id='input41'>
-		<button class='Inpage4'name='portfolioPicture' 		id='input42'></button>
-		<input class='Inpage4' name='portfolioDescription' 	id='input43'>
-		<input class='Inpage4' name='portfolioPicture' 		id='input44'>
-		<input class='Inpage4' name='portfolioDescription' 	id='input45'>
-		<input class='Inpage4' name='portfolioPicture' 		id='input46'>
+		<input class='Inpage4'  placeholder='Portfolio Title' name='portfolioDescription'  id='input41'>
+		<button class='Inpage4' name='portfolioPicture' 		id='input42'></button>
+		<input class='Inpage4'  placeholder='Portfolio Title' name='portfolioDescription' 	id='input43'>
+		<button class='Inpage4' name='portfolioPicture' 		id='input44'></button>
+		<input class='Inpage4'  placeholder='Portfolio Title' name='portfolioDescription' 	id='input45'>
+		<button class='Inpage4' name='portfolioPicture' 		id='input46'></button>
 	</div>
 	<div class='page5 pagesle'>
-		<input class='Inpage5' name='contact' id='input51'>
-		<input class='Inpage5' name='contact' id='input52'>
-		<input class='Inpage5' name='contact' id='input53'>
-		<input class='Inpage5' name='contact' id='input54'>
+		<input class='Inpage5' placeholder=' Facebook Link' name='contactFacebook' id='input51'>
+		<input class='Inpage5' placeholder=' Linkedin Link' name='contactLinkedin' id='input52'>
+		<input class='Inpage5' placeholder=' Twitter Link' name='contactTwitter' id='input53'>
+		<input class='Inpage5' placeholder=' Contact Description' name='contactDescription' id='input54'>
 	</div>
 	<button id='right' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-right fa-2x">
@@ -73,7 +73,9 @@
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page++;
 					checkPage(page);
-					$(".Inpage".concat(page)).css('z-index', '1');
+					setTimeout(function(){
+						$(".Inpage".concat(page)).css('z-index', '1');
+					}, 2100);
 					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 2000);
 				}, false);
 				findLeft.addEventListener("click", function(){
@@ -82,7 +84,9 @@
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page--;
 					checkPage(page);
-					$(".Inpage".concat(page)).css('z-index', '1');
+					setTimeout(function(){
+						$(".Inpage".concat(page)).css('z-index', '1');
+					}, 2100);
 					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 2000);
 				}, false);
 				$(document).keydown(function(e) {
