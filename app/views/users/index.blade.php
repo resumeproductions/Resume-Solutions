@@ -6,6 +6,8 @@
 
 @section('content')
 
+  <img id="banner" src="/images/banner.jpg">
+
   <section id="stats" class="callout">
 
       <div class="container">
@@ -51,7 +53,6 @@
 
     <!-- Callout section end -->
 
-    <img id="banner" src="/images/banner.jpg">
 
 <a href="#">
   <div class="button-fill grey">
@@ -66,6 +67,9 @@
       <div class="inside-text">Learn&nbspMore</div>
     </div>
   </div></a>
+
+
+
 
 
 
