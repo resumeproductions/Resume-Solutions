@@ -15,8 +15,6 @@ class CreateTemplate2Table extends Migration {
 		Schema::create('template2', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('first_name');
-			$table->string('last_name');
 			$table->string('adjectives');
 			$table->string('about_picture');
 			$table->string('about_title');
@@ -33,15 +31,12 @@ class CreateTemplate2Table extends Migration {
 			$table->string('skill_percents');
 			$table->string('language_titles');
 			$table->string('language_percents');
-			$table->string('hobies');
+			$table->string('hobbies');
 			$table->string('portfolio_titles');
 			$table->string('portfolio_pictures');
 			$table->string('portfolio_links');
 			$table->string('award_titles');
 			$table->string('award_numbers');
-			$table->string('conact_phone');
-			$table->string('conact_adress');
-			$table->string('conact_email');
 			$table->timestamps();
 		});
 	}

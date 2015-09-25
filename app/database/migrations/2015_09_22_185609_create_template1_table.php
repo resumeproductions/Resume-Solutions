@@ -36,18 +36,9 @@ class CreateTemplate1Table extends Migration {
 			$table->string('contactFacebook')->nullable();
 			$table->string('contactTwitter')->nullable();
 			
-			//Colors
-			$table->string('navbarColor');
-
-			$table->string('headerNameColor');
-			$table->string('headerDescriptionColor');
+			//Images
 			$table->string('headerBackgroundImage');
-
 			$table->string('portfolioImage');
-			$table->string('portfolioDescriptionColor');
-
-			$table->string('contactDesciptionColor');
-			
 			$table->timestamps();
 		});
 	}
