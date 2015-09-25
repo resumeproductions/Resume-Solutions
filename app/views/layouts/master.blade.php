@@ -107,10 +107,10 @@
                 </ul>
             </div>
         @endif
-        @yield('content')
 
     </div>
   </main>
+        @yield('content')
 <footer>
     
 
@@ -122,7 +122,6 @@
   <script src="/assets_homepage/js/jquery.backstretch.min.js"></script>
   <!-- Custom scripts -->
   <script src="/assets_homepage/js/custom.js"></script>
-  <script src="/hero-slider/js/jquery-2.1.1.js"></script>
   <script src="/hero-slider/js/main.js"></script> <!-- Resource jQuery -->
 
   @yield('script')
