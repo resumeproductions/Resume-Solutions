@@ -16,7 +16,7 @@
 		<link href="/assets_david/side-menu:Image/assets/css/jasny-bootstrap.min.css" rel="stylesheet">
 		<link href="/assets_david/side-menu:Image/assets/css/jquery.bxslider.css" rel="stylesheet">
 		<link href="/assets_david/side-menu:Image/assets/css/animate.css" rel="stylesheet">
-		<link href="/assets_david/side-menu:Image/assets/css/red-app.css" rel="stylesheet">
+		<link href="/assets_david/side-menu:Image/assets/css/blue-app.css" rel="stylesheet">
 		
 		<link href="../../settings-panel.css" rel="stylesheet">
 		
