@@ -220,8 +220,7 @@
 			<li>
 				<div class="cd-full-width">
 					<h2>Sign Up Now!</h2>
-					<a href="#0" class="cd-btn">Start</a>
-					<a href="#0" class="cd-btn secondary">Learn More</a>
+					<a href="#learn-more" class="cd-btn secondary">Learn More</a>
 				</div> <!-- .cd-full-width -->
 			</li>
 		</ul> <!-- .cd-hero-slider -->
@@ -241,7 +240,7 @@
 		</div> <!-- .cd-slider-nav -->
 	</section> <!-- .cd-hero -->
 
-	<main class="cd-main-content">
+	<main id="learn-more" class="cd-main-content">
 		<p>
 			We are your one stop to success. Implementing beautiful and responsive layouts to give you the push you need to start your new career. 
 		</p>
