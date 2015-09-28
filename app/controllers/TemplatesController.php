@@ -123,6 +123,16 @@ class TemplatesController extends \BaseController {
 	{
 		return View::make('templates.create_template');
 	}
+	
+	public function Something2()
+	{
+		return View::make('templates.DPS_create_template');
+	}
+
+	public function Something3()
+	{
+		return View::make('templates.JC_create_template');
+	}
 
 	public function storeTemplate1()
 	{
