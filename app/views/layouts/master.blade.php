@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
   @yield('title')
 
@@ -124,6 +124,8 @@
   <script src="/assets_homepage/js/custom.js"></script>
   <script src="/hero-slider/js/main.js"></script> <!-- Resource jQuery -->
 
+
+
   @yield('script')
 
 
@@ -131,3 +133,4 @@
 </footer>
 </body>
 </html>
+

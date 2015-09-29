@@ -1,18 +1,102 @@
-@extends('layouts.master')
-@section('title')
-<title>Welcome To Resume Solutions</title>
-@stop
-
-  <link rel="stylesheet" href="/css/buttons.css">
-  <link rel='stylesheet' id='edgt_stylesheet-css'  href='http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/css/stylesheet.min.css?ver=4.2.4' type='text/css' media='all' />
-    <script type='text/javascript' src='http://demo.edge-themes.com/hudson/wp-includes/js/jquery/jquery.js?ver=1.11.2'></script>
+<!DOCTYPE html>
+<html >
+  <head>
 
 
-@section('content')
+ <!-- Bootstrap core CSS -->
 
- 
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="/assets_homepage/css/flip_team.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="directions_css/style.css" />
 
-{{--   <section id="stats" class="callout">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/hero-slider/css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="/hero-slider/css/style.css"> <!-- Resource style -->
+  <script src="/hero-slider/js/modernizr.js"></script> <!-- Modernizr -->
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Custom styles CSS -->
+  <link href="/assets_homepage/css/style.css" rel="stylesheet" media="screen">
+
+  <link href="/css/footer-distributed-with-address-and-phones.css" rel="stylesheet" media="screen">
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    
+
+
+  </head>
+  <body>
+
+<div class="homenavigation">
+  <nav>
+    <div class="button" id='test' style = "position:fixed;">
+      <a class="btn-open" href="#"></a>
+    </div>
+  </nav>
+  <div class="overlay">
+    <div class="wrap">
+      <ul class="wrap-nav">
+        <li><a href="#">About</a>
+        <ul>
+          <li><a href="#">About Company</a></li>
+          <li><a href="#">Developers</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Profile</a>
+        <ul>
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">Edit Profile</a></li>
+          <li><a href="#">My Resumes</a></li>
+          <li><a href="/logout">Log Out</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Resumes</a>
+        <ul>
+          <li><a href="#">Create New Resume</a></li>
+          <li><a href="#">Browse Resumes</a></li>
+        </ul>
+        </li>
+      </ul>
+      <div class="social">
+        <a href="http://mario-loncarek.from.hr/">
+        <div class="social-icon">
+          <i class="fa fa-facebook"></i>
+        </div>
+        </a>
+        <a href="#">
+        <div class="social-icon">
+          <i class="fa fa-twitter"></i>
+        </div>
+        </a>
+        <a href="#">
+        <div class="social-icon">
+          <i class="fa fa-codepen"></i>
+        </div>
+        </a>
+        <a href="#">
+        <div class="social-icon">
+          <i class="fa fa-behance"></i>
+        </div>
+        </a>
+        <a href="#">
+        <div class="social-icon">
+          <i class="fa fa-dribbble"></i>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+     <section id="stats" class="callout">
 
       <div class="container">
 
@@ -53,223 +137,50 @@
 
       </div><!-- .container -->
 
-    </section> --}}
+    </section>
+    <div class="container flip">  
+      <section class="animation">
 
-    <!-- Callout section end -->
+        <ul id="st-stack" class="st-stack-raw">
+          <li><div class="st-item"><a href="http://drbl.in/fgQV"><img src="direction_images/1.jpg"/></a></div><div class="st-title"><h2>Graverobber</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fpRz"><img src="direction_images/2.jpg"/></a></div><div class="st-title"><h2>Hideous Snake Queen</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fGVs"><img src="direction_images/3.jpg"/></a></div><div class="st-title"><h2>Queen of Hearts</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fgvZ"><img src="direction_images/4.jpg"/></a></div><div class="st-title"><h2>Dead Pirate vs Kraken</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fyfM"><img src="direction_images/5.jpg"/></a></div><div class="st-title"><h2>Mountain Lion</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fCmJ"><img src="direction_images/6.jpg"/></a></div><div class="st-title"><h2>Flying Skull</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fsMv"><img src="direction_images/7.jpg"/></a></div><div class="st-title"><h2>The Fly &amp; Bureaucratic Elephant</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fGOf"><img src="direction_images/8.jpg"/></a></div><div class="st-title"><h2>Failsnake</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fypr"><img src="direction_images/9.jpg"/></a></div><div class="st-title"><h2>Cultist</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fEmG"><img src="direction_images/10.jpg"/></a></div><div class="st-title"><h2>Crusader &amp; Viking</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/ffiw"><img src="direction_images/11.jpg"/></a></div><div class="st-title"><h2>Crocodile</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fqWx"><img src="direction_images/12.jpg"/></a></div><div class="st-title"><h2>Captain Banana</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fkuv"><img src="direction_images/13.jpg"/></a></div><div class="st-title"><h2>Werewolf</h2><h3>by Isaac Montemayor</h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fIli"><img src="direction_images/14.jpg"/></a></div><div class="st-title"><h2>Vegetables</h2><h3>by Isaac Montemayor</h3></div></li>
+        </ul>
+      </section>
 
-{{-- 
-<a href="#">
-  <div class="button-fill grey">
-    <div class="button-text">Learn More</div>
-    <div class="button-inside">
-      <div class="inside-text">Learn&nbspMore</div>
-    </div>
-  </div></a><a href="#">
-  <div class="button-fill orange">
-    <div class="button-text">Learn More</div>
-    <div class="button-inside">
-      <div class="inside-text">Learn&nbspMore</div>
-    </div>
-  </div></a>
- --}}
-
- <div class="vc_row wpb_row section" style='background-color:#fafafa; text-align:left;'>
-    <div class=" full_section_inner clearfix">
-        <div class="wpb_column vc_column_container vc_col-sm-12">
-            <div class="wpb_wrapper">
-                <div class="edgt_vertical_marquee">
-                    <div class="edgt_vertical_marquee_inner clearfix">
-                        <div class="evm_left">
-                            <div class="evm_left_inner">
-
-                                <div class="evm_monitor">
-                                    <img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt="">
-                                <div class="evm_monitor_screen">
-
-                                <div class="evm_slide">
-                                    <img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade8.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade4.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade6.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade5.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade7.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade2.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="1897" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/scroll7.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/Fade-shop-1.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/Fade-shop-2.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="1897" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/scroll8.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="1897" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/scroll5.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="1897" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/scroll4.jpg" class="attachment-full" alt="a" />
-                                </div>
-                                <div class="evm_slide">
-                                    <img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/Fade-narrow.jpg" class="attachment-full" alt="a" />
-                     
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="evm_right">
-<div class="evm_right_inner">
-<div class="evm_r_text_container">
-
-<div class="evm_monitor">
-<img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt="">
-<div class="evm_monitor_screen">
-<div class="evm_slide">
-<img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade9.jpg" class="attachment-full" alt="a" />
-</div>
-</div>
-</div>
-
-<h2>Introducing Hudson</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>The biggest and best theme yet</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Personal, professional, advanced – Hudson is designed to provide elegant solutions for businesses and individuals. Create an amazing website today with the Hudson theme for WordPress.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade8.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>Get started in minutes</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>Easy setup &amp; one-click import</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Installing Hudson is quick and easy. Thanks to the one-click demo import option, you can create a fully equipped and ready-to-go website in just a matter of minutes.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade4.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>A huge collection of pages</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>Designed to perfection</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>With a large and varied collection of pre-designed pages, Hudson ensures that each section of your website is both beautiful and fulfills its goals in the best possible way.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade6.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>15 Fully Equipped Demos</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>One theme, endless possibilities</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Whether you’re looking for a portfolio, blog, online store, or any kind of web presentation – Hudson has the solution. Just import the appropriate demo and enjoy.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade5.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>Best Blog Solutions</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>Publish with style</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>From standard and masonry, to the smooth and intuitive revolving blog – just select the blog style that best suits you and start publishing your posts today.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade7.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>Unique Presentation</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>Smooth Effects &amp; Innovative Elements</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Every detail in Hudson has been carefully considered and purposefully designed for the best user experience. Add your favorite effects and specialized elements to each page easily.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/fade2.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>Edge Full Screen Slider</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>With Video &amp; Parallax Support</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Add video or images to each slide, and optionally enable a smooth parallax effect. Choose from a selection of transitions &amp; create your own amazing custom scroll animations, all with the Edge Slider.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="1897" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/scroll7.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>Intuitive and Easy</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>No Need to Know Code</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Logically organized and easy to navigate –Edge Options, combined with the included drag-and-drop page builder, ensure an intuitive and friendly environment for your website creation.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/Fade-shop-1.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>Create a Stunning Shop</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>WooCommerce Compatible</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Hudson is fully compatible with the popular and free WooCommerce plugin for WordPress.  Create the eCommerce platform you’ve always dreamed of.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/Fade-shop-2.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>Limitless Layouts</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>For Full Flexibility</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Extremely versatile and easily tailored to any need. With a vast number of original, innovative, and practical layout options, Hudson gives you full freedom to create the site you need.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="1897" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/scroll8.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>A Variety of Header Types</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>Easily customizable</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Switch between header orientations with the click of a button. Enable your favorite header type &amp; behavior, choose logo positions &amp; more. The combinations are limitless.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="1897" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/scroll5.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>Incredible Support</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>Here for you at all times</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Our support team is professional, fast, and extremely friendly. If you’re in need of any help while creating with Hudson, just send us a ticket and we’ll get back to you in no time.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="1897" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/scroll4.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>Unrivalled Portfolios</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>Project Presentation Made Simple</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>Make sure your key projects get the attention they deserve. The vast selection of unique and distinct portfolio layouts in Hudson lets you choose the perfect style.</div></div><div class="evm_r_text_container"><div class="evm_monitor"><img src="http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/img/marquee-monitor-1.png" alt=""><div class="evm_monitor_screen"><div class="evm_slide"><img width="1100" height="618" src="http://demo.edge-themes.com/hudson/wp-content/uploads/2015/08/Fade-narrow.jpg" class="attachment-full" alt="a" /></div></div></div><div class="evm_r_text"></p>
-<h2>Free Plugins Included</h2>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:10px;border-style: dashed"></div>
-
-<h6>Visual Composer &amp; LayerSlider</h6>
-<div class="separator  transparent left  " style="margin-top:0px;margin-bottom:11px;border-style: dashed"></div>
-
-<p>With the Visual Composer drag-and-drop plugin, creating pages is easy and intuitive. LayerSlider lets you create beautiful slideshows with stunning and smooth transitions.</div>
-
-<div class=" full_section_inner clearfix" style='padding-left: 15%;padding-right: 15%'>
-    <div class="wpb_column vc_column_container vc_col-sm-12">
-        <div class="wpb_wrapper">
-            <div class='edgt_elements_holder three_columns responsive_mode_from_768'>
-
-                <div class='edgt_elements_item vertical_alignment_middle horizontal_align_left ' data-animation='yes' data-bottom-top='ms-transform: translate3d(-500px,100px,0px);webkit-transform: translate3d(-500px,100px,0px);transform: translate3d(-500px,100px,0px);'
-                data-top-bottom='ms-transform: translate3d(300px,140px,200px);webkit-transform: translate3d(300px,140px,200px);transform: translate3d(300px,140px,200px);'>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    </div><!-- /container -->
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Background slider -->
+  <script src="/assets_homepage/js/jquery.backstretch.min.js"></script>
+  <!-- Custom scripts -->
+  <script src="/assets_homepage/js/custom.js"></script>
+  <script src="/hero-slider/js/main.js"></script> <!-- Resource jQuery -->
+    <script type="text/javascript" src="direction_js/jquery.stackslider.js"></script>
+    <script type="text/javascript">
+      
+      $( function() {
+        
+        $( '#st-stack' ).stackslider();
 
+      });
 
-
-
-   
-@stop
-
-@section('script')
-
-  <!-- Javascript files -->
-
-  <!-- Text rotator -->
-  <script src="/assets/js/jquery.simple-text-rotator.min.js"></script>
+    </script>
+      <script src="/assets/js/jquery.simple-text-rotator.min.js"></script>
   <!-- Waypoints -->
   <script src="/assets/js/jquery.waypoints.js"></script>
   <!-- CountTo  -->
@@ -278,17 +189,10 @@
   <script src="/assets/js/wow.min.js"></script>   
   <!-- Custom scripts -->
   <script src="/assets/js/custom.js"></script>
-  <script src="/js/buttons.js"></script>
 
 
-  <script type='text/javascript' src='http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/js/plugins.js?ver=4.2.4'></script>
-
-  <!-- dont need this file -->
-  <script type='text/javascript' src='http://demo.edge-themes.com/hudson/wp-content/themes/hudsonwp/js/default.min.js?ver=4.2.4'></script>
+  </body>
+</html>
 
 
- @stop
-
-
-
-
+      
