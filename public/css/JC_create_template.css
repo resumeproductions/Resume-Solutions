@@ -20,7 +20,6 @@ input {
 	border-style: double;
 	background-color: grey;
 	border-color: white;
-<<<<<<< HEAD:public/css/create_template.css
 }
 input:hover {
 	background-color: lightgrey;
@@ -70,11 +69,9 @@ textarea {
 	border-style: double;
 	background-color: grey;
 	border-color: white;
-=======
 }
 input:hover {
 	background-color: lightgrey;
->>>>>>> 81679d6eda1026fe5b455bcbdc0b3fb3e16d321b:public/css/JC_create_template.css
 }
 input:active {
 	background-color: white;
@@ -97,7 +94,6 @@ button {
 	position: absolute;
 	width: 20%;
 	height: 5%;
-<<<<<<< HEAD:public/css/create_template.css
 	width: 23%;
 }
 #input210 {
@@ -181,7 +177,6 @@ button {
 	top: 30%;
 	width: 10%;
 	height: 8%;
-=======
 	background-color: #fff;
 	background-image: none;
 	border: 1px solid #ccc;
@@ -206,7 +201,6 @@ textarea {
 	border-style: double;
 	background-color: grey;
 	border-color: white;
->>>>>>> 81679d6eda1026fe5b455bcbdc0b3fb3e16d321b:public/css/JC_create_template.css
 }
 #cont {
 	margin-left: 0px;
@@ -363,15 +357,3 @@ textarea {
 	background-attachment: fixed;
 	border-radius: 10%;
 }
-<<<<<<< HEAD:public/css/create_template.css
-=======
-
-
-
-
-
-
-
-
-
->>>>>>> 81679d6eda1026fe5b455bcbdc0b3fb3e16d321b:public/css/JC_create_template.css
