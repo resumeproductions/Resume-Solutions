@@ -15,6 +15,7 @@ class CreateTemplate3Table extends Migration {
 		Schema::create('template3', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('user_id');
 			$table->string('facebook')->nullable();
 			$table->string('google_plus')->nullable();
 			$table->string('twitter')->nullable();

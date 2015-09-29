@@ -15,6 +15,8 @@ class CreateTemplate1Table extends Migration {
 		Schema::create('template1', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->integer('user_id')->unsigned();
+		    $table->foreign('user_id')->references('id')->on('users');
 			$table->string('navbarTitle');
 
 			$table->string('headerJobTitle');
@@ -25,20 +27,20 @@ class CreateTemplate1Table extends Migration {
 			$table->string('workExperienceDescription');
 			$table->string('workExperienceExtraText');
 
-			$table->decimal('skillPercent', 2);
+			$table->string('skillPercent');
 			$table->string('skillTitle');
 
 			$table->string('portfolioPicture');
 			$table->string('portfolioDescription');
 
-			$table->string('contactDesciption');
+			$table->string('contactDescription');
 			$table->string('contactLinkedin')->nullable();
 			$table->string('contactFacebook')->nullable();
 			$table->string('contactTwitter')->nullable();
 			
 			//Images
-			$table->string('headerBackgroundImage');
-			$table->string('portfolioImage');
+			$table->string('headerBackgroundImage')->nullable();
+			$table->string('portfolioImage')->nullable();
 			$table->timestamps();
 		});
 	}

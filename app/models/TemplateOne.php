@@ -1,7 +1,7 @@
 <?php
 use Esensi\Model\SoftModel;
 
-class Template1 extends SoftModel 
+class TemplateOne extends SoftModel 
 {
 
 	protected $table = 'template1';
@@ -9,7 +9,7 @@ class Template1 extends SoftModel
 	// Don't forget to fill this array
 	protected $fillable = [];
 
-	protected $rules = [
+	protected $rules = array(
 		'navbarTitle' => 'required',
 		'headerJobTitle' => 'required',
 		'headerDescription' => 'required',
@@ -22,7 +22,7 @@ class Template1 extends SoftModel
 		'portfolioPicture' => 'required',
 		'portfolioDescription' => 'required',
 		'contactDescription' => 'required'
-	];
+	);
 
 	public function user()
 	{

@@ -126,34 +126,46 @@ class TemplatesController extends \BaseController {
 
 	public function storeTemplate1()
 	{
-		$template = new Template1();
-		$template = Input::get('navbarTitle');
-		$template = Input::get('headerJobTitle');
-		$template = Input::get('headerDescription');
-		$template = Input::get('workExperienceYear');
-		$template = Input::get('workExperienceTitle');
-		$template = Input::get('workExperienceDescription');
-		$template = Input::get('workExperienceExtraText');
-		$template = Input::get('skillPercent');
-		$template = Input::get('skillTitle');
-		$template = Input::get('portfolioPicture');
-		$template = Input::get('portfolioDescription');
-		$template = Input::get('contactDescription');
+
+		$template = new TemplateOne();
+		$template->navbarTitle = Input::get('navbarTitle');
+		$template->headerJobTitle = Input::get('headerJobTitle');
+		$template->headerDescription = Input::get('headerDescription');
+		$template->workExperienceExtraText = Input::get('workExperienceExtraText');
+		$template->contactDescription = Input::get('contactDescription');
+		
 		if(Input::has('contactFacebook')) {
-			$template = Input::get('contactFacebook');
+			$template->contactFacebook = Input::get('contactFacebook');
 		}
 		if(Input::has('contactLinkedin')) {
-			$template = Input::get('contactLinkedin');
+			$template->contactLinkedin = Input::get('contactLinkedin');
 		}
 		if(Input::has('contactTwitter')) {
-			$template = Input::get('contactTwitter');
+			$template->contactTwitter = Input::get('contactTwitter');
 		}
 		if(Input::has('headerBackgroundImage')) {
-			$template = Input::get('headerBackgroundImage');
+			$template->headerBackgroundImage = Input::get('headerBackgroundImage');
+		}
+		if(Input::has('workExperienceYear') && Input::has('workExperienceDescription') && Input::has('workExperienceTitle')) {
+			$template->workExperienceYear = implode(',', Input::get('workExperienceYear'));
+			$template->workExperienceTitle = implode(',', Input::get('workExperienceTitle'));
+			$template->workExperienceDescription = implode(',', Input::get('workExperienceDescription'));
+		}
+		if(Input::has('skillPercent') && Input::has('skillTitle')) {
+			$template->skillPercent = implode(',', Input::get('skillPercent'));
+			$template->skillTitle = implode(',', Input::get('skillTitle'));
+		}
+		if(Input::has('portfolioDescription') && Input::has('portfolioPicture')) {
+			$template->portfolioDescription = implode(',', Input::get('portfolioDescription'));
+			$template->portfolioPicture = implode(',', Input::get('portfolioPicture'));
 		}
 
-		$template->save();
+		$template->user_id = Auth::id();
 
+		$template->save();
+		
+
+		return Redirect::action('HomeController@showWelcome');
 	}
 
 	public function storeTemplate2()

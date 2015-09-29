@@ -15,6 +15,7 @@ class CreateTemplate2Table extends Migration {
 		Schema::create('template2', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('user_id');
 			$table->string('adjectives');
 			$table->string('about_picture');
 			$table->string('about_title');
