@@ -124,6 +124,16 @@ class TemplatesController extends \BaseController {
 		return View::make('templates.create_template');
 	}
 
+	public function Something2()
+	{
+		return View::make('templates.DPS_create_template');
+	}
+
+	public function Something3()
+	{
+		return View::make('templates.JC_create_template');
+	}
+
 	public function storeTemplate1()
 	{
 
@@ -159,12 +169,10 @@ class TemplatesController extends \BaseController {
 			$template->portfolioDescription = implode(',', Input::get('portfolioDescription'));
 			$template->portfolioPicture = implode(',', Input::get('portfolioPicture'));
 		}
-
 		$template->user_id = Auth::id();
 
 		$template->save();
 		
-
 		return Redirect::action('HomeController@showWelcome');
 	}
 
