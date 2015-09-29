@@ -2,7 +2,6 @@
 @extends('layouts.master')
 
 @section('title')
-
 <title>Template</title>
 <link href='/css/create_template.css' rel='stylesheet' type='text/css'>
 @stop
@@ -11,55 +10,86 @@
 
 </head>
 <body>
+{{ Form::open(array('action' => 'TemplatesController@storeTemplate1', 'files' => true)) }}
 	<div class='page1 pagesle'>
-		<input placeholder='Insert Job Title' class='Inpage1' name='headerJobTitle'    id='input11'>
-		<input placeholder='Insert Resume Title' class='Inpage1' name='navbarTitle' 	   id='input12'>
-		<textarea placeholder='Insert Job Description' class='Inpage1' name='headerDescription' id='input13'></textarea>
+		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='headerJobTitle'    id='input11'>
+		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='navbarTitle' 	   id='input12'>
+		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='headerDescription' id='input13'></textarea>
 	</div>
 	<div class='page2 pagesle'>
-		<textarea placeholder='Description of General Previous Work' class='Inpage2' name='workExperienceExtraText'	id='input21'></textarea>
-		<input 	  placeholder='Year of Work' class='Inpage2' name='workExperienceYear[]' 		id='input22'>
-		<input 	  placeholder='Work Title' class='Inpage2' name='workExperienceTitle[]' 		id='input23'>
-		<textarea placeholder='Work Description' class='Inpage2' name='workExperienceDescription[]'  id='input24'></textarea>
-		<input 	  placeholder='Year of Work' class='Inpage2' name='workExperienceYear[]' 		id='input25'>
-		<input 	  placeholder='Work Title' class='Inpage2' name='workExperienceTitle[]' 		id='input26'>
-		<textarea placeholder='Work Description' class='Inpage2' name='workExperienceDescription[]'  id='input27'></textarea>
-		<input 	  placeholder='Year of Work' class='Inpage2' name='workExperienceYear[]' 		id='input28'>
-		<input 	  placeholder='Work Title' class='Inpage2' name='workExperienceTitle[]' 		id='input29'>
-		<textarea placeholder='Work Description' class='Inpage2' name='workExperienceDescription[]'  id='input210'></textarea>
+		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='workExperienceExtraText'	id='input21'></textarea>
+		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceYear[]' id='input22'>
+		<input 	  placeholder='Work Title' class='Inpage2 inputs' name='workExperienceTitle[]' id='input23'>
+		<textarea placeholder='Work Description' class='Inpage2 textarea' name='workExperienceDescription[]'  id='input24'></textarea>
+		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceYear[]' id='input25'>
+		<input 	  placeholder='Work Title' class='Inpage2 inputs' name='workExperienceTitle[]' id='input26'>
+		<textarea placeholder='Work Description' class='Inpage2 textarea' name='workExperienceDescription[]'  id='input27'></textarea>
+		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceYear[]' id='input28'>
+		<input 	  placeholder='Work Title' class='Inpage2 inputs' name='workExperienceTitle[]' id='input29'>
+		<textarea placeholder='Work Description' class='Inpage2 textarea' name='workExperienceDescription[]'  id='input210'></textarea>
 	</div>
 	<div class='page3 pagesle'>
-		<input class='Inpage3' name='skillPercent[]' 	id='input31'>
-		<input class='Inpage3' placeholder='Skill Title' name='skillTitle[]' 	id='input32'>
-		<input class='Inpage3' name='skillPercent[]' 	id='input33'>
-		<input class='Inpage3' placeholder='Skill Title' name='skillTitle[]' 	id='input34'>
-		<input class='Inpage3' name='skillPercent[]' 	id='input35'>
-		<input class='Inpage3' placeholder='Skill Title' name='skillTitle[]' 	id='input36'>
-		<input class='Inpage3' name='skillPercent[]' 	id='input37'>
-		<input class='Inpage3' placeholder='Skill Title' name='skillTitle[]' 	id='input38'>
+		<input class='Inpage3 inputs' name='skillPercent[]' 	id='input31'>
+		<input class='Inpage3 inputs' placeholder='Skill Title' name='skillTitle[]' id='input32'>
+		<input class='Inpage3 inputs' name='skillPercent[]' 	id='input33'>
+		<input class='Inpage3 inputs' placeholder='Skill Title' name='skillTitle[]' id='input34'>
+		<input class='Inpage3 inputs' name='skillPercent[]' 	id='input35'>
+		<input class='Inpage3 inputs' placeholder='Skill Title' name='skillTitle[]' id='input36'>
+		<input class='Inpage3 inputs' name='skillPercent[]' 	id='input37'>
+		<input class='Inpage3 inputs' placeholder='Skill Title' name='skillTitle[]' id='input38'>
 	</div>
 	<div class='page4 pagesle'>
-		<input class='Inpage4'  placeholder='Portfolio Title' name='portfolioDescription[]'  id='input41'>
-		<button class='Inpage4' name='portfolioPicture[]' 		id='input42'></button>
-		<input class='Inpage4'  placeholder='Portfolio Title' name='portfolioDescription[]' 	id='input43'>
-		<button class='Inpage4' name='portfolioPicture[]' 		id='input44'></button>
-		<input class='Inpage4'  placeholder='Portfolio Title' name='portfolioDescription[]' 	id='input45'>
-		<button class='Inpage4' name='portfolioPicture[]' 		id='input46'></button>
+		<input class='Inpage4 inputs'  placeholder='Portfolio Title' name='portfolioDescription[]' id='input41'>
+		<button type="button" id='input42' class='buttons' data-toggle="modal" data-target=".fade">
+		   Submit image here
+		</button>
+		<input class='Inpage4 inputs'  placeholder='Portfolio Title' name='portfolioDescription[]' id='input43'>
+		<button type="button" id='input44' class='buttons' data-toggle="modal" data-target=".fade">
+		   Submit image here
+		</button>
+		<input class='Inpage4 inputs'  placeholder='Portfolio Title' name='portfolioDescription[]' id='input45'>
+		<button type="button" id='input46' class='buttons' data-toggle="modal" data-target=".fade">
+		   Submit image here
+		</button>
 	</div>
 	<div class='page5 pagesle'>
-		<input class='Inpage5' placeholder=' Facebook Link' name='contactFacebook' id='input51'>
-		<input class='Inpage5' placeholder=' Linkedin Link' name='contactLinkedin' id='input52'>
-		<input class='Inpage5' placeholder=' Twitter Link' name='contactTwitter' id='input53'>
-		<input class='Inpage5' placeholder=' Contact Description' name='contactDescription' id='input54'>
+		<input class='Inpage5 inputs' placeholder=' Facebook Link' name='contactFacebook' id='input51'>
+		<input class='Inpage5 inputs' placeholder=' Linkedin Link' name='contactLinkedin' id='input52'>
+		<input class='Inpage5 inputs' placeholder=' Twitter Link' name='contactTwitter' id='input53'>
+		<input class='Inpage5 inputs' placeholder=' Contact Description' name='contactDescription' id='input54'>
 	</div>
-	<button type="submit" class='Inpage5' id='submitTemplate1'>Submit</button>
+	<button type="submit" class='Inpage5 buttons' id='submitTemplate1'>Submit</button>
 	<button id='right' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-right fa-2x">
 	</button>
 	<button id='left' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-left fa-2x">
 	</button>
-		@stop
+	<!-- modal -->
+
+	{{Form::close()}}
+	<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="myModal modalFile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <span id="modalFile">Picture 1<input class='' name='portfolioPicture1' type="file"><span>
+		<span id="modalFile">Picture 2<input class='' name='portfolioPicture2' type="file"><span>
+		<span id="modalFile">Picture 3<input class='' name='portfolioPicture3' type="file"><span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <span class="pull-right" id="submitImages"><a href="{{{ action('TemplatesController@storeTemplate1Images')}}}">Submit</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+	@stop
 
 		@section('script')
 			<script type="text/javascript">
@@ -138,6 +168,7 @@
 						$("#left").css('pointer-events', 'auto');
 					};
 				}
+				
 			});
 </script>
 

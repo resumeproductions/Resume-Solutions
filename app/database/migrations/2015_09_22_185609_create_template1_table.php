@@ -30,7 +30,6 @@ class CreateTemplate1Table extends Migration {
 			$table->string('skillPercent');
 			$table->string('skillTitle');
 
-			$table->string('portfolioPicture');
 			$table->string('portfolioDescription');
 
 			$table->string('contactDescription');
