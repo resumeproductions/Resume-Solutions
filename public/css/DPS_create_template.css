@@ -198,6 +198,381 @@ textarea {
 	background-attachment: fixed;
 	border-radius: 10%;
 }
+#input11 {
+	left: 40%;
+	top: 57%;
+}
+#input12 {
+	left: 40%;
+	top: 62%;
+}
+#input13 {
+	left: 40%;
+	top: 67%;
+}
+#input21 {
+	left: 19%;
+	top: 37%;
+	width: 10%;
+}
+#input22 {
+	left: 37%;
+	top: 28%;
+}
+#input23 {
+	left: 38%;
+	top: 34%;
+	width: 55%;
+	height: 25%;
+	text-align: left;
+}
+#input24 {
+	left: 38%;
+	top: 63%;
+	width: 55%;
+	height: 25%;
+	text-align: left;
+}
+#input31 {
+	text-align: left;
+	left: 16%;
+	top: 35%;
+}
+#input32 {
+	text-align: left;
+	left: 16%;
+	top: 42%;
+	width: 37%;
+}
+#input33 {
+	text-align: left;
+	left: 55%;
+	top: 35%;
+}
+#input34 {
+	text-align: left;
+	left: 55%;
+	top: 42%;
+	width: 37%;
+}
+#input35 {
+	text-align: left;
+	left: 16%;
+	top: 52%;
+}
+#input36 {
+	text-align: left;
+	left: 16%;
+	top: 59%;
+	width: 37%;
+}
+#input37 {
+	text-align: left;
+	left: 55%;
+	top: 52%;
+}
+#input38 {
+	text-align: left;
+	left: 55%;
+	top: 59%;
+	width: 37%;
+}
+#input39 {
+	text-align: left;
+	left: 16%;
+	top: 69%;
+}
+#input310 {
+	text-align: left;
+	left: 16%;
+	top: 76%;
+	width: 37%;
+}
+#input311 {
+	text-align: left;
+	left: 55%;
+	top: 69%;
+}
+#input312 {
+	text-align: left;
+	left: 55%;
+	top: 76%;
+	width: 37%;
+}
+#input41 {
+	text-align: left;
+	left: 15%;
+	top: 14%;
+	width: 26%;
+}
+#input42 {
+	text-align: left;
+	left: 17%;
+	top: 33%;
+	width: 5%;
+}
+#input43 {
+	text-align: left;
+	left: 22%;
+	top: 33%;
+	width: 5%;
+}
+#input44 {
+	text-align: left;
+	left: 34%;
+	top: 34%;
+}
+#input45 {
+	text-align: left;
+	left: 34%;
+	top: 39%;
+	width: 30%;
+}
+#input46 {
+	text-align: left;
+	left: 17%;
+	top: 45%;
+	width: 5%;
+}
+#input47 {
+	text-align: left;
+	left: 22%;
+	top: 45%;
+	width: 5%;
+}
+#input48 {
+	text-align: left;
+	left: 34%;
+	top: 45%;
+}
+#input49 {
+	text-align: left;
+	left: 34%;
+	top: 50%;
+	width: 30%;
+}
+#input410 {
+	text-align: left;
+	left: 17%;
+	top: 54%;
+	width: 5%;
+}
+#input411 {
+	text-align: left;
+	left: 22%;
+	top: 54%;
+	width: 5%;
+}
+#input412 {
+	text-align: left;
+	left: 34%;
+	top: 55%;
+}
+#input413 {
+	text-align: left;
+	left: 34%;
+	top: 60%;
+	width: 30%;
+}
+#input414 {
+	text-align: left;
+	left: 17%;
+	top: 76%;
+	width: 5%;
+}
+#input415 {
+	text-align: left;
+	left: 22%;
+	top: 76%;
+	width: 5%;
+}
+#input416 {
+	text-align: left;
+	left: 34%;
+	top: 76%;
+}
+#input417 {
+	text-align: left;
+	left: 34%;
+	top: 81%;
+	width: 30%;
+}
+#input418 {
+	text-align: left;
+	left: 17%;
+	top: 86%;
+	width: 5%;
+}
+#input419 {
+	text-align: left;
+	left: 22%;
+	top: 86%;
+	width: 5%;
+}
+#input420 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input421 {
+	text-align: left;
+	left: 34%;
+	top: 91%;
+	width: 30%;
+}
+#input51 {
+	text-align: left;
+	left: 15%;
+	top: 24%;
+}
+#input52 {
+	text-align: left;
+	left: 15%;
+	top: 30%;
+}
+#input53 {
+	text-align: left;
+	left: 35%;
+	top: 33%;
+	width: 2%;
+}
+#input54 {
+	text-align: left;
+	left: 15%;
+	top: 41%;
+}
+#input55 {
+	text-align: left;
+	left: 35%;
+	top: 44%;
+	width: 2%;
+}
+#input56 {
+	text-align: left;
+	left: 15%;
+	top: 49%;
+}
+#input57 {
+	text-align: left;
+	left: 35%;
+	top: 53%;
+	width: 2%;
+}
+#input58 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input59 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input510 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input511 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input512 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input513 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input514 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input515 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input516 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input517 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input518 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input519 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input520 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input521 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input522 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input523 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input524 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input525 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input526 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input527 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input528 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input529 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
+#input530 {
+	text-align: left;
+	left: 34%;
+	top: 86%;
+}
 
 
 
