@@ -24,8 +24,6 @@ Route::post('/login' , 'UsersController@doLogin');
 Route::get('/logout' , 'UsersController@doLogout');
 
 Route::get('/' , 'HomeController@showWelcome');
-
-
 Route::resource('users', 'UsersController');
 Route::resource('templates', 'TemplatesController');
 
