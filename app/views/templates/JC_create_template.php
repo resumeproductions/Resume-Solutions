@@ -11,9 +11,6 @@
 
 </head>
 <body>
-<<<<<<< HEAD:app/views/templates/create_template.blade.php
-	{{ Form::open(array('action' => 'TemplatesController@storeTemplate1', 'files' => true, 'method' => 'POST')) }}
-		{{ Form::token() }}
 		<div class='page1 pagesle'>
 			<input 	class='Inpage1'   name='headerJobTitle' 	 id='input11'>
 			<input 	class='Inpage1'   name='navbarTitle' 		 id='input12'>
@@ -62,10 +59,7 @@
 		<button id='left' type="button" class="btn btn-default btn-lg">
 			<i class="fa fa-arrow-left fa-2x">
 		</button>
-		
-	{{Form::close()}}
 	@stop
-=======
 	<div class='page1 pagesle'>
 	</div>
 	<div class='page2 pagesle'>
@@ -88,8 +82,6 @@
 			</button>
 
 			@stop
->>>>>>> 81679d6eda1026fe5b455bcbdc0b3fb3e16d321b:app/views/templates/JC_create_template.php
-
 		@section('script')
 		<script type="text/javascript">
 		$(document).ready(function() {
@@ -108,7 +100,6 @@
 			}, false);
 			findLeft.addEventListener("click", function(){
 				checkPage(page);
-<<<<<<< HEAD:app/views/templates/create_template.blade.php
 				$(".page".concat(page)).animate({width: "0%", left: "99%"}, 2000);
 				$(".Inpage".concat(page)).css('z-index', '-1');
 				page--;
@@ -123,7 +114,6 @@
 	        	$( "#left" ).click();
 	        };
 	        break;
-=======
 				findRigh.addEventListener("click", function(){
 					checkPage(page);
 					$(".page".concat(page)).animate({width: "0%", left: "0%"}, 2000);
@@ -153,24 +143,20 @@
 		        	$( "#left" ).click();
 		        };
 		        break;
->>>>>>> 81679d6eda1026fe5b455bcbdc0b3fb3e16d321b:app/views/templates/JC_create_template.php
 
 	        case 38: // up
 	        break;
 
-<<<<<<< HEAD:app/views/templates/create_template.blade.php
 	        case 39: // right
 	        if (page < 5) {
 	        	$( "#right" ).click();
 	        };
 	        break;
-=======
 		        case 39: // right
 		        if (page < 7) {
 		        	$( "#right" ).click();
 		        };
 		        break;
->>>>>>> 81679d6eda1026fe5b455bcbdc0b3fb3e16d321b:app/views/templates/JC_create_template.php
 
 	        case 40: // down
 	        break;
@@ -184,7 +170,6 @@
 			}
 			function pageLeft() {
 
-<<<<<<< HEAD:app/views/templates/create_template.blade.php
 			}
 			function checkPage(page) {
 				if (page <= 1) {
@@ -205,7 +190,6 @@
 				};
 			}
 		});
-=======
 				}
 				function checkPage(page) {
 					if (page <= 1) {
@@ -226,7 +210,6 @@
 					};
 				}
 			});
->>>>>>> 81679d6eda1026fe5b455bcbdc0b3fb3e16d321b:app/views/templates/JC_create_template.php
 </script>
 
 @stop
