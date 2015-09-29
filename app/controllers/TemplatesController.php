@@ -134,6 +134,21 @@ class TemplatesController extends \BaseController {
 		return View::make('templates.JC_create_template');
 	}
 
+	public function storeTemplate1Images() {
+		$image = new Image();
+		if(Input::has('portfolioPicture1')) {
+			$image->portfolioPicture1 = Input::get('portfolioPicture1');
+		}
+		if(Input::has('portfolioPicture2')) {
+			$image->portfolioPicture2 = Input::get('portfolioPicture2');
+		}
+		if(Input::has('portfolioPicture3')) {
+			$image->portfolioPicture3 = Input::get('portfolioPicture3');
+		}
+		$image->save();
+		return Redirect::back();
+	}
+
 	public function storeTemplate1()
 	{
 
@@ -153,9 +168,10 @@ class TemplatesController extends \BaseController {
 		if(Input::has('contactTwitter')) {
 			$template->contactTwitter = Input::get('contactTwitter');
 		}
-		if(Input::has('headerBackgroundImage')) {
-			$template->headerBackgroundImage = Input::get('headerBackgroundImage');
-		}
+	
+		if (Input::hasFile('headerBackgroundImage')) {
+	        $event->headerBackgroundImage = Input::file('headerBackgroundImage')->move("images/uploaded/");
+	    }
 		if(Input::has('workExperienceYear') && Input::has('workExperienceDescription') && Input::has('workExperienceTitle')) {
 			$template->workExperienceYear = implode(',', Input::get('workExperienceYear'));
 			$template->workExperienceTitle = implode(',', Input::get('workExperienceTitle'));
@@ -165,9 +181,8 @@ class TemplatesController extends \BaseController {
 			$template->skillPercent = implode(',', Input::get('skillPercent'));
 			$template->skillTitle = implode(',', Input::get('skillTitle'));
 		}
-		if(Input::has('portfolioDescription') && Input::has('portfolioPicture')) {
+		if(Input::has('portfolioDescription')) {
 			$template->portfolioDescription = implode(',', Input::get('portfolioDescription'));
-			$template->portfolioPicture = implode(',', Input::get('portfolioPicture'));
 		}
 		$template->user_id = Auth::id();
 
