@@ -28,10 +28,10 @@
 
 .flip {
     font-family: 'Lato', Calibri, Arial, sans-serif;
-    background: #f6b93c url(../images/noisebg.png);
+    background: #4593e3 url(../images/noisebg.png);
     font-weight: 400;
     font-size: 15px;
-    color: #333;
+    color: black;
 }
 
 a {
