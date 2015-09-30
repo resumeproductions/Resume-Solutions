@@ -17,6 +17,7 @@ public function run()
 		$portfolio->picture = '2.jpg ';
 		$portfolio->title = 'My Project ';
 		$portfolio->description = 'Its pretty awesome';
+		$portfolio->template_id = 1;
 	
 		$portfolio->save();
 	}

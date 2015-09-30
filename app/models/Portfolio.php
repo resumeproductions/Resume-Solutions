@@ -10,7 +10,7 @@ class Portfolio extends \Eloquent {
 	// Don't forget to fill this array
 	protected $fillable = [];
 
-		    public function Template()
+	public function Template()
     {
     	return $this->belongsTo('Template');
     }

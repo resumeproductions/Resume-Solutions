@@ -11,7 +11,7 @@ class workExperience extends \Eloquent {
 	protected $fillable = [];
 
 
-	    public function Template()
+	public function Template()
     {
     	return $this->belongsTo('Template');
     }
