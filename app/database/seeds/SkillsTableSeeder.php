@@ -18,6 +18,7 @@ public function run()
 		$skill->percent = '20';
 		$skill->description_title = 'My Skills';
 		$skill->description= 'Are Sweet';
+		$skill->template_id = 1;
 	
 		$skill->save();
 	}

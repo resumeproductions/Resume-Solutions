@@ -21,6 +21,8 @@ class CreateContactsTable extends Migration {
 
 			$table->foreign('template_id')->references('id')->on('templates');
 
+			$table->timestamps();
+
 
 		});
 	}

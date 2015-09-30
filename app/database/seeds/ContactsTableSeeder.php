@@ -15,6 +15,7 @@ public function run()
 	{
 		$contact = new Contact();
 		$contact->description = 'Feel free to contact me with at the following available resources. ';
+		$contact->template_id = 1;
 	
 		$contact->save();
 	}

@@ -17,6 +17,8 @@ class AboutsTableSeeder extends Seeder {
 		$about->description = 'My name is John Doe and this is a section where you will tell your potential employers about yourself. ';
 		$about->title = '#johnslife';
 		$about->picture = '1.jpg';
+		$about->template_id = 1;
+
 
 
 	
