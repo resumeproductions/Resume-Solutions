@@ -32,17 +32,10 @@ class User extends SoftModel implements UserInterface, RemindableInterface
 	 */
 	protected $hidden = array('password', 'remember_token');
 
-	public function template1()
+	public function template()
     {
-        return $this->hasMany('Template1');
+        return $this->hasMany('Template');
     }
-    public function template2()
-    {
-        return $this->hasMany('Template2');
-    }
-    public function template3()
-    {
-        return $this->hasMany('Template3');
-    }
+   
 
 }

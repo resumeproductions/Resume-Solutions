@@ -25,6 +25,12 @@ class CreateUsersTable extends Migration {
 			$table->string('city');
 			$table->string('state');
 			$table->string('phone_number');
+			$table->string('facebook');
+			$table->string('twitter')->nullable();
+			$table->string('facebook')->nullable();
+			$table->string('linkedin')->nullable();
+			$table->string('skype')->nullable();
+			$table->string('google_plus')->nullable();
 			$table->timestamps(); 
 			$table->rememberToken();
             $table->softdeletes();

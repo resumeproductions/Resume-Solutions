@@ -33,9 +33,10 @@ class CreateTemplate2Table extends Migration {
 			$table->string('language_titles');
 			$table->string('language_percents');
 			$table->string('hobbies');
+			
 			$table->string('portfolio_titles');
 			$table->string('portfolio_pictures');
-			$table->string('portfolio_links');
+			
 			$table->string('award_titles');
 			$table->string('award_numbers');
 			$table->timestamps();
