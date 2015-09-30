@@ -7,9 +7,22 @@
 @stop
 
 @section('content')
-
-</head>
-<body>
+	<button id='color' value='0'>
+	</button>
+	<div id='david'>
+		<button id='dark'>
+			Grey
+		</button>
+		<button id='purple'>
+			Purple
+		</button>
+		<button id='blue'>
+			Blue
+		</button>
+		<button id='green'>
+			Green
+		</button>
+	</div>
 {{ Form::open(array('action' => 'TemplatesController@storeTemplate1', 'files' => true)) }}
 	<div class='page1 pagesle'>
 		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='headerJobTitle'    id='input11'>
@@ -41,15 +54,12 @@
 	<div class='page4 pagesle'>
 		<input class='Inpage4 inputs'  placeholder='Portfolio Title' name='portfolioDescription[]' id='input41'>
 		<button type="button" id='input42' class='buttons' data-toggle="modal" data-target=".fade">
-		   Submit image here
 		</button>
 		<input class='Inpage4 inputs'  placeholder='Portfolio Title' name='portfolioDescription[]' id='input43'>
 		<button type="button" id='input44' class='buttons' data-toggle="modal" data-target=".fade">
-		   Submit image here
 		</button>
 		<input class='Inpage4 inputs'  placeholder='Portfolio Title' name='portfolioDescription[]' id='input45'>
 		<button type="button" id='input46' class='buttons' data-toggle="modal" data-target=".fade">
-		   Submit image here
 		</button>
 	</div>
 	<div class='page5 pagesle'>
@@ -58,7 +68,7 @@
 		<input class='Inpage5 inputs' placeholder=' Twitter Link' name='contactTwitter' id='input53'>
 		<input class='Inpage5 inputs' placeholder=' Contact Description' name='contactDescription' id='input54'>
 	</div>
-	<button type="submit" class='Inpage5 buttons' id='submitTemplate1'>Submit</button>
+	<button type="submit" class='Inpage5 buttons' id='submitTemplate1'></button>
 	<button id='right' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-right fa-2x">
 	</button>
@@ -102,25 +112,25 @@
 				checkPage(page);
 				findRigh.addEventListener("click", function(){
 					checkPage(page);
-					$(".page".concat(page)).animate({width: "0%", left: "0%"}, 2000);
+					$(".page".concat(page)).animate({width: "0%", left: "0%"}, 1000);
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page++;
 					checkPage(page);
 					setTimeout(function(){
 						$(".Inpage".concat(page)).css('z-index', '1');
-					}, 2100);
-					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 2000);
+					}, 1200);
+					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
 				}, false);
 				findLeft.addEventListener("click", function(){
 					checkPage(page);
-					$(".page".concat(page)).animate({width: "0%", left: "99%"}, 2000);
+					$(".page".concat(page)).animate({width: "0%", left: "99%"}, 1000);
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page--;
 					checkPage(page);
 					setTimeout(function(){
 						$(".Inpage".concat(page)).css('z-index', '1');
-					}, 2100);
-					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 2000);
+					}, 1200);
+					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
 				}, false);
 				$(document).keydown(function(e) {
 					switch(e.which) {
@@ -170,7 +180,49 @@
 						$("#left").css('pointer-events', 'auto');
 					};
 				}
-				
+				var findColor = document.getElementById('color');
+				findColor.addEventListener("click", function(){
+					var getColor = findColor.getAttribute("value");
+					if (getColor == 0) {
+						$("#david").animate({opacity: "1"}, 1000);
+						$("#david").css('z-index', '2');
+						findColor.setAttribute('value', '1');
+					} else if (getColor == 1) {
+						$("#david").animate({opacity: "0"}, 1000);
+						setTimeout(function(){
+						$("#david").css('z-index', '-1');
+						}, 1200);
+						findColor.setAttribute('value', '0');
+					};
+				}, false);
+				var findDark = document.getElementById('dark');
+				findDark.addEventListener("click", function(){
+					console.log('dark');
+					for (var i = 1; i <= 7; i++) {
+						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Dark/Page' + i + '.png)')
+					};
+				}, false);
+				var findGreen = document.getElementById('green');
+				findGreen.addEventListener("click", function(){
+					console.log('green');
+					for (var i = 1; i <= 7; i++) {
+						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Green/Page' + i + '.png)');
+					};
+				}, false);
+				var findPurple = document.getElementById('purple');
+				findPurple.addEventListener("click", function(){
+					console.log('purple');
+					for (var i = 1; i <= 7; i++) {
+						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Purple/Page' + i + '.png)');
+					};
+				}, false);
+				var findBlue = document.getElementById('blue');
+				findBlue.addEventListener("click", function(){
+					console.log('blue');
+					for (var i = 1; i <= 7; i++) {
+						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Blue/Page' + i + '.png)');
+					};
+				}, false);
 			});
 </script>
 
