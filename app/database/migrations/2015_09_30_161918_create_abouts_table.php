@@ -21,7 +21,7 @@ class CreateAboutsTable extends Migration {
 
 
 			$table->integer('template_id')->unsigned();
-			$table->foreign('template_id')->refrences('id')->on('template');
+			$table->foreign('template_id')->refrences('id')->on('templates');
 		});
 	}
 
