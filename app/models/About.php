@@ -10,7 +10,7 @@ class About extends \Eloquent {
 	// Don't forget to fill this array
 	protected $fillable = [];
 
-	public function Template()
+	public function template()
     {
     	return $this->belongsTo('Template');
     }

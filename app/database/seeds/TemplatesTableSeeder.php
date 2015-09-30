@@ -15,6 +15,7 @@ public function run()
 	{
 		$template = new Template();
 		$template->color = '1';
+		$template->layout = '1';
 		$template->user_id = 1;
 		$template->save();
 	}

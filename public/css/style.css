@@ -12,12 +12,12 @@ Usage: You can use this code for free in personal and commercial projects if you
 
 p {line-height: 160%;}
 
-a {text-decoration: none; color: #fff; transition: all 0.1s ease-in;}
+a {text-decoration: none; color: blue; transition: all 0.1s ease-in;}
 img {border: 0;}
 
 body {
 	background: #fff;
-	color: #fff;
+	color: black;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-size: 13px;
 	font-weight: 300;
