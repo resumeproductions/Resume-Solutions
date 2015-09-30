@@ -5,16 +5,18 @@ use Faker\Factory as Faker;
 
 class ContactsTableSeeder extends Seeder {
 
-	public function run()
+public function run()
 	{
-		$faker = Faker::create();
+		$this->envContact();
 
-		foreach(range(1, 10) as $index)
-		{
-			Contact::create([
+	}
 
-			]);
-		}
+	protected function envContact()
+	{
+		$contact = new Contact();
+		$contact->description = 'Feel free to contact me with at the following available resources. ';
+	
+		$contact->save();
 	}
 
 }

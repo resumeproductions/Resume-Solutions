@@ -5,16 +5,20 @@ use Faker\Factory as Faker;
 
 class PortfoliosTableSeeder extends Seeder {
 
-	public function run()
+public function run()
 	{
-		$faker = Faker::create();
+		$this->envPortfolio();
 
-		foreach(range(1, 10) as $index)
-		{
-			Portfolio::create([
+	}
 
-			]);
-		}
+	protected function envPortfolio()
+	{
+		$portfolio = new Portfolio();
+		$portfolio->picture = '2.jpg ';
+		$portfolio->title = 'My Project ';
+		$portfolio->description = 'Its pretty awesome';
+	
+		$portfolio->save();
 	}
 
 }

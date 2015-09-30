@@ -5,16 +5,21 @@ use Faker\Factory as Faker;
 
 class SkillsTableSeeder extends Seeder {
 
-	public function run()
+public function run()
 	{
-		$faker = Faker::create();
+		$this->envSkills();
 
-		foreach(range(1, 10) as $index)
-		{
-			Skill::create([
+	}
 
-			]);
-		}
+	protected function envSkills()
+	{
+		$skill = new Skill();
+		$skill->skill_title = 'PHP ';
+		$skill->percent = '20';
+		$skill->description_title = 'My Skills';
+		$skill->description= 'Are Sweet';
+	
+		$skill->save();
 	}
 
 }
