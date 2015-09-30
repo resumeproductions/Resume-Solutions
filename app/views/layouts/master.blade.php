@@ -21,6 +21,7 @@
   <link href="/assets_homepage/css/flip_team.css" rel="stylesheet" media="screen">
   <link href="/css/footer-distributed-with-address-and-phones.css" rel="stylesheet" media="screen">
   <link href="/css/style.css" rel="stylesheet" media="screen">
+  <link href="/css/profile.css" rel="stylesheet" media="screen">
 
 <!-- Optional theme -->
 
@@ -133,4 +134,3 @@
 </footer>
 </body>
 </html>
-

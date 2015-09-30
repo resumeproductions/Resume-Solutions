@@ -176,9 +176,7 @@
       $( function() {
         
         $( '#st-stack' ).stackslider();
-
       });
-
     </script>
       <script src="/assets/js/jquery.simple-text-rotator.min.js"></script>
   <!-- Waypoints -->
@@ -193,6 +191,3 @@
 
   </body>
 </html>
-
-
-      

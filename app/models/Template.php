@@ -35,4 +35,9 @@ class Template extends \Eloquent {
     	return $this-hasMany('About');
     }
 
+    public function user()
+    {
+        return $this-belongsTo('user');
+    }
+
 }
