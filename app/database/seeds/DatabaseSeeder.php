@@ -13,7 +13,13 @@ class DatabaseSeeder extends Seeder {
 
 		DB::table('users')->delete();
 
+		$this->call('AboutsTableSeeder');
+		$this->call('ContactsTableSeeder');
 		$this->call('UsersTableSeeder');
+		$this->call('PortfoliosTableSeeder');
+		$this->call('SkillsTableSeeder');
+		$this->call('TemplatesTableSeeder');
+		$this->call('WorkExperiencesTableSeeder');
 	}
 
 }

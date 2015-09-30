@@ -10,29 +10,29 @@ class Template extends \Eloquent {
 	// Don't forget to fill this array
 	protected $fillable = [];
 
-	public function workExperience()
+	public function workExperiences()
     {
-    	return $this-hasMany('workExperience')
+    	return $this-hasMany('workExperience');
     }
 
-    public function Portfolio()
+    public function portfolios()
     {
-    	return $this-hasMany('Portfolio')
+    	return $this-hasMany('Portfolio');
     }
 
-    public function Skill()
+    public function skills()
     {
-    	return $this-hasMany('Skill')
+    	return $this-hasMany('Skill');
     }
 
-    public function Contact()
+    public function contacts()
     {
-    	return $this-hasMany('Contact')
+    	return $this-hasMany('Contact');
     }
 
-    public function About()
+    public function abouts()
     {
-    	return $this-hasMany('About')
+    	return $this-hasMany('About');
     }
 
 }
