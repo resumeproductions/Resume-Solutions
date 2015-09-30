@@ -431,72 +431,6 @@
 							</div>
 						</figure>
 					</li>
-					<li class="portfolio-item" data-groups='["all", "web"]' data-contenttype="ajax" data-href="assets/ajax/1.html">
-						<figure>
-							<div class="portfolio-img">
-								<a href="#" class="overlay">
-									<span class="title">Stuff</span>
-									<span class="category">web</span>
-								</a>
-								<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" alt="" class="img-responsive">
-							</div>
-						</figure>
-					</li>
-					<li class="portfolio-item" data-groups='["all", "app"]' data-contenttype="ajax" data-href="assets/ajax/2.html">
-						<figure>
-							<div class="portfolio-img">
-								<a href="#" class="overlay">
-									<span class="title">Stuff</span>
-									<span class="category">app</span>
-								</a>
-								<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" alt="" class="img-responsive">
-							</div>
-						</figure>
-					</li>
-					<li class="portfolio-item" data-groups='["all", "branding"]' data-contenttype="ajax" data-href="assets/ajax/1.html">
-						<figure>
-							<div class="portfolio-img">
-								<a href="#" class="overlay">
-									<span class="title">Stuff</span>
-									<span class="category">branding</span>
-								</a>
-								<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" alt="" class="img-responsive">
-							</div>
-						</figure>
-					</li>
-					<li class="portfolio-item" data-groups='["all", "web"]' data-contenttype="ajax" data-href="assets/ajax/2.html">
-						<figure>
-							<div class="portfolio-img">
-								<a href="#" class="overlay">
-									<span class="title">Stuff</span>
-									<span class="category">web</span>
-								</a>
-								<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" alt="" class="img-responsive">
-							</div>
-						</figure>
-					</li>
-					<li class="portfolio-item" data-groups='["all", "app"]' data-contenttype="ajax" data-href="assets/ajax/1.html">
-						<figure>
-							<div class="portfolio-img">
-								<a href="#" class="overlay">
-									<span class="title">Stuff</span>
-									<span class="category">app</span>
-								</a>
-								<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" alt="" class="img-responsive">
-							</div>
-						</figure>
-					</li>
-					<li class="portfolio-item" data-groups='["all", "branding"]' data-contenttype="ajax" data-href="assets/ajax/2.html">
-						<figure>
-							<div class="portfolio-img">
-								<a href="#" class="overlay">
-									<span class="title">Stuff</span>
-									<span class="category">branding</span>
-								</a>
-								<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" alt="" class="img-responsive">
-							</div>
-						</figure>
-					</li>
 				</ul>
 			</div>
 			<div class="container">
@@ -548,7 +482,6 @@
 						</p>
 						<ul class="list-contacts">
 							<li><i class="fa fa-phone"></i> (999) 999-9999</li>
-							<li><i class="fa fa-mobile-phone"></i> (999) 999-9999</li>
 							<li><i class="fa fa-map-marker"></i> 1795 Impala Way, Suite 69<br> San Antonio, TX 94107</li>
 							<li><i class="fa fa-envelope-o"></i> <a href="mailto:david8simonelli@gmail.com">david8simonelli@gmail.com</a></li>
 						</ul>
