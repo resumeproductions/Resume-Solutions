@@ -5,16 +5,17 @@ use Faker\Factory as Faker;
 
 class TemplatesTableSeeder extends Seeder {
 
-	public function run()
+public function run()
 	{
-		$faker = Faker::create();
+		$this->envTemplate();
 
-		foreach(range(1, 10) as $index)
-		{
-			Template::create([
+	}
 
-			]);
-		}
+	protected function envColor()
+	{
+		$template = new Template();
+		$template->color = '1 ';	
+		$template->save();
 	}
 
 }
