@@ -6,7 +6,6 @@
 <link href='/css/create_template.css' rel='stylesheet' type='text/css'>
 @stop
 
-
 @section('content')
 	<button id='color' value='0'>
 	</button>
@@ -31,7 +30,7 @@
 		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='headerDescription' id='input13'></textarea>
 	</div>
 	<div class='page2 pagesle'>
-		<textarea placeholder='Description of Previous Work' class='Inpage2 textarea' name='workExperienceExtraText'	id='input21'></textarea>
+		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='workExperienceExtraText'	id='input21'></textarea>
 		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceYear[]' id='input22'>
 		<input 	  placeholder='Work Title' class='Inpage2 inputs' name='workExperienceTitle[]' id='input23'>
 		<textarea placeholder='Work Description' class='Inpage2 textarea' name='workExperienceDescription[]'  id='input24'></textarea>
