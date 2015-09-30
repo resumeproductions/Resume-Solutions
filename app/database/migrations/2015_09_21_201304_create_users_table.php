@@ -24,13 +24,12 @@ class CreateUsersTable extends Migration {
 			$table->string('zip');
 			$table->string('city');
 			$table->string('state');
-			$table->string('phone_number');
-			$table->string('facebook');
-			$table->string('twitter')->nullable();
+			$table->string('phone_number')
 			$table->string('facebook')->nullable();
 			$table->string('linkedin')->nullable();
+			$table->string('twitter')->nullable();
 			$table->string('skype')->nullable();
-			$table->string('google_plus')->nullable();
+			$table->string('google')->nullable();
 			$table->timestamps(); 
 			$table->rememberToken();
             $table->softdeletes();
