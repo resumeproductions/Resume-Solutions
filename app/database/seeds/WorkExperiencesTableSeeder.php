@@ -7,14 +7,37 @@ class WorkExperiencesTableSeeder extends Seeder {
 
 	public function run()
 	{
-		$faker = Faker::create();
+		$experience = new workExperience();
+		$experience->description = "I worked as a fisher";
+		$experience->title = "Fisherman";
+		$experience->picture = "";
+		$experience->start_date = "June 6, 1990";
+		$experience->end_date = "May 7, 2000";
+		$experience->save();
 
-		foreach(range(1, 10) as $index)
-		{
-			WorkExperience::create([
+		$experience2 = new workExperience();
+		$experience2->description = "I worked as a fisher";
+		$experience2->title = "Fisherman";
+		$experience2->picture = "";
+		$experience2->start_date = "June 6, 1990";
+		$experience2->end_date = "May 7, 2000";
+		$experience2->save();
 
-			]);
-		}
+		$experience3 = new workExperience();
+		$experience3->description = "I worked as a fisher";
+		$experience3->title = "Fisherman";
+		$experience3->picture = "";
+		$experience3->start_date = "June 6, 1990";
+		$experience3->end_date = "May 7, 2000";
+		$experience3->save();
+
+		$experience4 = new workExperience();
+		$experience4->description = "I worked as a fisher";
+		$experience4->title = "Fisherman";
+		$experience4->picture = "";
+		$experience4->start_date = "June 6, 1990";
+		$experience4->end_date = "May 7, 2000";
+		$experience4->save();
 	}
 
 }
