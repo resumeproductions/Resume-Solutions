@@ -134,24 +134,24 @@ class TemplatesController extends \BaseController {
 		return View::make('templates.JC_create_template');
 	}
 
-	public function storeTemplate1Images() {
+	public function storeTemplate1Images() 
+	{
 		$image = new Image();
 		if(Input::has('portfolioPicture1')) {
-			$image->portfolioPicture1 = Input::get('portfolioPicture1');
+			$image->portfolioPicture1 = $Pic1;
 		}
 		if(Input::has('portfolioPicture2')) {
-			$image->portfolioPicture2 = Input::get('portfolioPicture2');
+			$image->portfolioPicture2 = $Pic2;
 		}
 		if(Input::has('portfolioPicture3')) {
-			$image->portfolioPicture3 = Input::get('portfolioPicture3');
+			$image->portfolioPicture3 = $Pic3;
 		}
 		$image->save();
-		return Redirect::back();
+		return Redirect::action('HomeController@showWelcome');
 	}
 
 	public function storeTemplate1()
 	{
-
 		$template = new TemplateOne();
 		$template->navbarTitle = Input::get('navbarTitle');
 		$template->headerJobTitle = Input::get('headerJobTitle');
@@ -169,9 +169,9 @@ class TemplatesController extends \BaseController {
 			$template->contactTwitter = Input::get('contactTwitter');
 		}
 	
-		if (Input::hasFile('headerBackgroundImage')) {
-	        $event->headerBackgroundImage = Input::file('headerBackgroundImage')->move("images/uploaded/");
-	    }
+		// if (Input::hasFile('headerBackgroundImage')) {
+	 	//        $template->headerBackgroundImage = Input::file('headerBackgroundImage')->move("images/uploaded/");
+	 	// }
 		if(Input::has('workExperienceYear') && Input::has('workExperienceDescription') && Input::has('workExperienceTitle')) {
 			$template->workExperienceYear = implode(',', Input::get('workExperienceYear'));
 			$template->workExperienceTitle = implode(',', Input::get('workExperienceTitle'));
@@ -185,6 +185,10 @@ class TemplatesController extends \BaseController {
 			$template->portfolioDescription = implode(',', Input::get('portfolioDescription'));
 		}
 		$template->user_id = Auth::id();
+
+		// $portfolioPicture1 = Input::get('portfolioPicture1');
+		// $portfolioPicture2 = Input::get('portfolioPicture2');
+		// $portfolioPicture3 = Input::get('portfolioPicture3');
 
 		$template->save();
 		
