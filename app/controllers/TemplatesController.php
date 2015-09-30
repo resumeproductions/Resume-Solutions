@@ -36,7 +36,107 @@ class TemplatesController extends \BaseController {
 		if ($validator->fails())
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
-		}
+		} else 
+		{
+			if(Input::has('skillPercent') && Input::has('skillTitle')) {
+				$skills = new Skill();
+				$skills->skillPercent = Input::get('skillPercent');
+				$skills->skillTitle = Input::get('skillTitle');
+				$skills->save();
+			}
+
+			if(Input::has('aboutTitle') && Input::has('aboutDescription')) {
+				$abouts = new About();
+				$abouts->title = Input::get('aboutTitle');
+				$abouts->description = Input::get('aboutDescription');
+				if (Input::hasFile('aboutBackgroundImage')) {
+			 	      $template->picture = Input::file('aboutBackgroundImage')->move("images/uploaded/");
+			 	}
+				$abouts->save();
+			}
+
+			if(Input::has('contactDescription')) {
+				$contacts = new Contact();
+				$contacts->contactDescription = Input::get('contactDescription');
+				$contacts->save();
+			}
+
+			//There are the inputs for the portfolio storage
+			if(Input::has('portfolioDescription1') && Input::has('portfolioPicture1') && Input::get('portfolioDescription1')) {
+				$portfolios = new Portfolio();
+				$portfolios->description = Input::get('portfolioDescription1');
+				$portfolios->title = Input::get('portfolioTitle1');
+				$portfolios->picture = Input::get('portfolioPicture1');
+				$portfolios->save();
+			}
+
+			if(Input::has('portfolioDescription2') && Input::has('portfolioPicture2')&& Input::get('portfolioDescription2');) {
+				$portfolios2 = new Portfolio();
+				$portfolios->description2 = Input::get('portfolioDescription2');
+				$portfolios2->title = Input::get('portfolioTitle2');
+				$portfolios2->picture = Input::get('portfolioPicture2');
+				$portfolios2->save();
+			}
+
+			if(Input::has('portfolioDescription3') && Input::has('portfolioPicture3')&& Input::get('portfolioDescription3');) {
+				$portfolios3 = new Portfolio();
+				$portfolios3->description = Input::get('portfolioDescription3');
+				$portfolios3->title = Input::get('portfolioTitle3');
+				$portfolios3->picture = Input::get('portfolioPicture3');
+				$portfolios3->save();
+			}
+			if(Input::has('portfolioDescription4') && Input::has('portfolioPicture4')&& Input::get('portfolioDescription4');) {
+				$portfolios4 = new Portfolio();
+				$portfolios4->description = Input::get('portfolioDescription4');
+				$portfolios4->title = Input::get('portfolioTitle4');
+				$portfolios4->picture = Input::get('portfolioPicture4');
+				$portfolios4->save();
+			}
+			if(Input::has('portfolioDescription5') && Input::has('portfolioPicture5')&& Input::get('portfolioDescription5');) {
+				$portfolios5 = new Portfolio();
+				$portfolios5->description = Input::get('portfolioDescription5');
+				$portfolios5->title = Input::get('portfolioTitle5');
+				$portfolios5->picture = Input::get('portfolioPicture5');
+				$portfolios5->save();
+			}
+			if(Input::has('portfolioDescription6') && Input::has('portfolioPicture6')&& Input::get('portfolioDescription6');) {
+				$portfolios6 = new Portfolio();
+				$portfolios6->description = Input::get('portfolioDescription6');
+				$portfolios6->title = Input::get('portfolioTitle6');
+				$portfolios6->picture = Input::get('portfolioPicture6');
+				$portfolios6->save();
+			}
+
+			$skills->navbarTitle = Input::get('navbarTitle');
+
+			if(Input::has('workExperienceStart') && Input::has('workExperienceDescription') && Input::has('workExperienceTitle')) {
+				$experience = new workExperience();
+				if(Input::has('workExperienceExtraText')) {
+					$experience->description = Input::get('workExperienceExtraText');
+				}
+				$experience->start_date = Input::get('workExperienceStart');
+				$experience->title = Input::get('workExperienceTitle');
+				$experience->workExperienceDescription = Input::get('workExperienceDescription');
+
+				if(Input::has('workExperienceEnd')) {
+					$experience->end_date = Input::get('workExperienceEnd');
+				}
+
+				$experience->save();
+			}
+
+			$template = new Template();
+			$template->color = Input::get('color');
+			$template->user_id = Auth::id();
+			$template->save();
+
+			if (!$template->save()) {
+				dd($template->getErrors()->toArray());
+			}
+			
+			return Redirect::action('HomeController@showWelcome');
+
+		} 
 
 		Template::create($data);
 
@@ -152,54 +252,21 @@ class TemplatesController extends \BaseController {
 
 	public function storeTemplate1()
 	{
-		$template = new TemplateOne();
-		$template->navbarTitle = Input::get('navbarTitle');
-		$template->headerJobTitle = Input::get('headerJobTitle');
-		$template->headerDescription = Input::get('headerDescription');
-		$template->workExperienceExtraText = Input::get('workExperienceExtraText');
-		$template->contactDescription = Input::get('contactDescription');
 		
-		if(Input::has('contactFacebook')) {
-			$template->contactFacebook = Input::get('contactFacebook');
-		}
-		if(Input::has('contactLinkedin')) {
-			$template->contactLinkedin = Input::get('contactLinkedin');
-		}
-		if(Input::has('contactTwitter')) {
-			$template->contactTwitter = Input::get('contactTwitter');
-		}
-	
-		if (Input::hasFile('headerBackgroundImage')) {
-	 	       $template->headerBackgroundImage = Input::file('headerBackgroundImage')->move("images/uploaded/");
-	 	}
-		if(Input::has('workExperienceYear') && Input::has('workExperienceDescription') && Input::has('workExperienceTitle')) {
-			$template->workExperienceYear = implode(',', Input::get('workExperienceYear'));
-			$template->workExperienceTitle = implode(',', Input::get('workExperienceTitle'));
-			$template->workExperienceDescription = implode(',', Input::get('workExperienceDescription'));
-		}
-		if(Input::has('skillPercent') && Input::has('skillTitle')) {
-			$template->skillPercent = implode(',', Input::get('skillPercent'));
-			$template->skillTitle = implode(',', Input::get('skillTitle'));
-		}
-		if(Input::has('portfolioDescription')) {
-			$template->portfolioDescription = implode(',', Input::get('portfolioDescription'));
-		}
-		$template->user_id = Auth::id();
-
-		// $portfolioPicture1 = Input::get('portfolioPicture1');
-		// $portfolioPicture2 = Input::get('portfolioPicture2');
-		// $portfolioPicture3 = Input::get('portfolioPicture3');
-
-		if (!$template->save()) {
-			dd($template->getErrors()->toArray());
-		}
-		
-		return Redirect::action('HomeController@showWelcome');
 	}
 
 	public function storeTemplate2()
 	{
-		$template = new Template2();
+		$skills = new Skill();
+		$skills->skill_titles = Input::get('skill_titles');
+		$skills->skill_percents = Input::get('skill_percents');
+		$skills->hobbies = Input::get('hobbies');
+
+		//need to create knowledge coulumn first
+		// $skills->knowledge = Input::get('knowledge');
+		$skill->save();
+
+		
 		if(Input::has('about_picture')) {
 			$template = Input::get('about_picture');
 		}
@@ -214,11 +281,8 @@ class TemplatesController extends \BaseController {
 		$template->work_finish_date = Input::get('work_finish_date');
 		$template->work_titles = Input::get('work_titles');
 		$template->work_descriptions = Input::get('work_descriptions');
-		$template->skill_titles = Input::get('skill_titles');
-		$template->skill_percents = Input::get('skill_percents');
 		$template->language_title = Input::get('language_title');
 		$template->language_percents = Input::get('language_percents');
-		$template->hobbies = Input::get('hobbies');
 		$template->portfolio_titles = Input::get('portfolio_titles');
 		if(Input::has('portfolio_pictures')) {
 			$template->portfolio_pictures = Input::get('portfolio_pictures');
