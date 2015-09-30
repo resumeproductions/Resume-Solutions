@@ -190,7 +190,9 @@ class TemplatesController extends \BaseController {
 		// $portfolioPicture2 = Input::get('portfolioPicture2');
 		// $portfolioPicture3 = Input::get('portfolioPicture3');
 
-		$template->save();
+		if (!$template->save()) {
+			dd($template->getErrors()->toArray());
+		}
 		
 		return Redirect::action('HomeController@showWelcome');
 	}
