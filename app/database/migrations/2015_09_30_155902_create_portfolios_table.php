@@ -23,8 +23,6 @@ class CreatePortfoliosTable extends Migration {
 
 			$table->foreign('template_id')->references('id')->on('templates');
 
-			$table->foreign('template_id')->refrences('id')->on('templates');
-
 
 
 		});
