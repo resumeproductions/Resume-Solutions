@@ -21,7 +21,8 @@ class CreateWorkExperiencesTable extends Migration {
 			$table->string('description');
 
 			$table->integer('template_id')->unsigned();
-			$table->foreign('template_id')->refrences('id')->on('template');
+			$table->foreign('template_id')->references('id')->on('templates');
+
 			
 		});
 	}

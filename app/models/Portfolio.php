@@ -12,7 +12,7 @@ class Portfolio extends \Eloquent {
 
 		    public function Template()
     {
-    	return $this->belongsTo('Template')
+    	return $this->belongsTo('Template');
     }
 
 }

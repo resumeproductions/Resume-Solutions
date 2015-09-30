@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'About' => $baseDir . '/app/models/About.php',
+    'AboutsTableSeeder' => $baseDir . '/app/database/seeds/AboutsTableSeeder.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
     'Boris\\CLIOptionsHandler' => $vendorDir . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',

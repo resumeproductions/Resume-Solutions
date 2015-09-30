@@ -35,6 +35,6 @@ class User extends SoftModel implements UserInterface, RemindableInterface
 
 	public function Template()
     {
-    	return $this->hasMany('Template')
+    	return $this->hasMany('Template');
     }
 }

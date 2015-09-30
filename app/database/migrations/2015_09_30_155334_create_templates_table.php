@@ -18,7 +18,7 @@ class CreateTemplatesTable extends Migration {
 			$table->integer('color');
 
 			$table->integer('user_id')->unsigned();
-			$table->foreign('user_id')->refrences('id')->on('users');
+			$table->foreign('user_id')->references('id')->on('users');
 		});
 	}
 
