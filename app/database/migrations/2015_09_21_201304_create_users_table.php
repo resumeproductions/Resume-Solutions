@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration {
 			$table->string('zip');
 			$table->string('city');
 			$table->string('state');
-			$table->string('phone_number')
+			$table->string('phone_number');
 			$table->string('facebook')->nullable();
 			$table->string('linkedin')->nullable();
 			$table->string('twitter')->nullable();
