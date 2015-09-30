@@ -73,22 +73,20 @@
 		<input placeholder='00' 			class='Inpage5' name='skill_percents' 	id='input55'>
 		<input placeholder='Skill Title' 	class='Inpage5' name='skill_titles' 	id='input56'>
 		<input placeholder='00' 			class='Inpage5' name='skill_percents' 	id='input57'>
-		<input placeholder='Skill Title' 	class='Inpage5' name='skill_titles' 	id='input58'>
-		<input placeholder='00' 			class='Inpage5' name='skill_percents' 	id='input59'>
 
-		<input placeholder='Miscellaneous Title' 		class='Inpage5' name='misc_title' 		id='input510'>
-		<input placeholder='Miscellaneous Small-Title' 	class='Inpage5' name='misc_small' 		id='input511'>
-		<input placeholder='Sub-Title' 					class='Inpage5' name='misc_sub[]' 		id='input512'>
-		<input placeholder='00' 						class='Inpage5' name='misc_percents[]' 	id='input513'>
-		<input placeholder='Miscellaneous Small-Title' 	class='Inpage5' name='misc_small' 		id='input514'>
-		<input placeholder='Sub-Title' 					class='Inpage5' name='misc_sub[]' 		id='input514'>
-		<input placeholder='00' 						class='Inpage5' name='misc_percents[]' 	id='input516'>
-		<input placeholder='Miscellaneous Small-Title' 	class='Inpage5' name='misc_small' 		id='input517'>
-		<input placeholder='Sub-Title' 					class='Inpage5' name='misc_sub[]' 		id='input518'>
-		<input placeholder='00' 						class='Inpage5' name='misc_percents[]' 	id='input519'>
-		<input placeholder='Miscellaneous Small-Title' 	class='Inpage5' name='misc_small' 		id='input520'>
-		<input placeholder='Sub-Title' 					class='Inpage5' name='misc_sub[]' 		id='input521'>
-		<input placeholder='00' 						class='Inpage5' name='misc_percents[]' 	id='input522'>
+		<input placeholder='Title' 			class='Inpage5' name='misc_title' 		id='input510'>
+		<input placeholder='Small-Title' 	class='Inpage5' name='misc_small' 		id='input511'>
+		<input placeholder='Sub-Title' 		class='Inpage5' name='misc_sub[]' 		id='input512'>
+		<input placeholder='00' 			class='Inpage5' name='misc_percents[]' 	id='input513'>
+		<input placeholder='Small-Title' 	class='Inpage5' name='misc_small' 		id='input514'>
+		<input placeholder='Sub-Title' 		class='Inpage5' name='misc_sub[]' 		id='input515'>
+		<input placeholder='00' 			class='Inpage5' name='misc_percents[]' 	id='input516'>
+		<input placeholder='Small-Title' 	class='Inpage5' name='misc_small' 		id='input517'>
+		<input placeholder='Sub-Title' 		class='Inpage5' name='misc_sub[]' 		id='input518'>
+		<input placeholder='00' 			class='Inpage5' name='misc_percents[]' 	id='input519'>
+		<input placeholder='Small-Title' 	class='Inpage5' name='misc_small' 		id='input520'>
+		<input placeholder='Sub-Title' 		class='Inpage5' name='misc_sub[]' 		id='input521'>
+		<input placeholder='00' 			class='Inpage5' name='misc_percents[]' 	id='input522'>
 
 		<input placeholder='Knowledge' class='Inpage5' name='knowledge' id='input523'>
 		<input placeholder='Knowledge' class='Inpage5' name='knowledge' id='input524'>
@@ -101,70 +99,38 @@
 		<input placeholder='Hobbies' class='Inpage5' name='hobbies' id='input530'>
 	</div>
 	<div class='page6 pagesle'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' id='input61'>
-		{{-- button --}}
+		<button placeholder='' 	class='Inpage6' name='portfolio_pictures[]' id='input61'></button>
 		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		id='input62'>
 		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input63'>
 		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input64'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' 	id='input65'>
-		{{-- button --}}
+
+		<button placeholder='' 	class='Inpage6' name='portfolio_pictures[]' 	id='input65'></button>
 		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		id='input66'>
 		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input67'>
 		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input68'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' 	id='input69'>
-		{{-- button --}}
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		d='input610'>
+
+		<button placeholder='' 	class='Inpage6' name='portfolio_pictures[]' 	id='input69'></button>
+		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		id='input610'>
 		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input611'>
 		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input612'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' 	id='input613'>
-		{{-- button --}}
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		d='input614'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input614'>
+
+		<button placeholder='' 	class='Inpage6' name='portfolio_pictures[]' 	id='input613'></button>
+		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		id='input614'>
+		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input615'>
 		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input616'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' 	id='input617'>
-		{{-- button --}}
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		d='input618'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input619'>
-		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input620'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' 	id='input621'>
-		{{-- button --}}
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		d='input622'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input623'>
-		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input624'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' 	id='input625'>
-		{{-- button --}}
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		d='input626'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input627'>
-		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input628'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' 	id='input629'>
-		{{-- button --}}
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		d='input630'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input631'>
-		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input632'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' 	id='input633'>
-		{{-- button --}}
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		d='input634'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input635'>
-		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input636'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' 	id='input637'>
-		{{-- button --}}
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' i		d='input638'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input639'>
-		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input640'>
-		<input placeholder='' 				class='Inpage6' name='portfolio_pictures[]' 	id='input641'>
-		{{-- button --}}
-		<input placeholder='Category' class='Inpage6' name='category[]' id='input642'>
-		<input placeholder='Category' class='Inpage6' name='category[]' id='input643'>
-		<input placeholder='Category' class='Inpage6' name='category[]' id='input644'>
+
+		<input placeholder='Category' class='Inpage6' name='category[]' id='input617'>
+		<input placeholder='Category' class='Inpage6' name='category[]' id='input618'>
+		<input placeholder='Category' class='Inpage6' name='category[]' id='input619'>
 	</div>
 	<div class='page7 pagesle'>
-		<input placeholder='Award Titles' 	class='Inpage7' name='award_titles[]' 	id='input71'>
+		<input placeholder='Award Title' 	class='Inpage7' name='award_titles[]' 	id='input71'>
 		<input placeholder='000' 			class='Inpage7' name='award_numbers[]' 	id='input72'>
-		<input placeholder='Award Titles' 	class='Inpage7' name='award_titles[]' 	id='input73'>
+		<input placeholder='Award Title' 	class='Inpage7' name='award_titles[]' 	id='input73'>
 		<input placeholder='000' 			class='Inpage7' name='award_numbers[]' 	id='input74'>
-		<input placeholder='Award Titles' 	class='Inpage7' name='award_titles[]' 	id='input75'>
+		<input placeholder='Award Title' 	class='Inpage7' name='award_titles[]' 	id='input75'>
 		<input placeholder='000' 			class='Inpage7' name='award_numbers[]' 	id='input76'>
-		<input placeholder='Award Titles' 	class='Inpage7' name='award_titles[]' 	id='input77'>
+		<input placeholder='Award Title' 	class='Inpage7' name='award_titles[]' 	id='input77'>
 		<input placeholder='000' 			class='Inpage7' name='award_numbers[]' 	id='input78'>
 		<input placeholder='Contact Title' class='Inpage7' name='contact_title' id='input79'>
 		<input placeholder='Cell Phone Number' class='Inpage7' name='' id='input710'>
@@ -191,25 +157,25 @@
 				checkPage(page);
 				findRigh.addEventListener("click", function(){
 					checkPage(page);
-					$(".page".concat(page)).animate({width: "0%", left: "0%"}, 2000);
+					$(".page".concat(page)).animate({width: "0%", left: "0%"}, 1000);
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page++;
 					checkPage(page);
 					setTimeout(function(){
 						$(".Inpage".concat(page)).css('z-index', '1');
 					}, 2100);
-					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 2000);
+					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
 				}, false);
 				findLeft.addEventListener("click", function(){
 					checkPage(page);
-					$(".page".concat(page)).animate({width: "0%", left: "99%"}, 2000);
+					$(".page".concat(page)).animate({width: "0%", left: "99%"}, 1000);
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page--;
 					checkPage(page);
 					setTimeout(function(){
 						$(".Inpage".concat(page)).css('z-index', '1');
 					}, 2100);
-					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 2000);
+					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
 				}, false);
 				$(document).keydown(function(e) {
 					switch(e.which) {
@@ -243,19 +209,19 @@
 				}
 				function checkPage(page) {
 					if (page <= 1) {
-						$("#right").css('opacity', '1');
+						$("#right").css('opacity', '.5');
 						$("#right").css('pointer-events', 'auto');
 						$("#left").css('opacity', '0');
 						$("#left").css('pointer-events', 'none');
 					} else if(page >= 7) {
 						$("#right").css('opacity', '0');
 						$("#right").css('pointer-events', 'none');
-						$("#left").css('opacity', '1');
+						$("#left").css('opacity', '.5');
 						$("#left").css('pointer-events', 'auto');
 					} else {
-						$("#right").css('opacity', '1');
+						$("#right").css('opacity', '.5');
 						$("#right").css('pointer-events', 'auto');
-						$("#left").css('opacity', '1');
+						$("#left").css('opacity', '.5');
 						$("#left").css('pointer-events', 'auto');
 					};
 				}

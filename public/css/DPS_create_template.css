@@ -22,7 +22,7 @@ input {
 	border-color: white;
 }
 input:hover {
-	background-color: lightgrey;
+	background-color: lightgrey;	
 }
 input:active {
 	background-color: white;
@@ -185,6 +185,8 @@ textarea {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	border-radius: 10%;
+	z-index: 2;
+	opacity: 5;
 }
 #right {
 	position: fixed;
@@ -197,6 +199,8 @@ textarea {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	border-radius: 10%;
+	z-index: 2;
+	opacity: 5;
 }
 #input11 {
 	left: 40%;
@@ -458,122 +462,334 @@ textarea {
 	top: 53%;
 	width: 2%;
 }
-#input58 {
+/*#input58 {
 	text-align: left;
 	left: 34%;
-	top: 86%;
+	top: 56%;
 }
 #input59 {
 	text-align: left;
 	left: 34%;
 	top: 86%;
-}
+}*/
 #input510 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 14%;
+	top: 60%;
 }
 #input511 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 14%;
+	top: 83%;
+	width: 8%;
 }
 #input512 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 14%;
+	top: 87%;
+	width: 8%;
 }
 #input513 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 17%;
+	top: 72%;
+	width: 3%;
+	font-size: 150%;
 }
 #input514 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 25%;
+	top: 83%;
+	width: 8%;
 }
 #input515 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 25%;
+	top: 87%;
+	width: 8%;
 }
 #input516 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 27%;
+	top: 72%;
+	width: 3%;
+	font-size: 150%;
 }
 #input517 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 35%;
+	top: 83%;
+	width: 8%;
 }
 #input518 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 35%;
+	top: 87%;
+	width: 8%;
 }
 #input519 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 37%;
+	top: 72%;
+	width: 3%;
+	font-size: 150%;
 }
 #input520 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 45%;
+	top: 83%;
+	width: 8%;
 }
 #input521 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 45%;
+	top: 87%;
+	width: 8%;
 }
 #input522 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 47%;
+	top: 72%;
+	width: 3%;
+	font-size: 150%;
 }
 #input523 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 64%;
+	top: 31%;
 }
 #input524 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 64%;
+	top: 37%;
 }
 #input525 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 64%;
+	top: 43%;
 }
 #input526 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 64%;
+	top: 49%;
 }
 #input527 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 64%;
+	top: 55%;
 }
 #input528 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 64%;
+	top: 68%;
 }
 #input529 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 64%;
+	top: 74%;
 }
 #input530 {
 	text-align: left;
-	left: 34%;
-	top: 86%;
+	left: 64%;
+	top: 80%;
 }
-
+#input61 {
+	text-align: center;
+	left: 5%;
+	top: 41%;
+	width: 10%;
+}
+#input62 {
+	text-align: center;
+	left: 0%;
+	top: 46%;
+}
+#input63 {
+	text-align: center;
+	left: 0%;
+	top: 51%;
+}
+#input64 {
+	text-align: center;
+	left: 0%;
+	top: 56%;
+}
+#input65 {
+	text-align: center;
+	left: 25%;
+	top: 41%;
+	width: 10%;
+}
+#input66 {
+	text-align: center;
+	left: 20%;
+	top: 46%;
+}
+#input67 {
+	text-align: center;
+	left: 20%;
+	top: 51%;
+}
+#input68 {
+	text-align: center;
+	left: 20%;
+	top: 56%;
+}
+#input69 {
+	text-align: center;
+	left: 45%;
+	top: 41%;
+	width: 10%;
+}
+#input610 {
+	text-align: center;
+	left: 40%;
+	top: 46%;
+}
+#input611 {
+	text-align: center;
+	left: 40%;
+	top: 51%;
+}
+#input612 {
+	text-align: center;
+	left: 40%;
+	top: 56%;
+}
+#input613 {
+	text-align: center;
+	left: 65%;
+	top: 41%;
+	width: 10%;
+}
+#input614 {
+	text-align: center;
+	left: 60%;
+	top: 46%;
+}
+#input615 {
+	text-align: center;
+	left: 60%;
+	top: 51%;
+}
+#input616 {
+	text-align: center;
+	left: 60%;
+	top: 56%;
+}
+#input617 {
+	text-align: center;
+	left: 45%;
+	top: 28%;
+	width: 5%;
+}
+#input618 {
+	text-align: center;
+	left: 50%;
+	top: 28%;
+	width: 5%;
+}
+#input619 {
+	text-align: center;
+	left: 55%;
+	top: 28%;
+	width: 5%;
+}
+#input71 {
+	text-align: center;
+	left: 13%;
+	top: 17%;
+}
+#input72 {
+	text-align: center;
+	left: 20%;
+	top: 8%;
+	width: 8%;
+	height: 8%;
+	font-size: 180%;
+}
+#input73 {
+	text-align: center;
+	left: 31%;
+	top: 17%;
+}
+#input74 {
+	text-align: center;
+	left: 38%;
+	top: 8%;
+	width: 8%;
+	height: 8%;
+	font-size: 180%;
+}
+#input75 {
+	text-align: center;
+	left: 48%;
+	top: 17%;
+}
+#input76 {
+	text-align: center;
+	left: 55%;
+	top: 8%;
+	width: 8%;
+	height: 8%;
+	font-size: 180%;
+}
+#input77 {
+	text-align: center;
+	left: 65%;
+	top: 17%;
+}
+#input78 {
+	text-align: center;
+	left: 72%;
+	top: 8%;
+	width: 8%;
+	height: 8%;
+	font-size: 180%;
+}
+#input79 {
+	text-align: center;
+	left: 15%;
+	top: 52%;
+	width: 25%;
+}
+#input710 {
+	text-align: center;
+	left: 15%;
+	top: 62%;
+	width: 25%;
+}
+#input711 {
+	text-align: center;
+	left: 15%;
+	top: 68%;
+	width: 25%;
+	height: 8%;
+}
+#input712 {
+	text-align: center;
+	left: 15%;
+	top: 77%;
+	width: 25%;
+}
+#input713 {
+	text-align: center;
+	left: 15%;
+	top: 77%;
+	width: 25%;
+}
+#input714 {
+	text-align: center;
+	left: 15%;
+	top: 83%;
+	width: 25%;
+}
+#input715 {
+	text-align: center;
+	left: 15%;
+	top: 89%;
+	width: 25%;
+}
 
 
 
