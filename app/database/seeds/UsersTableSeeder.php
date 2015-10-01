@@ -25,6 +25,19 @@ class UsersTableSeeder extends Seeder {
 		$user->username = $_ENV['USER_USERNAME'];
 		$user->city = $_ENV['USER_CITY'];
 		$user->save();
+
+		$user2 = new User();
+		$user2->first_name = 'Devi';
+		$user2->last_name = 'Johnson';
+		$user2->email = 'devijohnson@rocketmail.com';
+		$user2->password = 'london2452';
+		$user2->zip = '78227';
+		$user2->address = '3787 Perrin Central Blvd';
+		$user2->state = 'Texas';
+		$user2->phone_number = '210-865-1155';
+		$user2->username = 'devi';
+		$user2->city = 'San Antonio';
+		$user2->save();
 	}
 
 }
