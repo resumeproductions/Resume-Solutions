@@ -8,8 +8,6 @@
 
 @section('content')
 
-</head>
-<body>
 {{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
 	<button id='color' value='0'>
 	</button>
