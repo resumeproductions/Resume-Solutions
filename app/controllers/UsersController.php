@@ -88,7 +88,14 @@ class UsersController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return View::make('users.profile');
+		try {
+			$template = Template::findOrFail($id);
+		} catch (Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+			App::abort(404);
+		}
+
+
+		return View::make('templates.' . $template->layout, compact('template'));
 	}
 
 	/**
@@ -195,6 +202,13 @@ class UsersController extends \BaseController {
 		Auth::logout(); 
 		Session::flash('errorMessage', 'Logged out!'); 
 		return Redirect::action('HomeController@showWelcome');
+	}
+
+	public function getProfile()
+	{
+		$user = Auth::user();
+
+		return View::make('users.profile', compact('user'));
 	}
 
 }
