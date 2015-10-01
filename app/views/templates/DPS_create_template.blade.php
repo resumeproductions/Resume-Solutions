@@ -90,7 +90,6 @@
 		<input placeholder='Knowledge' class='Inpage5' name='knowledge' id='input524'>
 		<input placeholder='Knowledge' class='Inpage5' name='knowledge' id='input525'>
 		<input placeholder='Knowledge' class='Inpage5' name='knowledge' id='input526'>
-		<input placeholder='Knowledge' class='Inpage5' name='knowledge' id='input527'>
 
 		<input placeholder='Hobbies' class='Inpage5' name='hobbies' id='input528'>
 		<input placeholder='Hobbies' class='Inpage5' name='hobbies' id='input529'>
@@ -130,13 +129,7 @@
 		<input placeholder='000' 			class='Inpage7' name='award_numbers[]' 	id='input76'>
 		<input placeholder='Award Title' 	class='Inpage7' name='award_titles[]' 	id='input77'>
 		<input placeholder='000' 			class='Inpage7' name='award_numbers[]' 	id='input78'>
-		<input placeholder='Contact Title' class='Inpage7' name='contact_title' id='input79'>
-		<input placeholder='Cell Phone Number' class='Inpage7' name='' id='input710'>
-		<input placeholder='Address' class='Inpage7' name='address' id='input711'>
-		<input placeholder='Town' class='Inpage7' name='town' id='input712'>
-		<input placeholder='State' class='Inpage7' name='state' id='input713'>
-		<input placeholder='ZipCode' class='Inpage7' name='zip' id='input714'>
-		<input placeholder='Email' class='Inpage7' name='email' id='input715'>
+		<input placeholder='Contact Title' class='Inpage7' name='contact_description' id='input79'>
 	</div>
 	<button id='right' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-right fa-2x"></i>

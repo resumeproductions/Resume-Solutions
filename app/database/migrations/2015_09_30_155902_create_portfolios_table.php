@@ -18,6 +18,8 @@ class CreatePortfoliosTable extends Migration {
 			$table->string('picture')->nullable();
 			$table->string('title')->nullable();
 			$table->string('description');
+			$table->string('category')->nullable();
+			$table->string('link')->nullable();
 			
 			$table->integer('template_id')->unsigned();
 
