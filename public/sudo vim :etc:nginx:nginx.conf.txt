@@ -1,0 +1,19 @@
+sudo vim /etc/nginx/nginx.conf
+
+Add this line (in the http block):
+client_max_body_size 12m;
+
+Restart NGINX
+sudo service nginx restart
+
+Edit your php-fpm pool file:
+sudo vim /etc/php5/fpm/pool.d/resumesolutions.dev.conf
+
+Add these lines:
+php_admin_value[upload_max_filesize] = 10M
+php_admin_value[post_max_size] = 10M
+
+Restart your PHP-FPM Pool:
+ sudo service php5-fpm restart
+ 
+Ask ben.
