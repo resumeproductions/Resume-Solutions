@@ -45,13 +45,13 @@
             </div>
 
             <div class="form-group @if($errors->has('zip_code')) has-error @endif">
-                {{ Form::label('zip_code', 'Zip Code') }}
-                {{ Form::text('zip_code', null, ['class' => 'form-control'])}}
+                {{ Form::label('zip', 'Zip Code') }}
+                {{ Form::text('zip', null, ['class' => 'form-control'])}}
             </div>
             
             <div class="form-group @if($errors->has('phone')) has-error @endif">
-                {{ Form::label('phone', 'Phone Number') }}
-                {{ Form::text('phone', null, ['class' => 'form-control'])}}
+                {{ Form::label('phone_number', 'Phone Number') }}
+                {{ Form::text('phone_number', null, ['class' => 'form-control'])}}
             </div>
             <div class="col-sm-6 form-group @if($errors->has('profile_img_url')) has-error @endif">
                 {{ Form::label('profile_img_url', 'Profile Image') }}
