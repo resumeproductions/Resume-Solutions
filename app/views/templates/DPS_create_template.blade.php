@@ -8,7 +8,7 @@
 	@section('title')
 
 	<title>Template</title>
-	<link href='/css/JC_create_template.css' rel='stylesheet' type='text/css'>
+	<link href='/css/DPS_create_template.css' rel='stylesheet' type='text/css'>
 	@stop
 
 	@section('content')

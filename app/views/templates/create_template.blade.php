@@ -10,7 +10,7 @@
 
 </head>
 <body>
-{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
+
 	<button id='color' value='0'>
 	</button>
 	<div id='david'>
@@ -35,14 +35,14 @@
 		<input name='color' value='1'>
 	</div>
 	<div class='page2 pagesle'>
-		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='workExperienceExtraText'	id='input21'></textarea>
-		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceYear1' id='input22'>
+		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='aboutDescription'	id='input21'></textarea>
+		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceStart1' id='input22'>
 		<input 	  placeholder='Work Title' class='Inpage2 inputs' name='workExperienceTitle1' id='input23'>
 		<textarea placeholder='Work Description' class='Inpage2 textarea' name='workExperienceDescription1'  id='input24'></textarea>
-		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceYear2' id='input25'>
+		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceStart2' id='input25'>
 		<input 	  placeholder='Work Title' class='Inpage2 inputs' name='workExperienceTitle2' id='input26'>
 		<textarea placeholder='Work Description' class='Inpage2 textarea' name='workExperienceDescription2'  id='input27'></textarea>
-		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceYear3' id='input28'>
+		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceStart3' id='input28'>
 		<input 	  placeholder='Work Title' class='Inpage2 inputs' name='workExperienceTitle3' id='input29'>
 		<textarea placeholder='Work Description' class='Inpage2 textarea' name='workExperienceDescription3'  id='input210'></textarea>
 	</div>
