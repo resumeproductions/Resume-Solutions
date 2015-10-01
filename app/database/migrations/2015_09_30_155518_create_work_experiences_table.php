@@ -19,6 +19,7 @@ class CreateWorkExperiencesTable extends Migration {
 			$table->string('end_date')->nullable();
 			$table->string('title');
 			$table->string('description');
+			$table->string('job_title')->nullable();
 
 			$table->integer('template_id')->unsigned();
 
