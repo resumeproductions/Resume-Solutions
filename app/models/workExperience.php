@@ -1,6 +1,6 @@
 <?php
 
-class workExperience extends \Eloquent {
+class WorkExperience extends \Eloquent {
 
 	// Add your validation rules here
 	public static $rules = [
