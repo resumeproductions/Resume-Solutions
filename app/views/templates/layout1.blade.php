@@ -83,29 +83,14 @@
 					<h2><span> </span>ABOUT<span> </span></h2>
 				</div>
 					<span><p>{{{ $template->about->description}}}</p></span>
-					 
+				@foreach ($template->workExperiences as $workExperience)
 				<div class="years">	 
-					<h4><b>2009</b></h4>
-					<span><h4>Project Manager Web Center</h4></span>
-					<p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-					lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</i></p>
+					<h4><b>{{{$workExperience->start_date}}}</b></h4>
+					<span><h4>{{{$workExperience->title}}}</h4></span>
+					<p><i>{{{$workExperience->description}}}</i></p>
 				</div>
-				<div class="years">	 		
-					<h4><b>2012</b></h4>
-					<span><h4>Manager Delta Coders</h4></span>
-					<p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-					lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</i></p>
-				</div> 
-					
-				<div class="years">	 	
-					<h4><b>2013</b></h4>
-					<span><h4>Owner Alternative Labs</h4></span>
-					<div class="labs">
-						<p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-						lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.
-						sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec teltus</i></p>
-					</div>
-				</div>
+				@endforeach
+
 				 <a class="arrow scroll" href="#skills"><span> </span></a>
 			</div>
 		</div>
@@ -121,13 +106,15 @@
 					<div class="services_grids">
 							<div id="canvas">
 								<div class="skill-grids text-center">
+									@foreach ($template->skills as $skill)
 										<div class="col-md-3">	
 											<div class="skill-grid">
 												<div class="circle" id="circles-1"></div>									
-												 <h3>MySql</h3>	
+												 <h3>{{{$skill->skill_title}}}</h3>	
 											 </div>								  
 										</div>
-										<div class="col-md-3">	
+										
+									{{-- 	<div class="col-md-3">	
 											<div class="skill-grid">
 												<div class="circle" id="circles-2"></div>									
 												 <h3>AJAX</h3>	
@@ -144,7 +131,7 @@
 												<div class="circle" id="circles-4"></div>									
 												 <h3>JAVASCRIPT</h3>	
 											 </div>								  
-										</div>
+										</div> --}}
 										<div class="clearfix"> </div>
 								</div>
 							</div>
@@ -157,7 +144,7 @@
 										];
 									for (var i = 1; i <= 8; i++) {
 										var child = document.getElementById('circles-' + i),
-											percentage = 50 + (i * 10);
+											percentage = {{{$skill->percent}}};
 											
 										Circles.create({
 											id:         child.id,
@@ -177,6 +164,7 @@
 			</div>
 		   <a class="down scroll" href="#port"><span> </span></a>
 		</div>
+		@endforeach
 		<!--SKILLS Ends-->
 		<!--PORTFOLIO Starts-->
 		<div id="port" class="Portfolio">
