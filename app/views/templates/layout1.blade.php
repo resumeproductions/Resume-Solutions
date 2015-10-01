@@ -60,7 +60,7 @@
 			  <div class="container">
 				 <div class="banner-info">
 					  <div class="bannerhead">
-						  <h2>My name is <span>John Deo</span></h2>
+						  <h2>My name is <span>{{{ $template->user->first_name}}} {{{ $template->user->last_name}}}</span></h2>
 						  <h3>PHP Programmer</h3>
 						  <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
 						  lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</p>
@@ -76,23 +76,13 @@
 	<!--Content starts-->
 	<div class="content">
 		<!--About starts--> 
-		<div class="slide-out-div">
-			<a class="handle" href="#"></a>
-			<h3>Change Color</h3>
-			<ul id="color-switcher" class="list-inline">
-				<button id="darkCSS" onclick="swapStyleSheet('/assets_dylan/css/style.css')">Dark Style Sheet</button>
-				<button id="blueCSS" onclick="swapStyleSheet('/assets_dylan/css/blue-template.css')">Blue Style Sheet</button>
-				<button id="greenCSS" onclick="swapStyleSheet('/assets_dylan/css/green-template.css')">Green Style Sheet</button>
-				<button id="purpleCSS" onclick="swapStyleSheet('/assets_dylan/css/purple-template.css')">Purple Style Sheet</button>
-			</ul>
-		</div>
+		
 		<div id="about" class="about">
 			<div class="container">
 				<div class="header-section text-center">
 					<h2><span> </span>ABOUT<span> </span></h2>
 				</div>
-					<span><p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-					 lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</p></span>
+					<span><p>{{{ $template->about->description}}}</p></span>
 					 
 				<div class="years">	 
 					<h4><b>2009</b></h4>
@@ -234,11 +224,7 @@
 						   <a href="#"><img src="/assets_dylan/images/twt.png"></a>
 						   <a href="#"><img src="/assets_dylan/images/fb.png"></a>
 					   </div>
-					   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-					   quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
-					   id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-					   Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-					   ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+					   <p>{{{ $template->contact->description }}}</p>
 				  </div>
 				</div>
 			  

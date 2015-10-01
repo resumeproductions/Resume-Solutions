@@ -12,32 +12,32 @@ class Template extends \Eloquent {
 
 	public function workExperiences()
     {
-    	return $this-hasMany('WorkExperience');
+    	return $this->hasMany('WorkExperience');
     }
 
     public function portfolios()
     {
-    	return $this-hasMany('Portfolio');
+    	return $this->hasMany('Portfolio');
     }
 
     public function skills()
     {
-    	return $this-hasMany('Skill');
+    	return $this->hasMany('Skill');
     }
 
-    public function contacts()
+    public function contact()
     {
-    	return $this-hasMany('Contact');
+    	return $this->hasOne('Contact');
     }
 
-    public function abouts()
+    public function about()
     {
-    	return $this-hasMany('About');
+    	return $this->hasOne('About');
     }
 
     public function user()
     {
-        return $this-belongsTo('user');
+        return $this->belongsTo('User');
     }
 
 }

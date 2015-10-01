@@ -9,7 +9,7 @@
         <div class=" col-md-12 col-lg-12 "> 
           <div class="panel panel-info">
             <div class="panel-heading">
-              <h3 class="panel-title">{{Auth::user()->first_name}}</h3>
+              <h3 class="panel-title">{{$user->first_name}}</h3>
             </div>
             <div class="panel-body">
               <div class="row">
