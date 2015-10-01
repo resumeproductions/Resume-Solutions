@@ -70,9 +70,11 @@
 		<input id='input57' class='Inpage5'>
 		<input id='input58' class='Inpage5'>
 		<input id='input59' class='Inpage5'>
-		<textarear id='input510' class='Inpage5'></textarea>
+		<input id='input510' class='Inpage5'>
 		<input id='input511' class='Inpage5'>
-		<textarear id='input512' class='Inpage5'></textarea>
+		<textarea id='input512' class='Inpage5'></textarea>
+		<input id='input513' class='Inpage5'>
+		<textarea id='input514' class='Inpage5'></textarea>
 	</div>
 	<div class='page6 pagesle'>
 		<button id='input61' class='Inpage6'></button>

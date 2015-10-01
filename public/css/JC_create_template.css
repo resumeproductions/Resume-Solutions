@@ -231,11 +231,228 @@ button {
 	top: 17%;
 }
 #input42 {
+	left: 5%;
+	top: 24%;
+	width: 43%;
+	height: 10%;
 }
 #input43 {
+	left: 5%;
+	top: 34%;
+	width: 5%;
 }
 #input44 {
+	left: 11%;
+	top: 34%;
+	width: 5%;
 }
+#input45 {
+	left: 5%;
+	top: 42%;
+}
+#input46 {
+	left: 5%;
+	top: 49%;
+	width: 43%;
+	height: 10%;
+}
+#input47 {
+	left: 5%;
+	top: 59%;
+	width: 5%;
+}
+#input48 {
+	left: 11%;
+	top: 59%;
+	width: 5%;
+}
+#input49 {
+	left: 51%;
+	top: 17%;
+}
+#input410 {
+	left: 51%;
+	top: 24%;
+	width: 43%;
+	height: 10%;
+}
+#input411 {
+	left: 51%;
+	top: 34%;
+	width: 5%;
+}
+#input412 {
+	left: 57%;
+	top: 34%;
+	width: 5%;
+}
+#input413 {
+	left: 51%;
+	top: 42%;
+}
+#input414 {
+	left: 51%;
+	top: 49%;
+	width: 43%;
+	height: 10%;
+}
+#input415 {
+	left: 51%;
+	top: 59%;
+	width: 5%;
+}
+#input416 {
+	left: 57%;
+	top: 59%;
+	width: 5%;
+}
+#input416 {
+	left: 57%;
+	top: 59%;
+	width: 5%;
+}
+#input51 {
+	left: 20%;
+	top: 14%;
+}
+#input52 {
+	left: 73%;
+	top: 14%;
+	width: 5%;
+}
+#input51 {
+	left: 20%;
+	top: 14%;
+}
+#input52 {
+	left: 73%;
+	top: 14%;
+	width: 5%;
+}
+#input53 {
+	left: 20%;
+	top: 19%;
+}
+#input54 {
+	left: 73%;
+	top: 19%;
+	width: 5%;
+}
+#input55 {
+	left: 20%;
+	top: 25%;
+}
+#input56 {
+	left: 73%;
+	top: 25%;
+	width: 5%;
+}
+#input57 {
+	left: 20%;
+	top: 30%;
+}
+#input58 {
+	left: 73%;
+	top: 30%;
+	width: 5%;
+}
+#input59 {
+	left: 20%;
+	top: 35%;
+}
+#input510 {
+	left: 73%;
+	top: 35%;
+	width: 5%;
+}
+#input511 {
+	left: 20%;
+	top: 42%;
+}
+#input512 {
+	left: 20%;
+	top: 49%;
+	height: 20%;
+}
+#input513 {
+	left: 50%;
+	top: 42%;
+}
+#input514 {
+	left: 50%;
+	top: 49%;
+	height: 20%;
+}
+#input61 {
+	left: 14%;
+	top: 17%;
+	width: 10%;
+	height: 15%;
+}
+#input62 {
+	left: 13%;
+	top: 32%;
+	width: 12%;
+}
+#input63 {
+	left: 8%;
+	top: 38%;
+	width: 23%;
+} 
+#input64 {
+	left: 45%;
+	top: 17%;
+	width: 10%;
+	height: 15%;
+}
+#input65 {
+	left: 44%;
+	top: 32%;
+	width: 12%;
+}
+#input66 {
+	left: 39%;
+	top: 38%;
+	width: 23%;
+} 
+/* YOLO */
+#input67 {
+	left: 76%;
+	top: 17%;
+	width: 10%;
+	height: 15%;
+}
+#input68 {
+	left: 75%;
+	top: 32%;
+	width: 12%;
+}
+#input69 {
+	left: 69%;
+	top: 38%;
+	width: 23%;
+} 
+/* STUFF */
+
+#input611 {
+	left: 14%;
+	top: 50%;
+	width: 10%;
+	height: 15%;
+}
+#input612 {
+	left: 13%;
+	top: 65%;
+	width: 12%;
+}
+#input613 {
+	left: 8%;
+	top: 71%;
+	width: 23%;
+} 
+
+/* Placing */
+
 textarea {
 	position: absolute;
 	width: 30%;
