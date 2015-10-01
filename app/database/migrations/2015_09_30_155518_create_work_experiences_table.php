@@ -16,7 +16,7 @@ class CreateWorkExperiencesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('start_date');
-			$table->string('end_date');
+			$table->string('end_date')->nullable();
 			$table->string('title');
 			$table->string('description');
 
