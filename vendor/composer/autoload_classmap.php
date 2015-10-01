@@ -34,6 +34,7 @@ return array(
     'ContactsTableSeeder' => $baseDir . '/app/database/seeds/ContactsTableSeeder.php',
     'CreateAboutsTable' => $baseDir . '/app/database/migrations/2015_09_30_161918_create_abouts_table.php',
     'CreateContactsTable' => $baseDir . '/app/database/migrations/2015_09_30_161604_create_contacts_table.php',
+    'CreateEducationTable' => $baseDir . '/app/database/migrations/2015_10_01_153329_create_education_table.php',
     'CreatePasswordRemindersTable' => $baseDir . '/app/database/migrations/2015_09_24_161601_create_password_reminders_table.php',
     'CreatePortfoliosTable' => $baseDir . '/app/database/migrations/2015_09_30_155902_create_portfolios_table.php',
     'CreateSkillsTable' => $baseDir . '/app/database/migrations/2015_09_30_161244_create_skills_table.php',
@@ -52,6 +53,7 @@ return array(
     'Crypt_TripleDES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/TripleDES.php',
     'Crypt_Twofish' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Twofish.php',
     'DatabaseSeeder' => $baseDir . '/app/database/seeds/DatabaseSeeder.php',
+    'Education' => $baseDir . '/app/models/Education.php',
     'Esensi\\Model\\Contracts\\EncryptingModelInterface' => $vendorDir . '/esensi/model/src/Contracts/EncryptingModelInterface.php',
     'Esensi\\Model\\Contracts\\HashingModelInterface' => $vendorDir . '/esensi/model/src/Contracts/HashingModelInterface.php',
     'Esensi\\Model\\Contracts\\JugglingModelInterface' => $vendorDir . '/esensi/model/src/Contracts/JugglingModelInterface.php',
@@ -2027,6 +2029,6 @@ return array(
     'Whoops\\Run' => $vendorDir . '/filp/whoops/src/Whoops/Run.php',
     'Whoops\\Util\\Misc' => $vendorDir . '/filp/whoops/src/Whoops/Util/Misc.php',
     'Whoops\\Util\\TemplateHelper' => $vendorDir . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+    'WorkExperience' => $baseDir . '/app/models/WorkExperience.php',
     'WorkExperiencesTableSeeder' => $baseDir . '/app/database/seeds/WorkExperiencesTableSeeder.php',
-    'workExperience' => $baseDir . '/app/models/workExperience.php',
 );
