@@ -18,12 +18,7 @@ class User extends SoftModel implements UserInterface, RemindableInterface
 	 */
 	protected $table = 'users';
 
-
-	//Hash the password
-	public function setPasswordAttribute($value)
-	{
-	    $this->attributes['password'] = Hash::make($value);
-	}
+	protected $hashable = ['password'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.
