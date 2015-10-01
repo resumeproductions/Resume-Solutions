@@ -16,8 +16,8 @@ class CreateAboutsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('description');
-			$table->string('title');
-			$table->string('picture');
+			$table->string('title')->nullable();
+			$table->string('picture')->nullable();
 
 
 			$table->integer('template_id')->unsigned();
