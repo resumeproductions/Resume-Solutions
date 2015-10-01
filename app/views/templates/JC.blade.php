@@ -210,40 +210,40 @@
 								<div class="row">
 									<div class="col-sm-6 animateFadeInUp">
 										<div class="panel panel-default">
-											<div class="panel-heading"><i class="fa fa-2x fa-twitter blue"></i> Twitter</div>
+											<div class="panel-heading"><i class="fa fa-2x fa-building-o blue"></i> Twitter</div>
 											<div class="panel-body">
 												Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes.
 											</div>
-											<div class="panel-footer">Worked as web designer, From 2014 to present</div>
+											<div class="panel-footer">From 2014 to present</div>
 										</div>
 									</div>
 									<div class="col-sm-6 animateFadeInUp">
 										<div class="panel panel-default">
-											<div class="panel-heading"><i class="fa fa-2x fa-facebook dark-blue"></i> Facebook</div>
+											<div class="panel-heading"><i class="fa fa-2x fa-cube blue"></i> Facebook</div>
 											<div class="panel-body">
 												Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes.
 											</div>
-											<div class="panel-footer">Worked as web engineer, From 2012 to 2014</div>
+											<div class="panel-footer">From 2012 to 2014</div>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-sm-6 animateFadeInDown">
 										<div class="panel panel-default">
-											<div class="panel-heading"><i class="fa fa-2x fa-google red"></i> Google</div>
+											<div class="panel-heading"><i class="fa fa-2x fa-bar-chart blue"></i> Google</div>
 											<div class="panel-body">
 												Long description Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes oat cake toffee croissant muffin.
 											</div>
-											<div class="panel-footer">Worked as web designer, From 2014 to present</div>
+											<div class="panel-footer">From 2014 to present</div>
 										</div>
 									</div>
 									<div class="col-sm-6 animateFadeInDown">
 										<div class="panel panel-default">
-											<div class="panel-heading"><i class="fa fa-2x fa-windows blue"></i> Windows</div>
+											<div class="panel-heading"><i class="fa fa-2x fa-paper-plane blue"></i> Windows</div>
 											<div class="panel-body">
 												Long description Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes oat cake toffee croissant muffin.
 											</div>
-											<div class="panel-footer">Worked as web designer, From 2014 to present</div>
+											<div class="panel-footer">From 2014 to present</div>
 										</div>
 									</div>
 								</div>
