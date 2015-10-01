@@ -30,6 +30,7 @@ class CreateUsersTable extends Migration {
 			$table->string('twitter')->nullable();
 			$table->string('skype')->nullable();
 			$table->string('google')->nullable();
+			$table->string('profile_img_url')->nullable();
 			$table->timestamps(); 
 			$table->rememberToken();
             $table->softdeletes();

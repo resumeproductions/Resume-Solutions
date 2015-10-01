@@ -111,19 +111,54 @@ class UsersController extends \BaseController {
 	 * @return Response
 	 */
 	public function update($id)
-	{
-		$user = User::findOrFail($id);
-
-		$validator = Validator::make($data = Input::all(), User::$rules);
-
-		if ($validator->fails())
 		{
-			return Redirect::back()->withErrors($validator)->withInput();
+		$user = User::find($id);
+        if(!$user) {
+
+            Session::flash('errorMessage', "User with id of $id is not found"); 
+
+            App::abort(404);  
+        }elseif($user->id == Auth::user()->id){
+            if(Input::hasFile('profile_img_url')){
+				$file = Input::file('profile_img_url');
+				$destinationPath = public_path() . '/img';
+				$filename = $file->getClientOriginalName();
+				Input::file('profile_img_url')->move($destinationPath, $filename);
+
+				$user->password = Input::get('password');
+				$user->email = Input::get('email');
+				$user->first_name = Input::get('first_name');
+				$user->last_name = Input::get('last_name');
+				$user->username = Input::get('username');
+				$user->address = Input::get('address');
+				$user->city = Input::get('city');
+				$user->state = Input::get('state');
+				$user->zip = Input::get('zip');
+				$user->phone_number = Input::get('phone_number');
+				$user->profile_img_url = $filename; 
+
+				$user->save();
+                Session::flash('successMessage', 'Account and profile img updated successfully!');
+                return Redirect::action('UsersController@index');
+
+			}else{
+				$user->password = Input::get('password');
+				$user->email = Input::get('email');
+				$user->first_name = Input::get('first_name');
+				$user->last_name = Input::get('last_name');
+				$user->username = Input::get('username');
+				$user->address = Input::get('address');
+				$user->city = Input::get('city');
+				$user->state = Input::get('state');
+				$user->zip = Input::get('zip');
+				$user->phone_number = Input::get('phone_number');
+
+				$user->save();
+				
+				Session::flash('successMessage', 'Account updated successfully!');
+				return Redirect::action('UsersController@index');
+			}
 		}
-
-		$user->update($data);
-
-		return Redirect::route('users.index');
 	}
 
 	/**
