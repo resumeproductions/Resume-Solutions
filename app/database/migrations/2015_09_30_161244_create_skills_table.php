@@ -17,8 +17,8 @@ class CreateSkillsTable extends Migration {
 			$table->increments('id');
 			$table->integer('percent');
 			$table->string('skill_title');
-			$table->string('description_title');
-			$table->string('description');
+			$table->string('description_title')->nullable();
+			$table->string('description')->nullable();
 
 			$table->integer('template_id')->unsigned();
 
