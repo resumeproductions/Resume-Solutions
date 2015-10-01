@@ -10,11 +10,12 @@
 
 </head>
 <body>
-{{ Form::open(array('action' => 'TemplatesController@storeTemplate1', 'files' => true)) }}
+{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
 	<div class='page1 pagesle'>
 		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='aboutTitle'    id='input11'>
 		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='navbarTitle' 	   id='input12'>
 		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='aboutDescription' id='input13'></textarea>
+		<input name='color' value='1'>
 	</div>
 	<div class='page2 pagesle'>
 		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='workExperienceExtraText'	id='input21'></textarea>
@@ -67,10 +68,8 @@
 	</button>
 	<!-- modal -->
 
-	{{Form::close()}}
 	<!-- Button trigger modal -->
 <!-- Modal -->
-{{ Form::open(array('action' => 'TemplatesController@storeTemplate1Images', 'files' => true)) }}
 
 <div class="modal fade" id="myModal modalFile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   	<div class="modal-dialog" role="document">
