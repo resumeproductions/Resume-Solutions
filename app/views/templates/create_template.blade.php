@@ -8,24 +8,26 @@
 
 @section('content')
 
+</head>
+<body>
 {{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
 	<button id='color' value='0'>
 	</button>
 	<div id='david'>
-		<button id='dark'>
+		<button id='dark' name='color'>
 			Grey
 		</button>
-		<button id='purple'>
+		<button id='purple' name='color'>
 			Purple
 		</button>
-		<button id='blue'>
+		<button id='blue' name='color'>
 			Blue
 		</button>
-		<button id='green'>
+		<button id='green' name='color'>
 			Green
 		</button>
 	</div>
-{{ Form::open(array('action' => 'TemplatesController@storeTemplate1', 'files' => true)) }}
+	{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
 	<div class='page1 pagesle'>
 		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='aboutTitle'    id='input11'>
 		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='navbarTitle' 	   id='input12'>
@@ -66,9 +68,6 @@
 		</button>
 	</div>
 	<div class='page5 pagesle'>
-		<input class='Inpage5 inputs' placeholder=' Facebook Link' name='contactFacebook' id='input51'>
-		<input class='Inpage5 inputs' placeholder=' Linkedin Link' name='contactLinkedin' id='input52'>
-		<input class='Inpage5 inputs' placeholder=' Twitter Link' name='contactTwitter' id='input53'>
 		<input class='Inpage5 inputs' placeholder=' Contact Description' name='contactDescription' id='input54'>
 	</div>
 	<button type="submit" class='Inpage5 buttons' id='submitTemplate1'></button>
