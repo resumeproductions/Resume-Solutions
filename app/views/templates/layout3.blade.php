@@ -92,7 +92,7 @@
 					  <div class="row" id="first-page">
               <div class="col-sm-12 text-center">
                 <div class="dp-box">
-                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="/assets_john/images/john.jpg" width="272" height="299" alt="Display Picture" /> Johnathan Christopherson</h1>
+                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="/assets_john/images/dp.jpg" width="272" height="299" alt="Display Picture" /> BUFF</h1>
                   <div class="visible-xs visible-sm"><img class="dp" id="dp" src="/assets_john/images/dp.jpg" alt="Display Picture" /><h1>John Doe</h1></div>
                 </div>
               </div>

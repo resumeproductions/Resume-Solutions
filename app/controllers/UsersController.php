@@ -94,6 +94,7 @@ class UsersController extends \BaseController {
 			App::abort(404);
 		}
 
+		// return $template->layout;
 
 		return View::make('templates.' . $template->layout, compact('template'));
 	}
