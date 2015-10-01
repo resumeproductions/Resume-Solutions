@@ -50,7 +50,7 @@
         </li>
         <li><a href="#">Profile</a>
         <ul>
-          <li><a href="#">My Profile</a></li>
+          <li><a href="/users/show">My Profile</a></li>
           <li><a href="#">Edit Profile</a></li>
           <li><a href="#">My Resumes</a></li>
           <li><a href="/logout">Log Out</a></li>
@@ -176,9 +176,7 @@
       $( function() {
         
         $( '#st-stack' ).stackslider();
-
       });
-
     </script>
       <script src="/assets/js/jquery.simple-text-rotator.min.js"></script>
   <!-- Waypoints -->
@@ -193,6 +191,3 @@
 
   </body>
 </html>
-
-
-      

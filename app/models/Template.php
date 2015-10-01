@@ -12,7 +12,7 @@ class Template extends \Eloquent {
 
 	public function workExperiences()
     {
-    	return $this-hasMany('workExperience');
+    	return $this-hasMany('WorkExperience');
     }
 
     public function portfolios()
@@ -33,6 +33,11 @@ class Template extends \Eloquent {
     public function abouts()
     {
     	return $this-hasMany('About');
+    }
+
+    public function user()
+    {
+        return $this-belongsTo('user');
     }
 
 }

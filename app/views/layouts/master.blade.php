@@ -21,6 +21,7 @@
   <link href="/assets_homepage/css/flip_team.css" rel="stylesheet" media="screen">
   <link href="/css/footer-distributed-with-address-and-phones.css" rel="stylesheet" media="screen">
   <link href="/css/style.css" rel="stylesheet" media="screen">
+  <link href="/css/profile.css" rel="stylesheet" media="screen">
 
 <!-- Optional theme -->
 
@@ -45,7 +46,7 @@
       </li>
       <li><a href="#">Profile</a>
       <ul>
-        <li><a href="#">My Profile</a></li>
+        <li><a href="/users/show">My Profile</a></li>
         <li><a href="#">Edit Profile</a></li>
         <li><a href="#">My Resumes</a></li>
         <li><a href="/logout">Log Out</a></li>
@@ -133,4 +134,3 @@
 </footer>
 </body>
 </html>
-

@@ -16,6 +16,7 @@ class CreateTemplatesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('color');
+			$table->enum('layout', ['layout1', 'layout2', 'layout3']);
 
 			$table->integer('user_id')->unsigned();
 			$table->foreign('user_id')->references('id')->on('users');
