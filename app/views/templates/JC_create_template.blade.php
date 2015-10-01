@@ -117,9 +117,7 @@
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page++;
 					checkPage(page);
-					setTimeout(function(){
-						$(".Inpage".concat(page)).css('z-index', '1');
-					}, 1100);
+					$(".Inpage".concat(page)).css('z-index', '1');
 					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
 				}, false);
 				findLeft.addEventListener("click", function(){
@@ -128,9 +126,7 @@
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page--;
 					checkPage(page);
-					setTimeout(function(){
-						$(".Inpage".concat(page)).css('z-index', '1');
-					}, 1100);
+					$(".Inpage".concat(page)).css('z-index', '1');
 					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
 				}, false);
 				$(document).keydown(function(e) {
