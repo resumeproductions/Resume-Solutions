@@ -6,7 +6,7 @@ class WorkExperience extends \Eloquent {
 	public static $rules = [
 		// 'title' => 'required'
 	];
-
+	protected $table = 'work_experiences';
 	// Don't forget to fill this array
 	protected $fillable = [];
 
