@@ -90,9 +90,9 @@
         		<h4 class="modal-title" id="myModalLabel">Modal title</h4>
       		</div>
       		<div class="modal-body">
-        		<span id="modalFile">Picture 1<input class='' name='portfolioPicture' type="file"><span>
-				<span id="modalFile">Picture 2<input class='' name='portfolioPicture' type="file"><span>
-				<span id="modalFile">Picture 3<input class='' name='portfolioPicture' type="file"><span>
+        		<span id="modalFile">Picture 1<input class='' name='portfolioPicture1' type="file"><span>
+				<span id="modalFile">Picture 2<input class='' name='portfolioPicture2' type="file"><span>
+				<span id="modalFile">Picture 3<input class='' name='portfolioPicture3' type="file"><span>
       		</div>
       		<div class="modal-footer">
         		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
