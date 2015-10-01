@@ -96,100 +96,145 @@ button {
 	height: 5%;
 	width: 23%;
 }
-#input210 {
-	left: 29%;
-	top: 81%;
-	height: 14%;
-	width: 42%;
+#input11 {
+	left: 22%;
+	top: 10%;
+	height: 20%;
+	width: 10%;
+}
+#input12 {
+	left: 33%;
+	top: 50%;
+	width: 35%;
+	height: 8%;
+	font-size: 150%;
+}
+#input21 {
+	left: 22%;
+	top: 18%;
+	height: 15%;
+	width: 10%;
+}
+#input22 {
+	left: 34%;
+	top: 18%;
+	width: 45%;
+}
+#input23 {
+	left: 68%;
+	top: 38%;
+	height: 15%;
+	width: 10%;
+}
+#input24 {
+	left: 21%;
+	top: 38%;
+	width: 45%;
+}
+#input25 {
+	left: 22%;
+	top: 59%;
+	height: 15%;
+	width: 10%;
+}
+#input26 {
+	left: 34%;
+	top: 59%;
+	width: 45%;
 }
 #input31 {
-	left: 20%;
-	top: 34%;
-	width: 6%;
-	height: 12%;
-	font-size: 300%;
+	left: 5%;
+	top: 17%;
+	width: 5%;
 }
 #input32 {
-	left: 19%;
-	top: 58%;
-	width: 10%;
-	font-size: 100%;
+	left: 10%;
+	top: 17%;
+	width: 5%;
 }
 #input33 {
-	left: 37%;
-	top: 34%;
-	width: 6%;
-	height: 12%;
-	font-size: 300%;
+	left: 15%;
+	top: 17%;
+	width: 15%;
 }
 #input34 {
-	left: 36%;
-	top: 58%;
-	width: 10%;
-	font-size: 100%;
+	left: 5%;
+	top: 24%;
+	height: 10%;
+	width: 43%; 
 }
 #input35 {
-	left: 54%;
-	top: 34%;
-	width: 6%;
-	height: 12%;
-	font-size: 300%;
+	left: 52%;
+	top: 17%;
+	width: 5%;
 }
 #input36 {
-	left: 52%;
-	top: 58%;
-	width: 10%;
-	font-size: 100%;
+	left: 57%;
+	top: 17%;
+	width: 5%;
 }
 #input37 {
-	left: 71%;
-	top: 34%;
-	width: 6%;
-	height: 12%;
-	font-size: 300%;
+	left: 62%;
+	top: 17%;
+	width: 15%;
 }
 #input38 {
-	left: 68%;
-	top: 58%;
-	width: 13%;
-	font-size: 100%;
+	left: 52%;
+	top: 24%;
+	height: 10%;
+	width: 43%; 
+}
+#input39 {
+	left: 52%;
+	top: 37%;
+	width: 5%;
+}
+#input310 {
+	left: 57%;
+	top: 37%;
+	width: 5%;
+}
+#input311 {
+	left: 62%;
+	top: 37%;
+	width: 15%;
+}
+#input312 {
+	left: 52%;
+	top: 44%;
+	height: 10%;
+	width: 43%; 
+}
+#input313 {
+	left: 5%;
+	top: 37%;
+	width: 5%;
+}
+#input314 {
+	left: 10%;
+	top: 37%;
+	width: 5%;
+}
+#input315 {
+	left: 15%;
+	top: 37%;
+	width: 15%;
+}
+#input316 {
+	left: 5%;
+	top: 44%;
+	height: 10%;
+	width: 43%; 
 }
 #input41 {
-	left: 16%;
-	top: 57%;
-	width: 22%;
-	height: 12%;
+	left: 5%;
+	top: 17%;
 }
 #input42 {
-	left: 22%;
-	top: 30%;
-	width: 10%;
-	height: 8%;
 }
 #input43 {
-	left: 39%;
-	top: 57%;
-	width: 22%;
-	height: 12%;
 }
 #input44 {
-	left: 45%;
-	top: 30%;
-	width: 10%;
-	height: 8%;
-	background-color: #fff;
-	background-image: none;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-	border-width: 2%;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
 }
 textarea {
 	position: absolute;
@@ -205,37 +250,6 @@ textarea {
 #cont {
 	margin-left: 0px;
 	padding-left: 0px;
-}
-#input46 {
-	left: 68%;
-	top: 30%;
-	width: 10%;
-	height: 8%;
-}
-#input51 {
-	left: 26%;
-	top: 17%;
-	width: 18%;
-	height: 9%;
-}
-#input52 {
-	left: 1%;
-	top: 17%;
-	width: 15%;
-	height: 9%;
-}
-#input53 {
-	left: 14%;
-	top: 8%;
-	width: 15%;
-	height: 9%;
-}
-#input54 {
-	left: 15%;
-	top: 26%;
-	width: 31%;
-	height: 33%;
-	
 }
 #submitTemplate1 {
 	left: 65%;
