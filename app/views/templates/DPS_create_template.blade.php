@@ -8,13 +8,11 @@
 	@section('title')
 
 	<title>Template</title>
-	<link href='/css/DPS_create_template.css' rel='stylesheet' type='text/css'>
+	<link href='/css/JC_create_template.css' rel='stylesheet' type='text/css'>
 	@stop
 
 	@section('content')
 
-</head>
-<body>
 	<div class='page1 pagesle'>
 		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives[]' id='input11'>
 		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives[]' id='input12'>
@@ -141,10 +139,10 @@
 		<input placeholder='Email' class='Inpage7' name='email' id='input715'>
 	</div>
 	<button id='right' type="button" class="btn btn-default btn-lg">
-		<i class="fa fa-arrow-right fa-2x">
+		<i class="fa fa-arrow-right fa-2x"></i>
 	</button>
 	<button id='left' type="button" class="btn btn-default btn-lg">
-		<i class="fa fa-arrow-left fa-2x">
+		<i class="fa fa-arrow-left fa-2x"></i>
 	</button>
 			@stop
 
