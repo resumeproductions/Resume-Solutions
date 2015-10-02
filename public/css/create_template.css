@@ -19,30 +19,37 @@ body {
 	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	border-width: 2%;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
+	border-width: 4%;
+	border-style: solid;
+	background-color: white;
+	border-color: black;
 }
 input:hover {
-	background-color: lightgrey;
-}
-input:active {
-	background-color: white;
+	border-width: 5px;
+	border-color: skyblue;
 }
 input:focus {
-	background-color: white;
-	border-color: black;
+	border-width: 5px;
+	border-color: #4385E7;
+	outline: 0;
 }
 textarea:hover {
-	background-color: lightgrey;
-}
-textarea:active {
-	background-color: white;
+	border-width: 5px;
+	border-color: skyblue;
 }
 textarea:focus {
-	background-color: white;
-	border-color: black;
+	border-width: 5px;
+	border-color: #4385E7;
+	outline: 0;
+}
+button:focus {
+	border-width: 5px;
+	border-color: #4385E7;
+	outline: 0;
+}
+button:hover {
+	border-width: 5px;
+	border-color: skyblue;
 }
 .buttons {
 	position: absolute;
@@ -57,10 +64,10 @@ textarea:focus {
 	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-	border-width: 2%;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
+	border-width: 4%;
+	border-style: solid;
+	background-color: white;
+	border-color: black;
 }
 .textarea {
 	position: absolute;
@@ -69,9 +76,9 @@ textarea:focus {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	border-width: 4px;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
+	border-style: solid;
+	background-color: white;
+	border-color: black;
 }
 #cont {
 	margin-left: 0px;
@@ -93,6 +100,12 @@ textarea:focus {
 	left: 41%;
 	top: 49%;
 	width: 38%;
+}
+#input14 {
+	z-index: -1;
+	width: 0%;
+	height: 0%;
+	opacity: 0;
 }
 #input21 {
 	left: 25%;
@@ -408,10 +421,10 @@ textarea:focus {
 	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	border-width: 2%;
-	border-style: double;
+	border-width: 4%;
+	border-style: solid;
 	background-color: grey;
-	border-color: white;
+	border-color: black;
 }
 #dark {
 	position: absolute;

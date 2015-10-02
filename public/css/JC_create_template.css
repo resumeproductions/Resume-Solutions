@@ -16,28 +16,8 @@ input {
 	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	border-width: 2%;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
-}
-input:hover {
-	background-color: lightgrey;
-}
-input:active {
-	background-color: white;
-}
-input:focus {
-	background-color: white;
-	border-color: black;
-}
-textarea:hover {
-	background-color: lightgrey;
-}
-textarea:active {
-	background-color: white;
-}
-textarea:focus {
+	border-width: 4%;
+	border-style: solid;
 	background-color: white;
 	border-color: black;
 }
@@ -54,10 +34,10 @@ button {
 	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-	border-width: 2%;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
+	border-width: 4%;
+	border-style: solid;
+	background-color: white;
+	border-color: black;
 }
 textarea {
 	position: absolute;
@@ -66,29 +46,36 @@ textarea {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	border-width: 4px;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
+	border-style: solid;
+	background-color: white;
+	border-color: black;
 }
 input:hover {
-	background-color: lightgrey;
-}
-input:active {
-	background-color: white;
+	border-width: 5px;
+	border-color: skyblue;
 }
 input:focus {
-	background-color: white;
-	border-color: black;
+	border-width: 5px;
+	border-color: #4385E7;
+	outline: 0;
 }
 textarea:hover {
-	background-color: lightgrey;
-}
-textarea:active {
-	background-color: white;
+	border-width: 5px;
+	border-color: skyblue;
 }
 textarea:focus {
-	background-color: white;
-	border-color: black;
+	border-width: 5px;
+	border-color: #4385E7;
+	outline: 0;
+}
+button:focus {
+	border-width: 5px;
+	border-color: #4385E7;
+	outline: 0;
+}
+button:hover {
+	border-width: 5px;
+	border-color: skyblue;
 }
 button {
 	position: absolute;
@@ -466,13 +453,13 @@ button {
 }
 /* STUFF */
 #input616 {
-	left: 75%;
+	left: 76%;
 	top: 50%;
 	width: 10%;
 	height: 15%;
 }
 #input617 {
-	left: 74%;
+	left: 75%;
 	top: 65%;
 	width: 12%;
 }
@@ -484,16 +471,16 @@ button {
 
 /* Placing */
 
-textarea {
+.textarea {
 	position: absolute;
 	width: 30%;
 	height: 15%;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	border-width: 4px;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
+	border-style: solid;
+	background-color: white;
+	border-color: black;
 }
 #cont {
 	margin-left: 0px;
