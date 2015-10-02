@@ -143,19 +143,33 @@
       <section class="animation">
 
         <ul id="st-stack" class="st-stack-raw">
-          <li><div class="st-item"><a href="http://drbl.in/fgQV"><img src="images/step2.png" width="500" height="600"/></a></div><div class="st-title"><h2>Graverobber</h2><h3></h3></div></li>
-          <li><div class="st-item"><a href="http://drbl.in/fgQV"><img src="images/step1.png" width="500" height="600"/></a></div><div class="st-title"><h2>Graverobber</h2><h3></h3></div></li>
-          <li><div class="st-item"><a href="http://drbl.in/fGVs"><img src="direction_images/3.jpg"/></a></div><div class="st-title"><h2>Queen of Hearts</h2><h3></h3></div></li>
-          <li><div class="st-item"><a href="http://drbl.in/fgvZ"><img src="direction_images/4.jpg"/></a></div><div class="st-title"><h2>Dead Pirate vs Kraken</h2><h3></h3></div></li>
-          <li><div class="st-item"><a href="http://drbl.in/fyfM"><img src="direction_images/5.jpg"/></a></div><div class="st-title"><h2>Mountain Lion</h2><h3></h3></div></li>
-          <li><div class="st-item"><a href="http://drbl.in/fCmJ"><img src="direction_images/6.jpg"/></a></div><div class="st-title"><h2>Flying Skull</h2><h3></h3></div></li>
-          <li><div class="st-item"><a href="http://drbl.in/fsMv"><img src="direction_images/7.jpg"/></a></div><div class="st-title"><h2>The Fly &amp; Bureaucratic Elephant</h2><h3></h3></div></li>
-          <li><div class="st-item"><a href="http://drbl.in/fGOf"><img src="direction_images/8.jpg"/></a></div><div class="st-title"><h2>Failsnake</h2><h3></h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fgQV"><img src="images/hamburger.png" width="300" height="400"/></a></div><div class="st-title"><h2>If you look to the top right you will see a little hamburger, click here to open the nav.</h2><h3></h3></div></li>
+
+          <li><div class="st-item"><a href="http://drbl.in/fgQV"><img src="images/step2.png" width="500" height="600"/></a></div><div class="st-title"><h2>From here you can navigate the site, from your profile to your resumes.</h2><h3></h3></div></li>
+
+          <li><div class="st-item"><a href="http://drbl.in/fGVs"><img src="images/step3.png" width="500" height="600"/></a></div><div class="st-title"><h2>Clicking the profile page will take you to your personalized profile, dont worry we already got your information from signing up!</h2><h3></h3></div></li>
+
+          <li><div class="st-item"><a href="http://drbl.in/fgvZ"><img src="images/step4.png"  width="300" height="400"/></a></div><div class="st-title"><h2>Now that were on the profile page you can either view your current resumes or make a new one, lets create a new one!</h2><h3></h3></div></li>
+
+          <li><div class="st-item"><a href="http://drbl.in/fyfM"><img src="images/step1.png"width="500" height="600"/></a></div><div class="st-title"><h2>Clicking create new will then take you to a page with available templates, clicking on one will take you to a demo of that template in a new window.</h2><h3></h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fCmJ"><img src="images/step5.png"width="300" height="400"/></a></div><div class="st-title"><h2>After finding a template you like go ahead and come back to the page with all the templates and select the radio button above the template you like.</h2><h3></h3></div></li>
+
+          <li><div class="st-item"><a href="http://drbl.in/fCmJ"><img src="images/step8.png"width="500" height="600"/></a></div><div class="st-title"><h2>From here you will be brought to a create page immediately on the top left there will be a color picker where you can customize the color scheme of your resume..</h2><h3></h3></div></li>
+
+          <li><div class="st-item"><a href="http://drbl.in/fsMv"><img src="images/step6.png" width="500" height="600"/></a></div><div class="st-title"><h2>From here you can continue to create your resume, the input fields are over where the information you input will be displayed.</h2><h3></h3></div></li>
+
+          <li><div class="st-item"><a href="http://drbl.in/fGOf"><img src="images/step7.png" width="500" height="600"/></a></div><div class="st-title"><h2>Some fields are made for pictures of you, your work, or even portfolio pieces.</h2><h3></h3></div></li>
+
           <li><div class="st-item"><a href="http://drbl.in/fypr"><img src="direction_images/9.jpg"/></a></div><div class="st-title"><h2>Cultist</h2><h3></h3></div></li>
+
           <li><div class="st-item"><a href="http://drbl.in/fEmG"><img src="direction_images/10.jpg"/></a></div><div class="st-title"><h2>Crusader &amp; Viking</h2><h3></h3></div></li>
+
           <li><div class="st-item"><a href="http://drbl.in/ffiw"><img src="direction_images/11.jpg"/></a></div><div class="st-title"><h2>Crocodile</h2><h3></h3></div></li>
+
           <li><div class="st-item"><a href="http://drbl.in/fqWx"><img src="direction_images/12.jpg"/></a></div><div class="st-title"><h2>Captain Banana</h2><h3></h3></div></li>
+
           <li><div class="st-item"><a href="http://drbl.in/fkuv"><img src="direction_images/13.jpg"/></a></div><div class="st-title"><h2>Werewolf</h2><h3></h3></div></li>
+
           <li><div class="st-item"><a href="http://drbl.in/fIli"><img src="direction_images/14.jpg"/></a></div><div class="st-title"><h2>Vegetables</h2><h3></h3></div></li>
         </ul>
       </section>

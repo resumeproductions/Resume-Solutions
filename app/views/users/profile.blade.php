@@ -50,4 +50,6 @@
         </div>
       </div>
     </div>
+
+    @include('users.partials.my_resumes_modal')
 @stop

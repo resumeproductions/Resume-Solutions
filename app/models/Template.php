@@ -30,9 +30,9 @@ class Template extends \Eloquent {
         return $this->hasMany('Award');
     }
 
-    public function headers()
+    public function header()
     {
-        return $this->hasMany('Header1');
+        return $this->hasOne('Header1');
     }
 
     public function education()
@@ -45,17 +45,17 @@ class Template extends \Eloquent {
     	return $this->hasMany('Skill');
     }
 
-    public function contacts()
+    public function contact()
     {
     	return $this->hasOne('Contact');
     }
 
-    public function abouts()
+    public function about()
     {
     	return $this->hasOne('About');
     }
 
-    public function users()
+    public function user()
     {
         return $this->belongsTo('User');
     }
