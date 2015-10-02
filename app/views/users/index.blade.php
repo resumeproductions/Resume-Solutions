@@ -42,8 +42,9 @@
   <div class="overlay">
     <div class="wrap">
       <ul class="wrap-nav">
-        <li><a href="#">About</a>
+        <li><a href="#">Resume Solutions</a>
         <ul>
+          <li><a href="/">Home</a></li>
           <li><a href="#">About Company</a></li>
           <li><a href="#">Developers</a></li>
         </ul>
@@ -51,7 +52,7 @@
         <li><a href="#">Profile</a>
         <ul>
           <li><a href="/users/me">My Profile</a></li>
-          <li><a href="#">Edit Profile</a></li>
+          <li><a href="{{{action ('UsersController@edit', Auth::user()->id)}}}">Edit Profile</a></li>
           <li><a href="#">My Resumes</a></li>
           <li><a href="/logout">Log Out</a></li>
         </ul>

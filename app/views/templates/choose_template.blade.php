@@ -5,6 +5,7 @@
 @section('content')
 
 <!-- Portfolio section start -->
+{{ Form::open(array('action' => 'TemplatesController@create', 'method' => 'get')) }}
 
     <section id="portfolio" class="section">
 
@@ -17,7 +18,12 @@
             <p>Avaliable Templates</p>
           </div>
 
-                            <div class="col-md-4 col-sm-6 wow bounceInLeft">
+
+
+        <div class="col-md-4 col-sm-6 wow bounceInLeft">
+          <label class="radio-inline">
+            <input type="radio" name="layout" value="layout1"> Layout 1
+          </label>
             <a href="#" target="_blank" class="pop-up" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
@@ -32,6 +38,9 @@
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInLeft">
+            <label class="radio-inline">
+              <input type="radio" name="layout" value="layout2"> Layout 2
+            </label>
             <a href="#" target="_blank" class="pop-up" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
@@ -46,6 +55,9 @@
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInLeft">
+            <label class="radio-inline">
+              <input type="radio" name="layout" value="layout3"> Layout 3
+            </label>
             <a href="#" target="_blank" class="pop-up" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
@@ -58,12 +70,20 @@
               </div>
             </a>
           </div>
+
+          <div class="col-md-1 col-sm-6 wow bounceInLeft">
+            <button type="submit" class="btn btn-primary">Continue</button>
+          </div>
+
+
 
           
 
       </div><!-- .container -->
 
     </section>
+
+  {{ Form::close() }}
 
     <!-- Portfolio section end -->
 

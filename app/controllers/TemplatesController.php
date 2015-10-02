@@ -14,6 +14,13 @@ class TemplatesController extends \BaseController {
 		return View::make('templates.index', compact('templates'));
 	}
 
+
+	public function chooseTemplate()
+	{
+		return View::make('templates.choose_template');
+	}
+
+
 	/**
 	 * Show the form for creating a new template
 	 *
@@ -21,7 +28,13 @@ class TemplatesController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('templates.choose_template');
+		if (!Input::has('layout')) {
+			return Redirect::action('TemplatesController@chooseTemplate');
+		}
+
+		$layout = Input::get('layout');
+
+		return View::make('templates.create.' . $layout);
 	}
 
 
@@ -506,36 +519,4 @@ class TemplatesController extends \BaseController {
 
 		return Redirect::route('templates.index');
 	}
-
-	public function DPTemplate()
-	{
-		return View::make('templates.layout1');
-	}
-
-	public function DPSTemplate()
-	{
-		return View::make('templates.DPS');
-	}
-
-	public function JCTemplate()
-	{
-		return View::make('templates.JC');
-	}
-
-	public function Something()
-	{
-		return View::make('templates.create_template');
-	}
-
-	public function Something2()
-	{
-		return View::make('templates.DPS_create_template');
-	}
-
-	public function Something3()
-	{
-		return View::make('templates.JC_create_template');
-	}
-
-
 }
