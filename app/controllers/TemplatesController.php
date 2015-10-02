@@ -73,26 +73,26 @@ class TemplatesController extends \BaseController {
 			}
 
 			//Storing adjectives for template 2
-			if(Input::has('headerAdjective1') || Input::has('headerAdjective2') || Input::has('headerAdjective3')){
-				if(Input::has('headerAdjective1')) {
-					$header1 = new Header1();
-					$header1->template_id = $template->id;
-					$header1->adjective = Input::get('headerAdjective1');
-					$header1->save();					
-				}
-				if(Input::has('headerAdjective2')) {
-					$header2 = new Header1();
-					$header2->template_id = $template->id;
-					$header2->adjective = Input::get('headerAdjective2');
-					$header2->save();					
-				}
-				if(Input::has('headerAdjective3')) {
-					$header3 = new Header1();
-					$header3->template_id = $template->id;
-					$header3->adjective = Input::get('headerAdjective3');
-					$header3->save();					
-				}
+		
+			if(Input::has('adjectives1')) {
+				$header1 = new Header1();
+				$header1->template_id = $template->id;
+				$header1->adjective = Input::get('adjectives1');
+				$header1->save();					
 			}
+			if(Input::has('adjectives2')) {
+				$header2 = new Header1();
+				$header2->template_id = $template->id;
+				$header2->adjective = Input::get('adjectives2');
+				$header2->save();					
+			}
+			if(Input::has('adjectives3')) {
+				$header3 = new Header1();
+				$header3->template_id = $template->id;
+				$header3->adjective = Input::get('adjectives3');
+				$header3->save();					
+			}
+			
 
 			//Checking for up to 6 skill inputs to be accpeted
 			if(Input::has('skillPercent1') && Input::has('skillTitle1')) {
@@ -186,6 +186,7 @@ class TemplatesController extends \BaseController {
 				if(Input::has('miscTitle1')) {
 					$knowledge1->sub_title = Input::get('miscTitle1');
 				}
+				$knowledge1->save();
 			}
 			if(Input::has('knowledge2') && Input::has('miscHead2') && Input::has('miscFoot2') && Input::has('miscPercent2')) {
 				$knowledge2 = new Knowledge();
@@ -194,6 +195,7 @@ class TemplatesController extends \BaseController {
 				$knowledge2->sub_percent = Input::get('miscPercent2');
 				$knowledge2->sub_head = Input::get('miscHead2');
 				$knowledge2->sub_foot = Input::get('miscFoot2');
+				$knowledge2->save();
 			}
 			if(Input::has('knowledge3') && Input::has('miscHead3') && Input::has('miscFoot3') && Input::has('miscPercent3')) {
 				$knowledge3 = new Knowledge();
@@ -202,6 +204,7 @@ class TemplatesController extends \BaseController {
 				$knowledge3->sub_percent = Input::get('miscPercent3');
 				$knowledge3->sub_head = Input::get('miscHead3');
 				$knowledge3->sub_foot = Input::get('miscFoot3');
+				$knowledge3->save();
 			}
 			if(Input::has('knowledge4') && Input::has('miscHead4') && Input::has('miscFoot4') && Input::has('miscPercent4')) {
 				$knowledge4 = new Knowledge();
@@ -210,6 +213,7 @@ class TemplatesController extends \BaseController {
 				$knowledge4->sub_percent = Input::get('miscPercent4');
 				$knowledge4->sub_head = Input::get('miscHead4');
 				$knowledge4->sub_foot = Input::get('miscFoot4');
+				$knowledge4->save();
 			}
 
 			if(Input::has('aboutDescription1') || Input::has('aboutDescription2')) {
@@ -403,6 +407,7 @@ class TemplatesController extends \BaseController {
 				$award1->template_id = $template->id;
 				$award1->award_number = Input::get('awardTitle1');
 				$award1->award_title = Input::get('awardNumber1');
+				$award1->save();
 			}
 
 			if(Input::has('awardTitle2') && Input::has('awardNumber2')) {
@@ -410,6 +415,7 @@ class TemplatesController extends \BaseController {
 				$award2->template_id = $template->id;
 				$award2->award_number = Input::get('awardTitle2');
 				$award2->award_title = Input::get('awardNumber2');
+				$award2->save();
 			}
 
 			if(Input::has('awardTitle3') && Input::has('awardNumber3')) {
@@ -417,6 +423,7 @@ class TemplatesController extends \BaseController {
 				$award3->template_id = $template->id;
 				$award3->award_number = Input::get('awardTitle3');
 				$award3->award_title = Input::get('awardNumber3');
+				$award3->save();
 			}
 
 			//Storing up to 6 work experience sections
