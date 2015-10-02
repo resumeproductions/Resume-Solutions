@@ -7,8 +7,6 @@
 
 @section('content')
 
-</head>
-<body>
 	<button id='color' value='0'>
 	</button>
 	<div id='david'>
