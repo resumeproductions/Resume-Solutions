@@ -20,6 +20,26 @@ class Template extends \Eloquent {
     	return $this->hasMany('Portfolio');
     }
 
+    public function knowledge()
+    {
+        return $this->hasMany('Knowledge');
+    }
+
+    public function awards()
+    {
+        return $this->hasMany('Award');
+    }
+
+    public function header()
+    {
+        return $this->hasMany('Header1');
+    }
+
+    public function education()
+    {
+        return $this->hasMany('Education');
+    }
+
     public function skills()
     {
     	return $this->hasMany('Skill');

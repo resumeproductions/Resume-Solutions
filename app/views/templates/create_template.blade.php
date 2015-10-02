@@ -10,7 +10,7 @@
 
 </head>
 <body>
-
+	<input name='templateID' value='layout1'>
 	<button id='color' value='0'>
 	</button>
 	<div id='david'>
@@ -29,13 +29,13 @@
 	</div>
 	{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
 	<div class='page1 pagesle'>
-		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='aboutTitle'    id='input11'>
-		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='navbarTitle' 	   id='input12'>
-		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='aboutDescription' id='input13'></textarea>
+		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='headerJobTitle'    id='input11'>
+		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='headerResumeTitle' 	   id='input12'>
+		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='headerDescription' id='input13'></textarea>
 		<input name='color' value='1'>
 	</div>
 	<div class='page2 pagesle'>
-		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='aboutDescription'	id='input21'></textarea>
+		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='aboutDescription1'	id='input21'></textarea>
 		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceStart1' id='input22'>
 		<input 	  placeholder='Work Title' class='Inpage2 inputs' name='workExperienceTitle1' id='input23'>
 		<textarea placeholder='Work Description' class='Inpage2 textarea' name='workExperienceDescription1'  id='input24'></textarea>

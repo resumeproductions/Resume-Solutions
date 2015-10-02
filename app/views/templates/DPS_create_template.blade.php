@@ -14,52 +14,52 @@
 	@section('content')
 
 	<div class='page1 pagesle'>
-		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives[]' id='input11'>
-		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives[]' id='input12'>
-		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives[]' id='input13'>
+		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives1' id='input11'>
+		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives2' id='input12'>
+		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives3' id='input13'>
 	</div>
 	<div class='page2 pagesle'>
 		<button placeholder='' class='Inpage2' name='about_picture' id='input21'></button>
-		<input placeholder='Title of About' 	   	  class='Inpage2' name='about_title' id='input22'>
-		<textarea placeholder='Description about you' class='Inpage2' name='about_description[]' id='input23'></textarea>
-		<textarea placeholder='Description about you' class='Inpage2' name='about_description[]' id='input24'></textarea>
+		<input placeholder='Title of About' 	   	  class='Inpage2' name='aboutTitle' id='input22'>
+		<textarea placeholder='Description about you' class='Inpage2' name='aboutDescription1' id='input23'></textarea>
+		<textarea placeholder='Description about you' class='Inpage2' name='aboutDescription2' id='input24'></textarea>
 	</div>
 	<div class='page3 pagesle'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='service_titles[]' 		id='input31'>
-		<input placeholder='Description of Service' class='Inpage3' name='service_descriptions[]' 	id='input32'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='service_titles[]' 		id='input33'>
-		<input placeholder='Description of Service' class='Inpage3' name='service_descriptions[]' 	id='input34'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='service_titles[]' 		id='input35'>
-		<input placeholder='Description of Service' class='Inpage3' name='service_descriptions[]' 	id='input36'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='service_titles[]' 		id='input37'>
-		<input placeholder='Description of Service' class='Inpage3' name='service_descriptions[]' 	id='input38'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='service_titles[]' 		id='input39'>
-		<input placeholder='Description of Service' class='Inpage3' name='service_descriptions[]' 	id='input310'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='service_titles[]' 		id='input311'>
-		<input placeholder='Description of Service' class='Inpage3' name='service_descriptions[]' 	id='input312'>
+		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle1' 		id='input31'>
+		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription1' 	id='input32'>
+		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle2' 		id='input33'>
+		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription2' 	id='input34'>
+		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle3' 		id='input35'>
+		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription3' 	id='input36'>
+		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle4' 		id='input37'>
+		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription4' 	id='input38'>
+		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle5' 		id='input39'>
+		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription5' 	id='input310'>
+		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle6' 		id='input311'>
+		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription6' 	id='input312'>
 	</div>
 	<div class='page4 pagesle'>
-		<input placeholder='OverView of Past Expereince' class='Inpage4' name='overview' 	id='input41'>
-		<input placeholder='Start Date' 	  	class='Inpage4' name='work_start_date[]' 	id='input42'>
-		<input placeholder='End Date' 		  	class='Inpage4' name='work_finish_date[]' 	id='input43'>
-		<input placeholder='Work Title' 	  	class='Inpage4' name='work_titles[]' 		id='input44'>
-		<input placeholder='Work Description' 	class='Inpage4' name='work_descriptions[]' 	id='input45'>
-		<input placeholder='Start Date' 		class='Inpage4' name='work_start_date[]' 	id='input46'>
-		<input placeholder='End Date' 			class='Inpage4' name='work_finish_date[]' 	id='input47'>
-		<input placeholder='Work Title' 		class='Inpage4' name='work_titles[]' 		id='input48'>
-		<input placeholder='Work Description' 	class='Inpage4' name='work_descriptions[]' 	id='input49'>
-		<input placeholder='Start Date' 		class='Inpage4' name='work_start_date[]' 	id='input410'>
-		<input placeholder='End Date' 			class='Inpage4' name='work_finish_date[]' 	id='input411'>
-		<input placeholder='Work Title' 		class='Inpage4' name='work_titles[]' 		id='input412'>
-		<input placeholder='Work Description' 	class='Inpage4' name='work_descriptions[]' 	id='input413'>
-		<input placeholder='Start Date' 		class='Inpage4' name='work_start_date[]' 	id='input414'>
-		<input placeholder='End Date' 			class='Inpage4' name='work_finish_date[]' 	id='input415'>
-		<input placeholder='Work Title' 		class='Inpage4' name='work_titles[]' 		id='input416'>
-		<input placeholder='Work Description' 	class='Inpage4' name='work_descriptions[]' 	id='input417'>
-		<input placeholder='Start Date' 		class='Inpage4' name='work_start_date[]' 	id='input418'>
-		<input placeholder='End Date' 			class='Inpage4' name='work_finish_date[]' 	id='input419'>
-		<input placeholder='Work Title' 		class='Inpage4' name='work_titles[]' 		id='input420'>
-		<input placeholder='Work Description' 	class='Inpage4' name='work_descriptions[]' 	id='input421'>
+		<input placeholder='OverView of Past Expereince' class='Inpage4' name='workExperienceExtraText1' 	id='input41'>
+		<input placeholder='Start Date' 	  	class='Inpage4' name='workExperienceStart1' 	id='input42'>
+		<input placeholder='End Date' 		  	class='Inpage4' name='workExperienceEnd1' 	id='input43'>
+		<input placeholder='Work Title' 	  	class='Inpage4' name='workExperienceTitle1' 		id='input44'>
+		<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription1' 	id='input45'>
+		<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart2' 	id='input46'>
+		<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd2' 	id='input47'>
+		<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle2' 		id='input48'>
+		<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription2' 	id='input49'>
+		<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart3' 	id='input410'>
+		<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd3' 	id='input411'>
+		<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle3' 		id='input412'>
+		<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription3' 	id='input413'>
+		<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart4' 	id='input414'>
+		<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd4' 	id='input415'>
+		<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle4' 		id='input416'>
+		<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription4' 	id='input417'>
+		<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart5' 	id='input418'>
+		<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd5' 	id='input419'>
+		<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle5' 		id='input420'>
+		<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription5' 	id='input421'>
 
 	</div>
 	<div class='page5 pagesle'>
