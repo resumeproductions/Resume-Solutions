@@ -61,9 +61,8 @@
 				 <div class="banner-info">
 					  <div class="bannerhead">
 						  <h2>My name is <span>{{{ $template->user->first_name}}} {{{ $template->user->last_name}}}</span></h2>
-						  <h3>PHP Programmer</h3>
-						  <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-						  lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</p>
+						  <h3>{{{ $template->header->job_title}}}</h3>
+						  <p>{{{ $template->header->description}}}</p>
 						  <a class="downarrow scroll" href="#about"><span> </span></a>
 					  </div>
 				 </div>
@@ -114,24 +113,6 @@
 											 </div>								  
 										</div>
 										
-									{{-- 	<div class="col-md-3">	
-											<div class="skill-grid">
-												<div class="circle" id="circles-2"></div>									
-												 <h3>AJAX</h3>	
-											 </div>								  
-										</div>
-										<div class="col-md-3">	
-											<div class="skill-grid">
-												<div class="circle" id="circles-3"></div>									
-												 <h3>PHP</h3>	
-											 </div>								  
-										</div>
-										<div class="col-md-3">	
-											<div class="skill-grid">
-												<div class="circle" id="circles-4"></div>									
-												 <h3>JAVASCRIPT</h3>	
-											 </div>								  
-										</div> --}}
 										<div class="clearfix"> </div>
 								</div>
 							</div>
@@ -173,24 +154,13 @@
 				  </div>
 				  <div class="container">
 					  <div class="portfolio-grids">
+					  	@foreach ($template->portfolios as $portfolio)
 						  <div class="portfolio-grid col-md-4">
-							 <a href="#"><img src="/assets_dylan/images/monitr1.png"></a>
-							  <p>Proin gravida nibh vel velit auctor aliquet.
-								 Aenean sollicitudin, lorem quis bibendum</p>
+							 <a href="#"><img src="/img/uploaded/{{{$portfolio->picture}}}"></a>
+							  <p>{{{$portfolio->description}}}</p>
 							  <a class="rightarrow" href="#"><span> </span></a>
 						  </div>
-						  <div class="portfolio-grid col-md-4">
-							  <a href="#"><img src="/assets_dylan/images/monitr2.png"></a>
-							  <p>Proin gravida nibh vel velit auctor aliquet.
-								 Aenean sollicitudin, lorem quis bibendum</p>
-							  <a class="rightarrow" href="#"><span> </span></a>
-						  </div>
-						  <div class="portfolio-grid col-md-4">
-							  <a href="#"><img src="/assets_dylan/images/monitr3.png"></a>
-							  <p>Proin gravida nibh vel velit auctor aliquet.
-								 Aenean sollicitudin, lorem quis bibendum</p>
-							  <a class="rightarrow" href="#"><span> </span></a>
-						  </div>
+						  @endforeach
 						  <div class="clear"> </div>
 					  </div>
 					  <a class="portdown scroll" href="#contact"><span> </span></a>	  
