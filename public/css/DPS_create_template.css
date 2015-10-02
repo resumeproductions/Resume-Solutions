@@ -2,7 +2,10 @@
 	margin: 0px;
 	padding: 0px;
 }
-input {
+body {
+	background-color: grey;
+}
+.inputs {
 	position: absolute;
 	width: 20%;
 	height: 5%;
@@ -16,32 +19,39 @@ input {
 	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	border-width: 2%;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
+	border-width: 4%;
+	border-style: solid;
+	background-color: white;
+	border-color: black;
 }
 input:hover {
-	background-color: lightgrey;	
-}
-input:active {
-	background-color: white;
+	border-width: 5px;
+	border-color: skyblue;
 }
 input:focus {
-	background-color: white;
-	border-color: black;
+	border-width: 5px;
+	border-color: #4385E7;
+	outline: 0;
 }
 textarea:hover {
-	background-color: lightgrey;
-}
-textarea:active {
-	background-color: white;
+	border-width: 5px;
+	border-color: skyblue;
 }
 textarea:focus {
-	background-color: white;
-	border-color: black;
+	border-width: 5px;
+	border-color: #4385E7;
+	outline: 0;
 }
-button {
+button:focus {
+	border-width: 5px;
+	border-color: #4385E7;
+	outline: 0;
+}
+button:hover {
+	border-width: 5px;
+	border-color: skyblue;
+}
+.buttons {
 	position: absolute;
 	width: 20%;
 	height: 5%;
@@ -54,21 +64,21 @@ button {
 	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-	border-width: 2%;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
+	border-width: 4%;
+	border-style: solid;
+	background-color: white;
+	border-color: black;
 }
-textarea {
+.textarea {
 	position: absolute;
 	width: 30%;
 	height: 15%;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	border-width: 4px;
-	border-style: double;
-	background-color: grey;
-	border-color: white;
+	border-style: solid;
+	background-color: white;
+	border-color: black;
 }
 #cont {
 	margin-left: 0px;
@@ -109,7 +119,7 @@ textarea {
 }
 .page1 {
 	width: 100%;
-	background: url(/assets_david/Dps/Page1.png) no-repeat center center fixed;
+	background: url(/assets_david/Dps/Dark/Page1.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -118,7 +128,7 @@ textarea {
 .page2 {
 	width: 0%;
 	left: 99%;
-	background: url(/assets_david/Dps/Page2.png) no-repeat center center fixed;
+	background: url(/assets_david/Dps/Dark/Page2.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -128,7 +138,7 @@ textarea {
 .page3 {
 	width: 0%;
 	left: 99%;
-	background: url(/assets_david/Dps/Page3.png) no-repeat center center fixed;
+	background: url(/assets_david/Dps/Dark/Page3.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -138,7 +148,7 @@ textarea {
 .page4 {
 	width: 0%;
 	left: 99%;
-	background: url(/assets_david/Dps/Page4.png) no-repeat center center fixed;
+	background: url(/assets_david/Dps/Dark/Page4.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -148,7 +158,7 @@ textarea {
 .page5 {
 	width: 0%;
 	left: 99%;
-	background: url(/assets_david/Dps/Page5.png) no-repeat center center fixed;
+	background: url(/assets_david/Dps/Dark/Page5.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -158,7 +168,7 @@ textarea {
 .page6 {
 	width: 0%;
 	left: 99%;
-	background: url(/assets_david/Dps/Page6.png) no-repeat center center fixed;
+	background: url(/assets_david/Dps/Dark/Page6.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -168,7 +178,7 @@ textarea {
 .page7 {
 	width: 0%;
 	left: 99%;
-	background: url(/assets_david/Dps/Page7.png) no-repeat center center fixed;
+	background: url(/assets_david/Dps/Dark/Page7.png) no-repeat center center fixed;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -213,6 +223,12 @@ textarea {
 #input13 {
 	left: 40%;
 	top: 67%;
+}
+#input14 {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	z-index: -2;
 }
 #input21 {
 	left: 19%;
@@ -789,6 +805,67 @@ textarea {
 	left: 15%;
 	top: 89%;
 	width: 25%;
+}
+#color {
+	position: fixed;
+	background-image: url(/images/color.jpg);
+	background-size: 100% 100%;
+	height: 10%;
+	width: 10%;
+	left: 5%;
+	top: 10%;
+	z-index: 2;
+}
+#david {
+	position: fixed;
+	width: 30%;
+	height: 30%;
+	top: 30%;
+	left: 35%;
+	background-color: grey;
+	opacity: 0;
+	z-index: -1;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	border-width: 4%;
+	border-style: solid;
+	background-color: grey;
+	border-color: black;
+}
+#dark {
+	position: absolute;
+	background-color: lightgrey;
+	color: black;
+	width: 30%;
+	height: 30%;
+	top: 5%;
+	left: 5%;
+}
+#blue {
+	position: absolute;
+	background-color: lightblue;
+	color: darkblue;
+	width: 30%;
+	height: 30%;
+	left: 65%;
+	top: 65%;
+}
+#red {
+	position: absolute;
+	background-color: purple;
+	color: blue;
+	width: 30%;
+	height: 30%;
+	left: 5%;
+	top: 65%;
 }
 
 
