@@ -12,125 +12,127 @@
 	@stop
 
 	@section('content')
+	{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
+		<div class='page1 pagesle'>
+			<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives1' id='input11'>
+			<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives2' id='input12'>
+			<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives3' id='input13'>
+		</div>
+		<div class='page2 pagesle'>
+			<button placeholder='' class='Inpage2' name='about_picture' id='input21'></button>
+			<input placeholder='Title of About' 	   	  class='Inpage2' name='aboutTitle' id='input22'>
+			<textarea placeholder='Description about you' class='Inpage2' name='aboutDescription1' id='input23'></textarea>
+			<textarea placeholder='Description about you' class='Inpage2' name='aboutDescription2' id='input24'></textarea>
+		</div>
+		<div class='page3 pagesle'>
+			<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle1' 		id='input31'>
+			<input placeholder='Description of Service' class='Inpage3' name='serviceDescription1' 	id='input32'>
+			<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle2' 		id='input33'>
+			<input placeholder='Description of Service' class='Inpage3' name='serviceDescription2' 	id='input34'>
+			<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle3' 		id='input35'>
+			<input placeholder='Description of Service' class='Inpage3' name='serviceDescription3' 	id='input36'>
+			<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle4' 		id='input37'>
+			<input placeholder='Description of Service' class='Inpage3' name='serviceDescription4' 	id='input38'>
+			<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle5' 		id='input39'>
+			<input placeholder='Description of Service' class='Inpage3' name='serviceDescription5' 	id='input310'>
+			<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle6' 		id='input311'>
+			<input placeholder='Description of Service' class='Inpage3' name='serviceDescription6' 	id='input312'>
+		</div>
+		<div class='page4 pagesle'>
+			<input placeholder='OverView of Past Expereince' class='Inpage4' name='workExperienceExtraText1' 	id='input41'>
+			<input placeholder='Start Date' 	  	class='Inpage4' name='workExperienceStart1' 	id='input42'>
+			<input placeholder='End Date' 		  	class='Inpage4' name='workExperienceEnd1' 	id='input43'>
+			<input placeholder='Work Title' 	  	class='Inpage4' name='workExperienceTitle1' 		id='input44'>
+			<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription1' 	id='input45'>
+			<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart2' 	id='input46'>
+			<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd2' 	id='input47'>
+			<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle2' 		id='input48'>
+			<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription2' 	id='input49'>
+			<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart3' 	id='input410'>
+			<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd3' 	id='input411'>
+			<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle3' 		id='input412'>
+			<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription3' 	id='input413'>
+			<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart4' 	id='input414'>
+			<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd4' 	id='input415'>
+			<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle4' 		id='input416'>
+			<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription4' 	id='input417'>
+			<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart5' 	id='input418'>
+			<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd5' 	id='input419'>
+			<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle5' 		id='input420'>
+			<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription5' 	id='input421'>
 
-	<div class='page1 pagesle'>
-		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives1' id='input11'>
-		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives2' id='input12'>
-		<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives3' id='input13'>
-	</div>
-	<div class='page2 pagesle'>
-		<button placeholder='' class='Inpage2' name='about_picture' id='input21'></button>
-		<input placeholder='Title of About' 	   	  class='Inpage2' name='aboutTitle' id='input22'>
-		<textarea placeholder='Description about you' class='Inpage2' name='aboutDescription1' id='input23'></textarea>
-		<textarea placeholder='Description about you' class='Inpage2' name='aboutDescription2' id='input24'></textarea>
-	</div>
-	<div class='page3 pagesle'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle1' 		id='input31'>
-		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription1' 	id='input32'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle2' 		id='input33'>
-		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription2' 	id='input34'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle3' 		id='input35'>
-		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription3' 	id='input36'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle4' 		id='input37'>
-		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription4' 	id='input38'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle5' 		id='input39'>
-		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription5' 	id='input310'>
-		<input placeholder='Title of a Service' 	class='Inpage3' name='serviceTitle6' 		id='input311'>
-		<input placeholder='Description of Service' class='Inpage3' name='serviceDescription6' 	id='input312'>
-	</div>
-	<div class='page4 pagesle'>
-		<input placeholder='OverView of Past Expereince' class='Inpage4' name='workExperienceExtraText1' 	id='input41'>
-		<input placeholder='Start Date' 	  	class='Inpage4' name='workExperienceStart1' 	id='input42'>
-		<input placeholder='End Date' 		  	class='Inpage4' name='workExperienceEnd1' 	id='input43'>
-		<input placeholder='Work Title' 	  	class='Inpage4' name='workExperienceTitle1' 		id='input44'>
-		<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription1' 	id='input45'>
-		<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart2' 	id='input46'>
-		<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd2' 	id='input47'>
-		<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle2' 		id='input48'>
-		<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription2' 	id='input49'>
-		<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart3' 	id='input410'>
-		<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd3' 	id='input411'>
-		<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle3' 		id='input412'>
-		<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription3' 	id='input413'>
-		<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart4' 	id='input414'>
-		<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd4' 	id='input415'>
-		<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle4' 		id='input416'>
-		<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription4' 	id='input417'>
-		<input placeholder='Start Date' 		class='Inpage4' name='workExperienceStart5' 	id='input418'>
-		<input placeholder='End Date' 			class='Inpage4' name='workExperienceEnd5' 	id='input419'>
-		<input placeholder='Work Title' 		class='Inpage4' name='workExperienceTitle5' 		id='input420'>
-		<input placeholder='Work Description' 	class='Inpage4' name='workExperienceDescription5' 	id='input421'>
+		</div>
+		<div class='page5 pagesle'>
+			<input placeholder='Title' class='Inpage5' name='descriptionTitle1' id='input51'>
 
-	</div>
-	<div class='page5 pagesle'>
-		<input placeholder='Title' class='Inpage5' name='idk' id='input51'>
+			<input placeholder='Skill Title' 	class='Inpage5' name='skillTitle1' 	id='input52'>
+			<input placeholder='00' 			class='Inpage5' name='skillPercent1' 	id='input53'>
+			<input placeholder='Skill Title' 	class='Inpage5' name='skillTitle2' 	id='input54'>
+			<input placeholder='00' 			class='Inpage5' name='skillPercent2' 	id='input55'>
+			<input placeholder='Skill Title' 	class='Inpage5' name='skillTitle3' 	id='input56'>
+			<input placeholder='00' 			class='Inpage5' name='skillPercent3' 	id='input57'>
 
-		<input placeholder='Skill Title' 	class='Inpage5' name='skill_titles' 	id='input52'>
-		<input placeholder='00' 			class='Inpage5' name='skill_percents' 	id='input53'>
-		<input placeholder='Skill Title' 	class='Inpage5' name='skill_titles' 	id='input54'>
-		<input placeholder='00' 			class='Inpage5' name='skill_percents' 	id='input55'>
-		<input placeholder='Skill Title' 	class='Inpage5' name='skill_titles' 	id='input56'>
-		<input placeholder='00' 			class='Inpage5' name='skill_percents' 	id='input57'>
+			<input placeholder='Title' 			class='Inpage5' name='miscTitle1' 		id='input510'>
+			<input placeholder='Small-Title' 	class='Inpage5' name='miscHead1' 		id='input511'>
+			<input placeholder='Sub-Title' 		class='Inpage5' name='miscFoot1' 		id='input512'>
+			<input placeholder='00' 			class='Inpage5' name='miscPercent1' 	id='input513'>
+			<input placeholder='Small-Title' 	class='Inpage5' name='miscHead2' 		id='input514'>
+			<input placeholder='Sub-Title' 		class='Inpage5' name='miscFoot2' 		id='input515'>
+			<input placeholder='00' 			class='Inpage5' name='miscPercent2' 	id='input516'>
+			<input placeholder='Small-Title' 	class='Inpage5' name='miscHead3' 		id='input517'>
+			<input placeholder='Sub-Title' 		class='Inpage5' name='miscFoot3' 		id='input518'>
+			<input placeholder='00' 			class='Inpage5' name='miscPercent3' 	id='input519'>
+			<input placeholder='Small-Title' 	class='Inpage5' name='miscHead4' 		id='input520'>
+			<input placeholder='Sub-Title' 		class='Inpage5' name='miscFoot4' 		id='input521'>
+			<input placeholder='00' 			class='Inpage5' name='miscPercent4' 	id='input522'>
 
-		<input placeholder='Title' 			class='Inpage5' name='misc_title' 		id='input510'>
-		<input placeholder='Small-Title' 	class='Inpage5' name='misc_small' 		id='input511'>
-		<input placeholder='Sub-Title' 		class='Inpage5' name='misc_sub[]' 		id='input512'>
-		<input placeholder='00' 			class='Inpage5' name='misc_percents[]' 	id='input513'>
-		<input placeholder='Small-Title' 	class='Inpage5' name='misc_small' 		id='input514'>
-		<input placeholder='Sub-Title' 		class='Inpage5' name='misc_sub[]' 		id='input515'>
-		<input placeholder='00' 			class='Inpage5' name='misc_percents[]' 	id='input516'>
-		<input placeholder='Small-Title' 	class='Inpage5' name='misc_small' 		id='input517'>
-		<input placeholder='Sub-Title' 		class='Inpage5' name='misc_sub[]' 		id='input518'>
-		<input placeholder='00' 			class='Inpage5' name='misc_percents[]' 	id='input519'>
-		<input placeholder='Small-Title' 	class='Inpage5' name='misc_small' 		id='input520'>
-		<input placeholder='Sub-Title' 		class='Inpage5' name='misc_sub[]' 		id='input521'>
-		<input placeholder='00' 			class='Inpage5' name='misc_percents[]' 	id='input522'>
+			<input placeholder='Knowledge' class='Inpage5' name='knowledge1' id='input523'>
+			<input placeholder='Knowledge' class='Inpage5' name='knowledge2' id='input524'>
+			<input placeholder='Knowledge' class='Inpage5' name='knowledge3' id='input525'>
+			<input placeholder='Knowledge' class='Inpage5' name='knowledge4' id='input526'>
 
-		<input placeholder='Knowledge' class='Inpage5' name='knowledge' id='input523'>
-		<input placeholder='Knowledge' class='Inpage5' name='knowledge' id='input524'>
-		<input placeholder='Knowledge' class='Inpage5' name='knowledge' id='input525'>
-		<input placeholder='Knowledge' class='Inpage5' name='knowledge' id='input526'>
+			<input placeholder='Hobbies' class='Inpage5' name='hobbies1' id='input528'>
+			<input placeholder='Hobbies' class='Inpage5' name='hobbies2' id='input529'>
+			<input placeholder='Hobbies' class='Inpage5' name='hobbies3' id='input530'>
+		</div>
+		<div class='page6 pagesle'>
+			<button placeholder='' 	class='Inpage6' name='portfolioPicture1' id='input61'></button>
+			<input placeholder='Title' 			class='Inpage6' name='portfolioTitle1' 		id='input62'>
+			<input placeholder='Description' 	class='Inpage6' name='portfolioDescription1' id='input63'>
+			<input placeholder='Link' 			class='Inpage6' name='portfolioLink1' 		id='input64'>
 
-		<input placeholder='Hobbies' class='Inpage5' name='hobbies' id='input528'>
-		<input placeholder='Hobbies' class='Inpage5' name='hobbies' id='input529'>
-		<input placeholder='Hobbies' class='Inpage5' name='hobbies' id='input530'>
-	</div>
-	<div class='page6 pagesle'>
-		<button placeholder='' 	class='Inpage6' name='portfolio_pictures[]' id='input61'></button>
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		id='input62'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input63'>
-		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input64'>
+			<button placeholder='' 	class='Inpage6' name='portfolioPicture2' id='input65'></button>
+			<input placeholder='Title' 			class='Inpage6' name='portfolioTitle2' 		id='input66'>
+			<input placeholder='Description' 	class='Inpage6' name='portfolioDescription2' id='input67'>
+			<input placeholder='Link' 			class='Inpage6' name='portfolioLink2' 		id='input68'>
 
-		<button placeholder='' 	class='Inpage6' name='portfolio_pictures[]' 	id='input65'></button>
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		id='input66'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input67'>
-		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input68'>
+			<button placeholder='' 	class='Inpage6' name='portfolioPicture3' id='input69'></button>
+			<input placeholder='Title' 			class='Inpage6' name='portfolioTitle3' 		id='input610'>
+			<input placeholder='Description' 	class='Inpage6' name='portfolioDescription3' id='input611'>
+			<input placeholder='Link' 			class='Inpage6' name='portfolioLink3' 		id='input612'>
 
-		<button placeholder='' 	class='Inpage6' name='portfolio_pictures[]' 	id='input69'></button>
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		id='input610'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input611'>
-		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input612'>
+			<button placeholder='' 	class='Inpage6' name='portfolioPicture4' id='input613'></button>
+			<input placeholder='Title' 			class='Inpage6' name='portfolioTitle4' 		id='input614'>
+			<input placeholder='Description' 	class='Inpage6' name='portfolioDescription4' id='input615'>
+			<input placeholder='Link' 			class='Inpage6' name='portfolioLink4' 		id='input616'>
 
-		<button placeholder='' 	class='Inpage6' name='portfolio_pictures[]' 	id='input613'></button>
-		<input placeholder='Title' 			class='Inpage6' name='portfolio_titles[]' 		id='input614'>
-		<input placeholder='Description' 	class='Inpage6' name='portfolio_descriptions[]' id='input615'>
-		<input placeholder='Link' 			class='Inpage6' name='portfolio_links[]' 		id='input616'>
-
-		<input placeholder='Category' class='Inpage6' name='category[]' id='input617'>
-		<input placeholder='Category' class='Inpage6' name='category[]' id='input618'>
-		<input placeholder='Category' class='Inpage6' name='category[]' id='input619'>
-	</div>
-	<div class='page7 pagesle'>
-		<input placeholder='Award Title' 	class='Inpage7' name='award_titles[]' 	id='input71'>
-		<input placeholder='000' 			class='Inpage7' name='award_numbers[]' 	id='input72'>
-		<input placeholder='Award Title' 	class='Inpage7' name='award_titles[]' 	id='input73'>
-		<input placeholder='000' 			class='Inpage7' name='award_numbers[]' 	id='input74'>
-		<input placeholder='Award Title' 	class='Inpage7' name='award_titles[]' 	id='input75'>
-		<input placeholder='000' 			class='Inpage7' name='award_numbers[]' 	id='input76'>
-		<input placeholder='Award Title' 	class='Inpage7' name='award_titles[]' 	id='input77'>
-		<input placeholder='000' 			class='Inpage7' name='award_numbers[]' 	id='input78'>
-		<input placeholder='Contact Title' class='Inpage7' name='contact_description' id='input79'>
-	</div>
+			<input placeholder='Category' class='Inpage6' name='portfolioCategory1' id='input617'>
+			<input placeholder='Category' class='Inpage6' name='portfolioCategory2' id='input618'>
+			<input placeholder='Category' class='Inpage6' name='portfolioCategory3' id='input619'>
+		</div>
+		<div class='page7 pagesle'>
+			<input placeholder='Award Title' 	class='Inpage7' name='awardTitle1' 	id='input71'>
+			<input placeholder='000' 			class='Inpage7' name='awardNumber1' 	id='input72'>
+			<input placeholder='Award Title' 	class='Inpage7' name='awardTitle2' 	id='input73'>
+			<input placeholder='000' 			class='Inpage7' name='awardNumber2' 	id='input74'>
+			<input placeholder='Award Title' 	class='Inpage7' name='awardTitle3' 	id='input75'>
+			<input placeholder='000' 			class='Inpage7' name='awardNumber3' 	id='input76'>
+			<input placeholder='Award Title' 	class='Inpage7' name='awardTitle4' 	id='input77'>
+			<input placeholder='000' 			class='Inpage7' name='awardNumber4' 	id='input78'>
+			<input placeholder='Contact Title' class='Inpage7' name='contactDescription' id='input79'>
+		</div>
+		<button type="submit" class='Inpage5 buttons' id='submitTemplate1'></button>
+	{{Form::close()}}
 	<button id='right' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-right fa-2x"></i>
 	</button>
