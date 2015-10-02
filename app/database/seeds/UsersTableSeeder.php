@@ -27,17 +27,30 @@ class UsersTableSeeder extends Seeder {
 		$user->save();
 
 		$user2 = new User();
-		$user2->first_name = 'Devi';
-		$user2->last_name = 'Johnson';
-		$user2->email = 'devijohnson@rocketmail.com';
-		$user2->password = 'london2452';
+		$user2->first_name = 'Dave';
+		$user2->last_name = 'Simonelli';
+		$user2->email = 'simonelli@gmail.com';
+		$user2->password = 'password';
 		$user2->zip = '78227';
 		$user2->address = '3787 Perrin Central Blvd';
 		$user2->state = 'Texas';
 		$user2->phone_number = '210-865-1155';
-		$user2->username = 'devi';
+		$user2->username = 'simonelli';
 		$user2->city = 'San Antonio';
 		$user2->save();
+
+		$user3 = new User();
+		$user3->first_name = 'Dylan';
+		$user3->last_name = 'Perenchio';
+		$user3->email = 'dylanperenchio@gmail.com';
+		$user3->password = 'password';
+		$user3->zip = '78227';
+		$user3->address = '3787 Perrin Central Blvd';
+		$user3->state = 'Texas';
+		$user3->phone_number = '210-865-1155';
+		$user3->username = 'dylanp';
+		$user3->city = 'San Antonio';
+		$user3->save();
 	}
 
 }
