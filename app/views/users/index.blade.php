@@ -160,17 +160,16 @@
 
           <li><div class="st-item"><a href="http://drbl.in/fGOf"><img src="images/step7.png" width="500" height="600"/></a></div><div class="st-title"><h2>Some fields are made for pictures of you, your work, or even portfolio pieces.</h2><h3></h3></div></li>
 
-          <li><div class="st-item"><a href="http://drbl.in/fypr"><img src="direction_images/9.jpg"/></a></div><div class="st-title"><h2>Cultist</h2><h3></h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fypr"><img src="images/submit.png" width="300" height="400"/></a></div><div class="st-title"><h2>At the end of each creation page there will be a submit button to complete the creation of your resume! </h2><h3></h3></div></li>
 
-          <li><div class="st-item"><a href="http://drbl.in/fEmG"><img src="direction_images/10.jpg"/></a></div><div class="st-title"><h2>Crusader &amp; Viking</h2><h3></h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fEmG"><img src="images/step9.png" width="500" height="600"/></a></div><div class="st-title"><h2>Once submitting your resume you will be redirected to your profile page where you can then see your resume.</h2><h3></h3></div></li>
 
-          <li><div class="st-item"><a href="http://drbl.in/ffiw"><img src="direction_images/11.jpg"/></a></div><div class="st-title"><h2>Crocodile</h2><h3></h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/ffiw"><img src="images/step11.png" width="500" height="600"/></a></div><div class="st-title"><h2>Basic information that you inputed when you signed up will be available for edit under the edit profile button on your profile page.</h2><h3></h3></div></li>
 
-          <li><div class="st-item"><a href="http://drbl.in/fqWx"><img src="direction_images/12.jpg"/></a></div><div class="st-title"><h2>Captain Banana</h2><h3></h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fqWx"><img src="images/step12.png" width="300" height="400"/></a></div><div class="st-title"><h2>Congratulations you now have a full HTML/CSS Resume! We thank you for using Resume Solutions.</h2><h3></h3></div></li>
 
-          <li><div class="st-item"><a href="http://drbl.in/fkuv"><img src="direction_images/13.jpg"/></a></div><div class="st-title"><h2>Werewolf</h2><h3></h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fkuv"><img src="images/team.png" width="500" height="600"/></a></div><div class="st-title"><h2>If there are any questions or concerns feel free to reach out to any of our team members. This information can be found on the log in page.</h2><h3></h3></div></li>
 
-          <li><div class="st-item"><a href="http://drbl.in/fIli"><img src="direction_images/14.jpg"/></a></div><div class="st-title"><h2>Vegetables</h2><h3></h3></div></li>
         </ul>
       </section>
 
