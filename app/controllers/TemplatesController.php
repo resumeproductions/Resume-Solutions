@@ -41,8 +41,45 @@ class TemplatesController extends \BaseController {
 		{
 			$template = new Template();
 			$template->color = Input::get('color');
+			$template->layout = Input::get('templateID');
 			$template->user_id = Auth::id();
 			$template->save();
+
+			//Storing header info
+			if(Input::has('headerJobTitle')) {
+				$header = new Header1();
+				$header->job_title = Input::get('headerJobTitle');
+				$header->template_id = $template->id;
+				if(Input::has('headerResumeTitle')) {
+					$header->description = Input::get('headerResumeTitle');
+				}
+				if(Input::has('headerJobTitle')) {
+					$header->description = Input::get('headerJobTitle');
+				}
+				$header->save();
+			}
+
+			//Storing adjectives for template 2
+			if(Input::has('headerAdjective1') || Input::has('headerAdjective2') || Input::has('headerAdjective3')){
+				if(Input::has('headerAdjective1') {
+					$header1 = new Header1();
+					$header1->template_id = $template->id;
+					$header1->adjective = Input::get('headerAdjective1');
+					$header1->save();					
+				}
+				if(Input::has('headerAdjective2') {
+					$header2 = new Header1();
+					$header2->template_id = $template->id;
+					$header2->adjective = Input::get('headerAdjective2');
+					$header2->save();					
+				}
+				if(Input::has('headerAdjective3') {
+					$header3 = new Header1();
+					$header3->template_id = $template->id;
+					$header3->adjective = Input::get('headerAdjective3');
+					$header3->save();					
+				}
+			}
 
 			//Checking for up to 6 skill inputs to be accpeted
 			if(Input::has('skillPercent1') && Input::has('skillTitle1')) {
@@ -105,11 +142,18 @@ class TemplatesController extends \BaseController {
 				$skills->save();
 			}
 
-			if(Input::has('aboutTitle') && Input::has('aboutDescription')) {
+			if(Input::has('aboutDescription1') || Input::has('aboutDescription2')) {
 				$abouts = new About();
 				$abouts->template_id = $template->id;
-				$abouts->title = Input::get('aboutTitle');
-				$abouts->description = Input::get('aboutDescription');
+				if(Input::has('aboutDescription1')) {
+					$abouts->description = Input::get('aboutDescription1');
+				}
+				if(Input::has('aboutDescription2')) {
+					$abouts->description = Input::get('aboutDescription2');
+				}
+				if(Input::has('aboutTitle')) {
+					$abouts->title = Input::get('aboutTitle');
+				}
 				if (Input::hasFile('aboutBackgroundImage')) {
 			 	      $template->picture = Input::file('aboutBackgroundImage')->move("images/uploaded/");
 			 	}
@@ -123,80 +167,127 @@ class TemplatesController extends \BaseController {
 				$contacts->save();
 			}
 
+
+			//Storing services currently for template 2
+			if(Input::has('serviceTitle1') || Input::has('serviceTitle2') || Input::has('serviceTitle3') || Input::has('serviceTitle4') || Input::has('serviceTitle5') || Input::has('serviceTitle6')) {
+				if(Input::has('serviceTitle1') && Input::has('serviceDescription1')) {
+					$service1 = new Service();
+					$service1->template_id = $template->id;
+					$service1->title = Input::get('serviceTitle1');
+					$service1->description = Input::get('serviceDescription1');
+					$service1->save();
+				}
+				if(Input::has('serviceTitle2') && Input::has('serviceDescription2')) {
+					$service2 = new Service();
+					$service2->template_id = $template->id;
+					$service2->title = Input::get('serviceTitle2');
+					$service2->description = Input::get('serviceDescription2');
+					$service2->save();
+				}
+				if(Input::has('serviceTitle3') && Input::has('serviceDescription3')) {
+					$service3 = new Service();
+					$service3->template_id = $template->id;
+					$service3->title = Input::get('serviceTitle3');
+					$service3->description = Input::get('serviceDescription3');
+					$service3->save();
+				}
+				if(Input::has('serviceTitle4') && Input::has('serviceDescription4')) {
+					$service4 = new Service();
+					$service4->template_id = $template->id;
+					$service4->title = Input::get('serviceTitle4');
+					$service4->description = Input::get('serviceDescription4');
+					$service4->save();
+				}
+				if(Input::has('serviceTitle5') && Input::has('serviceDescription5')) {
+					$service5 = new Service();
+					$service5->template_id = $template->id;
+					$service5->title = Input::get('serviceTitle5');
+					$service5->description = Input::get('serviceDescription5');
+					$service5->save();
+				}
+				if(Input::has('serviceTitle6') && Input::has('serviceDescription6')) {
+					$service6 = new Service();
+					$service6->template_id = $template->id;
+					$service6->title = Input::get('serviceTitle6');
+					$service6->description = Input::get('serviceDescription6');
+					$service6->save();
+				}
+			}
+
 			//There are the inputs for the portfolio storeTemplate1Images
 			if(Input::has('portfolioDescription1')) {
-				$portfolio = new Portfolio();
+				$portfolio1 = new Portfolio();
 				if(Input::has('portfolioTitle1')) {
-					$portfolio->title = Input::get('portfolioTitle1');
+					$portfolio1->title = Input::get('portfolioTitle1');
 				}
-				$portfolio->template_id = $template->id;
-				$portfolio->description = Input::get('portfolioDescription1');
+				$portfolio1->template_id = $template->id;
+				$portfolio1->description = Input::get('portfolioDescription1');
 				if (Input::hasFile('portfolioPicture1')) {
-	            	$portfolio->picture = Input::file('portfolioPicture1')->move("img/uploaded/");
+	            	$portfolio1->picture = Input::file('portfolioPicture1')->move("img/uploaded/");
 	    		}
-				$portfolio->save();
+				$portfolio1->save();
 			}
 
 			if(Input::has('portfolioDescription2')) {
-				$portfolio = new Portfolio();
+				$portfolio2 = new Portfolio();
 				if(Input::has('portfolioTitle2')) {
-					$portfolio->title = Input::get('portfolioTitle2');
+					$portfolio2->title = Input::get('portfolioTitle2');
 				}
-				$portfolio->template_id = $template->id;
-				$portfolio->description = Input::get('portfolioDescription2');
+				$portfolio2->template_id = $template->id;
+				$portfolio2->description = Input::get('portfolioDescription2');
 				if (Input::hasFile('portfolioPicture2')) {
-	            	$portfolio->picture = Input::file('portfolioPicture2')->move("img/uploaded/");
+	            	$portfolio2->picture = Input::file('portfolioPicture2')->move("img/uploaded/");
 	    		}
-				$portfolio->save();
+				$portfolio2->save();
 			}
 
 			if(Input::has('portfolioDescription3')) {
-				$portfolio = new Portfolio();
+				$portfolio3 = new Portfolio();
 				if(Input::has('portfolioTitle3')) {
-					$portfolio->title = Input::get('portfolioTitle3');
+					$portfolio3->title = Input::get('portfolioTitle3');
 				}
-				$portfolio->template_id = $template->id;
-				$portfolio->description = Input::get('portfolioDescription3');
+				$portfolio3->template_id = $template->id;
+				$portfolio3->description = Input::get('portfolioDescription3');
 				if (Input::hasFile('portfolioPicture3')) {
-	            	$portfolio->picture = Input::file('portfolioPicture3')->move("img/uploaded/");
+	            	$portfolio3->picture = Input::file('portfolioPicture3')->move("img/uploaded/");
 	    		}
-				$portfolio->save();
+				$portfolio3->save();
 			}
 			if(Input::has('portfolioDescription4')) {
-				$portfolio = new Portfolio();
+				$portfolio4 = new Portfolio();
 				if(Input::has('portfolioTitle4')) {
-					$portfolio->title = Input::get('portfolioTitle4');
+					$portfolio4->title = Input::get('portfolioTitle4');
 				}
-				$portfolio->template_id = $template->id;
-				$portfolio->description = Input::get('portfolioDescription4');
+				$portfolio4->template_id = $template->id;
+				$portfolio4->description = Input::get('portfolioDescription4');
 				if (Input::hasFile('portfolioPicture4')) {
-	            	$portfolio->picture = Input::file('portfolioPicture4')->move("img/uploaded/");
+	            	$portfolio4->picture = Input::file('portfolioPicture4')->move("img/uploaded/");
 	    		}
-				$portfolio->save();
+				$portfolio4->save();
 			}
 			if(Input::has('portfolioDescription5')) {
-				$portfolio = new Portfolio();
+				$portfolio5 = new Portfolio();
 				if(Input::has('portfolioTitle5')) {
-					$portfolio->title = Input::get('portfolioTitle5');
+					$portfolio5->title = Input::get('portfolioTitle5');
 				}
-				$portfolio->template_id = $template->id;
-				$portfolio->description = Input::get('portfolioDescription5');
+				$portfolio5->template_id = $template->id;
+				$portfolio5->description = Input::get('portfolioDescription5');
 				if (Input::hasFile('portfolioPicture5')) {
-	            	$portfolio->picture = Input::file('portfolioPicture5')->move("img/uploaded/");
+	            	$portfolio5->picture = Input::file('portfolioPicture5')->move("img/uploaded/");
 	    		}
-				$portfolio->save();
+				$portfolio5->save();
 			}
 			if(Input::has('portfolioDescription6')) {
-				$portfolio = new Portfolio();
+				$portfolio6 = new Portfolio();
 				if(Input::has('portfolioTitle6')) {
-					$portfolio->title = Input::get('portfolioTitle6');
+					$portfolio6->title = Input::get('portfolioTitle6');
 				}
-				$portfolio->template_id = $template->id;
-				$portfolio->description = Input::get('portfolioDescription6');
+				$portfolio6->template_id = $template->id;
+				$portfolio6->description = Input::get('portfolioDescription6');
 				if (Input::hasFile('portfolioPicture6')) {
-	            	$portfolio->picture = Input::file('portfolioPicture6')->move("img/uploaded/");
+	            	$portfolio6->picture = Input::file('portfolioPicture6')->move("img/uploaded/");
 	    		}
-				$portfolio->save();
+				$portfolio6->save();
 			}
 
 			if(Input::has('workExperienceStart1') && Input::has('workExperienceDescription1') && Input::has('workExperienceTitle1')) {
