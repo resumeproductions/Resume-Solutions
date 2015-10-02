@@ -10,6 +10,8 @@
 	@section('content')
 
 	{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
+		<input name='color' class='Inpage1' value='1'>
+		<input name='templateID' value='layout3'>
 		<div class='page1 pagesle'>
 			<button id='input11' class='Inpage1' name='headerImage'>Profile Image</button>
 			<input id='input12' class='Inpage1' placeholder='Job title' name='headerJobTitle'>

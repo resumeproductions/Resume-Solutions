@@ -562,7 +562,7 @@ class TemplatesController extends \BaseController {
 				$education4->save();
 			}
 		} 
-		return Redirect::action('HomeController@showWelcome');
+		return Redirect::action('UsersController@getProfile');
 	}
 
 	/**
