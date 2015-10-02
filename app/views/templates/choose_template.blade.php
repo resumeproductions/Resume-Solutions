@@ -27,7 +27,7 @@
             <a href="#" target="_blank" class="pop-up" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="/images/1.jpg" alt="">
+                  <img src="/images/layout1.png" alt="">
                 </div>
                 <div class="portfolio-item-description">
                   <h3>Simple solid Template</h3>
@@ -44,7 +44,7 @@
             <a href="#" target="_blank" class="pop-up" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="/images/1.jpg" alt="">
+                  <img src="/images/layout2.png" alt="">
                 </div>
                 <div class="portfolio-item-description">
                   <h3>Simple solid Template</h3>
@@ -61,7 +61,7 @@
             <a href="#" target="_blank" class="pop-up" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="/images/1.jpg" alt="">
+                  <img src="/images/layout3.png" alt="">
                 </div>
                 <div class="portfolio-item-description">
                   <h3>Simple solid Template</h3>

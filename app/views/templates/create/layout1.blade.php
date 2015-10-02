@@ -9,13 +9,9 @@
 
 </head>
 <body>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
 	<input name='templateID' value='layout1'>
->>>>>>> cfd45298abf4e1636ed9e825b3d27729e5887397
->>>>>>> 22d5d4d2d86999fc85faffa43c8627d9328ebd63
+
 	<button id='color' value='0'>
 	</button>
 	<div id='david'>
@@ -34,23 +30,17 @@
 	</div>
 	{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
 	<div class='page1 pagesle'>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 22d5d4d2d86999fc85faffa43c8627d9328ebd63
+
 		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='aboutTitle'    id='input11'>
 		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='navbarTitle' 	   id='input12'>
 		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='aboutDescription' id='input13'></textarea>
 		<input name='color' class='Inpage1' id='input14'>
-<<<<<<< HEAD
-=======
-=======
+
 		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='headerJobTitle'    id='input11'>
 		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='headerResumeTitle' 	   id='input12'>
 		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='headerDescription' id='input13'></textarea>
 		<input name='color' value='1'>
->>>>>>> cfd45298abf4e1636ed9e825b3d27729e5887397
->>>>>>> 22d5d4d2d86999fc85faffa43c8627d9328ebd63
+
 	</div>
 	<div class='page2 pagesle'>
 		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='aboutDescription'	id='input21'></textarea>
