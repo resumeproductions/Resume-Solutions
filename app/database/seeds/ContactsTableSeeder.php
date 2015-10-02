@@ -18,6 +18,18 @@ public function run()
 		$contact->template_id = 1;
 	
 		$contact->save();
+
+		$contact2 = new Contact();
+		$contact2->description = 'Feel free to contact me with at the following available resources. ';
+		$contact2->template_id = 2;
+	
+		$contact2->save();
+
+		$contact3 = new Contact();
+		$contact3->description = 'Feel free to contact me with at the following available resources. ';
+		$contact3->template_id = 3;
+	
+		$contact3->save();
 	}
 
 }
