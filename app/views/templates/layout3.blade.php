@@ -459,14 +459,14 @@
 			<a class="handle" href="#"></a>
 			<h3>Change Color</h3>
 			<ul id="color-switcher" class="list-inline">
-				<li><a href="#" data-rel="css/theme-colors/orange.css"><img src="/assets_john/images/orange-theme.png" alt="Orange Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/green.css"><img src="/assets_john/images/green-theme.png" alt="Green Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/blue.css"><img src="/assets_john/images/blue-theme.png" alt="Blue Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/red.css"><img src="/assets_john/images/red-theme.png" alt="Red Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/purple.css"><img src="/assets_john/images/purple-theme.png" alt="Purple Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/dark.css"><img src="/assets_john/images/dark-theme.png" alt="Dark Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/glade.css"><img src="/assets_john/images/glade-theme.png" alt="Glade Theme Color" /></a></li>
-				<li><a href="#" data-rel="css/theme-colors/kimberly.css"><img src="/assets_john/images/kimberly-theme.png" alt="Kimberly Theme Color" /></a></li>
+				<li><a href="#" data-rel="/assets_john/css/theme-colors/orange.css"><img src="/assets_john/images/orange-theme.png" alt="Orange Theme Color" /></a></li>
+				<li><a href="#" data-rel="/assets_john/css/theme-colors/green.css"><img src="/assets_john/images/green-theme.png" alt="Green Theme Color" /></a></li>
+				<li><a href="#" data-rel="/assets_john/css/theme-colors/blue.css"><img src="/assets_john/images/blue-theme.png" alt="Blue Theme Color" /></a></li>
+				<li><a href="#" data-rel="/assets_john/css/theme-colors/red.css"><img src="/assets_john/images/red-theme.png" alt="Red Theme Color" /></a></li>
+				<li><a href="#" data-rel="/assets_john/css/theme-colors/purple.css"><img src="/assets_john/images/purple-theme.png" alt="Purple Theme Color" /></a></li>
+				<li><a href="#" data-rel="/assets_john/css/theme-colors/dark.css"><img src="/assets_john/images/dark-theme.png" alt="Dark Theme Color" /></a></li>
+				<li><a href="#" data-rel="/assets_john/css/theme-colors/glade.css"><img src="/assets_john/images/glade-theme.png" alt="Glade Theme Color" /></a></li>
+				<li><a href="#" data-rel="/assets_john/css/theme-colors/kimberly.css"><img src="/assets_john/images/kimberly-theme.png" alt="Kimberly Theme Color" /></a></li>	
 			</ul>
 		</div>
 		
