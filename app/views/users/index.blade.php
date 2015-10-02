@@ -58,7 +58,7 @@
         </li>
         <li><a href="#">Resumes</a>
         <ul>
-          <li><a href="#">Create New Resume</a></li>
+          <li><a href="/templates/create">Create New Resume</a></li>
           <li><a href="#">Browse Resumes</a></li>
         </ul>
         </li>
