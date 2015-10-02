@@ -12,16 +12,16 @@
 	<button id='color' value='0'>
 	</button>
 	<div id='david'>
-		<button id='dark' name='color'>
+		<button id='1' name='color'>
 			Grey
 		</button>
-		<button id='purple' name='color'>
+		<button id='2' name='color'>
 			Purple
 		</button>
-		<button id='blue' name='color'>
+		<button id='3' name='color'>
 			Blue
 		</button>
-		<button id='green' name='color'>
+		<button id='4' name='color'>
 			Green
 		</button>
 	</div>

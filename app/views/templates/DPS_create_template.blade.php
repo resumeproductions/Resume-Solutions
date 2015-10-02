@@ -13,6 +13,8 @@
 
 	@section('content')
 	{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
+		<input name='color' class='Inpage1' value='1'>
+		<input name='templateID' value='layout2'>
 		<div class='page1 pagesle'>
 			<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives1' id='input11'>
 			<input placeholder='Add an adjective to describe yourself.' class='Inpage1' name='adjectives2' id='input12'>
@@ -131,7 +133,7 @@
 			<input placeholder='000' 			class='Inpage7' name='awardNumber4' 	id='input78'>
 			<input placeholder='Contact Title' class='Inpage7' name='contactDescription' id='input79'>
 		</div>
-		<button type="submit" class='Inpage5 buttons' id='submitTemplate1'></button>
+		<button type="submit" class='Inpage7 buttons' id='submitTemplate2'>Submit</button>
 	{{Form::close()}}
 	<button id='right' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-right fa-2x"></i>
@@ -139,7 +141,7 @@
 	<button id='left' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-left fa-2x"></i>
 	</button>
-			@stop
+	@stop
 
 			@section('script')
 			<script type="text/javascript">
