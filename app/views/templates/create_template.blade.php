@@ -1,4 +1,3 @@
-
 @extends('layouts.master')
 
 @section('title')
@@ -10,7 +9,6 @@
 
 </head>
 <body>
-	<input name='templateID' value='layout1'>
 	<button id='color' value='0'>
 	</button>
 	<div id='david'>
@@ -29,13 +27,13 @@
 	</div>
 	{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
 	<div class='page1 pagesle'>
-		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='headerJobTitle'    id='input11'>
-		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='headerResumeTitle' 	   id='input12'>
-		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='headerDescription' id='input13'></textarea>
-		<input name='color' value='1'>
+		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='aboutTitle'    id='input11'>
+		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='navbarTitle' 	   id='input12'>
+		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='aboutDescription' id='input13'></textarea>
+		<input name='color' class='Inpage1' id='input14'>
 	</div>
 	<div class='page2 pagesle'>
-		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='aboutDescription1'	id='input21'></textarea>
+		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='aboutDescription'	id='input21'></textarea>
 		<input 	  placeholder='Year of Work' class='Inpage2 inputs' name='workExperienceStart1' id='input22'>
 		<input 	  placeholder='Work Title' class='Inpage2 inputs' name='workExperienceTitle1' id='input23'>
 		<textarea placeholder='Work Description' class='Inpage2 textarea' name='workExperienceDescription1'  id='input24'></textarea>
@@ -58,13 +56,13 @@
 	</div>
 	<div class='page4 pagesle'>
 		<input class='Inpage4 inputs'  placeholder='Portfolio Title' name='portfolioDescription1' id='input41'>
-		<button type="button" id='input42' class='buttons' data-toggle="modal" data-target=".fade">
+		<button type="button" id='input42' class='buttons Inpage4' data-toggle="modal" data-target=".fade">
 		</button>
 		<input class='Inpage4 inputs'  placeholder='Portfolio Title' name='portfolioDescription2' id='input43'>
-		<button type="button" id='input44' class='buttons' data-toggle="modal" data-target=".fade">
+		<button type="button" id='input44' class='buttons Inpage4' data-toggle="modal" data-target=".fade">
 		</button>
 		<input class='Inpage4 inputs'  placeholder='Portfolio Title' name='portfolioDescription3' id='input45'>
-		<button type="button" id='input46' class='buttons' data-toggle="modal" data-target=".fade">
+		<button type="button" id='input46' class='buttons Inpage4' data-toggle="modal" data-target=".fade">
 		</button>
 	</div>
 	<div class='page5 pagesle'>
@@ -116,9 +114,7 @@
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page++;
 					checkPage(page);
-					setTimeout(function(){
-						$(".Inpage".concat(page)).css('z-index', '1');
-					}, 1200);
+					$(".Inpage".concat(page)).css('z-index', '1');
 					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
 				}, false);
 				findLeft.addEventListener("click", function(){
@@ -127,9 +123,7 @@
 					$(".Inpage".concat(page)).css('z-index', '-1');
 					page--;
 					checkPage(page);
-					setTimeout(function(){
-						$(".Inpage".concat(page)).css('z-index', '1');
-					}, 1200);
+					$(".Inpage".concat(page)).css('z-index', '1');
 					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
 				}, false);
 				$(document).keydown(function(e) {
@@ -198,6 +192,7 @@
 				var findDark = document.getElementById('dark');
 				findDark.addEventListener("click", function(){
 					console.log('dark');
+					$('#input14').val('grey');
 					for (var i = 1; i <= 7; i++) {
 						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Dark/Page' + i + '.png)')
 					};
@@ -205,12 +200,14 @@
 				var findGreen = document.getElementById('green');
 				findGreen.addEventListener("click", function(){
 					console.log('green');
+					$('#input14').val('green');
 					for (var i = 1; i <= 7; i++) {
 						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Green/Page' + i + '.png)');
 					};
 				}, false);
 				var findPurple = document.getElementById('purple');
 				findPurple.addEventListener("click", function(){
+					$('#input14').val('purple');
 					console.log('purple');
 					for (var i = 1; i <= 7; i++) {
 						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Purple/Page' + i + '.png)');
@@ -218,6 +215,7 @@
 				}, false);
 				var findBlue = document.getElementById('blue');
 				findBlue.addEventListener("click", function(){
+					$('#input14').val('blue');
 					console.log('blue');
 					for (var i = 1; i <= 7; i++) {
 						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Blue/Page' + i + '.png)');
