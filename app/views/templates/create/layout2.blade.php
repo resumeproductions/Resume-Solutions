@@ -29,7 +29,7 @@
 	{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
 	<div class='page1 pagesle'>
 		<input name='color' class='Inpage1' id='input14' value='1'>
-		<input name='templateID' class=w'Inpage1' id='input14' value='layout2'>
+		<input name='templateID' class='Inpage1' id='input14' value='layout2'>
 		<input placeholder='Add an adjective to describe yourself.' class='Inpage1 inputs' name='adjectives1' id='input11'>
 		<input placeholder='Add an adjective to describe yourself.' class='Inpage1 inputs' name='adjectives2' id='input12'>
 		<input placeholder='Add an adjective to describe yourself.' class='Inpage1 inputs' name='adjectives3' id='input13'>
@@ -249,7 +249,7 @@
 		var findDark = document.getElementById('dark');
 		findDark.addEventListener("click", function(){
 			console.log('dark');
-			$('#input14').val('grey');
+			$('#input14').val('1');
 			for (var i = 1; i <= 7; i++) {
 				$('.page'.concat(i)).css('background-image', 'url(/assets_david/Dps/Dark/Page' + i + '.png)')
 			};
@@ -257,14 +257,14 @@
 		var findRed = document.getElementById('red');
 		findRed.addEventListener("click", function(){
 			console.log('red');
-			$('#input14').val('red');
+			$('#input14').val('2');
 			for (var i = 1; i <= 7; i++) {
 				$('.page'.concat(i)).css('background-image', 'url(/assets_david/Dps/Red/Page' + i + '.png)');
 			};
 		}, false);
 		var findBlue = document.getElementById('blue');
 		findBlue.addEventListener("click", function(){
-			$('#input14').val('blue');
+			$('#input14').val('3');
 			console.log('blue');
 			for (var i = 1; i <= 7; i++) {
 				$('.page'.concat(i)).css('background-image', 'url(/assets_david/Dps/Blue/Page' + i + '.png)');

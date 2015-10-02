@@ -195,7 +195,7 @@
 				var findDark = document.getElementById('dark');
 				findDark.addEventListener("click", function(){
 					console.log('dark');
-					$('#input14').val('grey');
+					$('#input14').val('1');
 					for (var i = 1; i <= 7; i++) {
 						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Dark/Page' + i + '.png)')
 					};
@@ -203,14 +203,14 @@
 				var findGreen = document.getElementById('green');
 				findGreen.addEventListener("click", function(){
 					console.log('green');
-					$('#input14').val('green');
+					$('#input14').val('2');
 					for (var i = 1; i <= 7; i++) {
 						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Green/Page' + i + '.png)');
 					};
 				}, false);
 				var findPurple = document.getElementById('purple');
 				findPurple.addEventListener("click", function(){
-					$('#input14').val('purple');
+					$('#input14').val('3');
 					console.log('purple');
 					for (var i = 1; i <= 7; i++) {
 						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Purple/Page' + i + '.png)');
@@ -218,7 +218,7 @@
 				}, false);
 				var findBlue = document.getElementById('blue');
 				findBlue.addEventListener("click", function(){
-					$('#input14').val('blue');
+					$('#input14').val('4');
 					console.log('blue');
 					for (var i = 1; i <= 7; i++) {
 						$('.page'.concat(i)).css('background-image', 'url(/assets_dylan/Dp/Blue/Page' + i + '.png)');
