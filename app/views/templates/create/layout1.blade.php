@@ -9,28 +9,25 @@
 
 </head>
 <body>
-
-	<input name='templateID' value='layout1'>
-
 	<button id='color' value='0'>
 	</button>
 	<div id='david'>
-		<button id='1' name='color'>
+		<button id='dark' name='color'>
 			Grey
 		</button>
-		<button id='2' name='color'>
+		<button id='purple' name='color'>
 			Purple
 		</button>
-		<button id='3' name='color'>
+		<button id='blue' name='color'>
 			Blue
 		</button>
-		<button id='4' name='color'>
+		<button id='green' name='color'>
 			Green
 		</button>
 	</div>
 	{{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
 	<div class='page1 pagesle'>
-
+		<input name='templateID' value='layout1' class='Inpage1' id='input14'>
 		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='aboutTitle'    id='input11'>
 		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='navbarTitle' 	   id='input12'>
 		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='aboutDescription' id='input13'></textarea>
@@ -39,8 +36,6 @@
 		<input placeholder='Insert Job Title' class='Inpage1 inputs' name='headerJobTitle'    id='input11'>
 		<input placeholder='Insert Resume Title' class='Inpage1 inputs' name='headerResumeTitle' 	   id='input12'>
 		<textarea placeholder='Insert Job Description' class='Inpage1 textarea' name='headerDescription' id='input13'></textarea>
-		<input name='color' value='1'>
-
 	</div>
 	<div class='page2 pagesle'>
 		<textarea placeholder='Description of General Previous Work' class='Inpage2 textarea' name='aboutDescription'	id='input21'></textarea>
