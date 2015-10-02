@@ -143,8 +143,8 @@
       <section class="animation">
 
         <ul id="st-stack" class="st-stack-raw">
-          <li><div class="st-item"><a href="http://drbl.in/fgQV"><img src="direction_images/1.jpg"/></a></div><div class="st-title"><h2>Graverobber</h2><h3></h3></div></li>
-          <li><div class="st-item"><a href="http://drbl.in/fpRz"><img src="direction_images/2.jpg"/></a></div><div class="st-title"><h2>Hideous Snake Queen</h2><h3></h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fgQV"><img src="images/step2.png" width="500" height="600"/></a></div><div class="st-title"><h2>Graverobber</h2><h3></h3></div></li>
+          <li><div class="st-item"><a href="http://drbl.in/fgQV"><img src="images/step1.png" width="500" height="600"/></a></div><div class="st-title"><h2>Graverobber</h2><h3></h3></div></li>
           <li><div class="st-item"><a href="http://drbl.in/fGVs"><img src="direction_images/3.jpg"/></a></div><div class="st-title"><h2>Queen of Hearts</h2><h3></h3></div></li>
           <li><div class="st-item"><a href="http://drbl.in/fgvZ"><img src="direction_images/4.jpg"/></a></div><div class="st-title"><h2>Dead Pirate vs Kraken</h2><h3></h3></div></li>
           <li><div class="st-item"><a href="http://drbl.in/fyfM"><img src="direction_images/5.jpg"/></a></div><div class="st-title"><h2>Mountain Lion</h2><h3></h3></div></li>
