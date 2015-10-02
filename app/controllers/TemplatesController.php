@@ -514,8 +514,54 @@ class TemplatesController extends \BaseController {
 				$experience6->save();
 			}
 
-		} 
+			if(Input::has('educationStart1') && Input::has('educationDescription1') && Input::has('educationTitle1')) {
+				$education1 = new Education();
+				$education1->template_id = $template->id;
+				$education1->start_date = Input::get('educationStart1');
+				if(Input::has('educationEnd1')) {
+					$education1->end_date = Input::get('educationEnd1');
+				}
+				$education1->title = Input::get('educationTitle1');
+				$education1->description = Input::get('educationDescription1'); 
+				$education1->save();
+			}
 
+			if(Input::has('educationStart2') && Input::has('educationDescription2') && Input::has('educationTitle2')) {
+				$education2 = new Education();
+				$education2->template_id = $template->id;
+				$education2->start_date = Input::get('educationStart2');
+				if(Input::has('educationEnd2')) {
+					$education2->end_date = Input::get('educationEnd2');
+				}
+				$education2->title = Input::get('educationTitle2');
+				$education2->description = Input::get('educationDescription2'); 
+				$education2->save();
+			}
+
+			if(Input::has('educationStart3') && Input::has('educationDescription3') && Input::has('educationTitle3')) {
+				$education3 = new Education();
+				$education3->template_id = $template->id;
+				$education3->start_date = Input::get('educationStart3');
+				if(Input::has('educationEnd3')) {
+					$education3->end_date = Input::get('educationEnd3');
+				}
+				$education3->title = Input::get('educationTitle3');
+				$education3->description = Input::get('educationDescription3'); 
+				$education3->save();
+			}
+
+			if(Input::has('educationStart4') && Input::has('educationDescription4') && Input::has('educationTitle4')) {
+				$education4 = new Education();
+				$education4->template_id = $template->id;
+				$education4->start_date = Input::get('educationStart4');
+				if(Input::has('educationEnd4')) {
+					$education4->end_date = Input::get('educationEnd4');
+				}
+				$education4->title = Input::get('educationTitle4');
+				$education4->description = Input::get('educationDescription4'); 
+				$education4->save();
+			}
+		} 
 		return Redirect::action('HomeController@showWelcome');
 	}
 
