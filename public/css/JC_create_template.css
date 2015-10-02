@@ -432,24 +432,55 @@ button {
 	top: 38%;
 	width: 23%;
 } 
-/* STUFF */
-
-#input611 {
+#input610 {
 	left: 14%;
 	top: 50%;
 	width: 10%;
 	height: 15%;
 }
-#input612 {
+#input611 {
 	left: 13%;
 	top: 65%;
 	width: 12%;
 }
-#input613 {
+#input612 {
 	left: 8%;
 	top: 71%;
 	width: 23%;
 } 
+#input613 {
+	left: 45%;
+	top: 50%;
+	width: 10%;
+	height: 15%;
+}
+#input614 {
+	left: 44%;
+	top: 65%;
+	width: 12%;
+}
+#input615 {
+	left: 39%;
+	top: 71%;
+	width: 23%;
+}
+/* STUFF */
+#input616 {
+	left: 75%;
+	top: 50%;
+	width: 10%;
+	height: 15%;
+}
+#input617 {
+	left: 74%;
+	top: 65%;
+	width: 12%;
+}
+#input618 {
+	left: 69%;
+	top: 71%;
+	width: 23%;
+}
 
 /* Placing */
 
