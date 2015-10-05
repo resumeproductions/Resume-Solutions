@@ -92,13 +92,13 @@
 					  <div class="row" id="first-page">
               <div class="col-sm-12 text-center">
                 <div class="dp-box">
-                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="/assets_john/images/dp.jpg" width="272" height="299" alt="Display Picture" /> BUFF</h1>
-                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="/assets_john/images/dp.jpg" alt="Display Picture" /><h1>John Doe</h1></div>
+                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="/img/uploaded/{{{$template->about->picture}}}" width="272" height="299" alt="Display Picture" /> BUFF</h1>
+                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="/img/uploaded/{{{$template->about->picture}}}" alt="Display Picture" /><h1>John Doe</h1></div>
                 </div>
               </div>
               <div class="col-xs-8 col-xs-offset-2 text-center">
                 <h2>
-                  PROFESSIONAL WEB DEVELOPER.
+                  	{{{$template->header->job_title}}}
                 </h2>
                 <p class="social-buttons">
                   <a class="btn btn-circle" href="#"><i class="fa fa-facebook"></i></a>
@@ -114,37 +114,39 @@
 
 					  </div>
 					</div>
-				  </div> <!-- /First page -->
-					
+				  </div> <!-- First page -->
+				
 					<!-- About -->
 					<div class="bb-item" id="page-1">
 						<div class="bb-custom-side">
 							<div class="bb-custom-container">
 								<h1 class="text-center"><span class="page-heading">About</span></h1>
-								<div class="row content-block text-justify animateFadeInRight">
-									<div class="col-sm-2 col-sm-offset-2 text-center">
-										<img src="/assets_john/images/man.png" alt="man icon"/>
+								@foreach ($template->abouts as $about)
+									<div class="row content-block text-justify animateFadeInRight">
+										<div class="col-sm-2 col-sm-offset-2 text-center">
+											<img src="/img/uploaded/{{{$about->picture}}}"/>
+										</div>
+										<div class="col-sm-6">
+											<p>{{{$about->description}}}</p>
+										</div>
 									</div>
-									<div class="col-sm-6">
-										<p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow bears marshmallow halvah.croissant candy. <br/> Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
+									<div class="row content-block text-justify animateFadeInLeft">
+										<div class="col-sm-2 col-sm-offset-2 col-sm-push-6 text-center">
+											<img src="/img/uploaded/{{{$about->picture}}}"/>
+										</div>
+										<div class="col-sm-6 col-sm-pull-2">
+											<p>{{{$about->description}}}</p>
+										</div>
 									</div>
-								</div>
-								<div class="row content-block text-justify animateFadeInLeft">
-									<div class="col-sm-2 col-sm-offset-2 col-sm-push-6 text-center">
-										<img src="/assets_john/images/joypad.png" alt="joypad icon"/>
+									<div class="row content-block content-block-last text-justify animateFadeInRight">
+										<div class="col-sm-2 col-sm-offset-2 text-center">
+											<img src="/img/uploaded/{{{$about->picture}}}"/>
+										</div>
+										<div class="col-sm-6">
+											<p>{{{$about->description}}}</p>
+										</div>
 									</div>
-									<div class="col-sm-6 col-sm-pull-2">
-										<p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow bears marshmallow halvah.croissant candy. <br/> Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
-									</div>
-								</div>
-								<div class="row content-block content-block-last text-justify animateFadeInRight">
-									<div class="col-sm-2 col-sm-offset-2 text-center">
-										<img src="/assets_john/images/wine.png" alt="wine icon"/>
-									</div>
-									<div class="col-sm-6">
-										<p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
-									</div>
-								</div>
+								@endforeach
 							</div>
 						</div>
 					</div>
@@ -156,46 +158,48 @@
 							<div class="bb-custom-container">							
 								<h1 class="text-center"><span class="page-heading">Education</span></h1>
 								<div class="row">
-									<div class="col-md-6">
-										<div class="blockquote-box blockquote-primary clearfix animateBounceInLeft">
-											<div class="square pull-left">
-												<i class="fa fa-calendar"></i> 1997 - 2005
+									@foreach ($template->educations as $education)
+										<div class="col-md-6">
+											<div class="blockquote-box blockquote-primary clearfix animateBounceInLeft">
+												<div class="square pull-left">
+													<i class="fa fa-calendar"></i> {{{$education->start_date}}} - {{{$education->end_date}}}
+												</div>
+												<h2>{{{$education->title}}}</h2>
+												<p class="text-justify">
+													{{{$education->description}}}
+												</p>
 											</div>
-											<h2>Senior school</h2>
-											<p class="text-justify">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-											</p>
-										</div>
-										<div class="blockquote-box blockquote-success clearfix animateBounceInLeft">
-											<div class="square pull-left">
-												<i class="fa fa-calendar"></i> 2005 - 2007
+											<div class="blockquote-box blockquote-success clearfix animateBounceInLeft">
+												<div class="square pull-left">
+													<i class="fa fa-calendar"></i> {{{$education->start_date}}} - {{{$education->end_date}}}
+												</div>
+												<h2>{{{$education->title}}}</h2>
+												<p class="text-justify">
+													{{{$education->description}}}
+												</p>
 											</div>
-											<h2>High school</h2>
-											<p class="text-justify">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat aante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat aante.
-											</p>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="blockquote-box blockquote-warning clearfix animateBounceInRight">
-											<div class="square pull-left">
-												<i class="fa fa-calendar"></i> 2005 - 2007
+										<div class="col-md-6">
+											<div class="blockquote-box blockquote-warning clearfix animateBounceInRight">
+												<div class="square pull-left">
+													<i class="fa fa-calendar"></i> {{{$education->start_date}}} - {{{$education->end_date}}}
+												</div>
+												<h2>{{{$education->title}}}</h2>
+												<p class="text-justify">
+	                        						{{{$education->description}}}
+												</p>
 											</div>
-											<h2>University</h2>
-											<p class="text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat aante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat aante..
-											</p>
-										</div>
-										<div class="blockquote-box blockquote-danger clearfix animateBounceInRight">
-											<div class="square pull-left">
-												<i class="fa fa-calendar"></i> 2005 - 2007
+											<div class="blockquote-box blockquote-danger clearfix animateBounceInRight">
+												<div class="square pull-left">
+													<i class="fa fa-calendar"></i> {{{$education->start_date}}} - {{{$education->end_date}}}
+												</div>
+												<h2>{{{$education->title}}}</h2>
+												<p class="text-justify">
+													{{{$education->description}}}
+												</p>
 											</div>
-											<h2>High school</h2>
-											<p class="text-justify">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat aante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat aante.
-											</p>
 										</div>
-									</div>
+									@endforeach
 								</div>
 							</div>
 						</div>
@@ -208,44 +212,46 @@
 							<div class="bb-custom-container">
 								<h1 class="text-center"><span class="page-heading">Experience</span></h1>
 								<div class="row">
-									<div class="col-sm-6 animateFadeInUp">
-										<div class="panel panel-default">
-											<div class="panel-heading"><i class="fa fa-2x fa-building-o blue"></i> Twitter</div>
-											<div class="panel-body">
-												Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes.
+									@foreach ($template->work_experiences as $experiences)
+										<div class="col-sm-6 animateFadeInUp">
+											<div class="panel panel-default">
+												<div class="panel-heading"><i class="fa fa-2x fa-building-o blue"></i>{{{$experiences->title}}}</div>
+												<div class="panel-body">
+													{{{$experiences->description}}}
+												</div>
+												<div class="panel-footer">From {{{$experiences->start_date}}} to {{{$experiences->end_date}}}</div>
 											</div>
-											<div class="panel-footer">From 2014 to present</div>
+										</div>
+										<div class="col-sm-6 animateFadeInUp">
+											<div class="panel panel-default">
+												<div class="panel-heading"><i class="fa fa-2x fa-cube blue"></i>{{{$experiences->title}}}</div>
+												<div class="panel-body">
+													{{{$experiences->description}}}
+												</div>
+												<div class="panel-footer">From {{{$experiences->start_date}}} to {{{$experiences->end_date}}}</div>
+											</div>
 										</div>
 									</div>
-									<div class="col-sm-6 animateFadeInUp">
-										<div class="panel panel-default">
-											<div class="panel-heading"><i class="fa fa-2x fa-cube blue"></i> Facebook</div>
-											<div class="panel-body">
-												Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes.
+									<div class="row">
+										<div class="col-sm-6 animateFadeInDown">
+											<div class="panel panel-default">
+												<div class="panel-heading"><i class="fa fa-2x fa-bar-chart blue"></i>{{{$experiences->title}}}</div>
+												<div class="panel-body">
+													{{{$experiences->description}}}
+												</div>
+												<div class="panel-footer">From {{{$experiences->start_date}}} to {{{$experiences->end_date}}}</div>
 											</div>
-											<div class="panel-footer">From 2012 to 2014</div>
 										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-6 animateFadeInDown">
-										<div class="panel panel-default">
-											<div class="panel-heading"><i class="fa fa-2x fa-bar-chart blue"></i> Google</div>
-											<div class="panel-body">
-												Long description Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes oat cake toffee croissant muffin.
+										<div class="col-sm-6 animateFadeInDown">
+											<div class="panel panel-default">
+												<div class="panel-heading"><i class="fa fa-2x fa-paper-plane blue"></i>{{{$experiences->title}}}</div>
+												<div class="panel-body">
+													{{{$experiences->description}}}
+												</div>
+												<div class="panel-footer">From {{{$experiences->start_date}}} to {{{$experiences->end_date}}}</div>
 											</div>
-											<div class="panel-footer">From 2014 to present</div>
 										</div>
-									</div>
-									<div class="col-sm-6 animateFadeInDown">
-										<div class="panel panel-default">
-											<div class="panel-heading"><i class="fa fa-2x fa-paper-plane blue"></i> Windows</div>
-											<div class="panel-body">
-												Long description Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes oat cake toffee croissant muffin.
-											</div>
-											<div class="panel-footer">From 2014 to present</div>
-										</div>
-									</div>
+									@endforeach
 								</div>
 							</div>
 						</div>
@@ -257,55 +263,57 @@
 						<div class="bb-custom-side">
 							<div class="bb-custom-container">
 								<h1 class="text-center"><span class="page-heading">Skills</span></h1>
-                <div class="row">        
-                  <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped active" role="progressbar" data-transitiongoal="70">
-                        <span class="sr-only">70% Complete (success)</span>
-                      </div>
-                      <span class="progress-type">ASP.Net</span>
-                      <span class="progress-completed">70%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" data-transitiongoal="55"></div>
-                      <span class="progress-type">Java</span>
-                      <span class="progress-completed">55%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" data-transitiongoal="90"></div>
-                      <span class="progress-type">Bootstrap</span>
-                      <span class="progress-completed">90%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" data-transitiongoal="80"></div>
-                      <span class="progress-type">Ruby On Rails</span>
-                      <span class="progress-completed">80%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" data-transitiongoal="75"></div>
-                      <span class="progress-type">Javascript</span>
-                      <span class="progress-completed">75%</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">        
-                  <div class="col-xs-12 col-sm-4 col-sm-offset-2 animateFadeInUp">
-                    <div class="well">
-                      <h3>Web Development</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-4 animateFadeInUp">
-                    <div class="well">
-                      <h3>Design</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+								@foreach ($template->skills as $skill)
+					                <div class="row">        
+					                  <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+					                    <div class="progress">
+					                      <div class="progress-bar progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}">
+					                        <span class="sr-only">70% Complete (success)</span>
+					                      </div>
+					                      <span class="progress-type">{{{$skill->title}}}</span>
+					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
+					                    </div>
+					                    <div class="progress">
+					                      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}"></div>
+					                      <span class="progress-type">{{{$skill->title}}}</span>
+					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
+					                    </div>
+					                    <div class="progress">
+					                      <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}"></div>
+					                      <span class="progress-type">{{{$skill->title}}}</span>
+					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
+					                    </div>
+					                    <div class="progress">
+					                      <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}"></div>
+					                      <span class="progress-type">{{{$skill->title}}}</span>
+					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
+					                    </div>
+					                    <div class="progress">
+					                      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}"></div>
+					                      <span class="progress-type">{{{$skill->title}}}</span>
+					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
+					                    </div>
+					                  </div>
+					                </div>
+					                <div class="row">        
+					                  <div class="col-xs-12 col-sm-4 col-sm-offset-2 animateFadeInUp">
+					                    <div class="well">
+					                      <h3>{{{$skill->description_title}}}</h3>
+					                      <p>
+					                        {{{$skill->description}}}
+					                      </p>
+					                    </div>
+					                  </div>
+					                  <div class="col-xs-12 col-sm-4 animateFadeInUp">
+					                    <div class="well">
+					                      <h3>{{{$skill->description_title}}}</h3>
+					                      <p>
+					                        {{{$skill->description}}}
+					                      </p>
+					                    </div>
+					                  </div>
+					                </div>
+					            @endforeach
 							</div>
 						</div>
 					</div>
@@ -317,48 +325,50 @@
 							<div class="bb-custom-container">
 								<h1 class="text-center"><span class="page-heading">Portfolio</span></h1>
 								<div class="row">
-									<div class="col-sm-6 col-md-4 text-center">
-										<div class="portfolio-item animateFlipInY">
-											<p><img src="/assets_john/images/pencil.png" alt="Pencil icon"/></p>
-											<h4>Mobile Application</h4>
-											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
+									@foreach ($template->portfolios as $portfolio)
+										<div class="col-sm-6 col-md-4 text-center">
+											<div class="portfolio-item animateFlipInY">
+												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Pencil icon"/></p>
+												<h4>{{{$portfolio->title}}}</h4>
+												<p>{{{$portfolio->description}}}</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-sm-6 col-md-4 text-center animateFlipInX">
-										<div class="portfolio-item">
-											<p><img src="/assets_john/images/clock.png" alt="Clock icon"/></p>
-											<h4>Mobile Application</h4>
-											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
+										<div class="col-sm-6 col-md-4 text-center animateFlipInX">
+											<div class="portfolio-item">
+												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Clock icon"/></p>
+												<h4>{{{$portfolio->title}}}</h4>
+												<p>{{{$portfolio->description}}}</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-sm-6 col-md-4 text-center animateFlipInY">
-										<div class="portfolio-item">
-											<p><img src="/assets_john/images/bookShell.png" alt="Book Shell icon"/></p>
-											<h4>Mobile Application</h4>
-											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
+										<div class="col-sm-6 col-md-4 text-center animateFlipInY">
+											<div class="portfolio-item">
+												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Book Shell icon"/></p>
+												<h4>{{{$portfolio->title}}}</h4>
+												<p>{{{$portfolio->description}}}</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-sm-6 col-md-4 text-center animateFlipInX">
-										<div class="portfolio-item">
-											<p><img src="/assets_john/images/calendar.png" alt="Calendar icon"/></p>
-											<h4>Mobile Application</h4>
-											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
+										<div class="col-sm-6 col-md-4 text-center animateFlipInX">
+											<div class="portfolio-item">
+												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Calendar icon"/></p>
+												<h4>{{{$portfolio->title}}}</h4>
+												<p>{{{$portfolio->description}}}</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-sm-6 col-md-4 text-center animateFlipInY">
-										<div class="portfolio-item">
-											<p><img src="/assets_john/images/film.png" alt="Film icon"/></p>
-											<h4>Mobile Application</h4>
-											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
+										<div class="col-sm-6 col-md-4 text-center animateFlipInY">
+											<div class="portfolio-item">
+												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Film icon"/></p>
+												<h4>{{{$portfolio->title}}}</h4>
+												<p>{{{$portfolio->description}}}</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-sm-6 col-md-4 text-center animateFlipInX">
-										<div class="portfolio-item">
-											<p><img src="/assets_john/images/phone.png" alt="Phone icon"/></p>
-											<h4>Mobile Application</h4>
-											<p>Croissant pudding gingerbread gummi bears marshmallow halvah puri khalo.</p>
+										<div class="col-sm-6 col-md-4 text-center animateFlipInX">
+											<div class="portfolio-item">
+												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Phone icon"/></p>
+												<h4>{{{$portfolio->title}}}</h4>
+												<p>{{{$portfolio->description}}}</p>
+											</div>
 										</div>
-									</div>
+									@endforeach
 								</div>
 							</div>
 						</div>
