@@ -40,9 +40,10 @@
 			<div class="page">
 				<div class="wrapper">
 					<div class="container">
-						<h1 class="heading">David Simonelli</h1>
+						<h1 class="heading">{{{ $template->user->first_name}}} {{{ $template->user->last_name}}}</h1>
 						<p>
-							<span class="rotate">Baller, Bored, Coder</span>
+							<span class="rotate">{{{ $template->header->adjective}}}</span>
+
 						</p>
 					</div>
 					<div class="arrow-down">
@@ -68,7 +69,7 @@
 					</div>
 					<div class="col-sm-8 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
 						<p class="lead">
-							Something Objective Like
+							{{{ $template->about->title}}}
 						</p>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -287,20 +288,23 @@
 					</div>
 					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
 						<h4>Knowledge</h4>
+						@foreach ($template->knowledges as $knowledge)
 						<ul class="fa-ul skills-ul">
-						  <li><i class="fa-li fa fa-check"></i>Cool Dance Moves</li>
-						  <li><i class="fa-li fa fa-check"></i>Can Use a Printer</li>
+						  <li><i class="fa-li fa fa-check"></i>{{{$knowledge->knowledge_item}}}</li>
+{{-- 						  <li><i class="fa-li fa fa-check"></i>Can Use a Printer</li>
 						  <li><i class="fa-li fa fa-check"></i>Not a Jerk</li>
 						  <li><i class="fa-li fa fa-check"></i>Actually Comes to Work</li>
-						  <li><i class="fa-li fa fa-check"></i>Not Wearing Hobo Clothes</li>
-						</ul>						
+						  <li><i class="fa-li fa fa-check"></i>Not Wearing Hobo Clothes</li> --}}
+						</ul>	
+						@endforeach					
 					</div>
 				</div>
 				<div class="row personal-skills">
 					<div class="col-sm-8 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.1s">
 						<h4>Languages</h4>
+						@foreach ($template->knowledges as $knowledge)
 						<div class="lang-container">
-							<input type="text" value="100" class="dial" 
+							<input type="text" value="{{{$knowledge->sub_percent}}}" class="dial" 
 								data-width="100"
 								data-height="100"
 								data-fgColor="#869198"
@@ -308,57 +312,17 @@
 								data-thickness=".2"
 								data-displayPrevious=true
 								data-readOnly=true>
-							<p class="lang-description">English</p>
-							<span class="lang-level">native</span>
+							<p class="lang-description">{{{$knowledge->sub_head}}}</p>
+							<span class="lang-level">{{{$knowledge->sub_foot}}}</span>
 						</div>
-						
-						<div class="lang-container">
-							<input type="text" value="80" class="dial" 
-								data-width="100"
-								data-height="100"
-								data-fgColor="#869198"
-								data-skin="tron"
-								data-thickness=".2"
-								data-displayPrevious=true
-								data-readOnly=true>
-							<p class="lang-description">Spanish</p>
-							<span class="lang-level">advanced</span>
-						</div>
-						
-						<div class="lang-container">
-							<input type="text" value="60" class="dial" 
-								data-width="100"
-								data-height="100"
-								data-fgColor="#869198"
-								data-skin="tron"
-								data-thickness=".2"
-								data-displayPrevious=true
-								data-readOnly=true
-								data-bgColor="#fff">
-							<p class="lang-description">German</p>
-							<span class="lang-level">intermediate</span>
-						</div>
-						
-						<div class="lang-container">
-							<input type="text" value="25" class="dial" 
-								data-width="100"
-								data-height="100"
-								data-fgColor="#869198"
-								data-skin="tron"
-								data-thickness=".2"
-								data-displayPrevious=true
-								data-readOnly=true
-								data-bgColor="#fff">
-							<p class="lang-description">French</p>
-							<span class="lang-level">basic</span>
-						</div>
+						@endforeach						
 					</div>
 					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">
 						<h4>Hobbies</h4>
 						<ul class="fa-ul skills-ul">
-						  <li><i class="fa-li fa fa-camera"></i>Hunting</li>
-						  <li><i class="fa-li fa fa-plane"></i>Kicking Puppys</li>
-						  <li><i class="fa-li fa fa-music"></i>Licking Toads</li>
+							@foreach ($template->skills as $skill)
+						  <li><i class="fa-li fa fa-camera"></i>{{{$skill->hobbies}}}</li>
+						  @endforeach
 						</ul>	
 					</div>
 				</div>
@@ -378,59 +342,29 @@
 					<div class="col-sm-12 text-center">
 						<ul id="filter" class="list-inline filter-tags">
 							<li><a href="#" class="btn btn-sm btn-theme-inverse active" data-group="all">All</a></li>
-							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="branding">Branding</a></li>
-							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="web">Web</a></li>
-							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="app">App</a></li>
+							@foreach ($template->portfolios as $portfolio)
+							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="web">{{{$portfolio->category}}}</a></li>
+							@endforeach
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="GITheWall">
 				<ul id="portfolio-container" class="text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">
+					@foreach ($template->portfolios as $portfolio)
 					<li class="portfolio-item" data-groups='["all", "branding"]' data-contenttype="ajax" data-href="assets/ajax/1.html">
 						<figure>
 							<div class="portfolio-img">
 								<a href="#" class="overlay">
-									<span class="title">Stuff</span>
-									<span class="category">branding</span>
+									<span class="title">{{{$portfolio->title}}}</span>
+									<span class="category">{{{$portfolio->description}}}</span>
 								</a>
-								<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" alt="" class="img-responsive">
+								<img src="/img/uploaded/{{{$portfolio->picture}}}" alt="" class="img-responsive">
 							</div>
 						</figure>
 					</li>
-					<li class="portfolio-item" data-groups='["all", "web"]' data-contenttype="ajax" data-href="assets/ajax/2.html">
-						<figure>
-							<div class="portfolio-img">
-								<a href="#" class="overlay">
-									<span class="title">Stuff</span>
-									<span class="category">web</span>
-								</a>
-								<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" alt="" class="img-responsive">
-							</div>
-						</figure>
-					</li>
-					<li class="portfolio-item" data-groups='["all", "app"]' data-contenttype="ajax" data-href="assets/ajax/1.html">
-						<figure>
-							<div class="portfolio-img">
-								<a href="#" class="overlay">
-									<span class="title">Stuff</span>
-									<span class="category">app</span>
-								</a>
-								<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" alt="" class="img-responsive">
-							</div>
-						</figure>
-					</li>
-					<li class="portfolio-item" data-groups='["all", "branding"]' data-contenttype="ajax" data-href="assets/ajax/2.html">
-						<figure>
-							<div class="portfolio-img">
-								<a href="#" class="overlay">
-									<span class="title">Stuff</span>
-									<span class="category">branding</span>
-								</a>
-								<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" alt="" class="img-responsive">
-							</div>
-						</figure>
-					</li>
+					@endforeach
+
 				</ul>
 			</div>
 			<div class="container">
@@ -446,22 +380,12 @@
 		<section id="facts" class="section">
 			<div class="container">
 				<div class="row text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">
+					@foreach ($template->awards as $award)
 					<div class="col-sm-3">
-						<h1 class="counter">5</h1>
-						<p>years experience</p>
+						<h1 class="counter">{{{$award->award_number}}}</h1>
+						<p>{{{$award->award_title}}}</p>
 					</div>
-					<div class="col-sm-3">
-						<h1 class="counter">352</h1>
-						<p>projects delivered</p>
-					</div>
-					<div class="col-sm-3">
-						<h1 class="counter">2148</h1>
-						<p>likes</p>
-					</div>
-					<div class="col-sm-3">
-						<h1 class="counter">142</h1>
-						<p>winning awards</p>
-					</div>
+					@endforeach
 				</div>
 			</div>
 		</section>
@@ -478,12 +402,12 @@
 				<div class="row">
 					<div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
 						<p>
-							<strong>Contact Info</strong> Don't contact me, I hate talking.
+							<strong>Contact Info</strong> {{{$template->contact->description}}}
 						</p>
 						<ul class="list-contacts">
-							<li><i class="fa fa-phone"></i> (999) 999-9999</li>
-							<li><i class="fa fa-map-marker"></i> 1795 Impala Way, Suite 69<br> San Antonio, TX 94107</li>
-							<li><i class="fa fa-envelope-o"></i> <a href="mailto:david8simonelli@gmail.com">david8simonelli@gmail.com</a></li>
+							<li><i class="fa fa-phone"></i> {{{$template->user->phone_number}}}</li>
+							<li><i class="fa fa-map-marker"></i> {{{$template->user->address}}}<br> {{{$template->user->city}}}, {{{$template->user->state}}} {{{$template->user->zip}}}</li>
+							<li><i class="fa fa-envelope-o"></i> <a href="mailto:david8simonelli@gmail.com">{{{$template->user->email}}}</a></li>
 						</ul>
 					</div>
 					<div class="col-sm-6 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">

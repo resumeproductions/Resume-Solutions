@@ -20,7 +20,7 @@ class Template extends \Eloquent {
     	return $this->hasMany('Portfolio');
     }
 
-    public function knowledge()
+    public function knowledges()
     {
         return $this->hasMany('Knowledge');
     }
