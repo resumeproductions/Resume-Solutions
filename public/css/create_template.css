@@ -388,11 +388,9 @@ button:hover {
 	font-size: 19px;
 	color: black;
 }
-
 #closeButton {
 	float: right;
 }
-
 #submitImage {
 	color: black;
 }
