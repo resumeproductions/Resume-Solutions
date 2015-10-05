@@ -35,7 +35,7 @@ class Template extends \Eloquent {
         return $this->hasOne('Header1');
     }
 
-    public function education()
+    public function educations()
     {
         return $this->hasMany('Education');
     }
@@ -56,9 +56,9 @@ class Template extends \Eloquent {
     	return $this->hasOne('Contact');
     }
 
-    public function about()
+    public function abouts()
     {
-    	return $this->hasOne('About');
+    	return $this->hasMany('About');
     }
 
     public function user()
