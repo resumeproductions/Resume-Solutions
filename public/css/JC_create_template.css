@@ -499,13 +499,24 @@ button {
 	background-color: white;
 	border-color: black;
 }
+.gone {
+	opacity: 0;
+	width: 0;
+	height: 0;
+	z-index: -1;
+}
+.submit {
+	background-image: url(/images/submitform.png);
+	background-size: 100% 100%;
+}
 #cont {
 	margin-left: 0px;
 	padding-left: 0px;
 }
-#submitTemplate1 {
+#submitTemplate3 {
 	left: 65%;
 	top: 70%;
+	height: 15%;
 }
 .pagesle {
 	margin: 0;
