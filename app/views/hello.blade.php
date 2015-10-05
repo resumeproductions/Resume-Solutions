@@ -49,8 +49,6 @@
 		<!-- Navigation start -->
 
 	<header role="banner">
-		<div id="cd-logo"><a href="#0"><img src="images/cd-logo.svg" alt="Logo"></a></div>
-
 		<nav class="main-nav">
 			<ul>
 				<!-- inser more links here -->
@@ -359,9 +357,9 @@
 						<h4><span>Dylan</span>Perenchio</h4>
 					</a>					
 					<ul>
-						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fa fa-github-alt"></i></a></li>					
+						<li><a href="www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="www.linkedin.com/in/perenchiod"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/perenchiod" target="_blank"><i class="fa fa-github-alt"></i></a></li>					
 					</ul>					
 				</div>
 				
@@ -416,7 +414,7 @@
 
 					<a href="#"><i class="fa fa-twitter"></i></a>
 					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="https://github.com/resumeproductions/Resume-Solutions"><i class="fa fa-github"></i></a>
 
 				</div>
 
