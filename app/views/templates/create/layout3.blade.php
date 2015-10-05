@@ -3,7 +3,7 @@
 
 	@section('title')
 
-	<title>Template</title>
+	<title>Template 3</title>
 	<link href='/css/JC_create_template.css' rel='stylesheet' type='text/css'>
 	@stop
 
@@ -13,15 +13,15 @@
 		<input name='color' class='Inpage1' value='1'>
 		<input name='templateID' value='layout3'>
 		<div class='page1 pagesle'>
-			<button id='input11' class='Inpage1' name='headerImage'>Profile Image</button>
+			<input type='file' id='input11' class='Inpage1' name='headerImage'>
 			<input id='input12' class='Inpage1' placeholder='Job title' name='headerJobTitle'>
 		</div>
 		<div class='page2 pagesle'>
-			<button id='input21' class='Inpage2'>Icon Image Upload</button>
+			<input id='input21' type='file' class='Inpage2' placeholder='Icon Image Upload'>
 			<textarea id='input22' class='Inpage2' placeholder='About me paragraph'></textarea>
-			<button id='input23' class='Inpage2'>Icon Image Upload</button>
+			<input id='input23' type='file' class='Inpage2' placeholder='Icon Image Upload'>
 			<textarea id='input24' class='Inpage2' placeholder='About me paragraph'></textarea>
-			<button id='input25' class='Inpage2'>Icon Image Upload</button>
+			<input id='input25' type='file' class='Inpage2' placeholder='Icon Image Upload'>
 			<textarea id='input26' class='Inpage2' placeholder='About me paragraph'></textarea>
 		</div>
 		<div class='page3 pagesle'>
@@ -84,22 +84,22 @@
 			<textarea id='input514' class='Inpage5' placeholder='Description for skills acquired' name='skillDescription2'></textarea>
 		</div>
 		<div class='page6 pagesle'>
-			<button id='input61' class='Inpage6' name='portfolioPicture1'>Portfolio image upload</button>
+			<input type='file' id='input61' class='Inpage6' name='portfolioPicture1' placeholder='Portfolio image upload1'>
 			<input id='input62' class='Inpage6' placeholder='Portfolio title' name='portfolioTitle1'>
 			<input id='input63' class='Inpage6' placeholder='Portfolio description' name='portfolioDescription1'>
-			<button id='input64' class='Inpage6' name='portfolioPicture2'>Portfolio image upload</button>
+			<input type='file' id='input64' class='Inpage6' name='portfolioPicture2' placeholder='Portfolio image upload2'>
 			<input id='input65' class='Inpage6' placeholder='Portfolio title' name='portfolioTitle2'>
 			<input id='input66' class='Inpage6' placeholder='Portfolio description' name='portfolioDescription2'>
-			<button id='input67' class='Inpage6' name='portfolioPicture3'>Portfolio image upload</button>
+			<input type='file' id='input67' class='Inpage6' name='portfolioPicture3' placeholder='Portfolio image upload3'>
 			<input id='input68' class='Inpage6' placeholder='Portfolio title' name='portfolioTitle3'>
 			<input id='input69' class='Inpage6' placeholder='Portfolio description' name='portfolioDescription3'>
-			<button id='input610' class='Inpage6' name='portfolioPicture4'>Portfolio image upload</button>
+			<input type='file' id='input610' class='Inpage6' name='portfolioPicture4' placeholder='Portfolio image upload4'>
 			<input id='input611' class='Inpage6' placeholder='Portfolio title' name='portfolioTitle4'>
 			<input id='input612' class='Inpage6' placeholder='Portfolio description' name='portfolioDescription4'>
-			<button id='input613' class='Inpage6' name='portfolioPicture5'>Portfolio image upload</button>
+			<input type='file' id='input613' class='Inpage6' name='portfolioPicture5' placeholder='Portfolio image upload5'>
 			<input id='input614' class='Inpage6' placeholder='Portfolio title' name='portfolioTitle5'>
 			<input id='input615' class='Inpage6' placeholder='Portfolio description' name='portfolioDescription5'>
-			<button id='input616' class='Inpage6' name='portfolioPicture6'>Portfolio image upload</button>
+			<input type='file' id='input616' class='Inpage6' name='portfolioPicture6' placeholder='Portfolio image upload6'>
 			<input id='input617' class='Inpage6' placeholder='Portfolio title' name='portfolioTitle6'>
 			<input id='input618' class='Inpage6' placeholder='Portfolio description' name='portfolioDescription6'>
 			<button type="submit" class='Inpage6 buttons' id='submitTemplate3'>Submit</button>
@@ -113,82 +113,82 @@
 	<button id='left' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-left fa-2x"></i>
 	</button>
-			@stop
+	@stop
 
-			@section('script')
-			<script type="text/javascript">
-			$(document).ready(function() {
-				var findRigh = document.getElementById('right');
-				var findLeft = document.getElementById('left');
-				var page = 1;
-				checkPage(page);
-				findRigh.addEventListener("click", function(){
-					checkPage(page);
-					$(".page".concat(page)).animate({width: "0%", left: "0%"}, 1000);
-					$(".Inpage".concat(page)).css('z-index', '-1');
-					page++;
-					checkPage(page);
-					$(".Inpage".concat(page)).css('z-index', '1');
-					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
-				}, false);
-				findLeft.addEventListener("click", function(){
-					checkPage(page);
-					$(".page".concat(page)).animate({width: "0%", left: "99%"}, 1000);
-					$(".Inpage".concat(page)).css('z-index', '-1');
-					page--;
-					checkPage(page);
-					$(".Inpage".concat(page)).css('z-index', '1');
-					$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
-				}, false);
-				$(document).keydown(function(e) {
-					switch(e.which) {
-		        case 37: // left
-		        if (page > 1) {
-		        	$( "#left" ).click();
-		        };
-		        break;
+	@section('script')
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var findRigh = document.getElementById('right');
+		var findLeft = document.getElementById('left');
+		var page = 1;
+		checkPage(page);
+		findRigh.addEventListener("click", function(){
+			checkPage(page);
+			$(".page".concat(page)).animate({width: "0%", left: "0%"}, 1000);
+			$(".Inpage".concat(page)).css('z-index', '-1');
+			page++;
+			checkPage(page);
+			$(".Inpage".concat(page)).css('z-index', '1');
+			$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
+		}, false);
+		findLeft.addEventListener("click", function(){
+			checkPage(page);
+			$(".page".concat(page)).animate({width: "0%", left: "99%"}, 1000);
+			$(".Inpage".concat(page)).css('z-index', '-1');
+			page--;
+			checkPage(page);
+			$(".Inpage".concat(page)).css('z-index', '1');
+			$(".page".concat(page)).animate({width: "100%", left: "0%"}, 1000);
+		}, false);
+		$(document).keydown(function(e) {
+			switch(e.which) {
+        case 37: // left
+        if (page > 1) {
+        	$( "#left" ).click();
+        };
+        break;
 
-		        case 38: // up
-		        break;
+        case 38: // up
+        break;
 
-		        case 39: // right
-		        if (page < 7) {
-		        	$( "#right" ).click();
-		        };
-		        break;
+        case 39: // right
+        if (page < 7) {
+        	$( "#right" ).click();
+        };
+        break;
 
-		        case 40: // down
-		        break;
+        case 40: // down
+        break;
 
-		        default: return; // exit this handler for other keys
-		    }
-		    e.preventDefault(); // prevent the default action (scroll / move caret)
-		});
-				function pageRight() {
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+		function pageRight() {
 
-				}
-				function pageLeft() {
+		}
+		function pageLeft() {
 
-				}
-				function checkPage(page) {
-					if (page <= 1) {
-						$("#right").css('opacity', '.5');
-						$("#right").css('pointer-events', 'auto');
-						$("#left").css('opacity', '0');
-						$("#left").css('pointer-events', 'none');
-					} else if(page >= 7) {
-						$("#right").css('opacity', '0');
-						$("#right").css('pointer-events', 'none');
-						$("#left").css('opacity', '.5');
-						$("#left").css('pointer-events', 'auto');
-					} else {
-						$("#right").css('opacity', '.5');
-						$("#right").css('pointer-events', 'auto');
-						$("#left").css('opacity', '.5');
-						$("#left").css('pointer-events', 'auto');
-					};
-				}
-			});
+		}
+		function checkPage(page) {
+			if (page <= 1) {
+				$("#right").css('opacity', '.5');
+				$("#right").css('pointer-events', 'auto');
+				$("#left").css('opacity', '0');
+				$("#left").css('pointer-events', 'none');
+			} else if(page >= 7) {
+				$("#right").css('opacity', '0');
+				$("#right").css('pointer-events', 'none');
+				$("#left").css('opacity', '.5');
+				$("#left").css('pointer-events', 'auto');
+			} else {
+				$("#right").css('opacity', '.5');
+				$("#right").css('pointer-events', 'auto');
+				$("#left").css('opacity', '.5');
+				$("#left").css('pointer-events', 'auto');
+			};
+		}
+	});
 </script>
 
 @stop
