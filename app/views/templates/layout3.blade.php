@@ -124,26 +124,26 @@
 								@foreach ($template->abouts as $about)
 									<div class="row content-block text-justify animateFadeInRight">
 										<div class="col-sm-2 col-sm-offset-2 text-center">
-											<img src="/img/uploaded/{{{$about->picture}}}"/>
+											@if(isset($about->picture))<img src="/img/uploaded/$about->Picture"> @endif
 										</div>
 										<div class="col-sm-6">
-											<p>{{{$about->description}}}</p>
+											@if(isset($about->description)) <p>$about->description</p> @endif
 										</div>
 									</div>
 									<div class="row content-block text-justify animateFadeInLeft">
 										<div class="col-sm-2 col-sm-offset-2 col-sm-push-6 text-center">
-											<img src="/img/uploaded/{{{$about->picture}}}"/>
+											@if(isset($about->picture)) <img src="/img/uploaded/$about->picture"/> @endif
 										</div>
 										<div class="col-sm-6 col-sm-pull-2">
-											<p>{{{$about->description}}}</p>
+											@if(isset($about->description)) <p>$about->description</p> @endif
 										</div>
 									</div>
 									<div class="row content-block content-block-last text-justify animateFadeInRight">
 										<div class="col-sm-2 col-sm-offset-2 text-center">
-											<img src="/img/uploaded/{{{$about->picture}}}"/>
+											@if(isset($about->picture)) <img src="/img/uploaded/$about->picture"/> @endif
 										</div>
 										<div class="col-sm-6">
-											<p>{{{$about->description}}}</p>
+											@if(isset($about->description)) <p>$about->description</p> @endif
 										</div>
 									</div>
 								@endforeach
@@ -162,7 +162,7 @@
 										<div class="col-md-6">
 											<div class="blockquote-box blockquote-primary clearfix animateBounceInLeft">
 												<div class="square pull-left">
-													<i class="fa fa-calendar"></i> {{{$education->start_date}}} - {{{$education->end_date}}}
+													<i class="fa fa-calendar"></i>@if(isset($education->start_date) && (isset($education->end_date)))  $education->start_date - $education->end_date @endif
 												</div>
 												<h2>{{{$education->title}}}</h2>
 												<p class="text-justify">
@@ -171,7 +171,7 @@
 											</div>
 											<div class="blockquote-box blockquote-success clearfix animateBounceInLeft">
 												<div class="square pull-left">
-													<i class="fa fa-calendar"></i> {{{$education->start_date}}} - {{{$education->end_date}}}
+													<i class="fa fa-calendar"></i> @if(isset($education->start_date) && (isset($education->end_date)))  $education->start_date - $education->end_date @endif
 												</div>
 												<h2>{{{$education->title}}}</h2>
 												<p class="text-justify">
@@ -182,7 +182,7 @@
 										<div class="col-md-6">
 											<div class="blockquote-box blockquote-warning clearfix animateBounceInRight">
 												<div class="square pull-left">
-													<i class="fa fa-calendar"></i> {{{$education->start_date}}} - {{{$education->end_date}}}
+													<i class="fa fa-calendar"></i> @if(isset($education->start_date) && (isset($education->end_date)))  $education->start_date - $education->end_date @endif
 												</div>
 												<h2>{{{$education->title}}}</h2>
 												<p class="text-justify">
@@ -328,42 +328,42 @@
 									@foreach ($template->portfolios as $portfolio)
 										<div class="col-sm-6 col-md-4 text-center">
 											<div class="portfolio-item animateFlipInY">
-												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Pencil icon"/></p>
+												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Pencil icon"/></p> @endif
 												<h4>{{{$portfolio->title}}}</h4>
 												<p>{{{$portfolio->description}}}</p>
 											</div>
 										</div>
 										<div class="col-sm-6 col-md-4 text-center animateFlipInX">
 											<div class="portfolio-item">
-												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Clock icon"/></p>
+												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Clock icon"/></p> @endif
 												<h4>{{{$portfolio->title}}}</h4>
 												<p>{{{$portfolio->description}}}</p>
 											</div>
 										</div>
 										<div class="col-sm-6 col-md-4 text-center animateFlipInY">
 											<div class="portfolio-item">
-												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Book Shell icon"/></p>
+												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Book Shell icon"/></p> @endif
 												<h4>{{{$portfolio->title}}}</h4>
 												<p>{{{$portfolio->description}}}</p>
 											</div>
 										</div>
 										<div class="col-sm-6 col-md-4 text-center animateFlipInX">
 											<div class="portfolio-item">
-												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Calendar icon"/></p>
+												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Calendar icon"/></p> @endif
 												<h4>{{{$portfolio->title}}}</h4>
 												<p>{{{$portfolio->description}}}</p>
 											</div>
 										</div>
 										<div class="col-sm-6 col-md-4 text-center animateFlipInY">
 											<div class="portfolio-item">
-												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Film icon"/></p>
+												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Film icon"/></p> @endif
 												<h4>{{{$portfolio->title}}}</h4>
 												<p>{{{$portfolio->description}}}</p>
 											</div>
 										</div>
 										<div class="col-sm-6 col-md-4 text-center animateFlipInX">
 											<div class="portfolio-item">
-												<p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Phone icon"/></p>
+												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Phone icon"/></p> @endif
 												<h4>{{{$portfolio->title}}}</h4>
 												<p>{{{$portfolio->description}}}</p>
 											</div>
