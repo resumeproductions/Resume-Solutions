@@ -506,7 +506,7 @@ button {
 	z-index: -1;
 }
 .submit {
-	background-image: url('/images/submitform.png');
+	background-image: url(/images/submitform.png);
 	background-size: 100% 100%;
 }
 #cont {

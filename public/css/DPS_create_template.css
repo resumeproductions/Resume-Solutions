@@ -24,6 +24,13 @@ body {
 	background-color: white;
 	border-color: black;
 }
+#submitTemplate2 {
+	background-image: url(/images/submitform.png);
+	background-size: 100% 100%;
+	top: 60%;
+	left: 60%;
+	height: 15%;
+}
 input:hover {
 	border-width: 5px;
 	border-color: skyblue;
