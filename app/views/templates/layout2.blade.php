@@ -40,9 +40,10 @@
 			<div class="page">
 				<div class="wrapper">
 					<div class="container">
-						<h1 class="heading">David Simonelli</h1>
+						<h1 class="heading">{{{ $template->user->first_name}}} {{{ $template->user->last_name}}}</h1>
 						<p>
-							<span class="rotate">Baller, Bored, Coder</span>
+							<span class="rotate">{{{ $template->header->adjective}}}</span>
+
 						</p>
 					</div>
 					<div class="arrow-down">
@@ -68,7 +69,7 @@
 					</div>
 					<div class="col-sm-8 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
 						<p class="lead">
-							Something Objective Like
+							{{{ $template->about->title}}}
 						</p>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
