@@ -37,8 +37,8 @@
 </div>
 
 {{ Form::open(array('action' => 'TemplatesController@store', 'files' => true)) }}
-<input name='color' class='Inpage1' value='1'>
-<input name='templateID' value='layout3'>
+<input name='color' class='Inpage1 gone' value='1'>
+<input name='templateID' class='gone' value='layout3'>
 <div class='page1 pagesle'>
 	<input type='file' id='input11' class='Inpage1' name='headerImage'>
 	<input id='input12' class='Inpage1' placeholder='Job title' name='headerJobTitle'>
@@ -129,9 +129,9 @@
 	<input type='file' id='input616' class='Inpage6' name='portfolioPicture6' placeholder='Portfolio image upload6'>
 	<input id='input617' class='Inpage6' placeholder='Portfolio title' name='portfolioTitle6'>
 	<input id='input618' class='Inpage6' placeholder='Portfolio description' name='portfolioDescription6'>
-	<button type="submit" class='Inpage6 buttons' id='submitTemplate3'>Submit</button>
 </div>
 <div class='page7 pagesle'>
+	<button type="submit" class='Inpage7 buttons submit' id='submitTemplate3'></button>
 </div>
 {{Form::close()}}
 <button id='right' type="button" class="btn btn-default btn-lg">

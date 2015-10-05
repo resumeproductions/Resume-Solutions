@@ -71,7 +71,7 @@
 	<div class='page5 pagesle'>
 		<input class='Inpage5 inputs' placeholder=' Contact Description' name='contactDescription' id='input54'>
 	</div>
-	<button type="submit" class='Inpage5 buttons' id='submitTemplate1'></button>
+	<button type="submit" class='Inpage5 buttons submit' id='submitTemplate1'></button>
 	<button id='right' type="button" class="btn btn-default btn-lg">
 		<i class="fa fa-arrow-right fa-2x">
 	</button>
