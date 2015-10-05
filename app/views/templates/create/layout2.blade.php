@@ -20,7 +20,7 @@
 			Grey
 		</button>
 		<button id='red' name='color'>
-			Purple
+			Red
 		</button>
 		<button id='blue' name='color'>
 			Blue
