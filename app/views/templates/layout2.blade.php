@@ -72,20 +72,7 @@
 							{{{ $template->about->title}}}
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+							{{{ $template->about->description}}}
 						</p>
 					</div>
 				</div>
@@ -108,81 +95,16 @@
 								<div class="icon">
 									<i class="fa fa-life-ring"></i>
 								</div>
+								@foreach($template->services as $service)
 								<div class="description">
-									<h4>Stuff</h4>
-									<p>Blah Blah Input Text Blah Blah
-										I didn't agree to this, blaaaah blaaah
+									<h4>{{{$service->title}}}</h4>
+									<p>{{{$service->description}}}
 									</p>
 								</div>
+								@endforeach
 							</div>
 						</div>
-						<div class="feature-box-container">
-							<div class="feature-box">
-								<div class="icon">
-									<i class="fa fa-gift"></i>
-								</div>
-								<div class="description">
-									<h4>Stuff</h4>
-									<p>Blah Blah Input Text Blah Blah
-										I didn't agree to this, blaaaah blaaah
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="feature-box-container">
-							<div class="feature-box">
-								<div class="icon">
-									<i class="fa fa-paint-brush"></i>
-								</div>
-								<div class="description">
-									<h4>Stuff</h4>
-									<p>Blah Blah Input Text Blah Blah
-										I didn't agree to this, blaaaah blaaah
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
-						<div class="feature-box-container">
-							<div class="feature-box">
-								<div class="icon">
-									<i class="fa fa-cogs"></i>
-								</div>
-								<div class="description">
-									<h4>Stuff</h4>
-									<p>Blah Blah Input Text Blah Blah
-										I didn't agree to this, blaaaah blaaah
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="feature-box-container">
-							<div class="feature-box">
-								<div class="icon">
-									<i class="fa fa-rocket"></i>
-								</div>
-								<div class="description">
-									<h4>Stuff</h4>
-									<p>Blah Blah Input Text Blah Blah
-										I didn't agree to this, blaaaah blaaah
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="feature-box-container">
-							<div class="feature-box">
-								<div class="icon">
-									<i class="fa fa-heart"></i>
-								</div>
-								<div class="description">
-									<h4>Stuff</h4>
-									<p>Blah Blah Input Text Blah Blah
-										I didn't agree to this, blaaaah blaaah
-									</p>
-								</div>
-							</div>
-						</div>
+
 					</div>
 				</div>
 			</div>
@@ -199,56 +121,20 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
-						<p>I got this stuff from being better than you.</p>
 						<ul class="v-timeline mt50">
 							<li>
 								<h3 class="v-heading wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s"><i class="fa fa-paper-plane-o"></i> Work experience</h3>
 							</li>
+							@foreach($template->workExperiences as $workExperience)
 							<li>
-								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s" datetime="2013-04-15 13:15"><span>2013 - present</span></time>
+								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s" datetime="2013-04-15 13:15"><span>{{{$workExperience->start_date}}} - {{{$workExperience->end_date}}}</span></time>
 								<div class="v-icon" data-toggle="collapse" data-target="#toggle-1"><i class="fa fa-minus"></i></div>
 								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s" >
-									<h4><a href="#" data-toggle="collapse" data-target="#toggle-1">College</a></h4>
-									<p id="toggle-1" class="collapse in">I did that</p>
+									<h4><a href="#" data-toggle="collapse" data-target="#toggle-1">{{{$workExperience->title}}}</a></h4>
+									<p id="toggle-1" class="collapse in">{{{$workExperience->description}}}</p>
 								</div>
 							</li>
-							<li>
-								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.1s" datetime="2013-04-16 21:30"><span>2011 - 2013</span></time>
-								<div class="v-icon" data-toggle="collapse" data-target="#toggle-2"><i class="fa fa-plus"></i></div>
-								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">
-									<h4><a href="#" data-toggle="collapse" data-target="#toggle-2">I did that too.</a></h4>
-									<p id="toggle-2" class="collapse">I did that too.</p>
-								</div>
-							</li>
-							<li>
-								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.2s" datetime="2013-04-17"><span>2010 - 2011</span></time>
-								<div class="v-icon" data-toggle="collapse" data-target="#toggle-3"><i class="fa fa-plus"></i></div>
-								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.2s">
-									<h4><a href="#" data-toggle="collapse" data-target="#toggle-3">Nerd Stuff</a></h4>
-									<p id="toggle-3" class="collapse">You Wouldn't understand</p>
-								</div>
-							</li>
-						</ul>
-						<ul class="v-timeline mt50">
-							<li>
-								<h3 class="v-heading wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s"><i class="fa fa-graduation-cap"></i> Education</h3>
-							</li>
-							<li>
-								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.3s" datetime="2013-04-18"><span>2008 - 2010</span></time>
-								<div class="v-icon" data-toggle="collapse" data-target="#toggle-4"><i class="fa fa-plus"></i></div>
-								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.3s">
-									<h4><a href="#" data-toggle="collapse" data-target="#toggle-4">Real Quick</a></h4>
-									<p id="toggle-4" class="collapse">Getting Bored</p>
-								</div>
-							</li>
-							<li>
-								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.4s" datetime="2013-04-18"><span>2005 - 2008</span></time>
-								<div class="v-icon" data-toggle="collapse" data-target="#toggle-5"><i class="fa fa-minus"></i></div>
-								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.4s">
-									<h4><a href="#" data-toggle="collapse" data-target="#toggle-5">Pokemoooooon</a></h4>
-									<p id="toggle-5" class="collapse in">I hate bugs</p>
-								</div>
-							</li>
+							@endforeach
 						</ul>
 					</div>
 				</div>
@@ -260,29 +146,18 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<h3 class="section-title">Chance I will come in to Work</h3>
+						<h3 class="section-title">Stats</h3>
 						<div class="section-title-border"></div>
 					</div>
 				</div>
+				@foreach ($template->skills as $skill)
 				<div class="row personal-skills">
 					<div class="col-sm-8 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
-						<h4>Whenever</h4>
-						<h6>Friday</h6>
+						<h4>{{{$skill->description_title}}}</h4>
+						<h6>{{{$skill->skill_title}}}</h6>
 						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width: 92%;">
-								92%
-							</div>
-						</div>
-						<h6>Tuesday</h6>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;">
-								86%
-							</div>
-						</div>
-						<h6>Today</h6>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%;">
-								78%
+							<div class="progress-bar" role="progressbar" aria-valuenow="{{{$skill->percent}}}" aria-valuemin="0" aria-valuemax="100" style="width: {{{$skill->percent}}}%;">
+								{{{$skill->percent}}}%
 							</div>
 						</div>
 					</div>
@@ -291,12 +166,9 @@
 						@foreach ($template->knowledges as $knowledge)
 						<ul class="fa-ul skills-ul">
 						  <li><i class="fa-li fa fa-check"></i>{{{$knowledge->knowledge_item}}}</li>
-{{-- 						  <li><i class="fa-li fa fa-check"></i>Can Use a Printer</li>
-						  <li><i class="fa-li fa fa-check"></i>Not a Jerk</li>
-						  <li><i class="fa-li fa fa-check"></i>Actually Comes to Work</li>
-						  <li><i class="fa-li fa fa-check"></i>Not Wearing Hobo Clothes</li> --}}
 						</ul>	
-						@endforeach					
+						@endforeach		
+						@endforeach			
 					</div>
 				</div>
 				<div class="row personal-skills">

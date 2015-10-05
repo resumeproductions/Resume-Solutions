@@ -45,6 +45,12 @@ class Template extends \Eloquent {
     	return $this->hasMany('Skill');
     }
 
+    public function services()
+    {
+        return $this->hasMany('Service');
+    }
+
+
     public function contact()
     {
     	return $this->hasOne('Contact');
