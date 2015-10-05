@@ -15,7 +15,7 @@ class CreateTemplatesTable extends Migration {
 		Schema::create('templates', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('color');
+			$table->string('color');
 			$table->enum('layout', ['layout1', 'layout2', 'layout3']);
 
 			$table->integer('user_id')->unsigned();
