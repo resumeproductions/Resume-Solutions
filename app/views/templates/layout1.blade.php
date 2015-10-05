@@ -81,7 +81,9 @@
 				<div class="header-section text-center">
 					<h2><span> </span>ABOUT<span> </span></h2>
 				</div>
-					<span><p>{{{ $template->about->description}}}</p></span>
+				@foreach ($template->abouts as $about)
+					<span><p>{{{ $about->description}}}</p></span>
+				@endforeach
 				@foreach ($template->workExperiences as $workExperience)
 				<div class="years">	 
 					<h4><b>{{{$workExperience->start_date}}}</b></h4>

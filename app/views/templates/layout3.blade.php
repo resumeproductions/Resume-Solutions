@@ -91,10 +91,12 @@
 					<div id="bb-first-page" class="bb-custom-side">
 					  <div class="row" id="first-page">
               <div class="col-sm-12 text-center">
+              	
                 <div class="dp-box">
-                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="/img/uploaded/{{{$template->about->picture}}}" width="272" height="299" alt="Display Picture" /> BUFF</h1>
-                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="/img/uploaded/{{{$template->about->picture}}}" alt="Display Picture" /><h1>John Doe</h1></div>
+                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="/img/uploaded/{{{$template->user->profile_img_url}}}" width="272" height="299" alt="Display Picture" /> BUFF</h1>
+                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="/img/uploaded/{{{$template->user->profile_img_url}}}" alt="Display Picture" /><h1>John Doe</h1></div>
                 </div>
+               
               </div>
               <div class="col-xs-8 col-xs-offset-2 text-center">
                 <h2>
@@ -124,29 +126,13 @@
 								@foreach ($template->abouts as $about)
 									<div class="row content-block text-justify animateFadeInRight">
 										<div class="col-sm-2 col-sm-offset-2 text-center">
-											@if(isset($about->picture))<img src="/img/uploaded/$about->Picture"> @endif
+											@if(isset($about->picture))<img src="/img/uploaded/{{{$about->picture}}}"> @endif
 										</div>
 										<div class="col-sm-6">
-											@if(isset($about->description)) <p>$about->description</p> @endif
+											@if(isset($about->description)) <p>{{{$about->description}}}</p> @endif
 										</div>
 									</div>
-									<div class="row content-block text-justify animateFadeInLeft">
-										<div class="col-sm-2 col-sm-offset-2 col-sm-push-6 text-center">
-											@if(isset($about->picture)) <img src="/img/uploaded/$about->picture"/> @endif
-										</div>
-										<div class="col-sm-6 col-sm-pull-2">
-											@if(isset($about->description)) <p>$about->description</p> @endif
-										</div>
-									</div>
-									<div class="row content-block content-block-last text-justify animateFadeInRight">
-										<div class="col-sm-2 col-sm-offset-2 text-center">
-											@if(isset($about->picture)) <img src="/img/uploaded/$about->picture"/> @endif
-										</div>
-										<div class="col-sm-6">
-											@if(isset($about->description)) <p>$about->description</p> @endif
-										</div>
-									</div>
-								@endforeach
+									@endforeach
 							</div>
 						</div>
 					</div>
@@ -162,36 +148,7 @@
 										<div class="col-md-6">
 											<div class="blockquote-box blockquote-primary clearfix animateBounceInLeft">
 												<div class="square pull-left">
-													<i class="fa fa-calendar"></i>@if(isset($education->start_date) && (isset($education->end_date)))  $education->start_date - $education->end_date @endif
-												</div>
-												<h2>{{{$education->title}}}</h2>
-												<p class="text-justify">
-													{{{$education->description}}}
-												</p>
-											</div>
-											<div class="blockquote-box blockquote-success clearfix animateBounceInLeft">
-												<div class="square pull-left">
-													<i class="fa fa-calendar"></i> @if(isset($education->start_date) && (isset($education->end_date)))  $education->start_date - $education->end_date @endif
-												</div>
-												<h2>{{{$education->title}}}</h2>
-												<p class="text-justify">
-													{{{$education->description}}}
-												</p>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="blockquote-box blockquote-warning clearfix animateBounceInRight">
-												<div class="square pull-left">
-													<i class="fa fa-calendar"></i> @if(isset($education->start_date) && (isset($education->end_date)))  $education->start_date - $education->end_date @endif
-												</div>
-												<h2>{{{$education->title}}}</h2>
-												<p class="text-justify">
-	                        						{{{$education->description}}}
-												</p>
-											</div>
-											<div class="blockquote-box blockquote-danger clearfix animateBounceInRight">
-												<div class="square pull-left">
-													<i class="fa fa-calendar"></i> {{{$education->start_date}}} - {{{$education->end_date}}}
+													<i class="fa fa-calendar"></i>@if(isset($education->start_date) && (isset($education->end_date)))  {{{$education->start_date}}} - {{{$education->end_date}}} @endif
 												</div>
 												<h2>{{{$education->title}}}</h2>
 												<p class="text-justify">
@@ -222,35 +179,6 @@
 												<div class="panel-footer">From {{{$experiences->start_date}}} to {{{$experiences->end_date}}}</div>
 											</div>
 										</div>
-										<div class="col-sm-6 animateFadeInUp">
-											<div class="panel panel-default">
-												<div class="panel-heading"><i class="fa fa-2x fa-cube blue"></i>{{{$experiences->title}}}</div>
-												<div class="panel-body">
-													{{{$experiences->description}}}
-												</div>
-												<div class="panel-footer">From {{{$experiences->start_date}}} to {{{$experiences->end_date}}}</div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-6 animateFadeInDown">
-											<div class="panel panel-default">
-												<div class="panel-heading"><i class="fa fa-2x fa-bar-chart blue"></i>{{{$experiences->title}}}</div>
-												<div class="panel-body">
-													{{{$experiences->description}}}
-												</div>
-												<div class="panel-footer">From {{{$experiences->start_date}}} to {{{$experiences->end_date}}}</div>
-											</div>
-										</div>
-										<div class="col-sm-6 animateFadeInDown">
-											<div class="panel panel-default">
-												<div class="panel-heading"><i class="fa fa-2x fa-paper-plane blue"></i>{{{$experiences->title}}}</div>
-												<div class="panel-body">
-													{{{$experiences->description}}}
-												</div>
-												<div class="panel-footer">From {{{$experiences->start_date}}} to {{{$experiences->end_date}}}</div>
-											</div>
-										</div>
 									@endforeach
 								</div>
 							</div>
@@ -270,26 +198,6 @@
 					                      <div class="progress-bar progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}">
 					                        <span class="sr-only">70% Complete (success)</span>
 					                      </div>
-					                      <span class="progress-type">{{{$skill->title}}}</span>
-					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
-					                    </div>
-					                    <div class="progress">
-					                      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}"></div>
-					                      <span class="progress-type">{{{$skill->title}}}</span>
-					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
-					                    </div>
-					                    <div class="progress">
-					                      <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}"></div>
-					                      <span class="progress-type">{{{$skill->title}}}</span>
-					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
-					                    </div>
-					                    <div class="progress">
-					                      <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}"></div>
-					                      <span class="progress-type">{{{$skill->title}}}</span>
-					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
-					                    </div>
-					                    <div class="progress">
-					                      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}"></div>
 					                      <span class="progress-type">{{{$skill->title}}}</span>
 					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
 					                    </div>
@@ -328,42 +236,7 @@
 									@foreach ($template->portfolios as $portfolio)
 										<div class="col-sm-6 col-md-4 text-center">
 											<div class="portfolio-item animateFlipInY">
-												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Pencil icon"/></p> @endif
-												<h4>{{{$portfolio->title}}}</h4>
-												<p>{{{$portfolio->description}}}</p>
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-4 text-center animateFlipInX">
-											<div class="portfolio-item">
-												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Clock icon"/></p> @endif
-												<h4>{{{$portfolio->title}}}</h4>
-												<p>{{{$portfolio->description}}}</p>
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-4 text-center animateFlipInY">
-											<div class="portfolio-item">
-												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Book Shell icon"/></p> @endif
-												<h4>{{{$portfolio->title}}}</h4>
-												<p>{{{$portfolio->description}}}</p>
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-4 text-center animateFlipInX">
-											<div class="portfolio-item">
-												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Calendar icon"/></p> @endif
-												<h4>{{{$portfolio->title}}}</h4>
-												<p>{{{$portfolio->description}}}</p>
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-4 text-center animateFlipInY">
-											<div class="portfolio-item">
-												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Film icon"/></p> @endif
-												<h4>{{{$portfolio->title}}}</h4>
-												<p>{{{$portfolio->description}}}</p>
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-4 text-center animateFlipInX">
-											<div class="portfolio-item">
-												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/$portfolio->picture" alt="Phone icon"/></p> @endif
+												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Pencil icon"/></p> @endif
 												<h4>{{{$portfolio->title}}}</h4>
 												<p>{{{$portfolio->description}}}</p>
 											</div>
@@ -421,10 +294,9 @@
 									<div class="col-sm-6">
 										<div id="contact-map"></div>
 										<address class="pull-right">
-											<strong>Twitter, Inc.</strong><br>
-											795 Folsom Ave, Suite 600<br>
-											San Francisco, CA 94107<br>
-											<abbr title="Phone">P:</abbr> (123) 456-7890
+											{{{$template->user->address}}}<br>
+											{{{$template->user->address}}}, {{{$template->user->state}}} {{{$template->user->zip}}}<br>
+											<abbr title="Phone">P:</abbr> {{{$template->user->phone_number}}}
 										</address>
 									</div>
 								</div>
