@@ -113,22 +113,22 @@
 		<input placeholder='Hobbies' class='Inpage5 inputs' name='hobbies3' id='input530'>
 	</div>
 	<div class='page6 pagesle'>
-		<button placeholder='' 	class='Inpage6 buttons' name='portfolioPicture1' id='input61'></button>
+		<input type='file' placeholder='' 	class='Inpage6 buttons' name='portfolioPicture1' id='input61'>
 		<input placeholder='Title' 			class='Inpage6 inputs' name='portfolioTitle1' 		id='input62'>
 		<input placeholder='Description' 	class='Inpage6 inputs' name='portfolioDescription1' id='input63'>
 		<input placeholder='Link' 			class='Inpage6 inputs' name='portfolioLink1' 		id='input64'>
 
-		<button placeholder='' 	class='Inpage6 buttons' name='portfolioPicture2' id='input65'></button>
+		<input type='file' placeholder='' 	class='Inpage6 buttons' name='portfolioPicture2' id='input65'>
 		<input placeholder='Title' 			class='Inpage6 inputs' name='portfolioTitle2' 		id='input66'>
 		<input placeholder='Description' 	class='Inpage6 inputs' name='portfolioDescription2' id='input67'>
 		<input placeholder='Link' 			class='Inpage6 inputs' name='portfolioLink2' 		id='input68'>
 
-		<button placeholder='' 	class='Inpage6 buttons' name='portfolioPicture3' id='input69'></button>
+		<input type='file' placeholder='' 	class='Inpage6 buttons' name='portfolioPicture3' id='input69'>
 		<input placeholder='Title' 			class='Inpage6 inputs' name='portfolioTitle3' 		id='input610'>
 		<input placeholder='Description' 	class='Inpage6 inputs' name='portfolioDescription3' id='input611'>
 		<input placeholder='Link' 			class='Inpage6 inputs' name='portfolioLink3' 		id='input612'>
 
-		<button placeholder='' 	class='Inpage6 buttons' name='portfolioPicture4' id='input613'></button>
+		<input type='file' placeholder='' 	class='Inpage6 buttons' name='portfolioPicture4' id='input613'>
 		<input placeholder='Title' 			class='Inpage6 inputs' name='portfolioTitle4' 		id='input614'>
 		<input placeholder='Description' 	class='Inpage6 inputs' name='portfolioDescription4' id='input615'>
 		<input placeholder='Link' 			class='Inpage6 inputs' name='portfolioLink4' 		id='input616'>
