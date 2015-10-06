@@ -229,7 +229,7 @@ $(document).ready(function() {
 		console.log('dark');
 		$('#input14').val('1');
 		for (var i = 1; i <= 7; i++) {
-			$('.page'.concat(i)).css('background-image', 'url(/assets_john/JC/Dark/Page' + i + '.png)')
+			$('.page'.concat(i)).css('background-image', 'url(/assets_john/Jc/Dark/Page' + i + '.png)')
 		};
 	}, false);
 	var findRed = document.getElementById('red');
@@ -237,7 +237,7 @@ $(document).ready(function() {
 		console.log('red');
 		$('#input14').val('2');
 		for (var i = 1; i <= 7; i++) {
-			$('.page'.concat(i)).css('background-image', 'url(/assets_john/JC/Red/Page' + i + '.png)');
+			$('.page'.concat(i)).css('background-image', 'url(/assets_john/Jc/Red/Page' + i + '.png)');
 		};
 	}, false);
 	var findBlue = document.getElementById('blue');
@@ -245,7 +245,7 @@ $(document).ready(function() {
 		$('#input14').val('3');
 		console.log('blue');
 		for (var i = 1; i <= 7; i++) {
-			$('.page'.concat(i)).css('background-image', 'url(/assets_john/JC/Blue/Page' + i + '.png)');
+			$('.page'.concat(i)).css('background-image', 'url(/assets_john/Jc/Blue/Page' + i + '.png)');
 		};
 	}, false);
 	var findGlade = document.getElementById('glade');
@@ -253,7 +253,7 @@ $(document).ready(function() {
 		$('#input14').val('4');
 		console.log('glade');
 		for (var i = 1; i <= 7; i++) {
-			$('.page'.concat(i)).css('background-image', 'url(/assets_john/JC/Glade/Page' + i + '.png)');
+			$('.page'.concat(i)).css('background-image', 'url(/assets_john/Jc/Glade/Page' + i + '.png)');
 		};
 	}, false);
 	var findKimberly = document.getElementById('kimberly');
@@ -261,7 +261,7 @@ $(document).ready(function() {
 		$('#input14').val('5');
 		console.log('kimberly');
 		for (var i = 1; i <= 7; i++) {
-			$('.page'.concat(i)).css('background-image', 'url(/assets_john/JC/Kimberly/Page' + i + '.png)');
+			$('.page'.concat(i)).css('background-image', 'url(/assets_john/Jc/Kimberly/Page' + i + '.png)');
 		};
 	}, false);
 	var findOrange = document.getElementById('orange');
@@ -269,7 +269,7 @@ $(document).ready(function() {
 		$('#input14').val('6');
 		console.log('orange');
 		for (var i = 1; i <= 7; i++) {
-			$('.page'.concat(i)).css('background-image', 'url(/assets_john/JC/Orange/Page' + i + '.png)');
+			$('.page'.concat(i)).css('background-image', 'url(/assets_john/Jc/Orange/Page' + i + '.png)');
 		};
 	}, false);
 	var findPurple = document.getElementById('purple');
@@ -277,7 +277,7 @@ $(document).ready(function() {
 		$('#input14').val('4');
 		console.log('purple');
 		for (var i = 1; i <= 7; i++) {
-			$('.page'.concat(i)).css('background-image', 'url(/assets_john/JC/Purple/Page' + i + '.png)');
+			$('.page'.concat(i)).css('background-image', 'url(/assets_john/Jc/Purple/Page' + i + '.png)');
 		};
 	}, false);
 	var findGreen = document.getElementById('green');
@@ -285,7 +285,7 @@ $(document).ready(function() {
 		$('#input14').val('4');
 		console.log('green');
 		for (var i = 1; i <= 7; i++) {
-			$('.page'.concat(i)).css('background-image', 'url(/assets_john/JC/Green/Page' + i + '.png)');
+			$('.page'.concat(i)).css('background-image', 'url(/assets_john/Jc/Green/Page' + i + '.png)');
 		};
 	}, false);
 });
