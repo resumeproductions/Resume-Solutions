@@ -66,6 +66,9 @@ class TemplatesController extends \BaseController {
 				if(Input::has('headerResumeTitle')) {
 					$header->description = Input::get('headerResumeTitle');
 				}
+				if(Input::has('headerImage')) {
+					$header->picture = Input::get('headerImage');
+				}
 				if(Input::has('headerJobTitle')) {
 					$header->description = Input::get('headerJobTitle');
 				}
