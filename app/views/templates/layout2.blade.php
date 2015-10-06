@@ -97,13 +97,13 @@
 								<div class="icon">
 									<i class="fa fa-life-ring"></i>
 								</div>
-								@foreach($template->services as $service)
 								<div class="description">
+								@foreach($template->services as $service)
 									<h4>{{{$service->title}}}</h4>
 									<p>{{{$service->description}}}
 									</p>
-								</div>
 								@endforeach
+								</div>
 							</div>
 						</div>
 
@@ -137,6 +137,19 @@
 								</div>
 							</li>
 							@endforeach
+							<li>
+								<h3 class="v-heading wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s"><i class="fa fa-paper-plane-o"></i>Education</h3>
+							</li>
+							@foreach($template->educations as $education)
+							<li>
+								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s" datetime="2013-04-15 13:15"><span>{{{$education->start_date}}} - {{{$education->end_date}}}</span></time>
+								<div class="v-icon" data-toggle="collapse" data-target="#toggle-1"><i class="fa fa-minus"></i></div>
+								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s" >
+									<h4><a href="#" data-toggle="collapse" data-target="#toggle-1">{{{$education->title}}}</a></h4>
+									<p id="toggle-1" class="collapse in">{{{$education->description}}}</p>
+								</div>
+							</li>
+							@endforeach
 						</ul>
 					</div>
 				</div>
@@ -152,9 +165,9 @@
 						<div class="section-title-border"></div>
 					</div>
 				</div>
-				@foreach ($template->skills as $skill)
 				<div class="row personal-skills">
 					<div class="col-sm-8 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
+				@foreach ($template->skills as $skill)
 						<h4>{{{$skill->description_title}}}</h4>
 						<h6>{{{$skill->skill_title}}}</h6>
 						<div class="progress">
@@ -162,6 +175,7 @@
 								{{{$skill->percent}}}%
 							</div>
 						</div>
+						@endforeach			
 					</div>
 					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
 						<h4>Knowledge</h4>
@@ -170,13 +184,11 @@
 						  <li><i class="fa-li fa fa-check"></i>{{{$knowledge->knowledge_item}}}</li>
 						</ul>	
 						@endforeach		
-						@endforeach			
 					</div>
 				</div>
 				<div class="row personal-skills">
 					<div class="col-sm-8 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.1s">
 						<h4>Languages</h4>
-						@foreach ($template->knowledges as $knowledge)
 						<div class="lang-container">
 							<input type="text" value="{{{$knowledge->sub_percent}}}" class="dial" 
 								data-width="100"
@@ -186,10 +198,11 @@
 								data-thickness=".2"
 								data-displayPrevious=true
 								data-readOnly=true>
+						@foreach ($template->knowledges as $knowledge)
 							<p class="lang-description">{{{$knowledge->sub_head}}}</p>
 							<span class="lang-level">{{{$knowledge->sub_foot}}}</span>
-						</div>
 						@endforeach						
+						</div>
 					</div>
 					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">
 						<h4>Hobbies</h4>
