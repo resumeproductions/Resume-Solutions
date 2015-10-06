@@ -216,22 +216,43 @@ class TemplatesController extends \BaseController {
 				$knowledge4->save();
 			}
 
-			if(Input::has('aboutDescription1') || Input::has('aboutDescription2')) {
-				$abouts = new About();
-				$abouts->template_id = $template->id;
-				if(Input::has('aboutDescription1')) {
-					$abouts->description = Input::get('aboutDescription1');
-				}
-				if(Input::has('aboutDescription2')) {
-					$abouts->description = Input::get('aboutDescription2');
-				}
+			if(Input::has('aboutDescription1')) {
+				$abouts1 = new About();
+				$abouts1->template_id = $template->id;
+				$abouts1->description = Input::get('aboutDescription1');
 				if(Input::has('aboutTitle')) {
-					$abouts->title = Input::get('aboutTitle');
+					$abouts1->title = Input::get('aboutTitle');
 				}
-				if (Input::hasFile('aboutBackgroundImage')) {
-			 	      $template->picture = Input::file('aboutBackgroundImage')->move("images/uploaded/");
+				if (Input::hasFile('aboutBackgroundImage1')) {
+			 	      $abouts1->picture = Input::file('aboutBackgroundImage1')->move("images/uploaded/");
 			 	}
-				$abouts->save();
+				$abouts1->save();
+			}
+
+			if(Input::has('aboutDescription2')) {
+				$abouts2 = new About();
+				$abouts2->template_id = $template->id;
+				$abouts2->description = Input::get('aboutDescription2');
+				if(Input::has('aboutTitle')) {
+					$abouts2->title = Input::get('aboutTitle');
+				}
+				if (Input::hasFile('aboutBackgroundImage2')) {
+			 	      $abouts2->picture = Input::file('aboutBackgroundImage2')->move("images/uploaded/");
+			 	}
+				$abouts2->save();
+			}
+
+			if(Input::has('aboutDescription3')) {
+				$abouts3 = new About();
+				$abouts3->template_id = $template->id;
+				$abouts3->description = Input::get('aboutDescription3');
+				if(Input::has('aboutTitle')) {
+					$abouts3->title = Input::get('aboutTitle');
+				}
+				if (Input::hasFile('aboutBackgroundImage3')) {
+			 	      $abouts3->picture = Input::file('aboutBackgroundImage3')->move("images/uploaded/");
+			 	}
+				$abouts3->save();
 			}
 
 			if(Input::has('contactDescription')) {

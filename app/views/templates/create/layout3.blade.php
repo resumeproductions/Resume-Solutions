@@ -44,12 +44,12 @@
 	<input id='input12' class='Inpage1' placeholder='Job title' name='headerJobTitle'>
 </div>
 <div class='page2 pagesle'>
-	<input id='input21' type='file' class='Inpage2' placeholder='Icon Image Upload'>
-	<textarea id='input22' class='Inpage2' placeholder='About me paragraph'></textarea>
-	<input id='input23' type='file' class='Inpage2' placeholder='Icon Image Upload'>
-	<textarea id='input24' class='Inpage2' placeholder='About me paragraph'></textarea>
-	<input id='input25' type='file' class='Inpage2' placeholder='Icon Image Upload'>
-	<textarea id='input26' class='Inpage2' placeholder='About me paragraph'></textarea>
+	<input id='input21' type='file' class='Inpage2' name='aboutBackgroundImage1' placeholder='Icon Image Upload'>
+	<textarea id='input22' name='aboutDescription1' class='Inpage2' placeholder='About me paragraph'></textarea>
+	<input id='input23' type='file' class='Inpage2' name='aboutBackgroundImage2' placeholder='Icon Image Upload'>
+	<textarea id='input24' name='aboutDescription1' class='Inpage2' placeholder='About me paragraph'></textarea>
+	<input id='input25' type='file' class='Inpage2' name='aboutBackgroundImage3' placeholder='Icon Image Upload'>
+	<textarea id='input26' name='aboutDescription1' class='Inpage2' placeholder='About me paragraph'></textarea>
 </div>
 <div class='page3 pagesle'>
 	<input id='input31' class='Inpage3' placeholder='Start year' name='educationStart1'>

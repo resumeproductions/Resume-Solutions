@@ -14,7 +14,7 @@ class HeadersTableSeeder extends Seeder {
 	protected function envHeader()
 	{
 		$header = new Header1();
-		$header->description = 'My name is John Doe and this is a section where you will tell your potential employers about yourself. ';
+		$header->description = '';
 		$header->job_title = '#johnslife';
 		$header->adjective = '#johnslife';
 		$header->resume_title = 'resume title';

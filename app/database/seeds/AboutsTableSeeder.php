@@ -14,8 +14,8 @@ class AboutsTableSeeder extends Seeder {
 	protected function envAbout()
 	{
 		$about = new About();
-		$about->description = 'My name is John Doe and this is a section where you will tell your potential employers about yourself. ';
-		$about->title = '#johnslife';
+		$about->description = 'I have been programming for a few years now and currently am a full-stack developer. I love taking on new challenges and learning new technologies as well.';
+		$about->title = 'Full-stack developer';
 		$about->picture = '1.jpg';
 		$about->template_id = 1;
 		$about->save();
