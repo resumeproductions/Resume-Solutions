@@ -246,7 +246,7 @@
 									<span class="title">{{{$portfolio->title}}}</span>
 									<span class="category">{{{$portfolio->description}}}</span>
 								</a>
-								<img src="{{{$portfolio->picture}}}" alt="" class="img-responsive">
+								<img src="/{{{$portfolio->picture}}}" alt="" class="img-responsive">
 							</div>
 						</figure>
 					</li>
