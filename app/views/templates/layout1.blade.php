@@ -158,7 +158,7 @@
 					  <div class="portfolio-grids">
 					  	@foreach ($template->portfolios as $portfolio)
 						  <div class="portfolio-grid col-md-4">
-							 <a href="#"><img src="/{{{$portfolio->picture}}}"></a>
+							 <a href="#"><img src="/{{{$portfolio->picture}}}" width="292.48" height="219"></a>
 							  <p>{{{$portfolio->description}}}</p>
 							  <a class="rightarrow" href="#"><span> </span></a>
 						  </div>
