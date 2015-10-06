@@ -231,7 +231,7 @@
 									@foreach ($template->portfolios as $portfolio)
 										<div class="col-sm-6 col-md-4 text-center">
 											<div class="portfolio-item animateFlipInY">
-												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Pencil icon"/></p> @endif
+												@if(isset($portfolio->picture)) <p><img src="/{{{$portfolio->picture}}}" alt="Pencil icon"/></p> @endif
 												<h4>{{{$portfolio->title}}}</h4>
 												<p>{{{$portfolio->description}}}</p>
 											</div>
