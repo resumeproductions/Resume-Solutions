@@ -203,7 +203,9 @@
 					                    </div>
 					                  </div>
 					                </div>
+					            @endforeach
 					                <div class="row">        
+					            @foreach ($template->skills as $skill)
 					                  <div class="col-xs-12 col-sm-4 col-sm-offset-2 animateFadeInUp">
 					                    <div class="well">
 					                      <h3>{{{$skill->description_title}}}</h3>
@@ -212,16 +214,9 @@
 					                      </p>
 					                    </div>
 					                  </div>
-					                  <div class="col-xs-12 col-sm-4 animateFadeInUp">
-					                    <div class="well">
-					                      <h3>{{{$skill->description_title}}}</h3>
-					                      <p>
-					                        {{{$skill->description}}}
-					                      </p>
-					                    </div>
-					                  </div>
-					                </div>
 					            @endforeach
+
+					                </div>
 							</div>
 						</div>
 					</div>
