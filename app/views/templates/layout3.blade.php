@@ -126,7 +126,7 @@
 								@foreach ($template->abouts as $about)
 									<div class="row content-block text-justify animateFadeInRight">
 										<div class="col-sm-2 col-sm-offset-2 text-center">
-											@if(isset($about->picture))<img src="/img/uploaded/{{{$about->picture}}}"> @endif
+											@if(isset($about->picture))<img src="/{{{$about->picture}}}"> @endif
 										</div>
 										<div class="col-sm-6">
 											@if(isset($about->description)) <p>{{{$about->description}}}</p> @endif
