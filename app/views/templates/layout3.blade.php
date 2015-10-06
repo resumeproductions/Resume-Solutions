@@ -198,7 +198,7 @@
 					                      <div class="progress-bar progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}">
 					                        <span class="sr-only">70% Complete (success)</span>
 					                      </div>
-					                      <span class="progress-type">{{{$skill->title}}}</span>
+					                      <span class="progress-type">{{{$skill->skill_title}}}</span>
 					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
 					                    </div>
 					                  </div>
