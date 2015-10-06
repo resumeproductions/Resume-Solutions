@@ -93,8 +93,8 @@
               <div class="col-sm-12 text-center">
               	
                 <div class="dp-box">
-                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="{{{$template->user->profile_img_url}}}" width="272" height="299" alt="Display Picture" /> {{{$template->user->first_name}}}{{{$template->user->first_name}}}</h1>
-                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="{{{$template->user->profile_img_url}}}" alt="Display Picture" /><h1>{{{$template->user->first_name}}}{{{$template->user->first_name}}}</h1></div>
+                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="/img/uploaded/{{{$template->user->profile_img_url}}}" width="272" height="299" alt="Display Picture" /> BUFF</h1>
+                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="/img/uploaded/{{{$template->user->profile_img_url}}}" alt="Display Picture" /><h1>John Doe</h1></div>
                 </div>
                
               </div>
@@ -126,7 +126,7 @@
 								@foreach ($template->abouts as $about)
 									<div class="row content-block text-justify animateFadeInRight">
 										<div class="col-sm-2 col-sm-offset-2 text-center">
-											@if(isset($about->picture))<img src="/{{{$about->picture}}}"> @endif
+											@if(isset($about->picture))<img src="/img/uploaded/{{{$about->picture}}}"> @endif
 										</div>
 										<div class="col-sm-6">
 											@if(isset($about->description)) <p>{{{$about->description}}}</p> @endif
@@ -236,7 +236,7 @@
 									@foreach ($template->portfolios as $portfolio)
 										<div class="col-sm-6 col-md-4 text-center">
 											<div class="portfolio-item animateFlipInY">
-												@if(isset($portfolio->picture)) <p><img src="/{{{$portfolio->picture}}}" alt="Pencil icon"/></p> @endif
+												@if(isset($portfolio->picture)) <p><img src="/img/uploaded/{{{$portfolio->picture}}}" alt="Pencil icon"/></p> @endif
 												<h4>{{{$portfolio->title}}}</h4>
 												<p>{{{$portfolio->description}}}</p>
 											</div>
