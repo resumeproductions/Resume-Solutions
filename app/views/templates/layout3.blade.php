@@ -129,7 +129,7 @@
 											@if(isset($about->picture))<img src="/{{{$about->picture}}}"> @endif
 										</div>
 										<div class="col-sm-6">
-										 <p>{{{$about->description}}}</p>
+											@if(isset($about->description)) <p>{{{$about->description}}}</p> @endif
 										</div>
 									</div>
 									@endforeach
@@ -198,7 +198,7 @@
 					                      <div class="progress-bar progress-bar-striped active" role="progressbar" data-transitiongoal="{{{$skill->percent}}}">
 					                        <span class="sr-only">70% Complete (success)</span>
 					                      </div>
-					                      <span class="progress-type">{{{$skill->skill_title}}}</span>
+					                      <span class="progress-type">{{{$skill->title}}}</span>
 					                      <span class="progress-completed">{{{$skill->percent}}}%</span>
 					                    </div>
 					                  </div>

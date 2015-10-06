@@ -109,13 +109,12 @@
 								<div class="skill-grids text-center">
 										<div class="col-md-3">	
 											<div class="skill-grid">
-									@foreach ($template->skills as $skill)
+												@foreach ($template->skills as $skill)
 												<div class="circle" id="circles-1">
 												 	<h3>{{{$skill->skill_title}}}</h3>	
 												</div>									
 											 </div>	
 										</div>
-										
 										<div class="clearfix"> </div>
 								</div>
 							</div>
@@ -128,9 +127,7 @@
 										];
 									for (var i = 1; i <= 5; i++) {
 										var child = document.getElementById('circles-' + i),
-											@foreach ($template->skills as $skill)
 												percentage = {{{$skill->percent}}};
-											@endforeach							  
 											
 										Circles.create({
 											id:         child.id,
@@ -145,6 +142,7 @@
 							
 					</script>
 					
+				@endforeach							  
 					<!--/-->
 				</div>
 			</div>
