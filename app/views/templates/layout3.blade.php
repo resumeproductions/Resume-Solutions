@@ -93,8 +93,8 @@
               <div class="col-sm-12 text-center">
               	
                 <div class="dp-box">
-                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="/img/uploaded/{{{$template->user->profile_img_url}}}" width="272" height="299" alt="Display Picture" /> BUFF</h1>
-                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="/img/uploaded/{{{$template->user->profile_img_url}}}" alt="Display Picture" /><h1>John Doe</h1></div>
+                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="/{{{$template->header->picture}}}" width="272" height="299" alt="Display Picture" /> BUFF</h1>
+                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="/{{{$template->header->picture}}}" alt="Display Picture" /><h1>John Doe</h1></div>
                 </div>
                
               </div>
