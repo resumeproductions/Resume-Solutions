@@ -24,7 +24,7 @@
           <label class="radio-inline">
             <input type="radio" name="layout" value="layout1"> Layout 1
           </label>
-            <a href="/users/1" target="_blank" class="pop-up" title="Caption 1">
+            <a href="/users/8" target="_blank" class="pop-up" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
                   <img src="/images/layout1.png" alt="">
@@ -41,7 +41,7 @@
             <label class="radio-inline">
               <input type="radio" name="layout" value="layout2"> Layout 2
             </label>
-            <a href="/users/2" target="_blank" class="pop-up" title="Caption 1">
+            <a href="/users/10" target="_blank" class="pop-up" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
                   <img src="/images/layout2.png" alt="">
@@ -58,7 +58,7 @@
             <label class="radio-inline">
               <input type="radio" name="layout" value="layout3"> Layout 3
             </label>
-            <a href="/users/3" target="_blank" class="pop-up" title="Caption 1">
+            <a href="/users/11" target="_blank" class="pop-up" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
                   <img src="/images/layout3.png" alt="">
