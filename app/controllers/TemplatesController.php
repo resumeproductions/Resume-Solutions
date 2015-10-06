@@ -66,7 +66,7 @@ class TemplatesController extends \BaseController {
 				if(Input::has('headerResumeTitle')) {
 					$header->description = Input::get('headerResumeTitle');
 				}
-				if (Input::hasFile('headerImage')) {
+				if (Input::hasFile('headerImage')) { 
 			 	      $header->picture = Input::file('headerImage')->move("images/uploaded/");
 			 	}
 				if(Input::has('headerJobTitle')) {
