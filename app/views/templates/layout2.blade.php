@@ -68,9 +68,11 @@
 						<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" class="img-responsive about-img" />
 					</div>
 						<div class="col-sm-8 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
-							@foreach($template->abouts as $about)
+							@foreach($template->abouts as $key => $about)
 						<p class="lead">
-							{{{ $about->title}}}
+							<?php if ($key = 1) { ?>
+								{{{ $about->title }}}
+							<?php }; ?>
 						</p>
 						@endforeach
 					@foreach($template->abouts as $about)
@@ -291,7 +293,7 @@
 				<div class="row">
 					<div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
 						<p>
-							<strong>Contact Info</strong> {{{$template->contact->description}}}
+							<strong>{{{$template->contact->description}}}</strong> 
 						</p>
 						<ul class="list-contacts">
 							<li><i class="fa fa-phone"></i> {{{$template->user->phone_number}}}</li>
