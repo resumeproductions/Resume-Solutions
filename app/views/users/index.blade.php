@@ -116,7 +116,7 @@
           <div class="col-md-3 col-sm-4 wow bounceInUp">
             <div class="stat">
               <div class="stat-icon">
-                <h2><i class="fa fa-code hidden-xs"></i><span class="timer" data-to="999"></span></h2>
+                <h2><i class="fa fa-code hidden-xs"></i><span class="timer" data-to="9321"></span></h2>
               </div>
               <h3>Line of code</h3>
             </div>
