@@ -129,7 +129,7 @@
 											@if(isset($about->picture))<img src="/{{{$about->picture}}}"> @endif
 										</div>
 										<div class="col-sm-6">
-											@if(isset($about->description)) <p>{{{$about->description}}}</p> @endif
+										 <p>{{{$about->description}}}</p>
 										</div>
 									</div>
 									@endforeach

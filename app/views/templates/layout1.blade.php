@@ -107,12 +107,13 @@
 					<div class="services_grids">
 							<div id="canvas">
 								<div class="skill-grids text-center">
-									@foreach ($template->skills as $skill)
 										<div class="col-md-3">	
 											<div class="skill-grid">
-												<div class="circle" id="circles-1"></div>									
-												 <h3>{{{$skill->skill_title}}}</h3>	
-											 </div>								  
+									@foreach ($template->skills as $skill)
+												<div class="circle" id="circles-1">
+												 	<h3>{{{$skill->skill_title}}}</h3>	
+												</div>									
+											 </div>	
 										</div>
 										
 										<div class="clearfix"> </div>
@@ -125,9 +126,11 @@
 									var colors = [
 											['#ADADAD', '#303030'], ['#ADADAD', '#303030'], ['#ADADAD', '#303030'], ['#ADADAD', '#303030']
 										];
-									for (var i = 1; i <= 8; i++) {
+									for (var i = 1; i <= 5; i++) {
 										var child = document.getElementById('circles-' + i),
-											percentage = {{{$skill->percent}}};
+											@foreach ($template->skills as $skill)
+												percentage = {{{$skill->percent}}};
+											@endforeach							  
 											
 										Circles.create({
 											id:         child.id,
@@ -147,7 +150,7 @@
 			</div>
 		   <a class="down scroll" href="#port"><span> </span></a>
 		</div>
-		@endforeach
+		
 		<!--SKILLS Ends-->
 		<!--PORTFOLIO Starts-->
 		<div id="port" class="Portfolio">
