@@ -19,6 +19,7 @@ class CreateHeadersTable extends Migration {
 			$table->string('job_title')->nullable();
 			$table->string('resume_title')->nullable();
 			$table->string('adjective')->nullable();
+			$table->string('picture')->nullable();
 			$table->integer('template_id')->unsigned();
 			$table->foreign('template_id')->references('id')->on('templates');
 			$table->timestamps();
