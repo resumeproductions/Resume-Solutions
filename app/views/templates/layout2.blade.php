@@ -67,11 +67,11 @@
 					<div class="col-sm-4 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
 						<img src="/assets_david/side-menu:Image/assets/img/blue.jpg" class="img-responsive about-img" />
 					</div>
-					@foreach($template->abouts as $about)
-					<div class="col-sm-8 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
+						<div class="col-sm-8 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
 						<p class="lead">
 							{{{ $about->title}}}
 						</p>
+					@foreach($template->abouts as $about)
 						<p>
 							{{{ $about->description}}}
 						</p>
